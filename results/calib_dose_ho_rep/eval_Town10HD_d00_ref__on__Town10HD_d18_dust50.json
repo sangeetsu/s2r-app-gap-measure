@@ -1,0 +1,15 @@
+{
+  "metrics": {
+    "AP_Car": 0.37727537401051714,
+    "n_gt_Car": 421,
+    "AP_Pedestrian": 0.09512013871686896,
+    "n_gt_Pedestrian": 165,
+    "AP_Cyclist": 0.10204081632653061,
+    "n_gt_Cyclist": 113,
+    "mAP@IoU=0.5": 0.19147877635130559
+  },
+  "ckpt": "checkpoints/anchindr_Town10HD_d00_ref/last.pt",
+  "cell": "Town10HD_d18_dust50",
+  "n_frames": 250,
+  "min_box_height": 0.0
+}

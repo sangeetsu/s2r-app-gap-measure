@@ -1,0 +1,15 @@
+{
+  "source_ckpt": "checkpoints/anchis_SHIFT_daytime_clear_n100/last.pt",
+  "dataset": "cityscapes_val",
+  "n_frames": 500,
+  "class_mapping": "ALDI COCO: Car<-{car,truck}, Pedestrian<-{person}, Cyclist<-{rider}",
+  "metrics": {
+    "AP_Car": 0.26040121494666946,
+    "n_gt_Car": 4852,
+    "AP_Pedestrian": 0.13775499333086172,
+    "n_gt_Pedestrian": 3448,
+    "AP_Cyclist": 0.2437316926342804,
+    "n_gt_Cyclist": 544,
+    "mAP@IoU=0.5": 0.21396263363727053
+  }
+}

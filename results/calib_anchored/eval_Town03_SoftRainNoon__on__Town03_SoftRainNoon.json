@@ -1,0 +1,14 @@
+{
+  "metrics": {
+    "AP_Car": 0.26911792384938166,
+    "n_gt_Car": 1037,
+    "AP_Pedestrian": 0.1750841750841751,
+    "n_gt_Pedestrian": 241,
+    "AP_Cyclist": 0.16558441558441558,
+    "n_gt_Cyclist": 199,
+    "mAP@IoU=0.5": 0.2032621715059908
+  },
+  "ckpt": "checkpoints/anch_Town03_SoftRainNoon/last.pt",
+  "cell": "Town03_SoftRainNoon",
+  "n_frames": 200
+}

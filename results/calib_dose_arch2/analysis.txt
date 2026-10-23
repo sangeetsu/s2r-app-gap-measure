@@ -1,0 +1,45 @@
+[analyze_dose] results results/calib_dose_arch2; metrics results/calib_dose/dose_metrics.json
+=== R1: appearance-only drop of the reference detector (pp), frames identical ===
+  town        sun25   sun10    sun3   night   fog25   fog50   fog75     wet    rain
+  Town01       -0.3     1.0     1.6    14.9     4.4    13.2    15.6    -0.0     5.3
+  Town02        nan     nan     nan     nan     nan     nan     nan     nan     nan
+  Town05        nan     nan     nan     nan     nan     nan     nan     nan     nan
+  Town10HD     -1.2     2.2     7.7    15.5    13.5    21.6    26.0     0.9     6.7
+  sun: Spearman(dose order, drop) per town [1.0, 1.0] -> 2/2 towns >= .8 -> R1 FAIL
+  fog: Spearman(dose order, drop) per town [1.0, 1.0] -> 2/2 towns >= .8 -> R1 FAIL
+
+=== R2: label-free metric(ref, dose) vs appearance-only drop, 18 pairs ===
+  img_fid_ref        Spearman +0.775 (p=1.6e-04)  LOTO R2 -0.228  -> R2 FAIL   (|rho|; sign-agnostic since 2026-10-16)
+  obj_fid_ref        Spearman +0.882 (p=1.3e-06)  LOTO R2 +0.340  -> R2 PASS   (|rho|; sign-agnostic since 2026-10-16)
+  nnd_dose_to_ref    Spearman +0.866 (p=3.4e-06)  LOTO R2 +0.184  -> R2 PASS   (|rho|; sign-agnostic since 2026-10-16)
+  cov_dose_by_ref    Spearman -0.913 (p=1.2e-07)  LOTO R2 +0.328  -> R2 PASS   (|rho|; sign-agnostic since 2026-10-16)
+  paired_img_disp    Spearman +0.750 (p=3.4e-04)  LOTO R2 -0.201  -> R2 FAIL   (|rho|; sign-agnostic since 2026-10-16)
+  paired_obj_disp    Spearman +0.862 (p=4.3e-06)  LOTO R2 +0.048  -> R2 PASS   (|rho|; sign-agnostic since 2026-10-16)
+  paired_task_disp   Spearman +0.889 (p=8.4e-07)  LOTO R2 +0.277  -> R2 PASS   (|rho|; sign-agnostic since 2026-10-16)
+  probe_flip         Spearman +0.950 (p=1.6e-09)  LOTO R2 +0.785  -> R2 PASS   (|rho|; sign-agnostic since 2026-10-16)
+
+=== R3: real mAP, dose-trained vs reference-trained detector (same town) ===
+  KITTI: Δ real mAP (dose - ref) by dose, mean over towns: sun25 +2.8, sun10 +4.4, sun3 -0.3, night +4.4, fog25 -5.9, fog50 -3.4, fog75 -12.0, wet +0.8, rain -10.0
+    Δ FID-to-KITTI vs Δ real mAP: Spearman -0.730, town-clustered permutation p=0.0010 (n=18)
+  Cityscapes: Δ real mAP (dose - ref) by dose, mean over towns: sun25 +1.4, sun10 +2.4, sun3 -0.2, night -0.6, fog25 -4.1, fog50 -2.0, fog75 -7.6, wet -1.3, rain -6.1
+    Δ FID-to-Cityscapes vs Δ real mAP: Spearman -0.554, town-clustered permutation p=0.0085 (n=18)
+
+=== Asymmetry: ref-trained on dose vs dose-trained on ref (drop from each detector's own held-out) ===
+  Town01_d01_sun25       ref->dose   -0.3   dose->ref   +1.6   harder: dose->ref
+  Town01_d02_sun10       ref->dose   +1.0   dose->ref   +0.6   harder: ref->dose
+  Town01_d03_sun3        ref->dose   +1.6   dose->ref   +0.4   harder: ref->dose
+  Town01_d04_night       ref->dose  +14.9   dose->ref   +3.3   harder: ref->dose
+  Town01_d05_fog25       ref->dose   +4.4   dose->ref   +6.5   harder: dose->ref
+  Town01_d06_fog50       ref->dose  +13.2   dose->ref  +17.3   harder: dose->ref
+  Town01_d07_fog75       ref->dose  +15.6   dose->ref  +15.1   harder: ref->dose
+  Town01_d08_wet         ref->dose   -0.0   dose->ref   +4.5   harder: dose->ref
+  Town01_d09_rain        ref->dose   +5.3   dose->ref   +5.5   harder: dose->ref
+  Town10HD_d01_sun25     ref->dose   -1.2   dose->ref   -0.2   harder: dose->ref
+  Town10HD_d02_sun10     ref->dose   +2.2   dose->ref   +1.1   harder: ref->dose
+  Town10HD_d03_sun3      ref->dose   +7.7   dose->ref   +3.2   harder: ref->dose
+  Town10HD_d04_night     ref->dose  +15.5   dose->ref   +2.0   harder: ref->dose
+  Town10HD_d05_fog25     ref->dose  +13.5   dose->ref  +14.0   harder: dose->ref
+  Town10HD_d06_fog50     ref->dose  +21.6   dose->ref  +23.2   harder: dose->ref
+  Town10HD_d07_fog75     ref->dose  +26.0   dose->ref  +17.9   harder: ref->dose
+  Town10HD_d08_wet       ref->dose   +0.9   dose->ref   -1.8   harder: ref->dose
+  Town10HD_d09_rain      ref->dose   +6.7   dose->ref   +0.9   harder: ref->dose

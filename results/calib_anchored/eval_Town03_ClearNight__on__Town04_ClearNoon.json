@@ -1,0 +1,14 @@
+{
+  "metrics": {
+    "AP_Car": 0.3841095162147794,
+    "n_gt_Car": 103,
+    "AP_Pedestrian": 0.0,
+    "n_gt_Pedestrian": 0,
+    "AP_Cyclist": 0.0,
+    "n_gt_Cyclist": 9,
+    "mAP@IoU=0.5": 0.12803650540492648
+  },
+  "ckpt": "checkpoints/anch_Town03_ClearNight/last.pt",
+  "cell": "Town04_ClearNoon",
+  "n_frames": 200
+}

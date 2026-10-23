@@ -1,0 +1,69 @@
+{
+  "features": "/home/sangeetsu/datasets/carla_extracted/spatial_features_dinov3.npz",
+  "matched_train_n": 53431,
+  "probe_trained_on_CARLA": {
+    "CARLA_heldout": {
+      "accuracy": 0.9470823011285439,
+      "accuracy_foreground_only": 0.9253913894324853,
+      "macro_f1": 0.9014123685315062,
+      "per_class_f1": {
+        "Background": 0.977213592998502,
+        "Car": 0.9544152122948685,
+        "Pedestrian": 0.8812714241196634,
+        "Cyclist": 0.7927492447129909
+      },
+      "n": 14532
+    },
+    "KITTI_val": {
+      "accuracy": 0.9105480868665977,
+      "accuracy_foreground_only": 0.8783425999470479,
+      "macro_f1": 0.6962870270720172,
+      "per_class_f1": {
+        "Background": 0.9526359832635983,
+        "Car": 0.9337935362409789,
+        "Pedestrian": 0.6320519221168248,
+        "Cyclist": 0.26666666666666666
+      },
+      "n": 13538
+    }
+  },
+  "probe_trained_on_KITTI": {
+    "CARLA_heldout": {
+      "accuracy": 0.7065785851913019,
+      "accuracy_foreground_only": 0.47957436399217224,
+      "macro_f1": 0.502966392326336,
+      "per_class_f1": {
+        "Background": 0.7783909737552122,
+        "Car": 0.7075115400755351,
+        "Pedestrian": 0.4359743040685225,
+        "Cyclist": 0.08998875140607424
+      },
+      "n": 14532
+    },
+    "KITTI_val": {
+      "accuracy": 0.9923917860836164,
+      "accuracy_foreground_only": 0.9923219486364839,
+      "macro_f1": 0.9756396000574774,
+      "per_class_f1": {
+        "Background": 0.9947240599614773,
+        "Car": 0.9947842579421526,
+        "Pedestrian": 0.9773071104387292,
+        "Cyclist": 0.9357429718875502
+      },
+      "n": 13538
+    }
+  },
+  "in_domain_synthetic": 94.70823011285438,
+  "in_domain_real": 99.23917860836164,
+  "real_minus_synthetic_pp": 4.5309484955072605,
+  "args": {
+    "carla_features": "/home/sangeetsu/datasets/carla_extracted/spatial_features_dinov3.npz",
+    "kitti_features": "/home/sangeetsu/datasets/kitti/spatial_features_dinov3.npz",
+    "carla_root": "/home/sangeetsu/datasets/carla_extracted",
+    "kitti_root": "/home/sangeetsu/datasets/kitti/extracted/training",
+    "kitti_splits": "/home/sangeetsu/datasets/kitti/splits.json",
+    "out": "results/domain_matrix_dinov3.json",
+    "bg_per_frame": 4,
+    "seed": 42
+  }
+}

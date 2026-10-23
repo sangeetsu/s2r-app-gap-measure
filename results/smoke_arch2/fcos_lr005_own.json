@@ -1,0 +1,14 @@
+{
+  "metrics": {
+    "AP_Car": 0.5347905416757928,
+    "n_gt_Car": 614,
+    "AP_Pedestrian": 0.3403480526749031,
+    "n_gt_Pedestrian": 127,
+    "AP_Cyclist": 0.19586776859504132,
+    "n_gt_Cyclist": 81,
+    "mAP@IoU=0.5": 0.35700212098191236
+  },
+  "ckpt": "checkpoints/smoke_fcos_lr005/last.pt",
+  "cell": "Town01_d00_ref",
+  "n_frames": 200
+}

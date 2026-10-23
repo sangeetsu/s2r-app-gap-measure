@@ -1,0 +1,15 @@
+{
+  "source_ckpt": "checkpoints/anchin_Town01_SoftRainNoon/last.pt",
+  "dataset": "cityscapes_val",
+  "n_frames": 500,
+  "class_mapping": "ALDI COCO: Car<-{car,truck}, Pedestrian<-{person}, Cyclist<-{rider}",
+  "metrics": {
+    "AP_Car": 0.244011410044702,
+    "n_gt_Car": 4852,
+    "AP_Pedestrian": 0.11764252696456087,
+    "n_gt_Pedestrian": 3448,
+    "AP_Cyclist": 0.10803237858032379,
+    "n_gt_Cyclist": 544,
+    "mAP@IoU=0.5": 0.15656210519652888
+  }
+}

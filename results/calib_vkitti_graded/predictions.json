@@ -1,0 +1,338 @@
+{
+ "A": {
+  "Scene01": 90.81605559419737,
+  "Scene02": 90.90909090909093,
+  "Scene18": 90.38655160014385,
+  "Scene20": 88.79277489655757
+ },
+ "cal_mean": 4.381586324096386,
+ "cells": {
+  "Scene01_d40_morning_a25": {
+   "alpha": 25,
+   "formula": 0.8679811691217698,
+   "line": -4.844544815130684,
+   "scene": "Scene01",
+   "variant": "morning",
+   "x": 10.78352341871232
+  },
+  "Scene01_d40_morning_a75": {
+   "alpha": 75,
+   "formula": 4.065543744544868,
+   "line": -0.20433255850490983,
+   "scene": "Scene01",
+   "variant": "morning",
+   "x": 51.42717226134869
+  },
+  "Scene01_d41_sunset_a25": {
+   "alpha": 25,
+   "formula": 1.2430620756009692,
+   "line": -4.308853479245027,
+   "scene": "Scene01",
+   "variant": "sunset",
+   "x": 15.475647256946331
+  },
+  "Scene01_d41_sunset_a75": {
+   "alpha": 75,
+   "formula": 4.977202960789525,
+   "line": 1.1500052199211748,
+   "scene": "Scene01",
+   "variant": "sunset",
+   "x": 63.2898255272778
+  },
+  "Scene01_d42_overcast_a25": {
+   "alpha": 25,
+   "formula": 0.4595590589715251,
+   "line": -5.425319539470644,
+   "scene": "Scene01",
+   "variant": "overcast",
+   "x": 5.696513892575467
+  },
+  "Scene01_d42_overcast_a75": {
+   "alpha": 75,
+   "formula": 3.504508086282329,
+   "line": -1.0307363633847135,
+   "scene": "Scene01",
+   "variant": "overcast",
+   "x": 44.18869604729343
+  },
+  "Scene01_d43_fog_a25": {
+   "alpha": 25,
+   "formula": 0.48359432997973756,
+   "line": -5.391214239825992,
+   "scene": "Scene01",
+   "variant": "fog",
+   "x": 5.995242430359667
+  },
+  "Scene01_d43_fog_a75": {
+   "alpha": 75,
+   "formula": 4.812411807686654,
+   "line": 0.9041338793697129,
+   "scene": "Scene01",
+   "variant": "fog",
+   "x": 61.13623688236771
+  },
+  "Scene01_d44_rain_a25": {
+   "alpha": 25,
+   "formula": 0.5769478428024389,
+   "line": -5.258662391408921,
+   "scene": "Scene01",
+   "variant": "rain",
+   "x": 7.15626491867647
+  },
+  "Scene01_d44_rain_a75": {
+   "alpha": 75,
+   "formula": 4.211949397652199,
+   "line": 0.012201886246692162,
+   "scene": "Scene01",
+   "variant": "rain",
+   "x": 53.32379884825809
+  },
+  "Scene02_d40_morning_a25": {
+   "alpha": 25,
+   "formula": 1.2644344124236624,
+   "line": -4.28011434884055,
+   "scene": "Scene02",
+   "variant": "morning",
+   "x": 15.727373484024497
+  },
+  "Scene02_d40_morning_a75": {
+   "alpha": 75,
+   "formula": 4.732372129530524,
+   "line": 0.7776710962161646,
+   "scene": "Scene02",
+   "variant": "morning",
+   "x": 60.02854855565033
+  },
+  "Scene02_d41_sunset_a25": {
+   "alpha": 25,
+   "formula": 2.709751264902906,
+   "line": -2.196401468867387,
+   "scene": "Scene02",
+   "variant": "sunset",
+   "x": 33.97862793075353
+  },
+  "Scene02_d41_sunset_a75": {
+   "alpha": 75,
+   "formula": 9.195261357438183,
+   "line": 7.594723619169333,
+   "scene": "Scene02",
+   "variant": "sunset",
+   "x": 119.73915521789684
+  },
+  "Scene02_d42_overcast_a25": {
+   "alpha": 25,
+   "formula": 0.6820680194237208,
+   "line": -5.110231695910228,
+   "scene": "Scene02",
+   "variant": "overcast",
+   "x": 8.456370330169875
+  },
+  "Scene02_d42_overcast_a75": {
+   "alpha": 75,
+   "formula": 5.965416849863758,
+   "line": 2.625190603453939,
+   "scene": "Scene02",
+   "variant": "overcast",
+   "x": 76.21098373948735
+  },
+  "Scene02_d43_fog_a25": {
+   "alpha": 25,
+   "formula": 0.4981340538397344,
+   "line": -5.3713019990461675,
+   "scene": "Scene02",
+   "variant": "fog",
+   "x": 6.169653874743403
+  },
+  "Scene02_d43_fog_a75": {
+   "alpha": 75,
+   "formula": 5.808246176360626,
+   "line": 2.3882096420906986,
+   "scene": "Scene02",
+   "variant": "fog",
+   "x": 74.13526598276519
+  },
+  "Scene02_d44_rain_a25": {
+   "alpha": 25,
+   "formula": 0.7518386961896057,
+   "line": -5.011062055537694,
+   "scene": "Scene02",
+   "variant": "rain",
+   "x": 9.324997844654035
+  },
+  "Scene02_d44_rain_a75": {
+   "alpha": 75,
+   "formula": 6.1091265302290845,
+   "line": 2.8422592391922645,
+   "scene": "Scene02",
+   "variant": "rain",
+   "x": 78.11228930866707
+  },
+  "Scene18_d40_morning_a25": {
+   "alpha": 25,
+   "formula": 0.5313801410767895,
+   "line": -5.319795320772819,
+   "scene": "Scene18",
+   "variant": "morning",
+   "x": 6.62080119926577
+  },
+  "Scene18_d40_morning_a75": {
+   "alpha": 75,
+   "formula": 2.3071690226150325,
+   "line": -2.7609153547333087,
+   "scene": "Scene18",
+   "variant": "morning",
+   "x": 29.03404719284333
+  },
+  "Scene18_d41_sunset_a25": {
+   "alpha": 25,
+   "formula": 0.6191439016518321,
+   "line": -5.194521943145152,
+   "scene": "Scene18",
+   "variant": "sunset",
+   "x": 7.718071515372458
+  },
+  "Scene18_d41_sunset_a75": {
+   "alpha": 75,
+   "formula": 4.624462495611053,
+   "line": 0.6569726647285448,
+   "scene": "Scene18",
+   "variant": "sunset",
+   "x": 58.971350222053616
+  },
+  "Scene18_d42_overcast_a25": {
+   "alpha": 25,
+   "formula": 0.9033997596767649,
+   "line": -4.787934722691968,
+   "scene": "Scene18",
+   "variant": "overcast",
+   "x": 11.279371580559427
+  },
+  "Scene18_d42_overcast_a75": {
+   "alpha": 75,
+   "formula": 6.468788272904625,
+   "line": 3.443921008112122,
+   "scene": "Scene18",
+   "variant": "overcast",
+   "x": 83.38224859190905
+  },
+  "Scene18_d43_fog_a25": {
+   "alpha": 25,
+   "formula": 0.6092430716027829,
+   "line": -5.208660446324621,
+   "scene": "Scene18",
+   "variant": "fog",
+   "x": 7.594232275569084
+  },
+  "Scene18_d43_fog_a75": {
+   "alpha": 75,
+   "formula": 5.443234146567839,
+   "line": 1.8867410045256028,
+   "scene": "Scene18",
+   "variant": "fog",
+   "x": 69.74289897806875
+  },
+  "Scene18_d44_rain_a25": {
+   "alpha": 25,
+   "formula": 0.9040116973370217,
+   "line": -4.787058041166256,
+   "scene": "Scene18",
+   "variant": "rain",
+   "x": 11.287050439651921
+  },
+  "Scene18_d44_rain_a75": {
+   "alpha": 75,
+   "formula": 6.435061674028553,
+   "line": 3.39240931185004,
+   "scene": "Scene18",
+   "variant": "rain",
+   "x": 82.93105731479125
+  },
+  "Scene20_d40_morning_a25": {
+   "alpha": 25,
+   "formula": 0.886231934306498,
+   "line": -4.789740532506343,
+   "scene": "Scene20",
+   "variant": "morning",
+   "x": 11.263554480842231
+  },
+  "Scene20_d40_morning_a75": {
+   "alpha": 75,
+   "formula": 3.813212196753178,
+   "line": -0.4485818835356028,
+   "scene": "Scene20",
+   "variant": "morning",
+   "x": 49.28779086076224
+  },
+  "Scene20_d41_sunset_a25": {
+   "alpha": 25,
+   "formula": 0.4990631720404901,
+   "line": -5.353117300223618,
+   "scene": "Scene20",
+   "variant": "sunset",
+   "x": 6.3289337680710105
+  },
+  "Scene20_d41_sunset_a75": {
+   "alpha": 75,
+   "formula": 2.8945089215010875,
+   "line": -1.827054645021919,
+   "scene": "Scene20",
+   "variant": "sunset",
+   "x": 37.213739123799314
+  },
+  "Scene20_d42_overcast_a25": {
+   "alpha": 25,
+   "formula": 0.9536639563619177,
+   "line": -4.6913652331836,
+   "scene": "Scene20",
+   "variant": "overcast",
+   "x": 12.125224356989293
+  },
+  "Scene20_d42_overcast_a75": {
+   "alpha": 75,
+   "formula": 3.978215344287601,
+   "line": -0.19942426584194717,
+   "scene": "Scene20",
+   "variant": "overcast",
+   "x": 51.470164028185536
+  },
+  "Scene20_d43_fog_a25": {
+   "alpha": 25,
+   "formula": 0.752590566019063,
+   "line": -4.98448461069669,
+   "scene": "Scene20",
+   "variant": "fog",
+   "x": 9.557789854051862
+  },
+  "Scene20_d43_fog_a75": {
+   "alpha": 75,
+   "formula": 4.813207484884425,
+   "line": 1.068908041624895,
+   "scene": "Scene20",
+   "variant": "fog",
+   "x": 62.57949482374238
+  },
+  "Scene20_d44_rain_a25": {
+   "alpha": 25,
+   "formula": 1.0424802385473713,
+   "line": -4.56167753718951,
+   "scene": "Scene20",
+   "variant": "rain",
+   "x": 13.261159715909116
+  },
+  "Scene20_d44_rain_a75": {
+   "alpha": 75,
+   "formula": 4.70423443420122,
+   "line": 0.902666975387036,
+   "scene": "Scene20",
+   "variant": "rain",
+   "x": 61.12338826099858
+  }
+ },
+ "created": "2026-10-20T10:49:42",
+ "ledger": "15.93",
+ "line": [
+  -6.075680280621391,
+  0.1141682006601252
+ ],
+ "tau": 1122.8695490971475
+}

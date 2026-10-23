@@ -1,0 +1,33 @@
+predictions written 2026-10-15T10:11:46 (12 cells; outcomes not yet read)
+
+=== KITTI: 12 cells ===
+  Town01_ClearSunset     observed  27.4  B-model  28.0  boxes-only  27.3
+  Town01_WetNoon         observed  30.9  B-model  27.8  boxes-only  26.4
+  Town02_ClearSunset     observed  35.1  B-model  32.3  boxes-only  30.2
+  Town02_WetNoon         observed  32.6  B-model  31.9  boxes-only  30.7
+  Town03_ClearSunset     observed  28.5  B-model  27.2  boxes-only  26.7
+  Town03_WetNoon         observed  30.9  B-model  27.2  boxes-only  26.7
+  Town04_ClearSunset     observed  18.8  B-model  23.0  boxes-only  22.5
+  Town04_WetNoon         observed  20.8  B-model  23.4  boxes-only  22.9
+  Town05_ClearSunset     observed  26.9  B-model  27.6  boxes-only  26.6
+  Town05_WetNoon         observed  27.1  B-model  26.5  boxes-only  26.3
+  Town10HD_ClearSunset   observed  33.7  B-model  32.9  boxes-only  30.1
+  Town10HD_WetNoon       observed  28.3  B-model  33.1  boxes-only  30.3
+  B-model r=+0.837 (p=0.0007) MAE 2.15 | boxes-only r=+0.867 (p=0.0003) MAE 2.48 | rule (a, p<0.025) PASS rule (b) PASS
+
+=== Cityscapes: 12 cells ===
+  Town01_ClearSunset     observed  13.4  B-model  14.1  boxes-only  13.9
+  Town01_WetNoon         observed  15.1  B-model  13.8  boxes-only  13.4
+  Town02_ClearSunset     observed  15.5  B-model  16.0  boxes-only  15.3
+  Town02_WetNoon         observed  17.0  B-model  15.9  boxes-only  15.6
+  Town03_ClearSunset     observed  14.1  B-model  13.7  boxes-only  13.5
+  Town03_WetNoon         observed  13.9  B-model  13.8  boxes-only  13.5
+  Town04_ClearSunset     observed  12.9  B-model  11.6  boxes-only  11.4
+  Town04_WetNoon         observed  14.6  B-model  11.8  boxes-only  11.6
+  Town05_ClearSunset     observed  15.9  B-model  13.8  boxes-only  13.5
+  Town05_WetNoon         observed  16.8  B-model  13.4  boxes-only  13.4
+  Town10HD_ClearSunset   observed  18.6  B-model  16.2  boxes-only  15.3
+  Town10HD_WetNoon       observed  15.2  B-model  16.3  boxes-only  15.4
+  B-model r=+0.614 (p=0.0336) MAE 1.41 | boxes-only r=+0.605 (p=0.0369) MAE 1.54 | rule (a, p<0.025) FAIL rule (b) PASS
+
+CANDIDATE B: FAILED

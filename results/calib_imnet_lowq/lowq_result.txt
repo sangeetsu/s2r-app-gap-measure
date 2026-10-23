@@ -1,0 +1,12 @@
+cell                   boxes E/L      own E/L  E-det on L L-det on E    KITTI E/L      CS E/L   FID->KITTI E/L   FID->CS E/L
+Town01_ClearNoon      2391/2987    39.4/44.7         38.6       32.7   30.5/21.9   14.5/11.1     13.15/15.15    13.59/15.41 
+Town04_ClearNoon      1222/1158    25.8/37.7         39.8       13.7   25.3/23.4   12.9/11.3     16.95/18.39    16.33/17.61 
+Town10HD_ClearNoon    7435/6249    37.4/40.9         37.2       26.2   32.8/22.8   14.4/12.9     12.86/13.82    10.42/11.19 
+Town06_ClearNoon      2314/2321    42.0/40.2         42.3       29.2   26.5/14.5   13.2/9.5      16.12/16.90    15.24/16.17 
+Town07_ClearNoon      6959/5313    61.6/25.7         19.3       32.8   19.3/24.3   10.3/11.5     16.25/18.57    17.47/19.66 
+
+KITTI: Epic - Low real mAP = +5.52 ± 6.98 pp over 5 towns; paired t p=0.1517
+  r(ΔFID to KITTI [Low-Epic], ΔmAP [Low-Epic]) = +0.758 (p=0.138); mean ΔFID +1.50
+
+Cityscapes: Epic - Low real mAP = +1.82 ± 1.95 pp over 5 towns; paired t p=0.1054
+  r(ΔFID to Cityscapes [Low-Epic], ΔmAP [Low-Epic]) = +0.515 (p=0.375); mean ΔFID +1.40

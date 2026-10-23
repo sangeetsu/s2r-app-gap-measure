@@ -1,0 +1,26 @@
+predictions written 2026-10-14T15:00:30
+
+=== KITTI: 6 held-out cells (detector result files written 1792015696+ epoch s) ===
+  Town06_ClearNight        predicted  26.1  observed  20.6  error  -5.5  
+  Town06_ClearNoon         predicted  23.3  observed  26.5  error  +3.2  within 1 sd
+  Town07_ClearNight        predicted  24.8  observed  24.9  error  +0.0  within 1 sd
+  Town07_ClearNoon         predicted  23.0  observed  19.3  error  -3.7  
+  Town15_ClearNight        predicted  24.4  observed   1.8  error -22.6  
+  Town15_ClearNoon         predicted  32.5  observed  11.6  error -20.9  
+  mean |error| 9.33 pp  (calibration residual sd 3.67); within 4 pp 50%
+  predicted vs observed: r=-0.317 (p=0.540) rho=-0.200 (p=0.704)
+  town means (pred/obs): Town06 24.7/23.6, Town07 23.9/22.1, Town15 28.5/6.7
+
+=== Cityscapes: 6 held-out cells (detector result files written 1792015757+ epoch s) ===
+  Town06_ClearNight        predicted  13.0  observed   9.2  error  -3.9  
+  Town06_ClearNoon         predicted  12.6  observed  13.2  error  +0.6  within 1 sd
+  Town07_ClearNight        predicted  11.3  observed  16.6  error  +5.4  
+  Town07_ClearNoon         predicted  10.9  observed  10.3  error  -0.6  within 1 sd
+  Town15_ClearNight        predicted  12.4  observed   2.1  error -10.4  
+  Town15_ClearNoon         predicted  15.2  observed   7.1  error  -8.1  
+  mean |error| 4.82 pp  (calibration residual sd 2.05); within 4 pp 50%
+  predicted vs observed: r=-0.418 (p=0.410) rho=-0.429 (p=0.397)
+  town means (pred/obs): Town06 12.8/11.2, Town07 11.1/13.5, Town15 13.8/4.6
+
+competing models file written 2026-10-14T15:15:00
+=== KITTI (6 held-out cells): mean |error| / r(pred, obs) ===

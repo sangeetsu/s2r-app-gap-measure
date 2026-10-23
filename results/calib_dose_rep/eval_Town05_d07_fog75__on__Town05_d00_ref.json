@@ -1,0 +1,14 @@
+{
+  "metrics": {
+    "AP_Car": 0.4298158140524779,
+    "n_gt_Car": 500,
+    "AP_Pedestrian": 0.3300865800865801,
+    "n_gt_Pedestrian": 78,
+    "AP_Cyclist": 0.19268858800773692,
+    "n_gt_Cyclist": 148,
+    "mAP@IoU=0.5": 0.31753032738226494
+  },
+  "ckpt": "checkpoints/anchindr_Town05_d07_fog75/last.pt",
+  "cell": "Town05_d00_ref",
+  "n_frames": 250
+}

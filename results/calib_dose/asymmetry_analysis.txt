@@ -1,0 +1,9 @@
+reproduction of forward metrics: max |diff| 0.00e+00; clean->dose harder (seed mean) in 58/72
+  Δcov = cov(ref by dose) − cov(dose by ref)   Spearman +0.570 (one-sided clustered p=0.0005)  sign agreement 54/72 (binomial p=0.0000)  -> A1 PASS, A2 PASS
+      fog        rho +0.50  agree 20/24
+      sun+night  rho +0.55  agree 22/32
+      wet+rain   rho +0.66  agree 12/16
+  Δnnd = nnd(dose→ref) − nnd(ref→dose)         Spearman +0.594 (one-sided clustered p=0.0005)  sign agreement 57/72 (binomial p=0.0000)
+      fog        rho +0.23  agree 21/24
+      sun+night  rho +0.70  agree 25/32
+      wet+rain   rho +0.51  agree 11/16

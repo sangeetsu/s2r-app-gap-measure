@@ -1,0 +1,14 @@
+=== G1: RTTS mAP (Car+Pedestrian) of dose-trained detectors, town mean; clear Cityscapes for contrast ===
+  seed 42: ref 15.7  sun25 17.8  sun10 18.9  sun3 17.5  night 16.5  fog25 20.5  fog50 20.4  fog75 19.0  wet 16.0  rain 17.9
+    fog75 - ref: town mean +3.23; positive in 7/8 towns (sign test p=0.035) -> G1 PASS
+    fog25 - ref: +4.78 (8/8 towns)
+    fog50 - ref: +4.67 (8/8 towns)
+  seed 17: ref 16.1  fog25 21.4  fog50 20.8  fog75 17.9
+    fog75 - ref: town mean +1.81; positive in 7/8 towns (sign test p=0.035)
+    fog25 - ref: +5.27 (8/8 towns)
+    fog50 - ref: +4.70 (8/8 towns)
+  clear Cityscapes (seed 42): ref 14.2  fog25 14.4  fog50 12.3  fog75 10.4
+
+=== G2 (72 pairs): Δ FID-to-RTTS vs Δ RTTS mAP Spearman -0.441, town-clustered p=0.0005 -> PASS
+  fog: rho +0.081 (n=24)
+  non-fog: rho -0.308 (n=48)

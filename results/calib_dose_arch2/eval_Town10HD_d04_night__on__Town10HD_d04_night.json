@@ -1,0 +1,14 @@
+{
+  "metrics": {
+    "AP_Car": 0.5300838809890508,
+    "n_gt_Car": 421,
+    "AP_Pedestrian": 0.1904040404040404,
+    "n_gt_Pedestrian": 165,
+    "AP_Cyclist": 0.21247771836007132,
+    "n_gt_Cyclist": 113,
+    "mAP@IoU=0.5": 0.3109885465843875
+  },
+  "ckpt": "checkpoints/anchina_Town10HD_d04_night/last.pt",
+  "cell": "Town10HD_d04_night",
+  "n_frames": 250
+}

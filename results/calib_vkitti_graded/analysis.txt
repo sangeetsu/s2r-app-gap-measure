@@ -1,0 +1,11 @@
+predictions 2026-10-20T10:49:42 (tau 1123); order OK
+40 test pairs; observed -0.9-13.2; predict-the-cal-mean MAE 4.57
+  formula MAE 3.02 rho +0.289 within ±4 62% | line MAE 3.70 rho +0.284 within ±4 50%
+VG1: Wilcoxon one-sided p=0.0486 -> PASS
+VG2: formula rho +0.289 (>= .8) MAE 3.02 (<= 5.0) -> FAIL
+  morning   observed   0.1  formula   2.3  line  -2.7
+  sunset    observed  -0.1  formula   3.3  line  -1.2
+  overcast  observed  -0.2  formula   2.9  line  -1.9
+  fog       observed   2.7  formula   2.9  line  -1.8
+  rain      observed  -0.2  formula   3.1  line  -1.6
+object FID vs drop over the 40 test pairs: rho +0.284

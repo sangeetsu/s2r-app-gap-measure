@@ -1,0 +1,98 @@
+{
+ "created": "2026-10-14T15:15:00",
+ "note": "competing models fit on the 24 ImageNet-grid sources; written before any towns2 result was inspected (anchin_Town06_ClearNight had finished training)",
+ "models": {
+  "KITTI:boxes": {
+   "coef": [
+    -6.682564395382083,
+    4.187976372220247
+   ],
+   "resid_sd": 3.8492578577152945
+  },
+  "KITTI:fid+boxes": {
+   "coef": [
+    32.905917696971294,
+    -1.4336967481520206,
+    1.8051609448924029
+   ],
+   "resid_sd": 3.6612432010214278
+  },
+  "Cityscapes:boxes": {
+   "coef": [
+    -3.3795452592989323,
+    2.123125908101563
+   ],
+   "resid_sd": 2.0146470747283645
+  },
+  "Cityscapes:fid+boxes": {
+   "coef": [
+    8.3386511975978,
+    -0.3887207383243048,
+    1.3261879228897995
+   ],
+   "resid_sd": 2.003617606965422
+  }
+ },
+ "cells": {
+  "Town06_ClearNight": {
+   "log_boxes": 7.841099765422119,
+   "n_boxes": 2543,
+   "KITTI:boxes": 26.155776154427475,
+   "KITTI:fid+boxes": 25.92457537712432,
+   "KITTI:fid (prereg 08:12)": 26.101207030571576,
+   "Cityscapes:boxes": 13.26809680067786,
+   "Cityscapes:fid+boxes": 13.040349507763949,
+   "Cityscapes:fid (prereg 08:12)": 13.030896306962054
+  },
+  "Town06_ClearNoon": {
+   "log_boxes": 7.746732907753622,
+   "n_boxes": 2314,
+   "KITTI:boxes": 25.76056998419114,
+   "KITTI:fid+boxes": 23.78136090542077,
+   "KITTI:fid (prereg 08:12)": 23.293363616739498,
+   "Cityscapes:boxes": 13.06774408029574,
+   "Cityscapes:fid+boxes": 12.689158503205729,
+   "Cityscapes:fid (prereg 08:12)": 12.594988336561777
+  },
+  "Town07_ClearNight": {
+   "log_boxes": 8.045267716607803,
+   "n_boxes": 3119,
+   "KITTI:boxes": 27.010826709957737,
+   "KITTI:fid+boxes": 25.40678556972985,
+   "KITTI:fid (prereg 08:12)": 24.839733177004774,
+   "Cityscapes:boxes": 13.701571067444199,
+   "Cityscapes:fid+boxes": 12.403444753235595,
+   "Cityscapes:fid (prereg 08:12)": 11.280517703073588
+  },
+  "Town07_ClearNoon": {
+   "log_boxes": 8.84779106484485,
+   "n_boxes": 6959,
+   "KITTI:boxes": 30.371775530529572,
+   "KITTI:fid+boxes": 25.578695085781227,
+   "KITTI:fid (prereg 08:12)": 23.022589858319463,
+   "Cityscapes:boxes": 15.405429179942686,
+   "Cityscapes:fid+boxes": 13.282263473418977,
+   "Cityscapes:fid (prereg 08:12)": 10.922836082848269
+  },
+  "Town15_ClearNight": {
+   "log_boxes": 6.329720905522696,
+   "n_boxes": 561,
+   "KITTI:boxes": 19.826157199695515,
+   "KITTI:fid+boxes": 22.02361424105869,
+   "KITTI:fid (prereg 08:12)": 24.4322151739381,
+   "Cityscapes:boxes": 10.05924918626839,
+   "Cityscapes:fid+boxes": 10.721360315835856,
+   "Cityscapes:fid (prereg 08:12)": 12.424179523639179
+  },
+  "Town15_ClearNoon": {
+   "log_boxes": 6.511745329644728,
+   "n_boxes": 673,
+   "KITTI:boxes": 20.588471187085585,
+   "KITTI:fid+boxes": 28.0262704070211,
+   "KITTI:fid (prereg 08:12)": 32.507725101191305,
+   "Cityscapes:boxes": 10.445709957029143,
+   "Cityscapes:fid+boxes": 12.384785458927222,
+   "Cityscapes:fid (prereg 08:12)": 15.166459565625196
+  }
+ }
+}

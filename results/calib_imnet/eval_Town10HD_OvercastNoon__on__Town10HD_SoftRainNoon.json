@@ -1,0 +1,14 @@
+{
+  "metrics": {
+    "AP_Car": 0.5971841957385481,
+    "n_gt_Car": 1066,
+    "AP_Pedestrian": 0.2665460575908337,
+    "n_gt_Pedestrian": 100,
+    "AP_Cyclist": 0.4487917146144994,
+    "n_gt_Cyclist": 184,
+    "mAP@IoU=0.5": 0.43750732264796044
+  },
+  "ckpt": "checkpoints/anchin_Town10HD_OvercastNoon/last.pt",
+  "cell": "Town10HD_SoftRainNoon",
+  "n_frames": 200
+}

@@ -1,0 +1,32 @@
+{
+ "Town06_ClearNight": {
+  "KITTI": 1.9951329231262207,
+  "Cityscapes": 2.240196466445923,
+  "n_src": 2543
+ },
+ "Town06_ClearNoon": {
+  "KITTI": 1.9722243547439575,
+  "Cityscapes": 2.2162399291992188,
+  "n_src": 2314
+ },
+ "Town07_ClearNight": {
+  "KITTI": 1.9650510549545288,
+  "Cityscapes": 2.2239999771118164,
+  "n_src": 3000
+ },
+ "Town07_ClearNoon": {
+  "KITTI": 3.732313394546509,
+  "Cityscapes": 4.226897239685059,
+  "n_src": 3000
+ },
+ "Town15_ClearNight": {
+  "KITTI": 1.4405769109725952,
+  "Cityscapes": 1.580061435699463,
+  "n_src": 561
+ },
+ "Town15_ClearNoon": {
+  "KITTI": 1.4512765407562256,
+  "Cityscapes": 1.5828672647476196,
+  "n_src": 673
+ }
+}

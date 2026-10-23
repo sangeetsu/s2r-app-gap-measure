@@ -1,0 +1,46 @@
+[decomp] detector results from results/calib_anchored
+24 anchored cells, 552 directional pairs; drop mean 8.6 sd 16.6 pp; LOO by cell
+
+  model (predicting the anchored drop)                      |err|  <=4pp  LOO R2    n
+  source anchor                                              9.44    30%  +0.450  552
+  target anchor                                             10.39    24%  +0.389  552
+  both anchors                                               5.14    45%  +0.845  552
+  both anchors + dIV_fg (labeled)                            5.24    44%  +0.840  552
+  both anchors + FM veto gap (label-free)                    5.15    51%  +0.750   69
+  both anchors + DoC (label-free)                            5.84    39%  +0.698   69
+  both anchors + FM-det disagreement (label-free)            5.00    51%  +0.766   69
+  both anchors + FID (label-free)                            4.30    54%  +0.890  552
+  both anchors + BoS stability gap (label-free)              3.48    66%  +0.838   56
+  both anchors + AoL agreement gap (label-free)              3.26    73%  +0.851   56
+  source anchor + dIV_fg (labeled)  [deployable]             8.18    34%  +0.567  552
+  source anchor + FM veto gap (label-free)  [deployable]     9.06    27%  +0.220   69
+  source anchor + DoC (label-free)  [deployable]             9.94    23%  +0.153   69
+  source anchor + FM-det disagreement (label-free)  [deployable]   9.31    27%  +0.194   69
+  source anchor + FID (label-free)  [deployable]             8.67    32%  +0.534  552
+  source anchor + BoS stability gap (label-free)  [deployable]   4.80    55%  +0.690   56
+  source anchor + AoL agreement gap (label-free)  [deployable]   4.81    54%  +0.684   56
+
+  measure                                             raw r       partial | both anchors    partial | source anchor
+  dIV_fg (labeled)                       +0.586 (p=4e-52)    +0.029 (p=5e-01) n=552   +0.480 (p=4e-33)
+  FM veto gap (label-free)               +0.297 (p=1e-02)    +0.354 (p=3e-03) n=69    +0.270 (p=2e-02)
+  DoC (label-free)                       +0.402 (p=6e-04)    +0.462 (p=6e-05) n=69    +0.418 (p=3e-04)
+  FM-det disagreement (label-free)       +0.199 (p=1e-01)    +0.393 (p=8e-04) n=69    +0.244 (p=4e-02)
+  FID (label-free)                       +0.196 (p=3e-06)    +0.545 (p=6e-44) n=552   +0.407 (p=2e-23)
+  BoS stability gap (label-free)         -0.002 (p=1e+00)    +0.446 (p=6e-04) n=56    +0.168 (p=2e-01)
+  AoL agreement gap (label-free)         -0.018 (p=9e-01)    +0.492 (p=1e-04) n=56    +0.213 (p=1e-01)
+
+=== KITTI: n=24 sources; mAP(S->KITTI) 48.0 ± 2.9 pp; anchored drop -8.8 ± 12.3 ===
+  predictor                                r with mAP(S->T)   r with drop     partial r | anchor
+  source anchor                                      -0.059        +0.971
+  dIV_fg (labeled)                                   +0.076        +0.477         -0.124 (p=0.56)
+  FID (label-free)                                   -0.122        -0.191         +0.139 (p=0.52)
+  BoS stability gap (label-free)                     -0.012        +0.026         +0.009 (p=0.98)
+  AoL agreement gap (label-free)                     -0.188        -0.008         +0.199 (p=0.64)
+
+=== Cityscapes: n=24 sources; mAP(S->Cityscapes) 30.8 ± 2.1 pp; anchored drop 8.4 ± 11.7 ===
+  predictor                                r with mAP(S->T)   r with drop     partial r | anchor
+  source anchor                                      +0.116        +0.984
+  dIV_fg (labeled)                                   +0.136        +0.598         -0.082 (p=0.70)
+  FID (label-free)                                   +0.251        -0.454         -0.328 (p=0.12)
+  BoS stability gap (label-free)                     -0.756        +0.166         +0.796 (p=0.02)
+  AoL agreement gap (label-free)                     -0.520        -0.083         +0.488 (p=0.22)

@@ -1,0 +1,14 @@
+{
+  "metrics": {
+    "AP_Car": 0.5449080901927795,
+    "n_gt_Car": 421,
+    "AP_Pedestrian": 0.22628681117466262,
+    "n_gt_Pedestrian": 165,
+    "AP_Cyclist": 0.1683830789093947,
+    "n_gt_Cyclist": 113,
+    "mAP@IoU=0.5": 0.313192660092279
+  },
+  "ckpt": "checkpoints/anchina_Town10HD_d05_fog25/last.pt",
+  "cell": "Town10HD_d05_fog25",
+  "n_frames": 250
+}

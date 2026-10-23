@@ -1,0 +1,171 @@
+{
+ "created": "2026-10-15T15:46:27",
+ "root": "/mnt/features/shift_cells",
+ "cells": {
+  "SHIFT_dawn-dusk_clear": {
+   "n_frames": 550,
+   "Cityscapes": {
+    "fid": 12.588982072006855,
+    "cos_mean": 0.23609048128128052
+   },
+   "KITTI": {
+    "fid": 12.846623224581007,
+    "cos_mean": 0.22734063863754272
+   }
+  },
+  "SHIFT_dawn-dusk_cloudy": {
+   "n_frames": 550,
+   "Cityscapes": {
+    "fid": 12.803498476618127,
+    "cos_mean": 0.23225271701812744
+   },
+   "KITTI": {
+    "fid": 13.36653420035611,
+    "cos_mean": 0.23172903060913086
+   }
+  },
+  "SHIFT_dawn-dusk_foggy": {
+   "n_frames": 550,
+   "Cityscapes": {
+    "fid": 13.034377308027583,
+    "cos_mean": 0.24493545293807983
+   },
+   "KITTI": {
+    "fid": 13.692416565373444,
+    "cos_mean": 0.2475566267967224
+   }
+  },
+  "SHIFT_dawn-dusk_overcast": {
+   "n_frames": 550,
+   "Cityscapes": {
+    "fid": 12.45444966288651,
+    "cos_mean": 0.2250303030014038
+   },
+   "KITTI": {
+    "fid": 12.910820014627294,
+    "cos_mean": 0.22241371870040894
+   }
+  },
+  "SHIFT_dawn-dusk_rainy": {
+   "n_frames": 550,
+   "Cityscapes": {
+    "fid": 13.525002907596122,
+    "cos_mean": 0.24589645862579346
+   },
+   "KITTI": {
+    "fid": 13.85312950577569,
+    "cos_mean": 0.240942120552063
+   }
+  },
+  "SHIFT_daytime_clear": {
+   "n_frames": 550,
+   "Cityscapes": {
+    "fid": 12.645890446026062,
+    "cos_mean": 0.24171918630599976
+   },
+   "KITTI": {
+    "fid": 12.836674816506992,
+    "cos_mean": 0.23589932918548584
+   }
+  },
+  "SHIFT_daytime_cloudy": {
+   "n_frames": 550,
+   "Cityscapes": {
+    "fid": 13.374262601422178,
+    "cos_mean": 0.2642137408256531
+   },
+   "KITTI": {
+    "fid": 13.70884106789836,
+    "cos_mean": 0.25816869735717773
+   }
+  },
+  "SHIFT_daytime_foggy": {
+   "n_frames": 550,
+   "Cityscapes": {
+    "fid": 13.87956631610641,
+    "cos_mean": 0.26040488481521606
+   },
+   "KITTI": {
+    "fid": 13.915694613220264,
+    "cos_mean": 0.24922490119934082
+   }
+  },
+  "SHIFT_daytime_overcast": {
+   "n_frames": 550,
+   "Cityscapes": {
+    "fid": 13.086003006001757,
+    "cos_mean": 0.2436402440071106
+   },
+   "KITTI": {
+    "fid": 13.584253241415752,
+    "cos_mean": 0.2439255714416504
+   }
+  },
+  "SHIFT_daytime_rainy": {
+   "n_frames": 550,
+   "Cityscapes": {
+    "fid": 12.470469696494547,
+    "cos_mean": 0.23207926750183105
+   },
+   "KITTI": {
+    "fid": 13.637998443427277,
+    "cos_mean": 0.24622642993927002
+   }
+  },
+  "SHIFT_night_clear": {
+   "n_frames": 550,
+   "Cityscapes": {
+    "fid": 14.03561004666297,
+    "cos_mean": 0.2580721378326416
+   },
+   "KITTI": {
+    "fid": 14.025541496200283,
+    "cos_mean": 0.24472641944885254
+   }
+  },
+  "SHIFT_night_cloudy": {
+   "n_frames": 550,
+   "Cityscapes": {
+    "fid": 13.280944970100553,
+    "cos_mean": 0.2571066617965698
+   },
+   "KITTI": {
+    "fid": 13.471063928574152,
+    "cos_mean": 0.24713963270187378
+   }
+  },
+  "SHIFT_night_foggy": {
+   "n_frames": 550,
+   "Cityscapes": {
+    "fid": 12.015797178258332,
+    "cos_mean": 0.2268872857093811
+   },
+   "KITTI": {
+    "fid": 12.279362886088489,
+    "cos_mean": 0.21936899423599243
+   }
+  },
+  "SHIFT_night_overcast": {
+   "n_frames": 550,
+   "Cityscapes": {
+    "fid": 13.013296165435063,
+    "cos_mean": 0.24004888534545898
+   },
+   "KITTI": {
+    "fid": 13.08407129166261,
+    "cos_mean": 0.2290225625038147
+   }
+  },
+  "SHIFT_night_rainy": {
+   "n_frames": 550,
+   "Cityscapes": {
+    "fid": 14.53771677390015,
+    "cos_mean": 0.27515679597854614
+   },
+   "KITTI": {
+    "fid": 14.51714804350709,
+    "cos_mean": 0.26079612970352173
+   }
+  }
+ }
+}

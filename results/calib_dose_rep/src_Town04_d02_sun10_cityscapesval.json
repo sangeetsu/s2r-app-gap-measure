@@ -1,0 +1,15 @@
+{
+  "source_ckpt": "checkpoints/anchindr_Town04_d02_sun10/last.pt",
+  "dataset": "cityscapes_val",
+  "n_frames": 500,
+  "class_mapping": "ALDI COCO: Car<-{car,truck}, Pedestrian<-{person}, Cyclist<-{rider}",
+  "metrics": {
+    "AP_Car": 0.2280137413535444,
+    "n_gt_Car": 4852,
+    "AP_Pedestrian": 0.05723102373226443,
+    "n_gt_Pedestrian": 3448,
+    "AP_Cyclist": 0.10001626280696048,
+    "n_gt_Cyclist": 544,
+    "mAP@IoU=0.5": 0.12842034263092308
+  }
+}

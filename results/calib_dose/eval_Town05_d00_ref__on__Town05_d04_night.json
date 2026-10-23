@@ -1,0 +1,14 @@
+{
+  "metrics": {
+    "AP_Car": 0.36916371224255895,
+    "n_gt_Car": 500,
+    "AP_Pedestrian": 0.0,
+    "n_gt_Pedestrian": 78,
+    "AP_Cyclist": 0.09090909090909091,
+    "n_gt_Cyclist": 148,
+    "mAP@IoU=0.5": 0.15335760105054996
+  },
+  "ckpt": "checkpoints/anchind_Town05_d00_ref/last.pt",
+  "cell": "Town05_d04_night",
+  "n_frames": 250
+}

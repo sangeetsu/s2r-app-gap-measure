@@ -1,0 +1,15 @@
+predictions 2026-10-20T09:48:09; order OK; 60 evals
+
+=== fcos: tau_own 260.6 vs shared 239.3; 30 fresh pairs; observed -0.6-26.9; predict-the-cal-mean MAE 8.14
+  F_own     MAE  3.54  rho +0.754  within ±4 pp  67%
+  F_shared  MAE  3.59  rho +0.754  within ±4 pp  57%
+  L_own     MAE  3.81  rho +0.765  within ±4 pp  60%
+
+=== swin: tau_own 289.9 vs shared 239.3; 30 fresh pairs; observed 0.5-29.5; predict-the-cal-mean MAE 7.93
+  F_own     MAE  2.31  rho +0.834  within ±4 pp  87%
+  F_shared  MAE  3.03  rho +0.839  within ±4 pp  63%
+  L_own     MAE  3.27  rho +0.819  within ±4 pp  70%
+
+POOLED 60 pairs: F_own MAE 2.92 | F_shared 3.31 (rho +0.806, within ±4 pp 60%) | L_own 3.54
+X1: F_own vs L_own Wilcoxon one-sided p=0.0044 -> PASS
+X2: F_shared rho +0.806 (>= .8) and MAE 3.31 (<= 5.0) -> PASS

@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+logs/
+checkpoints/
+carla_server_profiles.toml
+figures/
+*.npz
+!results/calib_dose/per_object.npz

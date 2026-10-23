@@ -1,0 +1,14 @@
+{
+  "metrics": {
+    "AP_Car": 0.6333780894051277,
+    "n_gt_Car": 413,
+    "AP_Pedestrian": 0.21925678806412752,
+    "n_gt_Pedestrian": 283,
+    "AP_Cyclist": 0.5812978263395833,
+    "n_gt_Cyclist": 95,
+    "mAP@IoU=0.5": 0.4779775679362795
+  },
+  "ckpt": "checkpoints/anchis_SHIFT_dawn-dusk_cloudy/last.pt",
+  "cell": "SHIFT_dawn-dusk_cloudy",
+  "n_frames": 150
+}

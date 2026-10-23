@@ -1,0 +1,10 @@
+predictions 2026-10-20T02:41:13; order OK
+48 pairs. B1: MAE isotonic 6.01 vs linear 5.83; Wilcoxon one-sided p=0.6560 -> FAIL
+B2: isotonic rho +0.615, MAE 6.01 (<= 7.0 and < mean-pred 9.47) -> FAIL; linear rho +0.605
+B3: within ±4 pp: isotonic 38%, linear 38% (seed-noise ceiling ≈ 88%)
+  d19_rain_fog25   observed  18.7  linear  18.0  isotonic  22.4
+  d20_rain_fog50   observed  25.3  linear  27.1  isotonic  25.3
+  d21_fog15        observed   5.5  linear   3.0  isotonic   1.0
+  d22_fog45        observed  21.1  linear  15.9  isotonic  18.2
+  d23_sun0         observed  21.0  linear  18.7  isotonic  20.8
+  d24_night_wet    observed  24.2  linear  23.7  isotonic  23.6

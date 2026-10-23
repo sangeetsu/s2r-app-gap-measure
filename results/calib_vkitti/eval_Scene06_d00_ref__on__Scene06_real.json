@@ -1,0 +1,15 @@
+{
+  "metrics": {
+    "AP_Car": 0.5826003706438491,
+    "n_gt_Car": 19,
+    "AP_Pedestrian": 0.0,
+    "n_gt_Pedestrian": 0,
+    "AP_Cyclist": 0.0,
+    "n_gt_Cyclist": 0,
+    "mAP@IoU=0.5": 0.1942001235479497
+  },
+  "ckpt": "checkpoints/vk_Scene06_d00_ref_s42/last.pt",
+  "cell": "Scene06_d00_ref",
+  "n_frames": 68,
+  "min_box_height": 0.0
+}

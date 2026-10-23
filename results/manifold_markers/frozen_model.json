@@ -1,0 +1,60 @@
+{
+ "created": "2026-10-15T03:24:42",
+ "fit_on": [
+  "anchin_Town01_ClearNight",
+  "anchin_Town01_ClearNoon",
+  "anchin_Town01_OvercastNoon",
+  "anchin_Town01_SoftRainNoon",
+  "anchin_Town02_ClearNight",
+  "anchin_Town02_ClearNoon",
+  "anchin_Town02_OvercastNoon",
+  "anchin_Town02_SoftRainNoon",
+  "anchin_Town03_ClearNight",
+  "anchin_Town03_ClearNoon",
+  "anchin_Town03_OvercastNoon",
+  "anchin_Town03_SoftRainNoon",
+  "anchin_Town04_OvercastNoon",
+  "anchin_Town04_SoftRainNoon",
+  "anchin_Town05_ClearNight",
+  "anchin_Town05_ClearNoon",
+  "anchin_Town05_OvercastNoon",
+  "anchin_Town05_SoftRainNoon",
+  "anchin_Town06_ClearNight",
+  "anchin_Town06_ClearNoon",
+  "anchin_Town07_ClearNight",
+  "anchin_Town07_ClearNoon",
+  "anchin_Town10HD_ClearNight",
+  "anchin_Town10HD_ClearNoon",
+  "anchin_Town10HD_OvercastNoon",
+  "anchin_Town10HD_SoftRainNoon",
+  "anchin_Town15_ClearNight",
+  "anchin_Town15_ClearNoon"
+ ],
+ "features": "log(training boxes, frames 0:800) ; alpha, D_eff from tools/manifold_markers.py (M=40, n_t=100, reps=10, seed 42)",
+ "models": {
+  "KITTI": {
+   "full": {
+    "intercept": 11.625104827444511,
+    "log_boxes": 9.275392165158312,
+    "alpha": -194.08953475634328,
+    "D_eff": -3.269052432293038
+   },
+   "boxes_only": {
+    "intercept": -27.63211604126701,
+    "log_boxes": 6.5893064279396
+   }
+  },
+  "Cityscapes": {
+   "full": {
+    "intercept": 9.332165048998867,
+    "log_boxes": 4.412317021569384,
+    "alpha": -100.5493318375415,
+    "D_eff": -1.7102881935062775
+   },
+   "boxes_only": {
+    "intercept": -11.100272287209902,
+    "log_boxes": 3.0113293433355075
+   }
+  }
+ }
+}

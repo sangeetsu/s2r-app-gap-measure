@@ -1,0 +1,29 @@
+  Town01_ClearNight      kittival       seed42  22.3  seed17  25.0
+  Town01_ClearNight      cityscapesval  seed42  12.4  seed17  13.3
+  Town01_ClearNight      anchor (own 800:1000) seed42  41.4  seed17  39.4
+  Town01_ClearNoon       kittival       seed42  30.5  seed17  30.7
+  Town01_ClearNoon       cityscapesval  seed42  14.5  seed17  14.7
+  Town01_ClearNoon       anchor (own 800:1000) seed42  39.4  seed17  38.8
+  Town02_SoftRainNoon    kittival       seed42  32.6  seed17  35.3
+  Town02_SoftRainNoon    cityscapesval  seed42  14.1  seed17  14.8
+  Town02_SoftRainNoon    anchor (own 800:1000) seed42  24.9  seed17  24.6
+  Town03_ClearNight      kittival       seed42  24.7  seed17  21.8
+  Town03_ClearNight      cityscapesval  seed42  16.0  seed17  17.4
+  Town03_ClearNight      anchor (own 800:1000) seed42  32.6  seed17  30.5
+  Town04_OvercastNoon    kittival       seed42  25.7  seed17  25.4
+  Town04_OvercastNoon    cityscapesval  seed42  14.0  seed17  12.9
+  Town04_OvercastNoon    anchor (own 800:1000) seed42  40.1  seed17  38.3
+  Town05_SoftRainNoon    kittival       seed42  30.0  seed17  27.5
+  Town05_SoftRainNoon    cityscapesval  seed42  12.9  seed17  14.0
+  Town05_SoftRainNoon    anchor (own 800:1000) seed42  56.8  seed17  56.6
+  Town10HD_ClearNight    kittival       seed42  30.8  seed17  29.1
+  Town10HD_ClearNight    cityscapesval  seed42  17.4  seed17  18.2
+  Town10HD_ClearNight    anchor (own 800:1000) seed42  22.3  seed17  22.8
+  Town10HD_OvercastNoon  kittival       seed42  31.6  seed17  32.0
+  Town10HD_OvercastNoon  cityscapesval  seed42  15.1  seed17  18.3
+  Town10HD_OvercastNoon  anchor (own 800:1000) seed42  38.3  seed17  38.7
+
+8 replicated sources, 184 (S,T) pairs
+  target mAP seed-to-seed diff: sd 2.31 pp, mean |diff| 1.74 pp
+  anchored DROP seed-to-seed diff: sd 2.68 pp, mean |diff| 2.07 pp, within 4 pp 87%
+  -> a perfect predictor of the seed-42 drop is within 4 pp of a re-trained detector's drop only ~87% of the time

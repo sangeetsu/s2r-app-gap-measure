@@ -1,0 +1,37 @@
+=== V1: clone-detector held-out Car-AP drop (pp), seed mean ===
+  scene       morning    sunset  overcast       fog      rain   own AP (s42/s17)
+  Scene01        -0.1      -0.1       0.0      27.2       0.7   90.8/90.9
+  Scene02         0.0       0.0       0.0      68.3       8.3   90.9/90.9
+  Scene06        97.8      93.6      28.7      99.2      97.0   99.5/98.8
+  Scene18         0.2       0.4       1.0       9.1       1.1   90.3/90.4
+  Scene20         8.4       4.5      -0.4      36.1       8.3   89.1/88.4
+  mean          21.3      19.7       5.9      48.0      23.1
+  scenes with mean drop > 0: 5/5 -> V1 PASS; seed agreement r=0.973, mean |Δseed| 3.71
+
+=== V2: metric(clone render, variant render) vs drop, 25 pairs ===
+  obj_fid_ref        rho +0.595 (scene-clustered p=0.0005) LOSO R2 -0.192 -> V2 FAIL
+  nnd_dose_to_ref    rho +0.408 (scene-clustered p=0.0005) LOSO R2 -0.872
+  cov_dose_by_ref    rho -0.283 (scene-clustered p=0.0260) LOSO R2 -0.638
+  paired_obj_disp    rho +0.375 (scene-clustered p=0.0010) LOSO R2 -0.900
+  probe_flip         rho +0.261 (scene-clustered p=0.1104) LOSO R2 -0.472
+  img_fid_ref        rho +0.396 (scene-clustered p=0.0125) LOSO R2 -0.375
+  lpips              rho +0.338 (scene-clustered p=0.1324) LOSO R2 -0.555
+  incfid_ref         rho +0.527 (scene-clustered p=0.0005) LOSO R2 -0.156
+
+=== V3: CARLA Car-AP calibration (object FID; 72 pairs; slope 0.158) applied to VKITTI2: MAE 22.86 vs CARLA-mean 25.16 -> V3 PASS; rho(pred,obs) +0.595
+    object FID ranges: CARLA 12.7-290.7; VKITTI2 43.9-388.8
+
+=== V4: real transfer (KITTI val Car AP), dose-trained - clone-trained ===
+  by variant: morning -0.9, sunset -0.8, overcast -2.6, fog -12.8, rain -4.0; clone-trained KITTI Car AP 57.9
+  Δ FID-to-KITTI vs Δ KITTI Car AP: rho -0.608, scene-clustered p=0.0005 (n=25) -> V4 PASS
+
+=== Asymmetry: clone-trained on variant vs variant-trained on clone (each vs own held-out) ===
+  clone->variant harder in 15/25 pairs
+
+=== E2b S1: sim->real (clone detector on real KITTI tracking frames, same sequences); predictions 2026-10-18T08:55:33 ===
+  Scene01: object FID clone->real 613.4; predicted drop 121.5 [34.9, 208.1]; observed 1.1; real-trained on clone drop -10.1
+  Scene02: object FID clone->real 1083.4; predicted drop 222.2 [78.1, 366.2]; observed 69.0; real-trained on clone drop 60.6
+  Scene06: object FID clone->real 662.3; predicted drop 132.0 [40.0, 224.0]; observed 40.7; real-trained on clone drop 92.3
+  Scene18: object FID clone->real 617.0; predicted drop 122.3 [35.3, 209.3]; observed 8.1; real-trained on clone drop 6.0
+  Scene20: object FID clone->real 563.7; predicted drop 110.9 [29.4, 192.3]; observed 16.6; real-trained on clone drop -2.3
+  inside 90% PI 1/5; MAE 114.66 vs weather-mean 21.50 -> S1 FAIL

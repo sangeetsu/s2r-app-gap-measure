@@ -1,0 +1,13 @@
+{
+  "source_ckpt": "checkpoints/anchindr_Town01_d05_fog25/last.pt",
+  "dataset": "RTTS (car->Car, person->Pedestrian; difficult dropped)",
+  "n_frames": 4322,
+  "metrics": {
+    "AP_Car": 0.27579878123344176,
+    "n_gt_Car": 25317,
+    "AP_Pedestrian": 0.1299436967865971,
+    "n_gt_Pedestrian": 11366,
+    "mAP@IoU=0.5": 0.2028712390100194
+  },
+  "seconds": 814.5106408596039
+}

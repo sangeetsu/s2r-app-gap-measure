@@ -1,0 +1,55 @@
+/home/sangeetsu/alpamayo1_carla/.claude/worktrees/nifty-albattani-68916f/tools/analyze_manifold_markers.py:44: RuntimeWarning: Mean of empty slice.
+  X+=list(x[ok]-x[ok].mean()); Y+=list(yy[ok]-yy[ok].mean())
+/home/sangeetsu/miniconda3/envs/alpamayo_carla/lib/python3.12/site-packages/numpy/_core/_methods.py:144: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+=== Rule 1/2/4: 30 ImageNet-backbone sources, markers on own source data vs real-target mAP ===
+  KITTI: ID accuracy (own-cell held-out mAP) r=+0.412 (p=0.024)
+    D_eff    r=-0.038 (p=0.8489)   partial|log boxes -0.198 (p=0.313)
+    Psi_eff  r=+0.139 (p=0.4816)   partial|log boxes -0.244 (p=0.212)
+    R_eff    r=-0.013 (p=0.9471)   partial|log boxes +0.098 (p=0.619)
+    alpha    r=-0.010 (p=0.9588)   partial|log boxes -0.083 (p=0.675)
+    PR       r=+0.352 (p=0.0568)   partial|log boxes +0.028 (p=0.882)
+  Cityscapes: ID accuracy (own-cell held-out mAP) r=+0.334 (p=0.071)
+    D_eff    r=-0.067 (p=0.7346)   partial|log boxes -0.222 (p=0.255)
+    Psi_eff  r=+0.065 (p=0.7443)   partial|log boxes -0.321 (p=0.096)
+    R_eff    r=-0.086 (p=0.6626)   partial|log boxes -0.008 (p=0.966)
+    alpha    r=-0.005 (p=0.9788)   partial|log boxes -0.070 (p=0.724)
+    PR       r=+0.237 (p=0.2081)   partial|log boxes -0.133 (p=0.485)
+
+=== Rule 3: Epic vs Low (same town), marker difference vs real-mAP difference ===
+  KITTI: ΔmAP(Epic-Low) Town01 +8.6, Town04 +1.9, Town06 +12.0, Town07 -4.9, Town10HD +10.0
+    D_eff    sign agreement 4/5   Δ: +1.637, +nan, +1.582, -5.068, +4.221
+    Psi_eff  sign agreement 2/5   Δ: -0.030, +nan, +0.001, -0.106, -0.005
+    R_eff    sign agreement 4/5   Δ: +0.026, +nan, +0.084, -0.249, +0.188
+    alpha    sign agreement 0/5   Δ: -0.035, +nan, -0.038, +0.157, -0.067
+    PR       sign agreement 1/5   Δ: -1.078, -0.625, -1.027, -0.016, -2.818
+  Cityscapes: ΔmAP(Epic-Low) Town01 +3.4, Town04 +1.7, Town06 +3.7, Town07 -1.2, Town10HD +1.5
+    D_eff    sign agreement 4/5   Δ: +1.637, +nan, +1.582, -5.068, +4.221
+    Psi_eff  sign agreement 2/5   Δ: -0.030, +nan, +0.001, -0.106, -0.005
+    R_eff    sign agreement 4/5   Δ: +0.026, +nan, +0.084, -0.249, +0.188
+    alpha    sign agreement 0/5   Δ: -0.035, +nan, -0.038, +0.157, -0.067
+    PR       sign agreement 1/5   Δ: -1.078, -0.625, -1.027, -0.016, -2.818
+
+=== Learning curve (content fixed, data quantity varies): within-cell r(marker, real mAP), pooled fixed effects ===
+  KITTI D_eff    within-cell r=-0.769 (p=0.0001, n=20)
+  KITTI Psi_eff  within-cell r=+0.163 (p=0.4918, n=20)
+  KITTI R_eff    within-cell r=-0.436 (p=0.0546, n=20)
+  KITTI alpha    within-cell r=+0.771 (p=0.0001, n=20)
+  KITTI PR       within-cell r=+0.811 (p=0.0000, n=24)
+  Cityscapes D_eff    within-cell r=-0.615 (p=0.0039, n=20)
+  Cityscapes Psi_eff  within-cell r=-0.262 (p=0.2643, n=20)
+  Cityscapes R_eff    within-cell r=-0.248 (p=0.2911, n=20)
+  Cityscapes alpha    within-cell r=+0.578 (p=0.0076, n=20)
+  Cityscapes PR       within-cell r=+0.307 (p=0.1450, n=24)
+
+=== Noise: seed-17 replicates vs seed-42 (8 cells): reliability = 1 - noise var / across-source var ===
+  D_eff    per-run noise sd 0.2289 (n=8)  across-source sd 2.6744  reliability 0.99
+  Psi_eff  per-run noise sd 0.0103 (n=8)  across-source sd 0.0525  reliability 0.96
+  R_eff    per-run noise sd 0.0116 (n=8)  across-source sd 0.0782  reliability 0.98
+  alpha    per-run noise sd 0.0054 (n=8)  across-source sd 0.0431  reliability 0.98
+  PR       per-run noise sd 0.3480 (n=8)  across-source sd 1.4661  reliability 0.94
+
+=== COCO control: 24 COCO-init detectors (real mAP flat) ===
+  KITTI mAP 48.0 ± 2.9: D_eff r=+0.18; Psi_eff r=-0.04; R_eff r=+0.10; alpha r=-0.17; PR r=+0.03
+  Cityscapes mAP 30.8 ± 2.1: D_eff r=-0.23; Psi_eff r=-0.50; R_eff r=-0.05; alpha r=+0.16; PR r=-0.34
+  marker means COCO vs ImageNet: D_eff 10.002 vs 10.266; Psi_eff 0.835 vs 0.798; R_eff 1.212 vs 1.255; alpha 0.151 vs 0.142; PR 6.063 vs 3.963

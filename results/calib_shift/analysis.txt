@@ -1,0 +1,20 @@
+=== KITTI: 15 condition cells, real mAP 35.7 ± 1.8 (range 32.3-38.3); train boxes 2127-3551
+  S1 shares of variance (sequential): log boxes 0%, + time-of-day 16%, + weather 19%, residual 64%
+     F(2,11) time-of-day | boxes    = 1.07, p=0.375
+     F(4,7) weather | boxes,time   = 0.53, p=0.722
+     F(6,7) time+weather | boxes   = 0.65, p=0.694
+  S2 FID: raw r=+0.056 (p=0.843); increment beyond log boxes: partial r=+0.059, F p=0.842 -> REPLICATES (no increment)
+     SHIFT_daytime_clear      n100:  30.0 (659 boxes)  n200:  32.7 (1683 boxes)  n400:  36.4 (3263 boxes)
+     SHIFT_night_rainy        n100:  30.4 (824 boxes)  n200:  31.7 (1786 boxes)  n400:  36.7 (2667 boxes)
+     SHIFT_dawn-dusk_foggy    n100:  27.5 (593 boxes)  n200:  34.6 (1146 boxes)  n400:  38.3 (2542 boxes)
+  S3 within-cell slope +5.30 pp per log(boxes) (SE 1.02, p=0.0035) -> REPLICATES
+=== Cityscapes: 15 condition cells, real mAP 25.3 ± 1.9 (range 22.7-28.6); train boxes 2127-3551
+  S1 shares of variance (sequential): log boxes 43%, + time-of-day 14%, + weather 17%, residual 26%
+     F(2,11) time-of-day | boxes    = 1.78, p=0.214
+     F(4,7) weather | boxes,time   = 1.13, p=0.415
+     F(6,7) time+weather | boxes   = 1.38, p=0.340
+  S2 FID: raw r=-0.552 (p=0.033); increment beyond log boxes: partial r=-0.357, F p=0.210 -> REPLICATES (no increment)
+     SHIFT_daytime_clear      n100:  21.4 (659 boxes)  n200:  24.2 (1683 boxes)  n400:  27.8 (3263 boxes)
+     SHIFT_night_rainy        n100:  19.6 (824 boxes)  n200:  22.8 (1786 boxes)  n400:  23.6 (2667 boxes)
+     SHIFT_dawn-dusk_foggy    n100:  19.7 (593 boxes)  n200:  22.6 (1146 boxes)  n400:  26.3 (2542 boxes)
+  S3 within-cell slope +4.02 pp per log(boxes) (SE 0.29, p=0.0000) -> REPLICATES

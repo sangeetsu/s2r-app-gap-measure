@@ -1,0 +1,60 @@
+predictions written 2026-10-18T02:55:30 (mtime 1792317331); first held-out eval file mtime 1792317354 -> order OK
+72 held-out pairs with observations; calibration mean drop 10.89 pp
+
+=== cov_dose_by_ref (secondary): H1 rho +0.822 PASS | H2 MAE 6.35 (mean-pred 11.90) PASS | H3 coverage 86% PASS
+   interpolation  n=24  rho +0.78  MAE  5.40  bias -2.50  coverage  88%
+   extrapolation  n= 8  rho +0.69  MAE  7.91  bias -3.88  coverage  75%
+   compound       n=24  rho +0.68  MAE  6.88  bias +0.71  coverage  83%
+   novel          n=16  rho +0.11  MAE  6.21  bias -3.13  coverage  94%
+
+=== img_fid_ref (secondary): H1 rho +0.800 PASS | H2 MAE 8.32 (mean-pred 11.90) FAIL | H3 coverage 83% PASS
+   interpolation  n=24  rho +0.76  MAE  8.16  bias -5.15  coverage  83%
+   extrapolation  n= 8  rho +0.29  MAE 12.86  bias -10.16  coverage  62%
+   compound       n=24  rho +0.71  MAE  8.42  bias +1.16  coverage  83%
+   novel          n=16  rho -0.28  MAE  6.15  bias +4.00  coverage  94%
+
+=== incfid_ref (secondary): H1 rho +0.828 PASS | H2 MAE 6.72 (mean-pred 11.90) PASS | H3 coverage 85% PASS
+   interpolation  n=24  rho +0.78  MAE  6.62  bias -2.91  coverage  83%
+   extrapolation  n= 8  rho +0.14  MAE  8.27  bias -4.08  coverage  75%
+   compound       n=24  rho +0.76  MAE  7.50  bias +0.53  coverage  83%
+   novel          n=16  rho -0.26  MAE  4.93  bias -1.04  coverage  94%
+
+=== lpips (secondary): H1 rho +0.809 PASS | H2 MAE 7.28 (mean-pred 11.90) FAIL | H3 coverage 85% PASS
+   interpolation  n=24  rho +0.82  MAE  6.95  bias -3.56  coverage  79%
+   extrapolation  n= 8  rho +0.02  MAE 10.85  bias -9.85  coverage  62%
+   compound       n=24  rho +0.64  MAE  7.44  bias +3.09  coverage  92%
+   novel          n=16  rho -0.24  MAE  5.76  bias -1.43  coverage  94%
+
+=== nnd_dose_to_ref (secondary): H1 rho +0.831 PASS | H2 MAE 6.90 (mean-pred 11.90) PASS | H3 coverage 86% PASS
+   interpolation  n=24  rho +0.83  MAE  5.57  bias -2.37  coverage  88%
+   extrapolation  n= 8  rho +0.40  MAE  7.07  bias -2.46  coverage  75%
+   compound       n=24  rho +0.66  MAE  7.54  bias +1.44  coverage  83%
+   novel          n=16  rho -0.20  MAE  7.85  bias -4.82  coverage  94%
+
+=== obj_fid_ref (primary): H1 rho +0.855 PASS | H2 MAE 5.58 (mean-pred 11.90) PASS | H3 coverage 82% PASS
+   interpolation  n=24  rho +0.81  MAE  5.43  bias -2.59  coverage  79%
+   extrapolation  n= 8  rho +0.38  MAE  6.14  bias +2.40  coverage  88%
+   compound       n=24  rho +0.68  MAE  7.32  bias +1.50  coverage  75%
+   novel          n=16  rho +0.16  MAE  2.90  bias +0.12  coverage  94%
+
+=== paired_obj_disp (secondary): H1 rho +0.837 PASS | H2 MAE 6.82 (mean-pred 11.90) PASS | H3 coverage 85% PASS
+   interpolation  n=24  rho +0.82  MAE  5.64  bias -2.39  coverage  88%
+   extrapolation  n= 8  rho +0.43  MAE  7.33  bias -2.75  coverage  75%
+   compound       n=24  rho +0.68  MAE  7.59  bias +1.32  coverage  79%
+   novel          n=16  rho -0.17  MAE  7.18  bias -4.43  coverage  94%
+
+=== per dose: observed drop (town mean) vs object-FID prediction
+  d10_fog35        observed   16.8  predicted    9.7  (towns 8)
+  d11_fog65        observed   25.3  predicted   22.7  (towns 8)
+  d12_fog90        observed   28.8  predicted   31.2  (towns 8)
+  d13_sun6         observed    3.9  predicted    5.8  (towns 8)
+  d14_night_rain   observed   28.7  predicted   29.1  (towns 8)
+  d15_night_fog50  observed   24.1  predicted   25.2  (towns 8)
+  d16_sun10_wet    observed    3.4  predicted    6.5  (towns 8)
+  d17_cloud90      observed    0.1  predicted    3.1  (towns 8)
+  d18_dust50       observed    2.9  predicted    0.2  (towns 8)
+
+=== compound doses: object-FID prediction vs label-using baselines (additive / max of measured component drops)
+  d14_night_rain   MAE: metric 10.29  additive  2.94  max  9.27   (observed mean 28.7)
+  d15_night_fog50  MAE: metric  8.63  additive 17.75  max  2.16   (observed mean 24.1)
+  d16_sun10_wet    MAE: metric  3.05  additive  1.10  max  0.89   (observed mean 3.4)

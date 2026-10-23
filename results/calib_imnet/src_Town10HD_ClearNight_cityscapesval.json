@@ -1,0 +1,15 @@
+{
+  "source_ckpt": "checkpoints/anchin_Town10HD_ClearNight/last.pt",
+  "dataset": "cityscapes_val",
+  "n_frames": 500,
+  "class_mapping": "ALDI COCO: Car<-{car,truck}, Pedestrian<-{person}, Cyclist<-{rider}",
+  "metrics": {
+    "AP_Car": 0.30399121476667357,
+    "n_gt_Car": 4852,
+    "AP_Pedestrian": 0.09720078824283578,
+    "n_gt_Pedestrian": 3448,
+    "AP_Cyclist": 0.12135437091032118,
+    "n_gt_Cyclist": 544,
+    "mAP@IoU=0.5": 0.1741821246399435
+  }
+}

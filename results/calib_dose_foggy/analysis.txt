@@ -1,0 +1,10 @@
+=== F1: simulated fog training vs real fog (Foggy Cityscapes val); mAP, town mean; Δ = fog-trained − ref-trained ===
+    beta     ref   fog25  fog50  fog75 | Δfog75  towns Δ>0
+       0    14.2    14.4   12.3   10.4 |   -3.8  0/8
+   0.005    12.8    14.7   12.9   10.5 |   -2.3  1/8
+    0.01    12.0    14.8   13.4   11.2 |   -0.8  3/8
+    0.02    10.0    14.8   13.1   11.7 |   +1.7  6/8
+  F1: fog75 beats ref on beta=0.02 in 6/8 towns (sign test p=0.145); Δ by beta 0/.005/.01/.02 = -3.8, -2.3, -0.8, +1.7 monotone=True -> PASS
+
+=== F2/F3 (72 pairs): Δ FID-to-FOGGY vs Δ foggy mAP: Spearman -0.081 (clustered p=0.5782) -> F2 FAIL
+  Δ FID-to-CLEAR-CS vs Δ foggy mAP: Spearman +0.095 (p=0.2909); F3 (foggy-FID predicts better than clear-FID): FAIL

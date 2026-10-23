@@ -1,0 +1,47 @@
+predictions 2026-10-20T00:44:43; order OK
+
+=== fcos: 18 held-out pairs (Town01 + Town10HD x 9 round-1 doses); predict-the-mean MAE 10.01
+  pred_linear      rho +0.789  MAE  5.25  within 4 pp  39%  -> PASS
+  pred_isotonic    rho +0.798  MAE  5.30  within 4 pp  44%
+  pred_frcnn_line  rho +0.789  MAE  5.55  within 4 pp  33%
+    Town01_d10_fog35       obs   9.2  lin   6.9
+    Town01_d11_fog65       obs  15.4  lin  17.5
+    Town01_d12_fog90       obs  17.8  lin  22.8
+    Town01_d13_sun6        obs  -0.6  lin   5.0
+    Town01_d14_night_rain  obs  24.7  lin  30.4
+    Town01_d15_night_fog50 obs  15.7  lin  23.0
+    Town01_d16_sun10_wet   obs   1.1  lin   5.9
+    Town01_d17_cloud90     obs  -1.7  lin   2.1
+    Town01_d18_dust50      obs   0.0  lin  -2.1
+    Town10HD_d10_fog35     obs  19.4  lin   9.0
+    Town10HD_d11_fog65     obs  23.9  lin  19.6
+    Town10HD_d12_fog90     obs  27.4  lin  29.6
+    Town10HD_d13_sun6      obs  11.9  lin   7.5
+    Town10HD_d14_night_rain obs  24.5  lin  16.2
+    Town10HD_d15_night_fog50 obs  21.2  lin  13.2
+    Town10HD_d16_sun10_wet obs   2.2  lin   3.2
+    Town10HD_d17_cloud90   obs   0.0  lin   1.1
+    Town10HD_d18_dust50    obs  19.7  lin   3.6
+
+=== swin: 18 held-out pairs (Town01 + Town10HD x 9 round-1 doses); predict-the-mean MAE 11.10
+  pred_linear      rho +0.806  MAE  5.23  within 4 pp  44%  -> PASS
+  pred_isotonic    rho +0.801  MAE  5.45  within 4 pp  39%
+  pred_frcnn_line  rho +0.806  MAE  5.22  within 4 pp  44%
+    Town01_d10_fog35       obs  14.7  lin   8.4
+    Town01_d11_fog65       obs  22.2  lin  19.4
+    Town01_d12_fog90       obs  23.8  lin  24.8
+    Town01_d13_sun6        obs  -0.4  lin   6.4
+    Town01_d14_night_rain  obs  28.0  lin  32.7
+    Town01_d15_night_fog50 obs  18.6  lin  25.0
+    Town01_d16_sun10_wet   obs   3.0  lin   7.3
+    Town01_d17_cloud90     obs  -1.5  lin   3.4
+    Town01_d18_dust50      obs   1.2  lin  -0.9
+    Town10HD_d10_fog35     obs  17.5  lin  10.6
+    Town10HD_d11_fog65     obs  23.1  lin  21.5
+    Town10HD_d12_fog90     obs  29.3  lin  31.9
+    Town10HD_d13_sun6      obs  11.4  lin   9.0
+    Town10HD_d14_night_rain obs  29.8  lin  17.9
+    Town10HD_d15_night_fog50 obs  26.4  lin  14.9
+    Town10HD_d16_sun10_wet obs   4.3  lin   4.5
+    Town10HD_d17_cloud90   obs   2.3  lin   2.3
+    Town10HD_d18_dust50    obs  22.5  lin   4.9

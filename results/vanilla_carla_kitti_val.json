@@ -1,0 +1,40 @@
+{
+  "metrics": {
+    "AP_Car": 0.7482625679241441,
+    "n_gt_Car": 6316,
+    "AP_Pedestrian": 0.4348917692195904,
+    "n_gt_Pedestrian": 992,
+    "AP_Cyclist": 0.2986318832225952,
+    "n_gt_Cyclist": 246,
+    "mAP@IoU=0.5": 0.4939287401221099
+  },
+  "args": {
+    "source_data": "carla",
+    "source_root": "/home/sangeetsu/datasets/carla_extracted",
+    "val_data": "kitti",
+    "val_splits": "/home/sangeetsu/datasets/kitti/splits.json",
+    "kitti_root": "/home/sangeetsu/datasets/kitti/extracted/training",
+    "epochs": 12,
+    "batch_size": 4,
+    "lr": 0.005,
+    "momentum": 0.9,
+    "weight_decay": 0.0001,
+    "num_workers": 4,
+    "aux_latents": null,
+    "aux_target": "raw",
+    "coral_fit_real": null,
+    "coral_eps": 0.0001,
+    "aux_lambda": 0.1,
+    "out": "checkpoints/vanilla_carla",
+    "result": "results/vanilla_carla_kitti_val.json",
+    "seed": 42,
+    "smoke": false,
+    "limit_train": null,
+    "limit_val": null
+  },
+  "n_train": 8000,
+  "n_val": 1496,
+  "train_seconds": 6409.618691682816,
+  "eval_seconds": 69.64113330841064,
+  "device": "NVIDIA RTX A6000"
+}

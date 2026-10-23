@@ -1,0 +1,15 @@
+{
+  "metrics": {
+    "AP_Car": 0.6301196521000146,
+    "n_gt_Car": 500,
+    "AP_Pedestrian": 0.11110519529221137,
+    "n_gt_Pedestrian": 78,
+    "AP_Cyclist": 0.2238404452690167,
+    "n_gt_Cyclist": 148,
+    "mAP@IoU=0.5": 0.32168843088708093
+  },
+  "ckpt": "checkpoints/pilotrt_Town05_d50_realtwin/last.pt",
+  "cell": "Town05_d50_realtwin",
+  "n_frames": 250,
+  "min_box_height": 0.0
+}

@@ -1,0 +1,30 @@
+predictions written 2026-10-21T03:27:13, sha256 verified, order verified
+
+RT1 survival 486/556 = 87.4% (Pedestrian 33/54; resampling control 551/556); unlabeled/frame Town03 orig 1.75 twin 3.28, Town05 orig 2.10 twin 3.40
+RT1 FAIL
+
+town   cell            drop(pp)  objFID   pred(τ239)  KITTI gain  Cityscapes gain  fid_KITTI (ref→cell)
+Town03 d50_realtwin       19.41    335.7      40.67      +1.18           -0.17   13.6 → 13.0
+Town03 d51_resample       -0.23      1.5       0.34      +0.87           +0.12   13.6 → 13.5
+Town05 d50_realtwin       12.34    341.6      32.51      +2.00           -0.96   13.5 → 12.0
+Town05 d51_resample        0.09      1.3       0.23      +0.94           -0.93   13.5 → 13.4
+
+RT2 real gain d50 [1.18, -0.17, 2.0, -0.96] mean +0.51 vs control mean +0.25 → FAIL
+RT3 τ_twin Town03 752, Town05 1004 (ratio 1.33) → PASS  [not interpreted: RT1 failed]
+RT4 fid_KITTI lower for the twin in both towns → PASS; Cityscapes: Town03 12.0 → 11.0, Town05 12.1 → 10.5
+RT5 weather constant (τ 239.3) predicts the twin drop within ±4 pp in both towns → FAIL
+Control d51 drop within ±2 pp in both towns → OK
+
+Twin-trained detectors: own held-out and on the clean reference (direction):
+  Town03 seed 42: own 33.4, on d00_ref 38.1; reference own 52.4
+  Town03 seed 17: own 33.4, on d00_ref 40.2; reference own 55.5
+  Town05 seed 42: own 32.2, on d00_ref 37.7; reference own 43.2
+  Town05 seed 17: own 32.3, on d00_ref 36.1; reference own 42.3
+
+Per-seed real mAP@.5 (KITTI val / Cityscapes val):
+  Town03_d00_ref       KITTI 28.5/27.1  Cityscapes 14.7/13.6
+  Town03_d50_realtwin  KITTI 28.4/29.6  Cityscapes 14.0/13.9
+  Town03_d51_resample  KITTI 26.9/30.4  Cityscapes 13.9/14.6
+  Town05_d00_ref       KITTI 26.9/28.5  Cityscapes 14.9/15.9
+  Town05_d50_realtwin  KITTI 28.5/30.9  Cityscapes 14.6/14.2
+  Town05_d51_resample  KITTI 28.0/29.2  Cityscapes 14.4/14.5

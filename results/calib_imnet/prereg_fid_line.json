@@ -1,0 +1,67 @@
+{
+ "created": "2026-10-14T08:12:25 (file mtime; earlier hand-typed value was wrong)",
+ "protocol": "ImageNet-backbone Faster R-CNN, tools/grid_imnet.conf, frames 0:800, seed 42; FID = image-level Frechet distance of DINOv3-L mean-pooled frame features (tools/domain_distance_matrix.py fid(), MAXN=1200 cap) between the source cell's frames and the real target's val frames; no labels of the target used",
+ "fit_on": [
+  "Town01_ClearNight",
+  "Town01_ClearNoon",
+  "Town01_OvercastNoon",
+  "Town01_SoftRainNoon",
+  "Town02_ClearNight",
+  "Town02_ClearNoon",
+  "Town02_OvercastNoon",
+  "Town02_SoftRainNoon",
+  "Town03_ClearNight",
+  "Town03_ClearNoon",
+  "Town03_OvercastNoon",
+  "Town03_SoftRainNoon",
+  "Town04_ClearNight",
+  "Town04_ClearNoon",
+  "Town04_OvercastNoon",
+  "Town04_SoftRainNoon",
+  "Town05_ClearNight",
+  "Town05_ClearNoon",
+  "Town05_OvercastNoon",
+  "Town05_SoftRainNoon",
+  "Town10HD_ClearNight",
+  "Town10HD_ClearNoon",
+  "Town10HD_OvercastNoon",
+  "Town10HD_SoftRainNoon"
+ ],
+ "lines": {
+  "KITTI": {
+   "intercept": 56.18229401193622,
+   "slope": -2.0404800505832963,
+   "r": -0.6390010788748935,
+   "resid_sd": 3.6665394625520293,
+   "fid_range_fit": [
+    12.085218023524007,
+    17.238433572901315
+   ]
+  },
+  "Cityscapes": {
+   "intercept": 24.01730929456032,
+   "slope": -0.7496211111533397,
+   "r": -0.5596962726922318,
+   "resid_sd": 2.0450936222922413,
+   "fid_range_fit": [
+    10.41962221954833,
+    16.641927386706328
+   ]
+  }
+ },
+ "lines_car": {
+  "KITTI": {
+   "intercept": 80.46931814896791,
+   "slope": -2.122765340467513,
+   "r": -0.5287463190776233,
+   "resid_sd": 5.086660485570456
+  },
+  "Cityscapes": {
+   "intercept": 40.242482056199066,
+   "slope": -1.091348461569153,
+   "r": -0.5290343597384046,
+   "resid_sd": 3.2255991615599746
+  }
+ },
+ "lines_car_created": "2026-10-14T15:14:35 (added after towns2 3-class predictions; towns2 Car predictions below are written after anchin_Town06_ClearNight finished training, result NOT inspected; towns3 Car predictions are fully blind)"
+}

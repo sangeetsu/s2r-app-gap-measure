@@ -1,0 +1,80 @@
+{
+ "Town03_d00_ref": {
+  "img_fid_ref": -4.65804284033311e-10,
+  "obj_fid_ref": 4.866706149186939e-09,
+  "nnd_dose_to_ref": 0.0,
+  "cov_dose_by_ref": 1.0,
+  "paired_img_disp": 0.0,
+  "paired_obj_disp": 0.0,
+  "paired_task_disp": 0.0,
+  "probe_flip": 0.0,
+  "n_obj": 3000,
+  "fid_KITTI": 13.57113399624834,
+  "fid_Cityscapes": 11.973074420843458
+ },
+ "Town03_d50_realtwin": {
+  "img_fid_ref": 6.4677298896088065,
+  "obj_fid_ref": 335.7369713906005,
+  "nnd_dose_to_ref": 1.4969898462295532,
+  "cov_dose_by_ref": 0.09533333033323288,
+  "paired_img_disp": 1.2312077283859253,
+  "paired_obj_disp": 1.5616523027420044,
+  "paired_task_disp": 1.6187598705291748,
+  "probe_flip": 0.32133333333333336,
+  "n_obj": 3000,
+  "fid_KITTI": 12.968115031991196,
+  "fid_Cityscapes": 10.971250297601996
+ },
+ "Town03_d51_resample": {
+  "img_fid_ref": 0.02207722844013471,
+  "obj_fid_ref": 1.5127800456007208,
+  "nnd_dose_to_ref": 0.1201828122138977,
+  "cov_dose_by_ref": 0.9430000185966492,
+  "paired_img_disp": 0.07746831327676773,
+  "paired_obj_disp": 0.12786561250686646,
+  "paired_task_disp": 0.12302175164222717,
+  "probe_flip": 0.008666666666666666,
+  "n_obj": 3000,
+  "fid_KITTI": 13.472370349633021,
+  "fid_Cityscapes": 11.892704657620538
+ },
+ "Town05_d00_ref": {
+  "img_fid_ref": 6.500169291712155e-10,
+  "obj_fid_ref": 3.7927975427010097e-08,
+  "nnd_dose_to_ref": 0.0,
+  "cov_dose_by_ref": 1.0,
+  "paired_img_disp": 0.0,
+  "paired_obj_disp": 0.0,
+  "paired_task_disp": 0.0,
+  "probe_flip": 0.0,
+  "n_obj": 3000,
+  "fid_KITTI": 13.479458640849213,
+  "fid_Cityscapes": 12.119967289481536
+ },
+ "Town05_d50_realtwin": {
+  "img_fid_ref": 6.8878687380125125,
+  "obj_fid_ref": 341.59183446273846,
+  "nnd_dose_to_ref": 1.5278929471969604,
+  "cov_dose_by_ref": 0.08666666597127914,
+  "paired_img_disp": 1.2266438007354736,
+  "paired_obj_disp": 1.6033064126968384,
+  "paired_task_disp": 1.4334436655044556,
+  "probe_flip": 0.27,
+  "n_obj": 3000,
+  "fid_KITTI": 12.01108194807933,
+  "fid_Cityscapes": 10.49599086766411
+ },
+ "Town05_d51_resample": {
+  "img_fid_ref": 0.017687439359680646,
+  "obj_fid_ref": 1.26652897515919,
+  "nnd_dose_to_ref": 0.11155115067958832,
+  "cov_dose_by_ref": 0.9643332958221436,
+  "paired_img_disp": 0.0693838968873024,
+  "paired_obj_disp": 0.12494707852602005,
+  "paired_task_disp": 0.11384039372205734,
+  "probe_flip": 0.004333333333333333,
+  "n_obj": 3000,
+  "fid_KITTI": 13.379802171572955,
+  "fid_Cityscapes": 12.033758704835803
+ }
+}

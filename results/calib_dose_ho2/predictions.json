@@ -1,0 +1,386 @@
+{
+ "cal_mean": 12.891958238869101,
+ "cal_x_range": [
+  0.9231777663762841,
+  349.7757933263165
+ ],
+ "cells": {
+  "Town01_d19_rain_fog25": {
+   "dose": "d19_rain_fog25",
+   "pred_isotonic": 22.069172508665414,
+   "pred_linear": 18.146973304252736,
+   "town": "Town01",
+   "x": 168.7062426094442
+  },
+  "Town01_d20_rain_fog50": {
+   "dose": "d20_rain_fog50",
+   "pred_isotonic": 24.94616704201592,
+   "pred_linear": 26.200128918350938,
+   "town": "Town01",
+   "x": 243.74601515175368
+  },
+  "Town01_d21_fog15": {
+   "dose": "d21_fog15",
+   "pred_isotonic": 0.8843553190689122,
+   "pred_linear": 2.963926070334726,
+   "town": "Town01",
+   "x": 27.229725138729464
+  },
+  "Town01_d22_fog45": {
+   "dose": "d22_fog45",
+   "pred_isotonic": 15.58665251654373,
+   "pred_linear": 14.758165586211033,
+   "town": "Town01",
+   "x": 137.12913513293006
+  },
+  "Town01_d23_sun0": {
+   "dose": "d23_sun0",
+   "pred_isotonic": 22.069172508665414,
+   "pred_linear": 18.67557797929163,
+   "town": "Town01",
+   "x": 173.63181172551572
+  },
+  "Town01_d24_night_wet": {
+   "dose": "d24_night_wet",
+   "pred_isotonic": 24.94616704201592,
+   "pred_linear": 23.706318141831137,
+   "town": "Town01",
+   "x": 220.50854124699026
+  },
+  "Town02_d19_rain_fog25": {
+   "dose": "d19_rain_fog25",
+   "pred_isotonic": 22.069172508665414,
+   "pred_linear": 18.11875556020156,
+   "town": "Town02",
+   "x": 168.44330802867557
+  },
+  "Town02_d20_rain_fog50": {
+   "dose": "d20_rain_fog50",
+   "pred_isotonic": 24.94616704201592,
+   "pred_linear": 24.87356882563144,
+   "town": "Town02",
+   "x": 231.385051028931
+  },
+  "Town02_d21_fog15": {
+   "dose": "d21_fog15",
+   "pred_isotonic": 0.8843553190689122,
+   "pred_linear": 2.973282052444973,
+   "town": "Town02",
+   "x": 27.31690472436094
+  },
+  "Town02_d22_fog45": {
+   "dose": "d22_fog45",
+   "pred_isotonic": 14.41753297423077,
+   "pred_linear": 14.074843937934737,
+   "town": "Town02",
+   "x": 130.76190425884602
+  },
+  "Town02_d23_sun0": {
+   "dose": "d23_sun0",
+   "pred_isotonic": 22.069172508665414,
+   "pred_linear": 16.783685314366718,
+   "town": "Town02",
+   "x": 156.00304580400598
+  },
+  "Town02_d24_night_wet": {
+   "dose": "d24_night_wet",
+   "pred_isotonic": 22.069172508665414,
+   "pred_linear": 18.796545209017168,
+   "town": "Town02",
+   "x": 174.75899140993488
+  },
+  "Town03_d19_rain_fog25": {
+   "dose": "d19_rain_fog25",
+   "pred_isotonic": 22.069172508665414,
+   "pred_linear": 18.535538911511708,
+   "town": "Town03",
+   "x": 172.32691954451207
+  },
+  "Town03_d20_rain_fog50": {
+   "dose": "d20_rain_fog50",
+   "pred_isotonic": 24.94616704201592,
+   "pred_linear": 28.341082248458726,
+   "town": "Town03",
+   "x": 263.69554284171113
+  },
+  "Town03_d21_fog15": {
+   "dose": "d21_fog15",
+   "pred_isotonic": 0.8843553190689122,
+   "pred_linear": 2.344519293494044,
+   "town": "Town03",
+   "x": 21.458056755230245
+  },
+  "Town03_d22_fog45": {
+   "dose": "d22_fog45",
+   "pred_isotonic": 15.881327623000345,
+   "pred_linear": 14.930395946035116,
+   "town": "Town03",
+   "x": 138.73398764608078
+  },
+  "Town03_d23_sun0": {
+   "dose": "d23_sun0",
+   "pred_isotonic": 12.82683811618116,
+   "pred_linear": 12.537253930998565,
+   "town": "Town03",
+   "x": 116.43455111769617
+  },
+  "Town03_d24_night_wet": {
+   "dose": "d24_night_wet",
+   "pred_isotonic": 22.069172508665414,
+   "pred_linear": 17.93837007009435,
+   "town": "Town03",
+   "x": 166.7624655370837
+  },
+  "Town04_d19_rain_fog25": {
+   "dose": "d19_rain_fog25",
+   "pred_isotonic": 22.069172508665414,
+   "pred_linear": 16.64689865152327,
+   "town": "Town04",
+   "x": 154.72845972142431
+  },
+  "Town04_d20_rain_fog50": {
+   "dose": "d20_rain_fog50",
+   "pred_isotonic": 24.94616704201592,
+   "pred_linear": 25.955631467746628,
+   "town": "Town04",
+   "x": 241.46777368223547
+  },
+  "Town04_d21_fog15": {
+   "dose": "d21_fog15",
+   "pred_isotonic": 0.8843553190689122,
+   "pred_linear": 2.984337293088982,
+   "town": "Town04",
+   "x": 27.419918099872348
+  },
+  "Town04_d22_fog45": {
+   "dose": "d22_fog45",
+   "pred_isotonic": 22.069172508665414,
+   "pred_linear": 16.615354629677995,
+   "town": "Town04",
+   "x": 154.43453069064844
+  },
+  "Town04_d23_sun0": {
+   "dose": "d23_sun0",
+   "pred_isotonic": 24.94616704201592,
+   "pred_linear": 22.58261437338116,
+   "town": "Town04",
+   "x": 210.03780415583014
+  },
+  "Town04_d24_night_wet": {
+   "dose": "d24_night_wet",
+   "pred_isotonic": 24.94616704201592,
+   "pred_linear": 28.10118963088996,
+   "town": "Town04",
+   "x": 261.4602094743259
+  },
+  "Town05_d19_rain_fog25": {
+   "dose": "d19_rain_fog25",
+   "pred_isotonic": 22.069172508665414,
+   "pred_linear": 18.048516981129808,
+   "town": "Town05",
+   "x": 167.78882086242584
+  },
+  "Town05_d20_rain_fog50": {
+   "dose": "d20_rain_fog50",
+   "pred_isotonic": 24.94616704201592,
+   "pred_linear": 27.2443890565401,
+   "town": "Town05",
+   "x": 253.4764918741373
+  },
+  "Town05_d21_fog15": {
+   "dose": "d21_fog15",
+   "pred_isotonic": 0.8843553190689122,
+   "pred_linear": 3.1088816609212335,
+   "town": "Town05",
+   "x": 28.58042976528668
+  },
+  "Town05_d22_fog45": {
+   "dose": "d22_fog45",
+   "pred_isotonic": 16.147548093423055,
+   "pred_linear": 15.085995270201954,
+   "town": "Town05",
+   "x": 140.18387120138868
+  },
+  "Town05_d23_sun0": {
+   "dose": "d23_sun0",
+   "pred_isotonic": 23.353376636684498,
+   "pred_linear": 19.17022334003126,
+   "town": "Town05",
+   "x": 178.2409459752041
+  },
+  "Town05_d24_night_wet": {
+   "dose": "d24_night_wet",
+   "pred_isotonic": 24.94616704201592,
+   "pred_linear": 25.33386485738612,
+   "town": "Town05",
+   "x": 235.67411623270414
+  },
+  "Town06_d19_rain_fog25": {
+   "dose": "d19_rain_fog25",
+   "pred_isotonic": 24.778452974897096,
+   "pred_linear": 20.41636669975136,
+   "town": "Town06",
+   "x": 189.8525823013174
+  },
+  "Town06_d20_rain_fog50": {
+   "dose": "d20_rain_fog50",
+   "pred_isotonic": 28.166644356927133,
+   "pred_linear": 30.661093763193357,
+   "town": "Town06",
+   "x": 285.3135451135722
+  },
+  "Town06_d21_fog15": {
+   "dose": "d21_fog15",
+   "pred_isotonic": 1.4917930531747836,
+   "pred_linear": 3.6427073614733194,
+   "town": "Town06",
+   "x": 33.55464870084779
+  },
+  "Town06_d22_fog45": {
+   "dose": "d22_fog45",
+   "pred_isotonic": 23.353376636684498,
+   "pred_linear": 19.711572047471734,
+   "town": "Town06",
+   "x": 183.28526472663748
+  },
+  "Town06_d23_sun0": {
+   "dose": "d23_sun0",
+   "pred_isotonic": 24.94616704201592,
+   "pred_linear": 21.783362887609147,
+   "town": "Town06",
+   "x": 202.59033231119838
+  },
+  "Town06_d24_night_wet": {
+   "dose": "d24_night_wet",
+   "pred_isotonic": 30.259375648994354,
+   "pred_linear": 31.78267784694392,
+   "town": "Town06",
+   "x": 295.76453085938056
+  },
+  "Town07_d19_rain_fog25": {
+   "dose": "d19_rain_fog25",
+   "pred_isotonic": 22.069172508665414,
+   "pred_linear": 18.256472466429056,
+   "town": "Town07",
+   "x": 169.72656217323106
+  },
+  "Town07_d20_rain_fog50": {
+   "dose": "d20_rain_fog50",
+   "pred_isotonic": 24.94616704201592,
+   "pred_linear": 28.476510381382464,
+   "town": "Town07",
+   "x": 264.9574700634621
+  },
+  "Town07_d21_fog15": {
+   "dose": "d21_fog15",
+   "pred_isotonic": 0.8843553190689122,
+   "pred_linear": 2.2441682157461127,
+   "town": "Town07",
+   "x": 20.52297957437986
+  },
+  "Town07_d22_fog45": {
+   "dose": "d22_fog45",
+   "pred_isotonic": 22.069172508665414,
+   "pred_linear": 17.273800023635584,
+   "town": "Town07",
+   "x": 160.56996317969788
+  },
+  "Town07_d23_sun0": {
+   "dose": "d23_sun0",
+   "pred_isotonic": 24.94616704201592,
+   "pred_linear": 26.984044001575548,
+   "town": "Town07",
+   "x": 251.05058150518153
+  },
+  "Town07_d24_night_wet": {
+   "dose": "d24_night_wet",
+   "pred_isotonic": 24.94616704201592,
+   "pred_linear": 29.719801018171427,
+   "town": "Town07",
+   "x": 276.54252455133246
+  },
+  "Town10HD_d19_rain_fog25": {
+   "dose": "d19_rain_fog25",
+   "pred_isotonic": 22.069172508665414,
+   "pred_linear": 16.094982025730243,
+   "town": "Town10HD",
+   "x": 149.58566849194358
+  },
+  "Town10HD_d20_rain_fog50": {
+   "dose": "d20_rain_fog50",
+   "pred_isotonic": 24.94616704201592,
+   "pred_linear": 24.755498502466697,
+   "town": "Town10HD",
+   "x": 230.28486488838644
+  },
+  "Town10HD_d21_fog15": {
+   "dose": "d21_fog15",
+   "pred_isotonic": 1.198987729740827,
+   "pred_linear": 3.4965501825392664,
+   "town": "Town10HD",
+   "x": 32.192747604160104
+  },
+  "Town10HD_d22_fog45": {
+   "dose": "d22_fog45",
+   "pred_isotonic": 15.831165798763621,
+   "pred_linear": 14.901077592199227,
+   "town": "Town10HD",
+   "x": 138.46079751930506
+  },
+  "Town10HD_d23_sun0": {
+   "dose": "d23_sun0",
+   "pred_isotonic": 11.635612581811056,
+   "pred_linear": 10.894533324123412,
+   "town": "Town10HD",
+   "x": 101.12758492984858
+  },
+  "Town10HD_d24_night_wet": {
+   "dose": "d24_night_wet",
+   "pred_isotonic": 14.633752339951474,
+   "pred_linear": 14.201218844884993,
+   "town": "Town10HD",
+   "x": 131.93947299426213
+  }
+ },
+ "control": {
+  "Town01_d06_fog50": {
+   "calibration": 149.49324856864996,
+   "rerun": 149.49324856864996
+  },
+  "Town02_d06_fog50": {
+   "calibration": 140.85513076525876,
+   "rerun": 140.85513076525876
+  },
+  "Town03_d06_fog50": {
+   "calibration": 154.57474518132835,
+   "rerun": 154.57474518132835
+  },
+  "Town04_d06_fog50": {
+   "calibration": 170.23617310749773,
+   "rerun": 170.23617310749773
+  },
+  "Town05_d06_fog50": {
+   "calibration": 155.2485570320655,
+   "rerun": 155.2485570320655
+  },
+  "Town06_d06_fog50": {
+   "calibration": 201.73332805797395,
+   "rerun": 201.73332805797395
+  },
+  "Town07_d06_fog50": {
+   "calibration": 174.80214641680686,
+   "rerun": 174.80214641680686
+  },
+  "Town10HD_d06_fog50": {
+   "calibration": 153.04597970646023,
+   "rerun": 153.04597970646023
+  }
+ },
+ "created": "2026-10-20T02:41:13",
+ "ledger": "15.76",
+ "linear": {
+  "intercept": 0.041672891226659174,
+  "slope": 0.10731849712840762
+ },
+ "n_cal": 144
+}

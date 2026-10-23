@@ -1,0 +1,14 @@
+(a) calibration doses needed: calibrate on k doses (all 8 towns), predict the other doses; MAE (pp), 300 random dose subsets per k
+  k= 2 doses: MAE  8.50 (10-90%: 5.10-15.07)
+  k= 3 doses: MAE  6.65 (10-90%: 4.98-9.54)
+  k= 4 doses: MAE  5.99 (10-90%: 5.00-7.29)
+  k= 6 doses: MAE  5.58 (10-90%: 4.85-6.40)
+  k= 9 doses: MAE  5.31 (10-90%: 4.58-6.10)
+  k=12 doses: MAE  5.33 (10-90%: 4.30-6.51)
+  predict-the-mean over all 18 doses: 10.58
+
+(b) metric-guided choice of training appearance (10 candidate doses per town; seed-42 detectors)
+  KITTI            clear  27.6 | random dose  26.1 | metric-chosen  28.7 | oracle  30.7 | metric captures   35% of the oracle gain over clear; beats random in 7/8 towns
+  Cityscapes       clear  14.2 | random dose  14.1 | metric-chosen  15.7 | oracle  16.7 | metric captures   61% of the oracle gain over clear; beats random in 7/8 towns
+  Foggy CS b=.02   clear  10.0 | random dose  11.2 | metric-chosen  12.6 | oracle  14.8 | metric captures   54% of the oracle gain over clear; beats random in 8/8 towns
+  RTTS (real fog)  clear  15.7 | random dose  18.0 | metric-chosen  19.0 | oracle  21.6 | metric captures   55% of the oracle gain over clear; beats random in 6/8 towns

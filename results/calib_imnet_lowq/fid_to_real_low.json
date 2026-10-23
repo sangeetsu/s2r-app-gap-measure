@@ -1,0 +1,61 @@
+{
+ "created": "2026-10-15T02:01:53",
+ "root": "/mnt/features/carla_lowq",
+ "cells": {
+  "Town01_ClearNoon": {
+   "n_frames": 1000,
+   "Cityscapes": {
+    "fid": 15.405731114894134,
+    "cos_mean": 0.2957369089126587
+   },
+   "KITTI": {
+    "fid": 15.149359280408504,
+    "cos_mean": 0.2729492783546448
+   }
+  },
+  "Town04_ClearNoon": {
+   "n_frames": 1000,
+   "Cityscapes": {
+    "fid": 17.61453153085008,
+    "cos_mean": 0.34456712007522583
+   },
+   "KITTI": {
+    "fid": 18.392051809320712,
+    "cos_mean": 0.34681564569473267
+   }
+  },
+  "Town06_ClearNoon": {
+   "n_frames": 1000,
+   "Cityscapes": {
+    "fid": 16.173630668543424,
+    "cos_mean": 0.3044300675392151
+   },
+   "KITTI": {
+    "fid": 16.896173664389757,
+    "cos_mean": 0.3016284704208374
+   }
+  },
+  "Town07_ClearNoon": {
+   "n_frames": 1000,
+   "Cityscapes": {
+    "fid": 19.658406461146473,
+    "cos_mean": 0.3466138243675232
+   },
+   "KITTI": {
+    "fid": 18.569438567514815,
+    "cos_mean": 0.30700385570526123
+   }
+  },
+  "Town10HD_ClearNoon": {
+   "n_frames": 1000,
+   "Cityscapes": {
+    "fid": 11.19054518470842,
+    "cos_mean": 0.1980798840522766
+   },
+   "KITTI": {
+    "fid": 13.82307017179715,
+    "cos_mean": 0.23592782020568848
+   }
+  }
+ }
+}

@@ -1,0 +1,84 @@
+{
+  "features": "/home/sangeetsu/datasets/carla_extracted/spatial_features_dinov3.npz",
+  "feat_dim": 1024,
+  "grid": [
+    22,
+    76
+  ],
+  "carla_train": {
+    "patch_accuracy": 0.996467499788292,
+    "fg_patch_recall": 1.0,
+    "per_class_f1": {
+      "Background": 0.0,
+      "Car": 0.9981882445679122,
+      "Pedestrian": 0.9610489357033136,
+      "Cyclist": 0.9637069773670818
+    },
+    "n_patches": 495966,
+    "n_fg": 495966,
+    "box_iou_all_fg": {
+      "mean": 0.8083088397979736,
+      "median": 0.9108333587646484,
+      "frac_iou_ge_0.5": 0.8802780835783098,
+      "frac_iou_ge_0.75": 0.760723517337882,
+      "n": 495966
+    },
+    "box_iou_correctly_classified_fg": {
+      "mean": 0.8104597926139832,
+      "median": 0.9113187789916992,
+      "frac_iou_ge_0.5": 0.8830688729983368,
+      "frac_iou_ge_0.75": 0.76333733969495,
+      "n": 494214
+    }
+  },
+  "kitti_transfer": {
+    "patch_accuracy": 0.943608,
+    "fg_patch_recall": 1.0,
+    "per_class_f1": {
+      "Background": 0.0,
+      "Car": 0.9757167742865002,
+      "Pedestrian": 0.6288739236774216,
+      "Cyclist": 0.5175827927620348
+    },
+    "n_patches": 250000,
+    "n_fg": 249657,
+    "box_iou_all_fg": {
+      "mean": 0.4769667088985443,
+      "median": 0.4913548529148102,
+      "frac_iou_ge_0.5": 0.4861429881797827,
+      "frac_iou_ge_0.75": 0.09639225016722944,
+      "n": 249657
+    },
+    "box_iou_correctly_classified_fg": {
+      "mean": 0.48792728781700134,
+      "median": 0.5042568445205688,
+      "frac_iou_ge_0.5": 0.5069054098735916,
+      "frac_iou_ge_0.75": 0.10146162389466812,
+      "n": 235902
+    }
+  },
+  "position_only_control_kitti": {
+    "box_iou_all_fg": {
+      "mean": 0.21841102838516235,
+      "median": 0.1788131296634674,
+      "frac_iou_ge_0.5": 0.08066667467765774,
+      "n": 249657
+    }
+  },
+  "args": {
+    "carla_features": "/home/sangeetsu/datasets/carla_extracted/spatial_features_dinov3.npz",
+    "kitti_features": "/home/sangeetsu/datasets/kitti/spatial_features_dinov3.npz",
+    "carla_root": "/home/sangeetsu/datasets/carla_extracted",
+    "kitti_root": "/home/sangeetsu/datasets/kitti/extracted/training",
+    "kitti_splits": "/home/sangeetsu/datasets/kitti/splits.json",
+    "out": "results/dense_loc_probe_dinov3.json",
+    "train_frames": 4000,
+    "bg_stride": 17,
+    "max_train_patches": 400000,
+    "max_test_patches": 250000,
+    "epochs": 25,
+    "lr": 0.001,
+    "batch_size": 4096,
+    "seed": 42
+  }
+}

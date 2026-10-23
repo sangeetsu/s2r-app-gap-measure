@@ -1,0 +1,18 @@
+=== KITTI: real mAP by training frames (100/200/400/800), fixed 2400 iterations; within-cell slope per log(boxes)
+  Town01_ClearNoon     n100:  20.7 (232 boxes)  n200:  25.4 (614 boxes)  n400:  26.9 (1153 boxes)  n800:  30.5 (2390 boxes)  slope +4.08/log-box
+  Town02_ClearNoon     n100:  26.5 (804 boxes)  n200:  28.3 (1982 boxes)  n400:  32.3 (3843 boxes)  n800:  34.6 (5577 boxes)  slope +4.19/log-box
+  Town03_ClearNoon     n100:  17.7 (673 boxes)  n200:  17.4 (1416 boxes)  n400:  22.1 (2453 boxes)  n800:  25.2 (5319 boxes)  slope +3.95/log-box
+  Town04_ClearNoon     n100:  16.1 (177 boxes)  n200:  22.9 (388 boxes)  n400:  23.5 (568 boxes)  n800:  25.3 (1222 boxes)  slope +4.66/log-box
+  Town05_ClearNoon     n100:  23.6 (489 boxes)  n200:  23.6 (831 boxes)  n400:  25.9 (1365 boxes)  n800:  28.3 (3010 boxes)  slope +2.80/log-box
+  Town10HD_ClearNoon   n100:  24.6 (1318 boxes)  n200:  24.8 (2342 boxes)  n400:  30.4 (4322 boxes)  n800:  32.8 (7434 boxes)  slope +5.24/log-box
+  pooled within-cell (fixed-effects) slope +4.14 pp per log(boxes); per-cell +4.15 ± 0.74
+  between-source slope (30 sources, 800 frames) +6.45 pp per log(boxes) (r=+0.694)
+=== Cityscapes: real mAP by training frames (100/200/400/800), fixed 2400 iterations; within-cell slope per log(boxes)
+  Town01_ClearNoon     n100:   9.9 (232 boxes)  n200:  13.1 (614 boxes)  n400:  12.5 (1153 boxes)  n800:  14.5 (2390 boxes)  slope +1.76/log-box
+  Town02_ClearNoon     n100:  14.2 (804 boxes)  n200:  15.0 (1982 boxes)  n400:  17.6 (3843 boxes)  n800:  15.7 (5577 boxes)  slope +1.24/log-box
+  Town03_ClearNoon     n100:  10.5 (673 boxes)  n200:   9.4 (1416 boxes)  n400:  12.4 (2453 boxes)  n800:  10.3 (5319 boxes)  slope +0.29/log-box
+  Town04_ClearNoon     n100:   8.4 (177 boxes)  n200:  13.3 (388 boxes)  n400:  14.4 (568 boxes)  n800:  12.9 (1222 boxes)  slope +2.41/log-box
+  Town05_ClearNoon     n100:  14.6 (489 boxes)  n200:  16.5 (831 boxes)  n400:  16.4 (1365 boxes)  n800:  15.5 (3010 boxes)  slope +0.34/log-box
+  Town10HD_ClearNoon   n100:  16.0 (1318 boxes)  n200:  16.6 (2342 boxes)  n400:  17.5 (4322 boxes)  n800:  14.4 (7434 boxes)  slope -0.64/log-box
+  pooled within-cell (fixed-effects) slope +0.99 pp per log(boxes); per-cell +0.90 ± 1.01
+  between-source slope (30 sources, 800 frames) +3.08 pp per log(boxes) (r=+0.671)

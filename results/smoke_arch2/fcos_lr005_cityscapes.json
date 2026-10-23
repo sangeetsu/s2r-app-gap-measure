@@ -1,0 +1,15 @@
+{
+  "source_ckpt": "checkpoints/smoke_fcos_lr005/last.pt",
+  "dataset": "cityscapes_val",
+  "n_frames": 500,
+  "class_mapping": "ALDI COCO: Car<-{car,truck}, Pedestrian<-{person}, Cyclist<-{rider}",
+  "metrics": {
+    "AP_Car": 0.2627075646926059,
+    "n_gt_Car": 4852,
+    "AP_Pedestrian": 0.13434143860035433,
+    "n_gt_Pedestrian": 3448,
+    "AP_Cyclist": 0.10493976587174007,
+    "n_gt_Cyclist": 544,
+    "mAP@IoU=0.5": 0.16732958972156675
+  }
+}

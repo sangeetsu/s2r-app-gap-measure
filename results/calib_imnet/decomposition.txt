@@ -1,0 +1,52 @@
+[decomp] detector results from results/calib_imnet
+24 anchored cells, 552 directional pairs; drop mean 11.4 sd 16.4 pp; LOO by cell
+
+  model (predicting the anchored drop)                      |err|  <=4pp  LOO R2    n
+  source anchor                                              9.67    26%  +0.405  552
+  target anchor                                             10.70    22%  +0.334  552
+  both anchors                                               6.78    34%  +0.747  552
+  both anchors + dIV_fg (labeled)                            6.69    36%  +0.749  552
+  both anchors + FM veto gap (label-free)                    6.58    36%  +0.758  549
+  both anchors + DoC (label-free)                            5.83    41%  +0.801  549
+  both anchors + FM-det disagreement (label-free)            6.69    35%  +0.752  549
+  both anchors + FID (label-free)                            5.73    43%  +0.811  552
+  both anchors + BoS stability gap (label-free)              6.80    33%  +0.747  552
+  both anchors + AoL agreement gap (label-free)              6.65    35%  +0.755  552
+  source anchor + dIV_fg (labeled)  [deployable]             8.88    30%  +0.493  552
+  source anchor + FM veto gap (label-free)  [deployable]     9.24    28%  +0.448  549
+  source anchor + DoC (label-free)  [deployable]             8.10    34%  +0.563  549
+  source anchor + FM-det disagreement (label-free)  [deployable]   9.37    29%  +0.430  549
+  source anchor + FID (label-free)  [deployable]             8.48    32%  +0.530  552
+  source anchor + BoS stability gap (label-free)  [deployable]   9.50    27%  +0.416  552
+  source anchor + AoL agreement gap (label-free)  [deployable]   9.14    30%  +0.451  552
+
+  measure                                             raw r       partial | both anchors    partial | source anchor
+  dIV_fg (labeled)                       +0.549 (p=1e-44)    -0.107 (p=1e-02) n=552   +0.402 (p=8e-23)
+  FM veto gap (label-free)               +0.300 (p=7e-13)    +0.222 (p=1e-07) n=549   +0.269 (p=2e-10)
+  DoC (label-free)                       +0.520 (p=2e-39)    +0.473 (p=6e-32) n=549   +0.531 (p=3e-41)
+  FM-det disagreement (label-free)       +0.165 (p=1e-04)    +0.162 (p=1e-04) n=549   +0.206 (p=1e-06)
+  FID (label-free)                       +0.227 (p=7e-08)    +0.507 (p=2e-37) n=552   +0.474 (p=2e-32)
+  BoS stability gap (label-free)         +0.190 (p=7e-06)    +0.102 (p=2e-02) n=552   +0.173 (p=5e-05)
+  AoL agreement gap (label-free)         +0.409 (p=1e-23)    +0.207 (p=1e-06) n=552   +0.304 (p=3e-13)
+
+=== KITTI: n=24 sources; mAP(S->KITTI) 27.6 ± 4.6 pp; anchored drop 8.0 ± 11.6 ===
+  predictor                                r with mAP(S->T)   r with drop     partial r | anchor
+  source anchor                                      +0.270        +0.925
+  dIV_fg (labeled)                                   +0.529        +0.364         -0.473 (p=0.02)
+  FM veto gap (label-free)                           +0.115        +0.266         -0.037 (p=0.86)
+  DoC (label-free)                                   -0.295        +0.423         +0.409 (p=0.05)
+  FM-det disagreement (label-free)                   +0.280        -0.247         -0.330 (p=0.11)
+  FID (label-free)                                   -0.639        -0.031         +0.610 (p=0.00)
+  BoS stability gap (label-free)                     +0.498        +0.020         -0.469 (p=0.02)
+  AoL agreement gap (label-free)                     +0.348        +0.347         -0.260 (p=0.22)
+
+=== Cityscapes: n=24 sources; mAP(S->Cityscapes) 14.0 ± 2.4 pp; anchored drop 21.6 ± 11.7 ===
+  predictor                                r with mAP(S->T)   r with drop     partial r | anchor
+  source anchor                                      +0.216        +0.980
+  dIV_fg (labeled)                                   +0.478        +0.581         -0.457 (p=0.02)
+  FM veto gap (label-free)                           +0.326        +0.040         -0.313 (p=0.14)
+  DoC (label-free)                                   -0.324        +0.410         +0.432 (p=0.04)
+  FM-det disagreement (label-free)                   +0.602        -0.245         -0.648 (p=0.00)
+  FID (label-free)                                   -0.560        -0.344         +0.530 (p=0.01)
+  BoS stability gap (label-free)                     +0.027        +0.254         +0.029 (p=0.89)
+  AoL agreement gap (label-free)                     +0.194        +0.414         -0.113 (p=0.60)

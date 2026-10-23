@@ -1,0 +1,14 @@
+{
+  "metrics": {
+    "AP_Car": 0.4572915954349848,
+    "n_gt_Car": 527,
+    "AP_Pedestrian": 0.13651870102030872,
+    "n_gt_Pedestrian": 107,
+    "AP_Cyclist": 0.041389504804138944,
+    "n_gt_Cyclist": 42,
+    "mAP@IoU=0.5": 0.21173326708647752
+  },
+  "ckpt": "checkpoints/smoke_in24/last.pt",
+  "cell": "Town01_ClearNoon",
+  "n_frames": 200
+}

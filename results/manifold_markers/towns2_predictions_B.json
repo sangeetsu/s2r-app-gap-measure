@@ -1,0 +1,47 @@
+{
+ "created": "2026-10-15T05:13:45",
+ "cells": {
+  "Town06_ClearNight": {
+   "log_boxes": 7.841099765422119,
+   "KITTI:full": 26.86971857657656,
+   "KITTI:boxes_only": 26.155776154427475,
+   "Cityscapes:full": 13.46657160890351,
+   "Cityscapes:boxes_only": 13.26809680067786
+  },
+  "Town06_ClearNoon": {
+   "log_boxes": 7.746732907753622,
+   "KITTI:full": 26.424476723466242,
+   "KITTI:boxes_only": 25.76056998419114,
+   "Cityscapes:full": 13.24929430587836,
+   "Cityscapes:boxes_only": 13.06774408029574
+  },
+  "Town07_ClearNight": {
+   "log_boxes": 8.045267716607803,
+   "KITTI:full": 28.083967521195653,
+   "KITTI:boxes_only": 27.010826709957737,
+   "Cityscapes:full": 13.999074107340322,
+   "Cityscapes:boxes_only": 13.701571067444199
+  },
+  "Town07_ClearNoon": {
+   "log_boxes": 8.84779106484485,
+   "KITTI:full": 26.91607921200125,
+   "KITTI:boxes_only": 30.371775530529572,
+   "Cityscapes:full": 14.19625115276169,
+   "Cityscapes:boxes_only": 15.405429179942686
+  },
+  "Town15_ClearNight": {
+   "log_boxes": 6.329720905522696,
+   "KITTI:full": 20.329973162480613,
+   "KITTI:boxes_only": 19.826157199695515,
+   "Cityscapes:full": 10.24028195673863,
+   "Cityscapes:boxes_only": 10.05924918626839
+  },
+  "Town15_ClearNoon": {
+   "log_boxes": 6.511745329644728,
+   "KITTI:full": 21.294315479169416,
+   "KITTI:boxes_only": 20.588471187085585,
+   "Cityscapes:full": 10.69920884592688,
+   "Cityscapes:boxes_only": 10.445709957029143
+  }
+ }
+}

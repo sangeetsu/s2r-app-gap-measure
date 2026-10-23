@@ -1,0 +1,47 @@
+{
+ "Scene01": {
+  "obj_fid_ref": 613.3744705615593,
+  "nnd_dose_to_ref": 2.3931665420532227,
+  "cov_dose_by_ref": 0.0007773027755320072,
+  "img_fid_ref": 9.055900928424311,
+  "n_obj_clone": 3000,
+  "n_obj_real": 2573,
+  "n_frames_real": 447
+ },
+ "Scene02": {
+  "obj_fid_ref": 1083.3911829950864,
+  "nnd_dose_to_ref": 3.451601266860962,
+  "cov_dose_by_ref": 0.0009960159659385681,
+  "img_fid_ref": 12.359813807403118,
+  "n_obj_clone": 1008,
+  "n_obj_real": 1004,
+  "n_frames_real": 233
+ },
+ "Scene06": {
+  "obj_fid_ref": 662.3186549675438,
+  "nnd_dose_to_ref": 2.6350162029266357,
+  "cov_dose_by_ref": 0.0,
+  "img_fid_ref": 10.326408682284855,
+  "n_obj_clone": 528,
+  "n_obj_real": 549,
+  "n_frames_real": 270
+ },
+ "Scene18": {
+  "obj_fid_ref": 617.0487957479622,
+  "nnd_dose_to_ref": 3.628514051437378,
+  "cov_dose_by_ref": 0.0,
+  "img_fid_ref": 14.609603176298576,
+  "n_obj_clone": 1332,
+  "n_obj_real": 1341,
+  "n_frames_real": 339
+ },
+ "Scene20": {
+  "obj_fid_ref": 563.6814490234073,
+  "nnd_dose_to_ref": 2.247148036956787,
+  "cov_dose_by_ref": 0.00033333332976326346,
+  "img_fid_ref": 10.458027184830765,
+  "n_obj_clone": 3000,
+  "n_obj_real": 3000,
+  "n_frames_real": 837
+ }
+}

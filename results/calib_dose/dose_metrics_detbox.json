@@ -1,0 +1,802 @@
+{
+ "Town01_d00_ref": {
+  "probe_flip": 0.0,
+  "obj_fid_ref": -2.4552946342737414e-08,
+  "paired_obj_disp": 0.0,
+  "paired_task_disp": 0.0,
+  "nnd_dose_to_ref": 0.0,
+  "det_doc": 0.0,
+  "det_count_ratio": 0.0,
+  "n_boxes": 4960
+ },
+ "Town01_d01_sun25": {
+  "probe_flip": 0.0627016129032258,
+  "obj_fid_ref": 22.162626570061548,
+  "paired_obj_disp": 0.5748245716094971,
+  "paired_task_disp": 0.39663732051849365,
+  "nnd_dose_to_ref": 0.5190386772155762,
+  "det_doc": -0.004681587219238281,
+  "det_count_ratio": -0.16251892949777494,
+  "n_boxes": 4960
+ },
+ "Town01_d02_sun10": {
+  "probe_flip": 0.10463709677419354,
+  "obj_fid_ref": 49.06392048227349,
+  "paired_obj_disp": 0.8217034339904785,
+  "paired_task_disp": 0.5526492595672607,
+  "nnd_dose_to_ref": 0.7545307278633118,
+  "det_doc": -0.0034362077713012695,
+  "det_count_ratio": -0.31299988043607085,
+  "n_boxes": 4960
+ },
+ "Town01_d03_sun3": {
+  "probe_flip": 0.12439516129032258,
+  "obj_fid_ref": 74.1219074388764,
+  "paired_obj_disp": 0.9465309381484985,
+  "paired_task_disp": 0.6295225620269775,
+  "nnd_dose_to_ref": 0.8869270086288452,
+  "det_doc": 0.0006948113441467285,
+  "det_count_ratio": -0.3805758193444772,
+  "n_boxes": 4960
+ },
+ "Town01_d04_night": {
+  "probe_flip": 0.2747983870967742,
+  "obj_fid_ref": 180.31527551384852,
+  "paired_obj_disp": 1.4331200122833252,
+  "paired_task_disp": 1.0073397159576416,
+  "nnd_dose_to_ref": 1.3652143478393555,
+  "det_doc": 0.03023284673690796,
+  "det_count_ratio": -0.9376873708677029,
+  "n_boxes": 4960
+ },
+ "Town01_d05_fog25": {
+  "probe_flip": 0.09778225806451613,
+  "obj_fid_ref": 51.87000705964033,
+  "paired_obj_disp": 0.8065007328987122,
+  "paired_task_disp": 0.5148552656173706,
+  "nnd_dose_to_ref": 0.7368685007095337,
+  "det_doc": 0.0016945600509643555,
+  "det_count_ratio": -0.6212016831190281,
+  "n_boxes": 4960
+ },
+ "Town01_d06_fog50": {
+  "probe_flip": 0.17358870967741935,
+  "obj_fid_ref": 144.49641580755974,
+  "paired_obj_disp": 1.2670116424560547,
+  "paired_task_disp": 0.8021436333656311,
+  "nnd_dose_to_ref": 1.1973004341125488,
+  "det_doc": 0.010394871234893799,
+  "det_count_ratio": -1.216823843545096,
+  "n_boxes": 4960
+ },
+ "Town01_d07_fog75": {
+  "probe_flip": 0.21350806451612903,
+  "obj_fid_ref": 192.99134253376974,
+  "paired_obj_disp": 1.428027629852295,
+  "paired_task_disp": 0.8994978666305542,
+  "nnd_dose_to_ref": 1.3371492624282837,
+  "det_doc": 0.015797555446624756,
+  "det_count_ratio": -1.4783035436028527,
+  "n_boxes": 4960
+ },
+ "Town01_d08_wet": {
+  "probe_flip": 0.08245967741935484,
+  "obj_fid_ref": 37.49698900262183,
+  "paired_obj_disp": 0.7204532623291016,
+  "paired_task_disp": 0.4918453097343445,
+  "nnd_dose_to_ref": 0.6916331648826599,
+  "det_doc": -0.0065577030181884766,
+  "det_count_ratio": -0.13491483762266882,
+  "n_boxes": 4960
+ },
+ "Town01_d09_rain": {
+  "probe_flip": 0.15342741935483872,
+  "obj_fid_ref": 119.30481135967443,
+  "paired_obj_disp": 1.183907151222229,
+  "paired_task_disp": 0.7795912027359009,
+  "nnd_dose_to_ref": 1.110168695449829,
+  "det_doc": 0.013592898845672607,
+  "det_count_ratio": -0.22997124252396947,
+  "n_boxes": 4960
+ },
+ "Town02_d00_ref": {
+  "probe_flip": 0.0,
+  "obj_fid_ref": -1.2460077414289117e-10,
+  "paired_obj_disp": 0.0,
+  "paired_task_disp": 0.0,
+  "nnd_dose_to_ref": 0.0,
+  "det_doc": 0.0,
+  "det_count_ratio": 0.0,
+  "n_boxes": 7450
+ },
+ "Town02_d01_sun25": {
+  "probe_flip": 0.08348993288590605,
+  "obj_fid_ref": 20.39238304566402,
+  "paired_obj_disp": 0.6759119629859924,
+  "paired_task_disp": 0.4268937408924103,
+  "nnd_dose_to_ref": 0.6411179900169373,
+  "det_doc": 0.0004138946533203125,
+  "det_count_ratio": -0.08032238883883322,
+  "n_boxes": 7450
+ },
+ "Town02_d02_sun10": {
+  "probe_flip": 0.10348993288590604,
+  "obj_fid_ref": 41.143819862644705,
+  "paired_obj_disp": 0.8836748600006104,
+  "paired_task_disp": 0.5350759029388428,
+  "nnd_dose_to_ref": 0.8628209233283997,
+  "det_doc": -0.0022518038749694824,
+  "det_count_ratio": -0.19469307138190048,
+  "n_boxes": 7450
+ },
+ "Town02_d03_sun3": {
+  "probe_flip": 0.12429530201342281,
+  "obj_fid_ref": 66.0725343482984,
+  "paired_obj_disp": 1.0353668928146362,
+  "paired_task_disp": 0.60531085729599,
+  "nnd_dose_to_ref": 1.0204991102218628,
+  "det_doc": -0.005164206027984619,
+  "det_count_ratio": -0.32757236095103576,
+  "n_boxes": 7450
+ },
+ "Town02_d04_night": {
+  "probe_flip": 0.18456375838926176,
+  "obj_fid_ref": 156.1391796633111,
+  "paired_obj_disp": 1.4998035430908203,
+  "paired_task_disp": 0.8252007961273193,
+  "nnd_dose_to_ref": 1.4723118543624878,
+  "det_doc": 0.0010759830474853516,
+  "det_count_ratio": -0.829866775704505,
+  "n_boxes": 7450
+ },
+ "Town02_d05_fog25": {
+  "probe_flip": 0.11906040268456376,
+  "obj_fid_ref": 54.530104059696214,
+  "paired_obj_disp": 0.8955269455909729,
+  "paired_task_disp": 0.539871096611023,
+  "nnd_dose_to_ref": 0.8264554738998413,
+  "det_doc": -0.005776107311248779,
+  "det_count_ratio": -0.5144114635562923,
+  "n_boxes": 7450
+ },
+ "Town02_d06_fog50": {
+  "probe_flip": 0.212751677852349,
+  "obj_fid_ref": 149.575483459731,
+  "paired_obj_disp": 1.4201469421386719,
+  "paired_task_disp": 0.8767297863960266,
+  "nnd_dose_to_ref": 1.3833693265914917,
+  "det_doc": -0.0032675862312316895,
+  "det_count_ratio": -1.115806240980645,
+  "n_boxes": 7450
+ },
+ "Town02_d07_fog75": {
+  "probe_flip": 0.2702013422818792,
+  "obj_fid_ref": 211.3439633026719,
+  "paired_obj_disp": 1.6243982315063477,
+  "paired_task_disp": 1.0132927894592285,
+  "nnd_dose_to_ref": 1.5633788108825684,
+  "det_doc": 0.005828440189361572,
+  "det_count_ratio": -1.3951928963108078,
+  "n_boxes": 7450
+ },
+ "Town02_d08_wet": {
+  "probe_flip": 0.07852348993288591,
+  "obj_fid_ref": 28.49823456688,
+  "paired_obj_disp": 0.7197777628898621,
+  "paired_task_disp": 0.4495355188846588,
+  "nnd_dose_to_ref": 0.6898588538169861,
+  "det_doc": 0.0011129975318908691,
+  "det_count_ratio": -0.07379826276189001,
+  "n_boxes": 7450
+ },
+ "Town02_d09_rain": {
+  "probe_flip": 0.15664429530201343,
+  "obj_fid_ref": 129.51855775091963,
+  "paired_obj_disp": 1.342865228652954,
+  "paired_task_disp": 0.7758270502090454,
+  "nnd_dose_to_ref": 1.2714449167251587,
+  "det_doc": 0.01077282428741455,
+  "det_count_ratio": -0.24262743746743642,
+  "n_boxes": 7450
+ },
+ "Town05_d00_ref": {
+  "probe_flip": 0.0,
+  "obj_fid_ref": 2.098113327519968e-08,
+  "paired_obj_disp": 0.0,
+  "paired_task_disp": 0.0,
+  "nnd_dose_to_ref": 0.0,
+  "det_doc": 0.0,
+  "det_count_ratio": 0.0,
+  "n_boxes": 3890
+ },
+ "Town05_d01_sun25": {
+  "probe_flip": 0.043187660668380465,
+  "obj_fid_ref": 13.414487447720376,
+  "paired_obj_disp": 0.47631970047950745,
+  "paired_task_disp": 0.36849433183670044,
+  "nnd_dose_to_ref": 0.4428880512714386,
+  "det_doc": -0.005545258522033691,
+  "det_count_ratio": -0.06752498131512255,
+  "n_boxes": 3890
+ },
+ "Town05_d02_sun10": {
+  "probe_flip": 0.06503856041131105,
+  "obj_fid_ref": 32.04697179387176,
+  "paired_obj_disp": 0.682172954082489,
+  "paired_task_disp": 0.5162847638130188,
+  "nnd_dose_to_ref": 0.6446734070777893,
+  "det_doc": -0.0033087730407714844,
+  "det_count_ratio": -0.13287057538985844,
+  "n_boxes": 3890
+ },
+ "Town05_d03_sun3": {
+  "probe_flip": 0.09074550128534704,
+  "obj_fid_ref": 46.89029256603908,
+  "paired_obj_disp": 0.7714676260948181,
+  "paired_task_disp": 0.5699865221977234,
+  "nnd_dose_to_ref": 0.7453115582466125,
+  "det_doc": -0.011824607849121094,
+  "det_count_ratio": -0.15423637330175272,
+  "n_boxes": 3890
+ },
+ "Town05_d04_night": {
+  "probe_flip": 0.17994858611825193,
+  "obj_fid_ref": 174.34669200865392,
+  "paired_obj_disp": 1.3930686712265015,
+  "paired_task_disp": 1.0235414505004883,
+  "nnd_dose_to_ref": 1.3438609838485718,
+  "det_doc": 0.019167006015777588,
+  "det_count_ratio": -0.8289580697411993,
+  "n_boxes": 3890
+ },
+ "Town05_d05_fog25": {
+  "probe_flip": 0.09768637532133675,
+  "obj_fid_ref": 62.207327761299894,
+  "paired_obj_disp": 0.7975501418113708,
+  "paired_task_disp": 0.6309935450553894,
+  "nnd_dose_to_ref": 0.7380056381225586,
+  "det_doc": -0.02798408269882202,
+  "det_count_ratio": -0.5740510970170254,
+  "n_boxes": 3890
+ },
+ "Town05_d06_fog50": {
+  "probe_flip": 0.19151670951156813,
+  "obj_fid_ref": 160.59327425920014,
+  "paired_obj_disp": 1.2514618635177612,
+  "paired_task_disp": 1.0105869770050049,
+  "nnd_dose_to_ref": 1.2200413942337036,
+  "det_doc": -0.004554867744445801,
+  "det_count_ratio": -0.9542782725353272,
+  "n_boxes": 3890
+ },
+ "Town05_d07_fog75": {
+  "probe_flip": 0.23701799485861183,
+  "obj_fid_ref": 244.94015528129535,
+  "paired_obj_disp": 1.489437222480774,
+  "paired_task_disp": 1.2122074365615845,
+  "nnd_dose_to_ref": 1.4515823125839233,
+  "det_doc": -0.0029637813568115234,
+  "det_count_ratio": -1.2916855255874469,
+  "n_boxes": 3890
+ },
+ "Town05_d08_wet": {
+  "probe_flip": 0.08534704370179949,
+  "obj_fid_ref": 37.83912098449514,
+  "paired_obj_disp": 0.6800961494445801,
+  "paired_task_disp": 0.5110344886779785,
+  "nnd_dose_to_ref": 0.6599579453468323,
+  "det_doc": -0.0015060901641845703,
+  "det_count_ratio": -0.04629969469984083,
+  "n_boxes": 3890
+ },
+ "Town05_d09_rain": {
+  "probe_flip": 0.1532133676092545,
+  "obj_fid_ref": 109.19547333711216,
+  "paired_obj_disp": 1.0655200481414795,
+  "paired_task_disp": 0.8050606846809387,
+  "nnd_dose_to_ref": 1.017873764038086,
+  "det_doc": -0.00019180774688720703,
+  "det_count_ratio": -0.19151536154583973,
+  "n_boxes": 3890
+ },
+ "Town10HD_d00_ref": {
+  "probe_flip": 0.0,
+  "obj_fid_ref": 3.5839775591739453e-08,
+  "paired_obj_disp": 0.0,
+  "paired_task_disp": 0.0,
+  "nnd_dose_to_ref": 0.0,
+  "det_doc": 0.0,
+  "det_count_ratio": 0.0,
+  "n_boxes": 8430
+ },
+ "Town10HD_d01_sun25": {
+  "probe_flip": 0.09205219454329774,
+  "obj_fid_ref": 17.93610558379646,
+  "paired_obj_disp": 0.7195414304733276,
+  "paired_task_disp": 0.38358187675476074,
+  "nnd_dose_to_ref": 0.6869474649429321,
+  "det_doc": -0.00400310754776001,
+  "det_count_ratio": -0.12532923029260098,
+  "n_boxes": 8430
+ },
+ "Town10HD_d02_sun10": {
+  "probe_flip": 0.11079478054567023,
+  "obj_fid_ref": 28.98454551427426,
+  "paired_obj_disp": 0.8504335284233093,
+  "paired_task_disp": 0.450156033039093,
+  "nnd_dose_to_ref": 0.8104161620140076,
+  "det_doc": -0.004736483097076416,
+  "det_count_ratio": -0.16678452108496436,
+  "n_boxes": 8430
+ },
+ "Town10HD_d03_sun3": {
+  "probe_flip": 0.13677342823250296,
+  "obj_fid_ref": 46.01411319164322,
+  "paired_obj_disp": 1.000388264656067,
+  "paired_task_disp": 0.5198689103126526,
+  "nnd_dose_to_ref": 0.9500867128372192,
+  "det_doc": -0.0020726919174194336,
+  "det_count_ratio": -0.36296480742941367,
+  "n_boxes": 8430
+ },
+ "Town10HD_d04_night": {
+  "probe_flip": 0.24555160142348753,
+  "obj_fid_ref": 100.60943195436789,
+  "paired_obj_disp": 1.4381059408187866,
+  "paired_task_disp": 0.7424054145812988,
+  "nnd_dose_to_ref": 1.3765794038772583,
+  "det_doc": 0.022196650505065918,
+  "det_count_ratio": -0.9015715965437624,
+  "n_boxes": 8430
+ },
+ "Town10HD_d05_fog25": {
+  "probe_flip": 0.3036773428232503,
+  "obj_fid_ref": 80.30412076385119,
+  "paired_obj_disp": 1.1521145105361938,
+  "paired_task_disp": 0.7034609913825989,
+  "nnd_dose_to_ref": 1.008484125137329,
+  "det_doc": -0.009574592113494873,
+  "det_count_ratio": -0.9537573497143326,
+  "n_boxes": 8430
+ },
+ "Town10HD_d06_fog50": {
+  "probe_flip": 0.32526690391459073,
+  "obj_fid_ref": 144.81269396881316,
+  "paired_obj_disp": 1.563486933708191,
+  "paired_task_disp": 0.8433895707130432,
+  "nnd_dose_to_ref": 1.5186855792999268,
+  "det_doc": 0.0391884446144104,
+  "det_count_ratio": -1.2876467179172915,
+  "n_boxes": 8430
+ },
+ "Town10HD_d07_fog75": {
+  "probe_flip": 0.42597864768683275,
+  "obj_fid_ref": 219.08491954945953,
+  "paired_obj_disp": 1.849306344985962,
+  "paired_task_disp": 1.034101128578186,
+  "nnd_dose_to_ref": 1.7801300287246704,
+  "det_doc": 0.04824584722518921,
+  "det_count_ratio": -1.5128344896431953,
+  "n_boxes": 8430
+ },
+ "Town10HD_d08_wet": {
+  "probe_flip": 0.09122182680901542,
+  "obj_fid_ref": 26.55673596940801,
+  "paired_obj_disp": 0.7692310810089111,
+  "paired_task_disp": 0.3907894492149353,
+  "nnd_dose_to_ref": 0.7384135723114014,
+  "det_doc": -0.0026819705963134766,
+  "det_count_ratio": -0.05648876161553511,
+  "n_boxes": 8430
+ },
+ "Town10HD_d09_rain": {
+  "probe_flip": 0.16263345195729537,
+  "obj_fid_ref": 90.43525167087932,
+  "paired_obj_disp": 1.2883895635604858,
+  "paired_task_disp": 0.7262351512908936,
+  "nnd_dose_to_ref": 1.2397637367248535,
+  "det_doc": 0.003232717514038086,
+  "det_count_ratio": -0.1779184533092739,
+  "n_boxes": 8430
+ },
+ "Town03_d00_ref": {
+  "probe_flip": 0.0,
+  "obj_fid_ref": -2.3306256480282173e-08,
+  "paired_obj_disp": 0.0,
+  "paired_task_disp": 0.0,
+  "nnd_dose_to_ref": 0.0,
+  "det_doc": 0.0,
+  "det_count_ratio": 0.0,
+  "n_boxes": 4728
+ },
+ "Town03_d01_sun25": {
+  "probe_flip": 0.04801184433164129,
+  "obj_fid_ref": 16.972098571694232,
+  "paired_obj_disp": 0.5448695421218872,
+  "paired_task_disp": 0.4015425145626068,
+  "nnd_dose_to_ref": 0.5108456015586853,
+  "det_doc": -0.007411360740661621,
+  "det_count_ratio": -0.09047838612523301,
+  "n_boxes": 4728
+ },
+ "Town03_d02_sun10": {
+  "probe_flip": 0.06789340101522842,
+  "obj_fid_ref": 35.96225341207196,
+  "paired_obj_disp": 0.7494231462478638,
+  "paired_task_disp": 0.5410189032554626,
+  "nnd_dose_to_ref": 0.7189870476722717,
+  "det_doc": -0.009512543678283691,
+  "det_count_ratio": -0.18817622542010284,
+  "n_boxes": 4728
+ },
+ "Town03_d03_sun3": {
+  "probe_flip": 0.07804568527918782,
+  "obj_fid_ref": 54.84394041295877,
+  "paired_obj_disp": 0.8699585795402527,
+  "paired_task_disp": 0.6433196067810059,
+  "nnd_dose_to_ref": 0.8417924642562866,
+  "det_doc": -0.009063243865966797,
+  "det_count_ratio": -0.28570996306490704,
+  "n_boxes": 4728
+ },
+ "Town03_d04_night": {
+  "probe_flip": 0.13472927241962776,
+  "obj_fid_ref": 126.50891027300531,
+  "paired_obj_disp": 1.2649582624435425,
+  "paired_task_disp": 0.8365671634674072,
+  "nnd_dose_to_ref": 1.2278941869735718,
+  "det_doc": 0.0015423893928527832,
+  "det_count_ratio": -0.5061832858232379,
+  "n_boxes": 4728
+ },
+ "Town03_d05_fog25": {
+  "probe_flip": 0.06831641285956007,
+  "obj_fid_ref": 44.664180617813145,
+  "paired_obj_disp": 0.7433222532272339,
+  "paired_task_disp": 0.5449787974357605,
+  "nnd_dose_to_ref": 0.6899945139884949,
+  "det_doc": -0.012917518615722656,
+  "det_count_ratio": -0.4256548661673525,
+  "n_boxes": 4728
+ },
+ "Town03_d06_fog50": {
+  "probe_flip": 0.13049915397631134,
+  "obj_fid_ref": 153.93733441163863,
+  "paired_obj_disp": 1.3040663003921509,
+  "paired_task_disp": 0.9587282538414001,
+  "nnd_dose_to_ref": 1.2574896812438965,
+  "det_doc": -0.01432502269744873,
+  "det_count_ratio": -1.0630834661154691,
+  "n_boxes": 4728
+ },
+ "Town03_d07_fog75": {
+  "probe_flip": 0.1782994923857868,
+  "obj_fid_ref": 237.8881748599165,
+  "paired_obj_disp": 1.543076992034912,
+  "paired_task_disp": 1.1660957336425781,
+  "nnd_dose_to_ref": 1.4635241031646729,
+  "det_doc": -0.01294565200805664,
+  "det_count_ratio": -1.3982093956977617,
+  "n_boxes": 4728
+ },
+ "Town03_d08_wet": {
+  "probe_flip": 0.06281725888324872,
+  "obj_fid_ref": 42.78047660183347,
+  "paired_obj_disp": 0.7327011823654175,
+  "paired_task_disp": 0.4869324862957001,
+  "nnd_dose_to_ref": 0.6974180340766907,
+  "det_doc": -0.010174751281738281,
+  "det_count_ratio": -0.1303939458611901,
+  "n_boxes": 4728
+ },
+ "Town03_d09_rain": {
+  "probe_flip": 0.10554145516074451,
+  "obj_fid_ref": 107.28759672809178,
+  "paired_obj_disp": 1.1066375970840454,
+  "paired_task_disp": 0.7028598189353943,
+  "nnd_dose_to_ref": 1.0673139095306396,
+  "det_doc": -0.012328147888183594,
+  "det_count_ratio": -0.2854285503713375,
+  "n_boxes": 4728
+ },
+ "Town04_d00_ref": {
+  "probe_flip": 0.0,
+  "obj_fid_ref": -4.375101525511127e-08,
+  "paired_obj_disp": 0.0,
+  "paired_task_disp": 0.0,
+  "nnd_dose_to_ref": 0.0,
+  "det_doc": 0.0,
+  "det_count_ratio": 0.0,
+  "n_boxes": 1806
+ },
+ "Town04_d01_sun25": {
+  "probe_flip": 0.027131782945736434,
+  "obj_fid_ref": 16.52729195761185,
+  "paired_obj_disp": 0.44584378600120544,
+  "paired_task_disp": 0.4306681454181671,
+  "nnd_dose_to_ref": 0.4197847843170166,
+  "det_doc": -0.0025663375854492188,
+  "det_count_ratio": -0.12486787462677033,
+  "n_boxes": 1806
+ },
+ "Town04_d02_sun10": {
+  "probe_flip": 0.07475083056478406,
+  "obj_fid_ref": 44.05371479953351,
+  "paired_obj_disp": 0.688592791557312,
+  "paired_task_disp": 0.6507165431976318,
+  "nnd_dose_to_ref": 0.6655809283256531,
+  "det_doc": -0.004986226558685303,
+  "det_count_ratio": -0.3318318570647107,
+  "n_boxes": 1806
+ },
+ "Town04_d03_sun3": {
+  "probe_flip": 0.06866002214839424,
+  "obj_fid_ref": 64.20070863630826,
+  "paired_obj_disp": 0.7896682024002075,
+  "paired_task_disp": 0.7351139187812805,
+  "nnd_dose_to_ref": 0.7558823227882385,
+  "det_doc": 0.003732025623321533,
+  "det_count_ratio": -0.3356973431302882,
+  "n_boxes": 1806
+ },
+ "Town04_d04_night": {
+  "probe_flip": 0.1921373200442968,
+  "obj_fid_ref": 219.4448204859209,
+  "paired_obj_disp": 1.4130650758743286,
+  "paired_task_disp": 1.2134206295013428,
+  "nnd_dose_to_ref": 1.3382453918457031,
+  "det_doc": 0.054724276065826416,
+  "det_count_ratio": -1.16204400283049,
+  "n_boxes": 1806
+ },
+ "Town04_d05_fog25": {
+  "probe_flip": 0.10299003322259136,
+  "obj_fid_ref": 52.117655655747285,
+  "paired_obj_disp": 0.6773930788040161,
+  "paired_task_disp": 0.6815481185913086,
+  "nnd_dose_to_ref": 0.6196686029434204,
+  "det_doc": 0.002208530902862549,
+  "det_count_ratio": -0.8281034131310565,
+  "n_boxes": 1806
+ },
+ "Town04_d06_fog50": {
+  "probe_flip": 0.33610188261351054,
+  "obj_fid_ref": 172.85979092105754,
+  "paired_obj_disp": 1.1817214488983154,
+  "paired_task_disp": 1.3052425384521484,
+  "nnd_dose_to_ref": 1.1351428031921387,
+  "det_doc": 0.05064713954925537,
+  "det_count_ratio": -1.5613335288945045,
+  "n_boxes": 1806
+ },
+ "Town04_d07_fog75": {
+  "probe_flip": 0.437984496124031,
+  "obj_fid_ref": 264.89908142848867,
+  "paired_obj_disp": 1.4149901866912842,
+  "paired_task_disp": 1.6517499685287476,
+  "nnd_dose_to_ref": 1.3638904094696045,
+  "det_doc": 0.05412989854812622,
+  "det_count_ratio": -2.1906020365757257,
+  "n_boxes": 1806
+ },
+ "Town04_d08_wet": {
+  "probe_flip": 0.05149501661129568,
+  "obj_fid_ref": 43.89470149732256,
+  "paired_obj_disp": 0.6456296443939209,
+  "paired_task_disp": 0.5838297009468079,
+  "nnd_dose_to_ref": 0.6379399299621582,
+  "det_doc": 0.004260659217834473,
+  "det_count_ratio": -0.11239888514703665,
+  "n_boxes": 1806
+ },
+ "Town04_d09_rain": {
+  "probe_flip": 0.07918050941306755,
+  "obj_fid_ref": 105.17823835046465,
+  "paired_obj_disp": 0.9555243253707886,
+  "paired_task_disp": 0.8412767648696899,
+  "nnd_dose_to_ref": 0.889255940914154,
+  "det_doc": 0.0027917027473449707,
+  "det_count_ratio": -0.3021831631425808,
+  "n_boxes": 1806
+ },
+ "Town06_d00_ref": {
+  "probe_flip": 0.0,
+  "obj_fid_ref": 1.2455529940780252e-08,
+  "paired_obj_disp": 0.0,
+  "paired_task_disp": 0.0,
+  "nnd_dose_to_ref": 0.0,
+  "det_doc": 0.0,
+  "det_count_ratio": 0.0,
+  "n_boxes": 4300
+ },
+ "Town06_d01_sun25": {
+  "probe_flip": 0.019069767441860466,
+  "obj_fid_ref": 13.218373330221766,
+  "paired_obj_disp": 0.49341267347335815,
+  "paired_task_disp": 0.4252471923828125,
+  "nnd_dose_to_ref": 0.47039610147476196,
+  "det_doc": -0.02358222007751465,
+  "det_count_ratio": -0.18353159091562798,
+  "n_boxes": 4300
+ },
+ "Town06_d02_sun10": {
+  "probe_flip": 0.03883720930232558,
+  "obj_fid_ref": 38.6705138157547,
+  "paired_obj_disp": 0.7617313265800476,
+  "paired_task_disp": 0.6660045981407166,
+  "nnd_dose_to_ref": 0.7337912917137146,
+  "det_doc": -0.0400925874710083,
+  "det_count_ratio": -0.43364927419970567,
+  "n_boxes": 4300
+ },
+ "Town06_d03_sun3": {
+  "probe_flip": 0.052093023255813956,
+  "obj_fid_ref": 63.01349393518558,
+  "paired_obj_disp": 0.9149407148361206,
+  "paired_task_disp": 0.7852680087089539,
+  "nnd_dose_to_ref": 0.8678308129310608,
+  "det_doc": -0.03582274913787842,
+  "det_count_ratio": -0.5463323122229006,
+  "n_boxes": 4300
+ },
+ "Town06_d04_night": {
+  "probe_flip": 0.14604651162790697,
+  "obj_fid_ref": 223.99888896034167,
+  "paired_obj_disp": 1.6382163763046265,
+  "paired_task_disp": 1.4293055534362793,
+  "nnd_dose_to_ref": 1.6123180389404297,
+  "det_doc": 0.053745388984680176,
+  "det_count_ratio": -0.805248712151416,
+  "n_boxes": 4300
+ },
+ "Town06_d05_fog25": {
+  "probe_flip": 0.09348837209302326,
+  "obj_fid_ref": 70.05662152515629,
+  "paired_obj_disp": 0.8986522555351257,
+  "paired_task_disp": 0.8441072106361389,
+  "nnd_dose_to_ref": 0.8689611554145813,
+  "det_doc": -0.0547027587890625,
+  "det_count_ratio": -0.9064555354405488,
+  "n_boxes": 4300
+ },
+ "Town06_d06_fog50": {
+  "probe_flip": 0.18255813953488373,
+  "obj_fid_ref": 208.46227127021325,
+  "paired_obj_disp": 1.466033935546875,
+  "paired_task_disp": 1.3822414875030518,
+  "nnd_dose_to_ref": 1.5009713172912598,
+  "det_doc": -0.0237998366355896,
+  "det_count_ratio": -1.3994031630676707,
+  "n_boxes": 4300
+ },
+ "Town06_d07_fog75": {
+  "probe_flip": 0.25627906976744186,
+  "obj_fid_ref": 300.3917432893006,
+  "paired_obj_disp": 1.7198541164398193,
+  "paired_task_disp": 1.6758214235305786,
+  "nnd_dose_to_ref": 1.7722293138504028,
+  "det_doc": -0.015970706939697266,
+  "det_count_ratio": -1.6981420532642506,
+  "n_boxes": 4300
+ },
+ "Town06_d08_wet": {
+  "probe_flip": 0.03488372093023256,
+  "obj_fid_ref": 52.91408151401674,
+  "paired_obj_disp": 0.8216784000396729,
+  "paired_task_disp": 0.6828822493553162,
+  "nnd_dose_to_ref": 0.8252995014190674,
+  "det_doc": -0.023447751998901367,
+  "det_count_ratio": -0.23190273140409132,
+  "n_boxes": 4300
+ },
+ "Town06_d09_rain": {
+  "probe_flip": 0.05372093023255814,
+  "obj_fid_ref": 107.64932206808703,
+  "paired_obj_disp": 1.1298837661743164,
+  "paired_task_disp": 0.8629186153411865,
+  "nnd_dose_to_ref": 1.119493007659912,
+  "det_doc": -0.018781065940856934,
+  "det_count_ratio": -0.36837098370192367,
+  "n_boxes": 4300
+ },
+ "Town07_d00_ref": {
+  "probe_flip": 0.0,
+  "obj_fid_ref": 1.0520352589082904e-08,
+  "paired_obj_disp": 0.0,
+  "paired_task_disp": 0.0,
+  "nnd_dose_to_ref": 0.0,
+  "det_doc": 0.0,
+  "det_count_ratio": 0.0,
+  "n_boxes": 7180
+ },
+ "Town07_d01_sun25": {
+  "probe_flip": 0.06740947075208914,
+  "obj_fid_ref": 15.298646723226966,
+  "paired_obj_disp": 0.7251723408699036,
+  "paired_task_disp": 0.3625798523426056,
+  "nnd_dose_to_ref": 0.6638562679290771,
+  "det_doc": 0.0008551478385925293,
+  "det_count_ratio": -0.08741662495627203,
+  "n_boxes": 7180
+ },
+ "Town07_d02_sun10": {
+  "probe_flip": 0.11128133704735375,
+  "obj_fid_ref": 37.63246599784725,
+  "paired_obj_disp": 1.03128981590271,
+  "paired_task_disp": 0.5188249945640564,
+  "nnd_dose_to_ref": 0.9964745044708252,
+  "det_doc": 0.0005058646202087402,
+  "det_count_ratio": -0.281757226384371,
+  "n_boxes": 7180
+ },
+ "Town07_d03_sun3": {
+  "probe_flip": 0.1467966573816156,
+  "obj_fid_ref": 66.56886151518506,
+  "paired_obj_disp": 1.2892292737960815,
+  "paired_task_disp": 0.6263976097106934,
+  "nnd_dose_to_ref": 1.2430531978607178,
+  "det_doc": 0.014652252197265625,
+  "det_count_ratio": -0.4981394889186603,
+  "n_boxes": 7180
+ },
+ "Town07_d04_night": {
+  "probe_flip": 0.2700557103064067,
+  "obj_fid_ref": 280.12467603731193,
+  "paired_obj_disp": 2.421145439147949,
+  "paired_task_disp": 1.0671534538269043,
+  "nnd_dose_to_ref": 2.1881613731384277,
+  "det_doc": 0.03297138214111328,
+  "det_count_ratio": -1.5151411606364502,
+  "n_boxes": 7180
+ },
+ "Town07_d05_fog25": {
+  "probe_flip": 0.09930362116991644,
+  "obj_fid_ref": 41.883731208395375,
+  "paired_obj_disp": 1.0005605220794678,
+  "paired_task_disp": 0.48374035954475403,
+  "nnd_dose_to_ref": 0.9248765110969543,
+  "det_doc": 0.004842996597290039,
+  "det_count_ratio": -0.4129442608553486,
+  "n_boxes": 7180
+ },
+ "Town07_d06_fog50": {
+  "probe_flip": 0.21532033426183844,
+  "obj_fid_ref": 168.68844442354134,
+  "paired_obj_disp": 1.8355618715286255,
+  "paired_task_disp": 0.9655581116676331,
+  "nnd_dose_to_ref": 1.755986213684082,
+  "det_doc": 0.03183889389038086,
+  "det_count_ratio": -1.20211751622419,
+  "n_boxes": 7180
+ },
+ "Town07_d07_fog75": {
+  "probe_flip": 0.27423398328690807,
+  "obj_fid_ref": 235.97329727576084,
+  "paired_obj_disp": 2.107991933822632,
+  "paired_task_disp": 1.1463207006454468,
+  "nnd_dose_to_ref": 2.008256435394287,
+  "det_doc": 0.039654552936553955,
+  "det_count_ratio": -1.375765031367188,
+  "n_boxes": 7180
+ },
+ "Town07_d08_wet": {
+  "probe_flip": 0.07688022284122563,
+  "obj_fid_ref": 30.957163689430672,
+  "paired_obj_disp": 0.9017971754074097,
+  "paired_task_disp": 0.4595480263233185,
+  "nnd_dose_to_ref": 0.865901529788971,
+  "det_doc": -0.002694427967071533,
+  "det_count_ratio": -0.08438126065884821,
+  "n_boxes": 7180
+ },
+ "Town07_d09_rain": {
+  "probe_flip": 0.14011142061281337,
+  "obj_fid_ref": 88.39264854709609,
+  "paired_obj_disp": 1.4192034006118774,
+  "paired_task_disp": 0.702080249786377,
+  "nnd_dose_to_ref": 1.3274699449539185,
+  "det_doc": 0.00045746564865112305,
+  "det_count_ratio": -0.2871251245120152,
+  "n_boxes": 7180
+ }
+}

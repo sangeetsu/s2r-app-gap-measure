@@ -1,0 +1,16 @@
+predictions 2026-10-20T07:51:15 (tau 239.3); order OK
+72 pairs; observed drop range -0.6-41.8, sd 12.5; predict-the-fit-mean MAE 10.94
+  M0: MAE  4.87  pair rho +0.857  within ±4 pp  54%  mean within-dose rho +0.28
+  M1: MAE  3.47  pair rho +0.940  within ±4 pp  61%  mean within-dose rho +0.72
+  M2: MAE  2.72  pair rho +0.959  within ±4 pp  83%  mean within-dose rho +0.70
+F1: M2 MAE 2.72 vs M0 4.87, Wilcoxon one-sided p=0.0001 -> PASS
+F2: M2 rho +0.959 (>= .8) and MAE 2.72 (<= 5.0) -> PASS
+  d25_fog5         observed   0.8  M0   1.3  M1   1.0  M2   0.8
+  d26_fog30        observed  14.4  M0   8.5  M1   8.5  M2  10.6
+  d27_fog55        observed  23.2  M0  19.3  M1  19.5  M2  20.8
+  d28_fog80        observed  27.6  M0  27.0  M1  27.5  M2  25.8
+  d29_sun15        observed   2.3  M0   4.2  M1   4.0  M2   5.0
+  d30_sun_m5       observed  19.5  M0  20.4  M1  20.1  M2  20.8
+  d31_night_fog25  observed  20.8  M0  21.0  M1  20.8  M2  21.4
+  d32_dust90       observed   0.2  M0   1.0  M1   0.7  M2   0.4
+  d33_rain_fog75   observed  29.2  M0  34.8  M1  35.6  M2  29.7

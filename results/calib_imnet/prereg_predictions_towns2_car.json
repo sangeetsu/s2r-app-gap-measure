@@ -1,0 +1,121 @@
+{
+ "created": "2026-10-14T15:00:30",
+ "root": "/mnt/features/carla_new2",
+ "cells": {
+  "Town06_ClearNight": {
+   "n_frames": 1000,
+   "Cityscapes": {
+    "fid": 14.65595462045482,
+    "cos_mean": 0.2823222279548645,
+    "pred_mAP": 13.030896306962054,
+    "pred_band_1sd": 2.0450936222922413,
+    "pred_CarAP": 24.247728528338378,
+    "pred_CarAP_band_1sd": 3.2255991615599746
+   },
+   "KITTI": {
+    "fid": 14.742161763730842,
+    "cos_mean": 0.26397818326950073,
+    "pred_mAP": 26.101207030571576,
+    "pred_band_1sd": 3.6665394625520293,
+    "pred_CarAP": 49.17516811335466,
+    "pred_CarAP_band_1sd": 5.086660485570456
+   }
+  },
+  "Town06_ClearNoon": {
+   "n_frames": 1000,
+   "Cityscapes": {
+    "fid": 15.237459015027708,
+    "cos_mean": 0.29570579528808594,
+    "pred_mAP": 12.594988336561777,
+    "pred_band_1sd": 2.0450936222922413,
+    "pred_CarAP": 23.613104601925553,
+    "pred_CarAP_band_1sd": 3.2255991615599746
+   },
+   "KITTI": {
+    "fid": 16.118231778740018,
+    "cos_mean": 0.294688880443573,
+    "pred_mAP": 23.293363616739498,
+    "pred_band_1sd": 3.6665394625520293,
+    "pred_CarAP": 46.25409437943657,
+    "pred_CarAP_band_1sd": 5.086660485570456
+   }
+  },
+  "Town07_ClearNight": {
+   "n_frames": 1000,
+   "Cityscapes": {
+    "fid": 16.990972375218153,
+    "cos_mean": 0.3112388849258423,
+    "pred_mAP": 11.280517703073588,
+    "pred_band_1sd": 2.0450936222922413,
+    "pred_CarAP": 21.699410493940757,
+    "pred_CarAP_band_1sd": 3.2255991615599746
+   },
+   "KITTI": {
+    "fid": 15.360385819979857,
+    "cos_mean": 0.25924503803253174,
+    "pred_mAP": 24.839733177004774,
+    "pred_band_1sd": 3.6665394625520293,
+    "pred_CarAP": 47.86282351410601,
+    "pred_CarAP_band_1sd": 5.086660485570456
+   }
+  },
+  "Town07_ClearNoon": {
+   "n_frames": 1000,
+   "Cityscapes": {
+    "fid": 17.468122251206843,
+    "cos_mean": 0.3199046850204468,
+    "pred_mAP": 10.922836082848269,
+    "pred_band_1sd": 2.0450936222922413,
+    "pred_CarAP": 21.178673710842585,
+    "pred_CarAP_band_1sd": 3.2255991615599746
+   },
+   "KITTI": {
+    "fid": 16.25093278620276,
+    "cos_mean": 0.2751069664955139,
+    "pred_mAP": 23.022589858319463,
+    "pred_band_1sd": 3.6665394625520293,
+    "pred_CarAP": 45.97240128014954,
+    "pred_CarAP_band_1sd": 5.086660485570456
+   }
+  },
+  "Town15_ClearNight": {
+   "n_frames": 1000,
+   "Cityscapes": {
+    "fid": 15.465319210506724,
+    "cos_mean": 0.23906081914901733,
+    "pred_mAP": 12.424179523639179,
+    "pred_band_1sd": 2.0450936222922413,
+    "pred_CarAP": 23.364429728136685,
+    "pred_CarAP_band_1sd": 3.2255991615599746
+   },
+   "KITTI": {
+    "fid": 15.560102549849468,
+    "cos_mean": 0.22743511199951172,
+    "pred_mAP": 24.4322151739381,
+    "pred_band_1sd": 3.6665394625520293,
+    "pred_CarAP": 47.43887176202729,
+    "pred_CarAP_band_1sd": 5.086660485570456
+   }
+  },
+  "Town15_ClearNoon": {
+   "n_frames": 1000,
+   "Cityscapes": {
+    "fid": 11.807097742108049,
+    "cos_mean": 0.22278660535812378,
+    "pred_mAP": 15.166459565625196,
+    "pred_band_1sd": 2.0450936222922413,
+    "pred_CarAP": 27.356824099752828,
+    "pred_CarAP_band_1sd": 3.2255991615599746
+   },
+   "KITTI": {
+    "fid": 11.60245056254152,
+    "cos_mean": 0.20330506563186646,
+    "pred_mAP": 32.507725101191305,
+    "pred_band_1sd": 3.6665394625520293,
+    "pred_CarAP": 55.84003823031698,
+    "pred_CarAP_band_1sd": 5.086660485570456
+   }
+  }
+ },
+ "car_added": "2026-10-14T15:14:35 (added after towns2 3-class predictions; towns2 Car predictions below are written after anchin_Town06_ClearNight finished training, result NOT inspected; towns3 Car predictions are fully blind)"
+}

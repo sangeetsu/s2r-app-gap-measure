@@ -1,0 +1,15 @@
+{
+  "metrics": {
+    "AP_Car": 0.09427609427609426,
+    "n_gt_Car": 19,
+    "AP_Pedestrian": 0.0,
+    "n_gt_Pedestrian": 0,
+    "AP_Cyclist": 0.0,
+    "n_gt_Cyclist": 0,
+    "mAP@IoU=0.5": 0.03142536475869809
+  },
+  "ckpt": "checkpoints/vk_Scene06_d00_ref_s17/last.pt",
+  "cell": "Scene06_d21_sunset",
+  "n_frames": 68,
+  "min_box_height": 0.0
+}

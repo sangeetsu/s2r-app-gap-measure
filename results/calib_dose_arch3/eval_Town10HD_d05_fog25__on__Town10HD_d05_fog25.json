@@ -1,0 +1,15 @@
+{
+  "metrics": {
+    "AP_Car": 0.5976310181714911,
+    "n_gt_Car": 421,
+    "AP_Pedestrian": 0.45055136339045454,
+    "n_gt_Pedestrian": 165,
+    "AP_Cyclist": 0.2767991338200067,
+    "n_gt_Cyclist": 113,
+    "mAP@IoU=0.5": 0.44166050512731747
+  },
+  "ckpt": "checkpoints/anchins_Town10HD_d05_fog25/last.pt",
+  "cell": "Town10HD_d05_fog25",
+  "n_frames": 250,
+  "min_box_height": 0.0
+}

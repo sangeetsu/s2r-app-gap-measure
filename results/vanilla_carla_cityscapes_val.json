@@ -1,0 +1,15 @@
+{
+  "source_ckpt": "checkpoints/vanilla_carla/last.pt",
+  "dataset": "cityscapes_val",
+  "n_frames": 500,
+  "class_mapping": "Car<-{car,truck}, Pedestrian<-{person}, Cyclist<-{rider}; groups dropped",
+  "metrics": {
+    "AP_Car": 0.47565522297925716,
+    "n_gt_Car": 4760,
+    "AP_Pedestrian": 0.3008006444653988,
+    "n_gt_Pedestrian": 3418,
+    "AP_Cyclist": 0.14441002104253728,
+    "n_gt_Cyclist": 556,
+    "mAP@IoU=0.5": 0.30695529616239775
+  }
+}

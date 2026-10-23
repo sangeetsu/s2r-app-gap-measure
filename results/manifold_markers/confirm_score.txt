@@ -1,0 +1,31 @@
+predictions written 2026-10-15T10:00:42 for 12 cells (outcomes not yet read)
+
+=== KITTI: 11 fresh cells with markers ===
+  Town01_ClearSunset     observed  27.4  full-model  27.6  boxes-only  25.9
+  Town01_WetNoon         observed  30.9  full-model  25.0  boxes-only  24.5
+  Town02_ClearSunset     observed  35.1  full-model  30.1  boxes-only  30.5
+  Town02_WetNoon         observed  32.6  full-model  33.5  boxes-only  31.2
+  Town03_ClearSunset     observed  28.5  full-model  27.4  boxes-only  24.8
+  Town03_WetNoon         observed  30.9  full-model  26.1  boxes-only  24.9
+  Town04_ClearSunset     observed  18.8  full-model  17.4  boxes-only  18.3
+  Town05_ClearSunset     observed  26.9  full-model  25.6  boxes-only  24.7
+  Town05_WetNoon         observed  27.1  full-model  27.9  boxes-only  24.3
+  Town10HD_ClearSunset   observed  33.7  full-model  30.1  boxes-only  30.3
+  Town10HD_WetNoon       observed  28.3  full-model  31.6  boxes-only  30.6
+  full model: r=+0.778 (p=0.0048) MAE 2.57 | boxes-only: r=+0.824 (p=0.0018) MAE 3.15 | rule (a) PASS  rule (b) PASS
+
+=== Cityscapes: 11 fresh cells with markers ===
+  Town01_ClearSunset     observed  13.4  full-model  14.3  boxes-only  13.4
+  Town01_WetNoon         observed  15.1  full-model  13.0  boxes-only  12.7
+  Town02_ClearSunset     observed  15.5  full-model  15.2  boxes-only  15.4
+  Town02_WetNoon         observed  17.0  full-model  17.0  boxes-only  15.8
+  Town03_ClearSunset     observed  14.1  full-model  14.3  boxes-only  12.9
+  Town03_WetNoon         observed  13.9  full-model  13.5  boxes-only  12.9
+  Town04_ClearSunset     observed  12.9  full-model   9.4  boxes-only   9.9
+  Town05_ClearSunset     observed  15.9  full-model  13.3  boxes-only  12.8
+  Town05_WetNoon         observed  16.8  full-model  14.5  boxes-only  12.6
+  Town10HD_ClearSunset   observed  18.6  full-model  15.2  boxes-only  15.4
+  Town10HD_WetNoon       observed  15.2  full-model  16.0  boxes-only  15.5
+  full model: r=+0.615 (p=0.0440) MAE 1.49 | boxes-only: r=+0.632 (p=0.0369) MAE 1.80 | rule (a) PASS  rule (b) PASS
+
+PRE-REGISTERED CONFIRMATION: PASSED

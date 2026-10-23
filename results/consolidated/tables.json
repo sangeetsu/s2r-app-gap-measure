@@ -1,0 +1,4821 @@
+{
+ "created": "2026-10-18T09:35:40",
+ "B": 2000,
+ "seed": 0,
+ "methods": {
+  "ci": "95% percentile interval, cluster bootstrap over towns (cells where no town structure), B=2000, seed 0",
+  "p": "two-sided permutation p, outcome shuffled within town, B=2000: (1+#|null|>=|obs|)/(B+1); floor 0.0005",
+  "loto_r2": "leave-one-town-out linear calibration, 1 - MSE/var(y)",
+  "cal_k": "mean |error| (pp) of a linear calibration fit on k towns, applied to the remaining towns; k=n-1 exact, k=1 200 random draws"
+ },
+ "tables": {
+  "T1": {
+   "title": "Experimental grids: real-target mAP of simulator-only detectors (mean \u00b1 sd over source cells; mAP@0.5, 3 classes)",
+   "header": [
+    "grid",
+    "sources",
+    "KITTI mAP (range)",
+    "Cityscapes mAP",
+    "note"
+   ],
+   "rows": [
+    [
+     "COCO-init 24-cell grid (6 towns \u00d7 4 weathers)",
+     24,
+     "48.0 \u00b1 3.0 (40.9\u201352.1)",
+     "30.8 \u00b1 2.2",
+     "detector pretrained on COCO end to end"
+    ],
+    [
+     "ImageNet-init 24-cell grid",
+     24,
+     "27.6 \u00b1 4.7 (14.9\u201334.6)",
+     "14.0 \u00b1 2.4",
+     "ImageNet backbone only; seed 42"
+    ],
+    [
+     "held-out towns (Town06/07/15 \u00d7 Noon/Night)",
+     6,
+     "17.5 \u00b1 9.3 (1.8\u201326.5)",
+     "9.7 \u00b1 5.0",
+     "pre-registered test cells"
+    ],
+    [
+     "fresh cells (6 towns \u00d7 ClearSunset/WetNoon)",
+     12,
+     "28.4 \u00b1 4.8 (18.8\u201335.1)",
+     "15.3 \u00b1 1.6",
+     "pre-registered confirmation cells"
+    ],
+    [
+     "SHIFT 15 condition cells (independent rig)",
+     15,
+     "35.7 \u00b1 1.8 (32.3\u201338.3)",
+     "25.3 \u00b1 1.9",
+     "400 frames/cell, fixed 2400 it"
+    ],
+    [
+     "frame-matched dose testbed, 8 towns \u00d7 10 doses (seed 42)",
+     80,
+     "26.1 \u00b1 5.5 (7.7\u201333.6)",
+     "14.1 \u00b1 2.3",
+     "Faster R-CNN R50-FPN, ImageNet init"
+    ],
+    [
+     "dose testbed replicate (seed 17)",
+     80,
+     "26.7 \u00b1 5.3 (7.8\u201334.2)",
+     "14.2 \u00b1 2.3",
+     ""
+    ],
+    [
+     "dose testbed, FCOS (Town01 + Town10HD \u00d7 10 doses)",
+     20,
+     "22.9 \u00b1 8.9 (0.9\u201331.4)",
+     "13.8 \u00b1 5.3",
+     "second detector family"
+    ]
+   ],
+   "note": "sd with ddof=1 (the ledger's earlier 2.9/4.6 used ddof=0). Held-out towns include Town15, whose two cells failed to train (561/673 boxes).",
+   "sources": [
+    "results/calib_anchored",
+    "results/calib_imnet",
+    "results/calib_imnet_towns2",
+    "results/calib_imnet_confirm",
+    "results/calib_shift",
+    "results/calib_dose",
+    "results/calib_dose_rep",
+    "results/calib_dose_arch2"
+   ],
+   "data": {
+    "COCO-init 24-cell grid (6 towns \u00d7 4 weathers)": {
+     "n": 24,
+     "KITTI_mean": 47.95969964112812,
+     "KITTI_sd": 3.007977000811495,
+     "CS_mean": 30.77087842535182,
+     "CS_sd": 2.1583746791764327,
+     "KITTI_range": [
+      40.8986454148577,
+      52.06123794740923
+     ]
+    },
+    "ImageNet-init 24-cell grid": {
+     "n": 24,
+     "KITTI_mean": 27.598669075747825,
+     "KITTI_sd": 4.6618813312558345,
+     "CS_mean": 13.999582146247628,
+     "CS_sd": 2.4135951176567763,
+     "KITTI_range": [
+      14.920165933576476,
+      34.60351431343325
+     ]
+    },
+    "held-out towns (Town06/07/15 \u00d7 Noon/Night)": {
+     "n": 6,
+     "KITTI_mean": 17.45329477198481,
+     "KITTI_sd": 9.261610514460811,
+     "CS_mean": 9.734228036147575,
+     "CS_sd": 5.022539558105823,
+     "KITTI_range": [
+      1.8106499260704827,
+      26.53676226193471
+     ]
+    },
+    "fresh cells (6 towns \u00d7 ClearSunset/WetNoon)": {
+     "n": 12,
+     "KITTI_mean": 28.40617229360808,
+     "KITTI_sd": 4.844390667719944,
+     "CS_mean": 15.256756156855195,
+     "CS_sd": 1.641869231082763,
+     "KITTI_range": [
+      18.762815504496746,
+      35.067239800347444
+     ]
+    },
+    "SHIFT 15 condition cells (independent rig)": {
+     "n": 15,
+     "KITTI_mean": 35.72919144990012,
+     "KITTI_sd": 1.807344166951805,
+     "CS_mean": 25.255359920351047,
+     "CS_sd": 1.8683924375597727,
+     "KITTI_range": [
+      32.28819957853464,
+      38.25465565588242
+     ]
+    },
+    "frame-matched dose testbed, 8 towns \u00d7 10 doses (seed 42)": {
+     "n": 80,
+     "KITTI_mean": 26.09499559862956,
+     "KITTI_sd": 5.536907586766624,
+     "CS_mean": 14.097163681387366,
+     "CS_sd": 2.278473608251315,
+     "KITTI_range": [
+      7.707374512592187,
+      33.566984139750566
+     ]
+    },
+    "dose testbed replicate (seed 17)": {
+     "n": 80,
+     "KITTI_mean": 26.656211515930522,
+     "KITTI_sd": 5.313349102557244,
+     "CS_mean": 14.22377609913568,
+     "CS_sd": 2.273054033623042,
+     "KITTI_range": [
+      7.752975837638167,
+      34.16285739765526
+     ]
+    },
+    "dose testbed, FCOS (Town01 + Town10HD \u00d7 10 doses)": {
+     "n": 20,
+     "KITTI_mean": 22.887552707740703,
+     "KITTI_sd": 8.939188061330453,
+     "CS_mean": 13.815073444723103,
+     "CS_sd": 5.340019130928602,
+     "KITTI_range": [
+      0.8691782340447358,
+      31.373394750163314
+     ]
+    }
+   }
+  },
+  "T2": {
+   "title": "Noise floors: run-to-run (training-seed) variation of every outcome used in the paper",
+   "header": [
+    "outcome",
+    "per-run sd (pp)",
+    "scale",
+    "reliability / agreement"
+   ],
+   "rows": [
+    [
+     "ImageNet grid, real mAP (8 sources re-trained, seed 17 vs 42)",
+     "KITTI 1.53 / CS 0.86",
+     "across-source sd 4.66 / 2.41",
+     "reliability 0.89 / 0.87; r ceiling 0.94 / 0.93"
+    ],
+    [
+     "ImageNet grid, within-CARLA anchored drop (184 pairs)",
+     "1.90",
+     "mean |\u0394seed| 2.07 pp",
+     "87% of pairs within 4 pp"
+    ],
+    [
+     "dose testbed, appearance-only drop (72 pairs, 80+80 detectors)",
+     "1.73",
+     "mean |\u0394seed| 1.84 pp; signal sd 10.5",
+     "seed r 0.974; reliability 0.97"
+    ],
+    [
+     "dose testbed, real mAP (80 detectors \u00d7 2 seeds)",
+     "KITTI 1.61 / CS 1.30",
+     "\u0394 real mAP (dose \u2212 ref) seed r 0.86 / 0.66",
+     "mean |\u0394seed| of \u0394 real mAP 2.22 / 1.48 pp"
+    ]
+   ],
+   "note": "per-run sd = sd(seed17 \u2212 seed42)/\u221a2. Correlations with a per-cell outcome cannot exceed the stated ceiling.",
+   "sources": [
+    "results/calib_imnet",
+    "results/calib_imnet_rep",
+    "results/calib_dose",
+    "results/calib_dose_rep"
+   ],
+   "data": {
+    "KITTI": {
+     "n_rep": 8,
+     "per_run_sd": 1.530240048065228,
+     "across_source_sd": 4.6618813312558345,
+     "reliability": 0.8922551058414954,
+     "ceiling": 0.9445925607591324,
+     "mean_abs_diff": 1.6877449003346223
+    },
+    "Cityscapes": {
+     "n_rep": 8,
+     "per_run_sd": 0.8601617867778013,
+     "across_source_sd": 2.4135951176567763,
+     "reliability": 0.8729918902880367,
+     "ceiling": 0.9343403503477931,
+     "mean_abs_diff": 1.1695223587283181
+    },
+    "grid_drop": {
+     "pairs": 184,
+     "mean_abs_diff": 2.0703621852031167,
+     "per_run_sd": 1.9009284169241614,
+     "within4pp": 0.8695652173913043
+    },
+    "dose_drop": {
+     "pairs": 72,
+     "r_seed": 0.9737087321421892,
+     "mean_abs_diff": 1.835656082087054,
+     "per_run_sd": 1.7286482488913717,
+     "signal_sd": 10.548994460712727,
+     "reliability": 0.9731471038306256
+    },
+    "dose_real_KITTI": {
+     "n": 80,
+     "per_run_sd": 1.61286243258653,
+     "mean_abs_diff": 1.810427024095474,
+     "delta_real_r_seed": 0.8576927624673304,
+     "delta_real_abs_diff": 2.22032203805446
+    },
+    "dose_real_Cityscapes": {
+     "n": 80,
+     "per_run_sd": 1.2970317608606332,
+     "mean_abs_diff": 1.349072314568012,
+     "delta_real_r_seed": 0.6619301784779175,
+     "delta_real_abs_diff": 1.4781158568036012
+    }
+   }
+  },
+  "T3": {
+   "title": "Pretraining hides the simulator: the same 24 CARLA cells with two detector initialisations",
+   "header": [
+    "init",
+    "KITTI mAP",
+    "Cityscapes mAP",
+    "KITTI town means",
+    "KITTI variance: town / weather",
+    "Cityscapes variance: town / weather",
+    "within-CARLA drop explained by the two anchors (LOO R\u00b2)"
+   ],
+   "rows": [
+    [
+     "COCO-pretrained (backbone+FPN+heads)",
+     "48.0 \u00b1 3.0",
+     "30.8 \u00b1 2.2",
+     "45.5\u201350.6",
+     "28% (p=0.116) / 33% (p=0.022)",
+     "31% (p=0.269) / 3% (p=0.890)",
+     "0.845"
+    ],
+    [
+     "ImageNet backbone only",
+     "27.6 \u00b1 4.7",
+     "14.0 \u00b1 2.4",
+     "23.0\u201333.5",
+     "70% (p=<.001) / 12% (p=0.047)",
+     "40% (p=0.135) / 0% (p=0.993)",
+     "0.747"
+    ]
+   ],
+   "note": "Two-way ANOVA, type-I with town before weather, 24 sources. Anchors = the detector's own in-domain mAP and the target cell's in-domain mAP.",
+   "sources": [
+    "results/calib_anchored",
+    "results/calib_imnet"
+   ],
+   "data": {
+    "COCO-pretrained (backbone+FPN+heads)": {
+     "pairs": 552,
+     "anchors_loo_r2": 0.8450008498501521,
+     "KITTI": {
+      "mean": 47.95969964112812,
+      "sd": 3.007977000811495,
+      "town_share": 0.2773403867629378,
+      "town_p": 0.11564156200859711,
+      "weather_share": 0.3349978807137096,
+      "weather_p": 0.021997142106980273,
+      "town_means_range": [
+       45.45083738909226,
+       50.64165921321376
+      ],
+      "r_anchor": -0.059219781089006295
+     },
+     "Cityscapes": {
+      "mean": 30.77087842535182,
+      "sd": 2.1583746791764327,
+      "town_share": 0.31428177314944566,
+      "town_p": 0.26935154447005244,
+      "weather_share": 0.02721461927830599,
+      "weather_p": 0.8902041299641966,
+      "town_means_range": [
+       28.98358103936834,
+       32.294189269393264
+      ],
+      "r_anchor": 0.11555621268287608
+     }
+    },
+    "ImageNet backbone only": {
+     "pairs": 552,
+     "anchors_loo_r2": 0.746970111264663,
+     "KITTI": {
+      "mean": 27.598669075747825,
+      "sd": 4.6618813312558345,
+      "town_share": 0.7001632308884174,
+      "town_p": 9.616240188148578e-05,
+      "weather_share": 0.12032439237625135,
+      "weather_p": 0.04740373804551678,
+      "town_means_range": [
+       23.014478578855602,
+       33.480366825573725
+      ],
+      "r_anchor": 0.26973194654590454
+     },
+     "Cityscapes": {
+      "mean": 13.999582146247628,
+      "sd": 2.4135951176567763,
+      "town_share": 0.4003504383202012,
+      "town_p": 0.1347768027936999,
+      "weather_share": 0.003371221547447493,
+      "weather_p": 0.9933155635929514,
+      "town_means_range": [
+       11.421730517717647,
+       15.819493803147374
+      ],
+      "r_anchor": 0.21614724805926855
+     }
+    }
+   }
+  },
+  "T4": {
+   "title": "Content dominates across configurations: labeled object count vs frozen-DINOv3 image FID as predictors of real transfer",
+   "header": [
+    "sources",
+    "n",
+    "KITTI r(log boxes, mAP) [CI]",
+    "KITTI r(FID, mAP)",
+    "KITTI partial r: FID | boxes / boxes | FID",
+    "CS r(log boxes, mAP) [CI]",
+    "CS r(FID, mAP)",
+    "CS partial r: FID | boxes / boxes | FID"
+   ],
+   "rows": [
+    [
+     "24 grid sources",
+     24,
+     "+0.590 [-0.01, +0.84]",
+     "-0.639",
+     "-0.369 / +0.220",
+     "+0.578 [+0.13, +0.73]",
+     "-0.560",
+     "-0.236 / +0.289"
+    ],
+    [
+     "30 sources (grid + 6 held-out towns)",
+     30,
+     "+0.694 [+0.06, +0.90]",
+     "-0.386",
+     "-0.131 / +0.634",
+     "+0.671 [+0.13, +0.86]",
+     "-0.374",
+     "-0.112 / +0.607"
+    ],
+    [
+     "12 fresh cells (unseen weathers)",
+     12,
+     "+0.867 [+0.23, +0.97]",
+     "\u2014",
+     "\u2014 / \u2014",
+     "+0.605 [+0.08, +0.80]",
+     "\u2014",
+     "\u2014 / \u2014"
+    ],
+    [
+     "town level (9 towns, 30 sources)",
+     9,
+     "+0.814 (p=0.008)",
+     "-0.274 (p=0.476)",
+     "\u2014",
+     "+0.880 (p=0.002)",
+     "-0.282 (p=0.462)",
+     "\u2014"
+    ]
+   ],
+   "note": "Boxes = Car/Pedestrian/Cyclist labels in the 800 training frames. FID = image-level Fr\u00e9chet distance in frozen DINOv3 space between the source cell and the real target. CI clusters by town.",
+   "sources": [
+    "results/calib_imnet",
+    "results/calib_imnet_towns2",
+    "results/calib_imnet_confirm",
+    "results/domain_distance_dinov3_all.json",
+    "results/calib_imnet/prereg_predictions_towns2.json"
+   ],
+   "data": {
+    "24 grid sources": {
+     "n": 24,
+     "KITTI": {
+      "r_logboxes": 0.5898149220263141,
+      "p": 0.0024175759664296853,
+      "ci": [
+       -0.00786891452391856,
+       0.8438040701129671
+      ],
+      "r_fid": -0.6390010788748933,
+      "partial_fid_given_boxes": -0.36935836044399256,
+      "partial_boxes_given_fid": 0.21956822876963514
+     },
+     "Cityscapes": {
+      "r_logboxes": 0.5775426730844749,
+      "p": 0.003123542586205817,
+      "ci": [
+       0.13099524267033202,
+       0.7304636984941602
+      ],
+      "r_fid": -0.5596962726922318,
+      "partial_fid_given_boxes": -0.23638426736898296,
+      "partial_boxes_given_fid": 0.2894472529771452
+     }
+    },
+    "30 sources (grid + 6 held-out towns)": {
+     "n": 30,
+     "KITTI": {
+      "r_logboxes": 0.694039395962997,
+      "p": 2.103274774710991e-05,
+      "ci": [
+       0.06450882609701215,
+       0.8989287308959024
+      ],
+      "r_fid": -0.38581048920428324,
+      "partial_fid_given_boxes": -0.13072228103730643,
+      "partial_boxes_given_fid": 0.6336042584273005
+     },
+     "Cityscapes": {
+      "r_logboxes": 0.6712322221646538,
+      "p": 4.9016924401412844e-05,
+      "ci": [
+       0.1280461670582798,
+       0.8593288663130083
+      ],
+      "r_fid": -0.37433310805111863,
+      "partial_fid_given_boxes": -0.11167772421861497,
+      "partial_boxes_given_fid": 0.6074405939253658
+     }
+    },
+    "12 fresh cells (unseen weathers)": {
+     "n": 12,
+     "KITTI": {
+      "r_logboxes": 0.8669216902347772,
+      "p": 0.00026178609154642774,
+      "ci": [
+       0.23067418040474147,
+       0.9661772514511514
+      ],
+      "r_fid": null,
+      "partial_fid_given_boxes": null,
+      "partial_boxes_given_fid": null
+     },
+     "Cityscapes": {
+      "r_logboxes": 0.6054970009419287,
+      "p": 0.03693974034931652,
+      "ci": [
+       0.08186430222089713,
+       0.7955469331441498
+      ],
+      "r_fid": null,
+      "partial_fid_given_boxes": null,
+      "partial_boxes_given_fid": null
+     }
+    },
+    "town_level": {
+     "KITTI": {
+      "r_boxes": 0.8136423017282735,
+      "p_boxes": 0.007626560111792,
+      "r_fid": -0.27399450978398343,
+      "p_fid": 0.475573908557763
+     },
+     "Cityscapes": {
+      "r_boxes": 0.879873610321249,
+      "p_boxes": 0.0017556148923512781,
+      "r_fid": -0.28215663977115546,
+      "p_fid": 0.46197671138978924
+     }
+    }
+   }
+  },
+  "T5": {
+   "title": "Labeled-data quantity is causal: within-cell learning curves (content and appearance fixed) vs the between-source slope",
+   "header": [
+    "target",
+    "CARLA within-cell slope, pp per log(boxes) [CI]",
+    "per-cell slopes (6 cells)",
+    "pp per doubling",
+    "between-source slope (30 sources)",
+    "share of between-source slope",
+    "SHIFT within-cell slope (3 conditions)"
+   ],
+   "rows": [
+    [
+     "KITTI",
+     "+4.14 [+3.60, +4.62]",
+     "+4.15 \u00b1 0.74",
+     "+2.9",
+     "+6.45 (r=+0.69)",
+     "64%",
+     "+5.30 (SE 1.02, p=0.004)"
+    ],
+    [
+     "Cityscapes",
+     "+0.99 [+0.21, +1.68]",
+     "+0.90 \u00b1 1.01",
+     "+0.7",
+     "+3.08 (r=+0.67)",
+     "32%",
+     "+4.02 (SE 0.29, p=<.001)"
+    ]
+   ],
+   "note": "CARLA: 6 ClearNoon cells \u00d7 100/200/400/800 frames, fixed 2400 iterations; CI = cluster bootstrap over cells. SHIFT: 3 condition cells \u00d7 100/200/400 frames.",
+   "sources": [
+    "results/calib_imnet_lc",
+    "results/calib_imnet",
+    "results/calib_imnet_towns2",
+    "results/calib_shift"
+   ],
+   "data": {
+    "KITTI": {
+     "carla_fe_slope": 4.137857160499026,
+     "ci": [
+      3.596248362835178,
+      4.621756803750809
+     ],
+     "per_cell_mean": 4.154372012810519,
+     "per_cell_sd": 0.7411231144988167,
+     "between_slope_30": 6.45443849891373,
+     "share": 0.6410870846775316,
+     "shift_slope": 5.3047786242756185,
+     "shift_se": 1.0244082222851016,
+     "shift_p": 0.0035300753403763054,
+     "pp_per_doubling": 2.868144024359681
+    },
+    "Cityscapes": {
+     "carla_fe_slope": 0.9912390524167976,
+     "ci": [
+      0.2065151152925057,
+      1.6816359813836417
+     ],
+     "per_cell_mean": 0.8995575085702873,
+     "per_cell_sd": 1.0148390482580545,
+     "between_slope_30": 3.084718270350357,
+     "share": 0.32133860065743197,
+     "shift_slope": 4.021952696166091,
+     "shift_se": 0.2885548521646481,
+     "shift_p": 3.416670347347598e-05,
+     "pp_per_doubling": 0.6870745544436151
+    }
+   }
+  },
+  "T6": {
+   "title": "Across configurations, no distance or consistency estimator predicts real transfer once content is known (24 ImageNet-init sources)",
+   "header": [
+    "predictor",
+    "KITTI r with real mAP [CI]",
+    "KITTI partial r | log boxes",
+    "Cityscapes r [CI]",
+    "Cityscapes partial r | log boxes"
+   ],
+   "rows": [
+    [
+     "log labeled boxes (content)",
+     "+0.590 [-0.00, +0.84]",
+     "\u2014",
+     "+0.578 [+0.13, +0.73]",
+     "\u2014"
+    ],
+    [
+     "dIV_fg usable-information gap (labeled boxes)",
+     "+0.529 [-0.08, +0.78]",
+     "+0.481",
+     "+0.478 [-0.25, +0.72]",
+     "+0.480"
+    ],
+    [
+     "FM veto gap (frozen probe on detector boxes)",
+     "+0.115 [-0.57, +0.50]",
+     "-0.018",
+     "+0.326 [-0.08, +0.52]",
+     "+0.076"
+    ],
+    [
+     "DoC, difference of confidences",
+     "-0.295 [-0.64, +0.18]",
+     "+0.280",
+     "-0.324 [-0.55, +0.03]",
+     "+0.102"
+    ],
+    [
+     "FM\u2013detector disagreement",
+     "+0.280 [-0.23, +0.52]",
+     "+0.041",
+     "+0.602 [+0.30, +0.75]",
+     "+0.393"
+    ],
+    [
+     "image FID, frozen DINOv3",
+     "-0.639 [-0.88, -0.26]",
+     "-0.369",
+     "-0.560 [-0.64, -0.28]",
+     "-0.236"
+    ],
+    [
+     "BoS stability gap",
+     "+0.498 [+0.17, +0.83]",
+     "+0.191",
+     "+0.027 [-0.38, +0.24]",
+     "-0.411"
+    ],
+    [
+     "AoL agreement gap",
+     "+0.348 [-0.28, +0.77]",
+     "+0.128",
+     "+0.194 [-0.53, +0.54]",
+     "-0.064"
+    ]
+   ],
+   "note": "Expected sign for a gap measure is negative (more shift \u2192 lower mAP). Only FID has the right sign, and it vanishes given object count.",
+   "sources": [
+    "results/calib_imnet",
+    "results/calib_anchored",
+    "results/domain_distance_dinov3_all.json"
+   ],
+   "data": {
+    "dIV_fg usable-information gap (labeled boxes)": {
+     "KITTI": {
+      "r": 0.5288427780382572,
+      "p": 0.007884590250186148,
+      "ci": [
+       -0.07972351036828318,
+       0.7847875533049775
+      ],
+      "partial_given_boxes": 0.48056625121939817,
+      "n": 24
+     },
+     "Cityscapes": {
+      "r": 0.4776064491863108,
+      "p": 0.018261717508807705,
+      "ci": [
+       -0.24546995741687955,
+       0.7191591290370978
+      ],
+      "partial_given_boxes": 0.48037763322775845,
+      "n": 24
+     }
+    },
+    "FM veto gap (frozen probe on detector boxes)": {
+     "KITTI": {
+      "r": 0.11526252041623106,
+      "p": 0.5917390232580366,
+      "ci": [
+       -0.5684078858910039,
+       0.4951702304477616
+      ],
+      "partial_given_boxes": -0.01794819713124122,
+      "n": 24
+     },
+     "Cityscapes": {
+      "r": 0.3263200245239831,
+      "p": 0.11964920621643126,
+      "ci": [
+       -0.0805481560192,
+       0.5226775315538666
+      ],
+      "partial_given_boxes": 0.07621877295028631,
+      "n": 24
+     }
+    },
+    "DoC, difference of confidences": {
+     "KITTI": {
+      "r": -0.29545676812082433,
+      "p": 0.16100775204975834,
+      "ci": [
+       -0.6401310995590379,
+       0.18400588530974377
+      ],
+      "partial_given_boxes": 0.27972795215023977,
+      "n": 24
+     },
+     "Cityscapes": {
+      "r": -0.3243133268021069,
+      "p": 0.12207524711919202,
+      "ci": [
+       -0.5518607749616372,
+       0.030199230930363835
+      ],
+      "partial_given_boxes": 0.10231413488194385,
+      "n": 24
+     }
+    },
+    "FM\u2013detector disagreement": {
+     "KITTI": {
+      "r": 0.2797200687216669,
+      "p": 0.18557026230849424,
+      "ci": [
+       -0.23464826852672313,
+       0.519271730407669
+      ],
+      "partial_given_boxes": 0.04086861153637665,
+      "n": 24
+     },
+     "Cityscapes": {
+      "r": 0.6024975866836988,
+      "p": 0.0018353100070491112,
+      "ci": [
+       0.30496149163717123,
+       0.7543130390522604
+      ],
+      "partial_given_boxes": 0.39329953993093997,
+      "n": 24
+     }
+    },
+    "image FID, frozen DINOv3": {
+     "KITTI": {
+      "r": -0.6390010788748933,
+      "p": 0.0007761040546375254,
+      "ci": [
+       -0.883499546475337,
+       -0.262023052480033
+      ],
+      "partial_given_boxes": -0.36935836044399256,
+      "n": 24
+     },
+     "Cityscapes": {
+      "r": -0.5596962726922318,
+      "p": 0.0044565817874391445,
+      "ci": [
+       -0.6407228946173833,
+       -0.27977076707650333
+      ],
+      "partial_given_boxes": -0.23638426736898296,
+      "n": 24
+     }
+    },
+    "BoS stability gap": {
+     "KITTI": {
+      "r": 0.4976374240354317,
+      "p": 0.013345520676636694,
+      "ci": [
+       0.17344429373911685,
+       0.8319795010173352
+      ],
+      "partial_given_boxes": 0.1909563722389675,
+      "n": 24
+     },
+     "Cityscapes": {
+      "r": 0.026972808906136108,
+      "p": 0.9004384408859384,
+      "ci": [
+       -0.3823210055282761,
+       0.2393550373857486
+      ],
+      "partial_given_boxes": -0.41149010660615615,
+      "n": 24
+     }
+    },
+    "AoL agreement gap": {
+     "KITTI": {
+      "r": 0.34770809634357464,
+      "p": 0.09593348748860599,
+      "ci": [
+       -0.2846136273977026,
+       0.771011265170208
+      ],
+      "partial_given_boxes": 0.12805722964626864,
+      "n": 24
+     },
+     "Cityscapes": {
+      "r": 0.19427471384624925,
+      "p": 0.3630073487131221,
+      "ci": [
+       -0.5290952944456934,
+       0.5365244617146265
+      ],
+      "partial_given_boxes": -0.06447608265137926,
+      "n": 24
+     }
+    }
+   }
+  },
+  "T7": {
+   "title": "Pre-registered out-of-sample tests across configurations",
+   "header": [
+    "test",
+    "KITTI mean |error| (pp)",
+    "KITTI r(pred, obs)",
+    "Cityscapes mean |error|",
+    "Cityscapes r(pred, obs)"
+   ],
+   "rows": [
+    [
+     "held-out towns (6 cells): FID line (pre-registered 08:12)",
+     "9.33",
+     "-0.317",
+     "4.82",
+     "-0.418"
+    ],
+    [
+     "held-out towns (6 cells): log(training boxes)",
+     "7.76",
+     "+0.761",
+     "3.94",
+     "+0.694"
+    ],
+    [
+     "held-out towns (6 cells): FID + log(boxes)",
+     "8.59",
+     "+0.263",
+     "4.26",
+     "+0.618"
+    ],
+    [
+     "fresh cells (11): boxes only (pre-registered coefficients)",
+     "3.15 (centred 1.91)",
+     "+0.824",
+     "1.80 (centred 1.30)",
+     "+0.632"
+    ],
+    [
+     "fresh cells (11): geometry model (pre-registered coefficients)",
+     "2.57 (centred 2.33)",
+     "+0.778",
+     "1.49 (centred 1.46)",
+     "+0.615"
+    ],
+    [
+     "rendering quality Epic\u2192Low (5 towns), KITTI",
+     "Epic \u2212 Low real mAP +5.52 \u00b1 6.98 (paired t p=0.152); 4/5 towns lose",
+     "\u2014",
+     "FID to KITTI rises at Low in 5/5 (+1.50); r(\u0394FID, \u0394mAP) +0.76 (wrong sign)",
+     "\u2014"
+    ],
+    [
+     "rendering quality Epic\u2192Low (5 towns), Cityscapes",
+     "Epic \u2212 Low real mAP +1.82 \u00b1 1.95 (paired t p=0.105); 4/5 towns lose",
+     "\u2014",
+     "FID to Cityscapes rises at Low in 5/5 (+1.40); r(\u0394FID, \u0394mAP) +0.51 (wrong sign)",
+     "\u2014"
+    ]
+   ],
+   "note": "Predictions were written and hashed before the detectors were trained (ledger \u00a715.34, 15.36, 15.43, 15.40). Town15 collapsed in training (561/673 boxes) and is kept as pre-registered.",
+   "sources": [
+    "results/calib_imnet_towns2",
+    "results/calib_imnet_confirm",
+    "results/calib_imnet_lowq",
+    "results/calib_imnet/prereg_predictions_towns2*.json",
+    "results/manifold_markers/confirm_predictions.json"
+   ],
+   "data": {
+    "KITTI": {
+     "FID line (pre-registered 08:12)": {
+      "mae": 9.332635867466829,
+      "r": -0.3173701855204855
+     },
+     "log(training boxes)": {
+      "mae": 7.757698781577546,
+      "r": 0.7613170585039943
+     },
+     "FID + log(boxes)": {
+      "mae": 8.588722611209159,
+      "r": 0.26349241618475455
+     }
+    },
+    "Cityscapes": {
+     "FID line (pre-registered 08:12)": {
+      "mae": 4.820062930657818,
+      "r": -0.41756707576513585
+     },
+     "log(training boxes)": {
+      "mae": 3.9434470201142866,
+      "r": 0.6942974381307045
+     },
+     "FID + log(boxes)": {
+      "mae": 4.264611274002044,
+      "r": 0.618043921402259
+     }
+    },
+    "fresh": {
+     "KITTI": {
+      "boxes_only": {
+       "r": 0.8237531595955269,
+       "mae": 3.1508598129285974,
+       "mae_centred": 1.9057320516726144
+      },
+      "geometry_model": {
+       "r": 0.7779973164536025,
+       "mae": 2.569740558122762,
+       "mae_centred": 2.329569344038504
+      },
+      "r_logboxes_12": 0.8669216902347772,
+      "p": 0.00026178609154642774,
+      "n": 11
+     },
+     "Cityscapes": {
+      "boxes_only": {
+       "r": 0.6322748343585266,
+       "mae": 1.7961654745897233,
+       "mae_centred": 1.299612146920398
+      },
+      "geometry_model": {
+       "r": 0.6149766788565058,
+       "mae": 1.4926202398844928,
+       "mae_centred": 1.4604611962860745
+      },
+      "r_logboxes_12": 0.6054970009419287,
+      "p": 0.03693974034931652,
+      "n": 11
+     }
+    },
+    "lowq": {
+     "KITTI": {
+      "epic_minus_low": 5.521844431463416,
+      "sd": 6.982198340421033,
+      "p": 0.151725002345256,
+      "towns_lose": 4,
+      "n": 5,
+      "dfid_low_minus_epic": 1.4992630547987744,
+      "fid_up": 5,
+      "r_dfid_dmap": 0.7576147374464658
+     },
+     "Cityscapes": {
+      "epic_minus_low": 1.8155837995494644,
+      "sd": 1.9466033318003868,
+      "p": 0.10535757034489647,
+      "towns_lose": 4,
+      "n": 5,
+      "dfid_low_minus_epic": 1.3985803021652,
+      "fid_up": 5,
+      "r_dfid_dmap": 0.5146301685003843
+     }
+    }
+   }
+  },
+  "T8": {
+   "title": "SHIFT replication (independent CARLA rig, 15 time-of-day \u00d7 weather cells at near-matched counts)",
+   "header": [
+    "target",
+    "real mAP",
+    "variance shares: log boxes / time / weather",
+    "F p: time | boxes, weather | boxes+time, both",
+    "r(FID, mAP)",
+    "partial r(FID | log boxes)"
+   ],
+   "rows": [
+    [
+     "KITTI",
+     "35.7 \u00b1 1.8",
+     "0% / 16% / 19%",
+     "0.375 / 0.722 / 0.694",
+     "+0.056",
+     "+0.059 (F p=0.842)"
+    ],
+    [
+     "Cityscapes",
+     "25.3 \u00b1 1.9",
+     "43% / 14% / 17%",
+     "0.214 / 0.415 / 0.340",
+     "-0.552",
+     "-0.357 (F p=0.210)"
+    ]
+   ],
+   "note": "n = 15 (low power; estimation reported). Causal count slopes for SHIFT are in T5.",
+   "sources": [
+    "results/calib_shift",
+    "/mnt/features/shift_cells/cells_meta.json"
+   ],
+   "data": {
+    "KITTI": {
+     "mean": 35.72919144990012,
+     "sd": 1.807344166951805,
+     "share_boxes": 3.944442124731626e-05,
+     "share_time": 0.16334316995965525,
+     "share_weather": 0.19309910040030995,
+     "p_time": 0.37496617187743436,
+     "p_weather": 0.721567976972707,
+     "p_both": 0.694490486604054,
+     "r_fid": 0.05609072429845903,
+     "partial_fid": 0.05887989118606696,
+     "p_fid_increment": 0.8415274373962853,
+     "r_logboxes": -0.006280479380422123
+    },
+    "Cityscapes": {
+     "mean": 25.255359920351047,
+     "sd": 1.8683924375597727,
+     "share_boxes": 0.430290020353508,
+     "share_time": 0.1393604564768047,
+     "share_weather": 0.1689164145504592,
+     "p_time": 0.21375744243027622,
+     "p_weather": 0.4147903843739805,
+     "p_both": 0.3403710866619772,
+     "r_fid": -0.5516358176729097,
+     "partial_fid": -0.35738710399717766,
+     "p_fid_increment": 0.2096643664745681,
+     "r_logboxes": 0.6559649536015687
+    }
+   }
+  },
+  "T9": {
+   "title": "R1 \u2014 appearance-only cost: mAP drop (pp) of each town's clean-trained detector on the SAME frames re-rendered under a dose (mean of 2 seeds)",
+   "header": [
+    "town",
+    "sun25",
+    "sun10",
+    "sun3",
+    "night",
+    "fog25",
+    "fog50",
+    "fog75",
+    "wet",
+    "rain"
+   ],
+   "rows": [
+    [
+     "Town01",
+     "2.1",
+     "3.0",
+     "4.8",
+     "18.0",
+     "11.2",
+     "23.6",
+     "25.6",
+     "3.3",
+     "8.3"
+    ],
+    [
+     "Town02",
+     "0.6",
+     "3.4",
+     "4.2",
+     "11.4",
+     "7.4",
+     "16.3",
+     "18.0",
+     "1.1",
+     "6.9"
+    ],
+    [
+     "Town03",
+     "1.4",
+     "4.8",
+     "6.4",
+     "18.7",
+     "12.2",
+     "28.9",
+     "37.8",
+     "0.7",
+     "11.8"
+    ],
+    [
+     "Town04",
+     "0.4",
+     "1.9",
+     "2.5",
+     "7.5",
+     "6.4",
+     "10.5",
+     "12.9",
+     "0.8",
+     "2.8"
+    ],
+    [
+     "Town05",
+     "1.3",
+     "-0.2",
+     "1.8",
+     "27.7",
+     "6.4",
+     "17.5",
+     "25.3",
+     "1.2",
+     "1.3"
+    ],
+    [
+     "Town06",
+     "-0.2",
+     "4.1",
+     "7.5",
+     "33.6",
+     "18.7",
+     "28.9",
+     "36.5",
+     "4.4",
+     "10.2"
+    ],
+    [
+     "Town07",
+     "2.5",
+     "1.5",
+     "5.9",
+     "21.6",
+     "12.2",
+     "21.6",
+     "26.8",
+     "1.6",
+     "3.2"
+    ],
+    [
+     "Town10HD",
+     "0.7",
+     "4.1",
+     "6.6",
+     "16.7",
+     "19.6",
+     "32.8",
+     "33.3",
+     "0.9",
+     "8.8"
+    ],
+    [
+     "**town mean**",
+     "**1.1**",
+     "**2.8**",
+     "**5.0**",
+     "**19.4**",
+     "**11.8**",
+     "**22.5**",
+     "**27.0**",
+     "**1.7**",
+     "**6.7**"
+    ],
+    [
+     "town-mean CI",
+     "[+0.58, +1.71]",
+     "[+1.69, +3.85]",
+     "[+3.58, +6.21]",
+     "[+14.08, +24.80]",
+     "[+8.57, +15.28]",
+     "[+17.51, +27.54]",
+     "[+20.92, +32.41]",
+     "[+0.97, +2.69]",
+     "[+4.06, +9.16]"
+    ],
+    [
+     "mean |seed 42 \u2212 seed 17|",
+     "0.9",
+     "1.5",
+     "2.0",
+     "1.1",
+     "2.3",
+     "3.4",
+     "2.0",
+     "1.6",
+     "1.8"
+    ],
+    [
+     "town mean, boxes \u226525 px only (seed 42)",
+     "1.4",
+     "2.2",
+     "5.8",
+     "24.0",
+     "13.2",
+     "27.4",
+     "34.0",
+     "2.0",
+     "8.7"
+    ],
+    [
+     "town mean, boxes \u226540 px only (seed 42)",
+     "0.5",
+     "1.7",
+     "4.6",
+     "24.3",
+     "10.6",
+     "23.7",
+     "31.4",
+     "-0.6",
+     "4.6"
+    ]
+   ],
+   "note": "Monotone within family (Spearman \u2265 .8 per town): sun 8/8 (seed 42), 8/8 (seed 17); fog 8/8, 8/8. Visibility control (seed 42, boxes <25 px / <40 px removed): monotone in sun 7 and 7 of 8 towns, fog 8 and 8 of 8 \u2014 drops grow when only nearer objects are scored.",
+   "sources": [
+    "results/calib_dose",
+    "results/calib_dose_rep",
+    "results/calib_dose_h25",
+    "results/calib_dose_h40"
+   ],
+   "data": {
+    "seed42": {
+     "Town01|d01_sun25": 1.5056951868201196,
+     "Town01|d02_sun10": 1.7458384904572384,
+     "Town01|d03_sun3": 5.523419157168966,
+     "Town01|d04_night": 19.370536944986643,
+     "Town01|d05_fog25": 12.453907427348664,
+     "Town01|d06_fog50": 23.15667308461863,
+     "Town01|d07_fog75": 25.94406516284429,
+     "Town01|d08_wet": 3.846890734224914,
+     "Town01|d09_rain": 7.279024947629466,
+     "Town02|d01_sun25": 0.8713207376667569,
+     "Town02|d02_sun10": 2.7335476739821516,
+     "Town02|d03_sun3": 3.457493573025033,
+     "Town02|d04_night": 10.774969433316638,
+     "Town02|d05_fog25": 7.3573802785829585,
+     "Town02|d06_fog50": 17.29411508698508,
+     "Town02|d07_fog75": 18.037559939206233,
+     "Town02|d08_wet": 0.7232771373104754,
+     "Town02|d09_rain": 7.1215047305222825,
+     "Town03|d01_sun25": 1.1007602167991308,
+     "Town03|d02_sun10": 5.024586350741174,
+     "Town03|d03_sun3": 6.109128356198468,
+     "Town03|d04_night": 17.736024260535736,
+     "Town03|d05_fog25": 8.963930896183975,
+     "Town03|d06_fog50": 24.697314210107095,
+     "Town03|d07_fog75": 36.354240231713526,
+     "Town03|d08_wet": 1.1190365775676838,
+     "Town03|d09_rain": 10.97317409926255,
+     "Town04|d01_sun25": 0.34118760260503933,
+     "Town04|d02_sun10": 2.218372607212679,
+     "Town04|d03_sun3": 1.9415990792892366,
+     "Town04|d04_night": 7.631433058433499,
+     "Town04|d05_fog25": 7.501511056528171,
+     "Town04|d06_fog50": 11.39805734917904,
+     "Town04|d07_fog75": 13.864672513068236,
+     "Town04|d08_wet": 0.06848938351018674,
+     "Town04|d09_rain": 2.8031294599050725,
+     "Town05|d01_sun25": 0.5767566261666062,
+     "Town05|d02_sun10": 0.5180098404867195,
+     "Town05|d03_sun3": 0.778652879552439,
+     "Town05|d04_night": 27.878391718639108,
+     "Town05|d05_fog25": 4.90196627909318,
+     "Town05|d06_fog50": 17.929564329143037,
+     "Town05|d07_fog75": 25.89689335491105,
+     "Town05|d08_wet": 2.5407988575661378,
+     "Town05|d09_rain": 2.334383009298115,
+     "Town06|d01_sun25": -0.8629075861292819,
+     "Town06|d02_sun10": 3.8385494795472965,
+     "Town06|d03_sun3": 8.054199906223111,
+     "Town06|d04_night": 33.62458039929938,
+     "Town06|d05_fog25": 18.12772672445479,
+     "Town06|d06_fog50": 32.741521463333875,
+     "Town06|d07_fog75": 39.10690691962842,
+     "Town06|d08_wet": 3.8672524614389445,
+     "Town06|d09_rain": 11.016538261280559,
+     "Town07|d01_sun25": 3.131291424230149,
+     "Town07|d02_sun10": 2.923264479457849,
+     "Town07|d03_sun3": 9.109170376679618,
+     "Town07|d04_night": 22.13955639553565,
+     "Town07|d05_fog25": 11.869428160540043,
+     "Town07|d06_fog50": 23.2579349371505,
+     "Town07|d07_fog75": 27.608614433303657,
+     "Town07|d08_wet": 1.2556273431309393,
+     "Town07|d09_rain": 4.416944194411215,
+     "Town10HD|d01_sun25": 0.9193510365171349,
+     "Town10HD|d02_sun10": 5.186319237544538,
+     "Town10HD|d03_sun3": 7.483899521207363,
+     "Town10HD|d04_night": 17.361726720216794,
+     "Town10HD|d05_fog25": 20.702200866267393,
+     "Town10HD|d06_fog50": 33.941159236418905,
+     "Town10HD|d07_fog75": 34.401593972472014,
+     "Town10HD|d08_wet": 2.8535917814414233,
+     "Town10HD|d09_rain": 10.852104982061931
+    },
+    "seed17": {
+     "Town01|d01_sun25": 2.7794534393581287,
+     "Town01|d02_sun10": 4.2024739219695135,
+     "Town01|d03_sun3": 4.0877648440016685,
+     "Town01|d04_night": 16.704199145023452,
+     "Town01|d05_fog25": 9.87808589606474,
+     "Town01|d06_fog50": 23.99493583113206,
+     "Town01|d07_fog75": 25.322653539700074,
+     "Town01|d08_wet": 2.7019473866232175,
+     "Town01|d09_rain": 9.400285550817578,
+     "Town02|d01_sun25": 0.4132426711212176,
+     "Town02|d02_sun10": 4.002217783567531,
+     "Town02|d03_sun3": 4.898275090392076,
+     "Town02|d04_night": 12.013047004491451,
+     "Town02|d05_fog25": 7.514473822413457,
+     "Town02|d06_fog50": 15.24748784340608,
+     "Town02|d07_fog75": 17.999073450924698,
+     "Town02|d08_wet": 1.4472836241480067,
+     "Town02|d09_rain": 6.683007775286452,
+     "Town03|d01_sun25": 1.6604467904141842,
+     "Town03|d02_sun10": 4.587188104362177,
+     "Town03|d03_sun3": 6.667211274210089,
+     "Town03|d04_night": 19.71544773668692,
+     "Town03|d05_fog25": 15.48295667413879,
+     "Town03|d06_fog50": 33.01648035383278,
+     "Town03|d07_fog75": 39.14806991584177,
+     "Town03|d08_wet": 0.283866443328634,
+     "Town03|d09_rain": 12.579125746201306,
+     "Town04|d01_sun25": 0.4813162736167449,
+     "Town04|d02_sun10": 1.5578239517742247,
+     "Town04|d03_sun3": 3.0017113986730397,
+     "Town04|d04_night": 7.319450770226128,
+     "Town04|d05_fog25": 5.272372215471188,
+     "Town04|d06_fog50": 9.549727178310022,
+     "Town04|d07_fog75": 11.96307317341576,
+     "Town04|d08_wet": 1.5785747875747873,
+     "Town04|d09_rain": 2.8024933373511356,
+     "Town05|d01_sun25": 1.9820397600554855,
+     "Town05|d02_sun10": -0.9857629168338562,
+     "Town05|d03_sun3": 2.9069614712222602,
+     "Town05|d04_night": 27.518829533841053,
+     "Town05|d05_fog25": 7.899209923370464,
+     "Town05|d06_fog50": 17.001767292515954,
+     "Town05|d07_fog75": 24.631007807740545,
+     "Town05|d08_wet": -0.1777704508261877,
+     "Town05|d09_rain": 0.3014023388403402,
+     "Town06|d01_sun25": 0.5149322751332122,
+     "Town06|d02_sun10": 4.313232920120974,
+     "Town06|d03_sun3": 6.983287330984183,
+     "Town06|d04_night": 33.50981945573004,
+     "Town06|d05_fog25": 19.335302583761308,
+     "Town06|d06_fog50": 24.98484055621197,
+     "Town06|d07_fog75": 33.9806679630638,
+     "Town06|d08_wet": 4.894687303655424,
+     "Town06|d09_rain": 9.368668018943808,
+     "Town07|d01_sun25": 1.8885120330903291,
+     "Town07|d02_sun10": 0.047623759684846334,
+     "Town07|d03_sun3": 2.6123210172110873,
+     "Town07|d04_night": 21.021958318102502,
+     "Town07|d05_fog25": 12.452168226342366,
+     "Town07|d06_fog50": 20.006689522960542,
+     "Town07|d07_fog75": 25.891888011389128,
+     "Town07|d08_wet": 1.982883122104397,
+     "Town07|d09_rain": 1.9079960644117477,
+     "Town10HD|d01_sun25": 0.5045627070048155,
+     "Town10HD|d02_sun10": 2.9819263958570232,
+     "Town10HD|d03_sun3": 5.677172454060475,
+     "Town10HD|d04_night": 16.130303745559292,
+     "Town10HD|d05_fog25": 18.5362112110729,
+     "Town10HD|d06_fog50": 31.628572190646146,
+     "Town10HD|d07_fog75": 32.262021567149475,
+     "Town10HD|d08_wet": -1.1470119613565188,
+     "Town10HD|d09_rain": 6.8388350401043425
+    },
+    "monotone": {
+     "seed42_sun": {
+      "rhos": [
+       1.0,
+       1.0,
+       1.0,
+       0.7999999999999999,
+       0.7999999999999999,
+       1.0,
+       0.7999999999999999,
+       1.0
+      ],
+      "n_pass": 8
+     },
+     "seed42_fog": {
+      "rhos": [
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0
+      ],
+      "n_pass": 8
+     },
+     "seed17_sun": {
+      "rhos": [
+       0.7999999999999999,
+       1.0,
+       1.0,
+       1.0,
+       0.7999999999999999,
+       1.0,
+       0.7999999999999999,
+       1.0
+      ],
+      "n_pass": 8
+     },
+     "seed17_fog": {
+      "rhos": [
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0,
+       1.0
+      ],
+      "n_pass": 8
+     }
+    },
+    "visibility": {
+     "\u226525 px": {
+      "town_mean": {
+       "d01_sun25": 1.356813735269355,
+       "d02_sun10": 2.2413601900252957,
+       "d03_sun3": 5.7673681603622375,
+       "d04_night": 23.982315422753935,
+       "d05_fog25": 13.18429304966958,
+       "d06_fog50": 27.382784193758198,
+       "d07_fog75": 34.01386376148799,
+       "d08_wet": 2.0179935003512366,
+       "d09_rain": 8.746865873379301
+      },
+      "mono_sun": 7,
+      "mono_fog": 8
+     },
+     "\u226540 px": {
+      "town_mean": {
+       "d01_sun25": 0.525100965707018,
+       "d02_sun10": 1.7066025172876933,
+       "d03_sun3": 4.6326641120659495,
+       "d04_night": 24.332208504973323,
+       "d05_fog25": 10.592029830817543,
+       "d06_fog50": 23.74999618893183,
+       "d07_fog75": 31.440000507520516,
+       "d08_wet": -0.5505313371795979,
+       "d09_rain": 4.6042349998741585
+      },
+      "mono_sun": 7,
+      "mono_fog": 8
+     }
+    }
+   }
+  },
+  "T10": {
+   "title": "R2 \u2014 with content fixed, label-free metrics track the appearance-only cost (72 town\u00d7dose pairs, 8 towns)",
+   "header": [
+    "family",
+    "metric",
+    "needs",
+    "Spearman \u03c1, seed 42 [CI]",
+    "clustered p",
+    "LOTO R\u00b2 (42)",
+    "\u03c1 seed 17",
+    "LOTO R\u00b2 (17)",
+    "calibration |err| pp, k=1 \u2192 7 towns (predict-the-mean 8.8)"
+   ],
+   "rows": [
+    [
+     "object-level, frozen DINOv3 (GT boxes)",
+     "object FID",
+     "boxes",
+     "+0.840 [+0.78, +0.91]",
+     "<.001",
+     "+0.62",
+     "+0.814",
+     "+0.57",
+     "5.7 \u2192 4.7"
+    ],
+    [
+     "object-level, frozen DINOv3 (GT boxes)",
+     "directed NN distance dose\u2192ref",
+     "boxes",
+     "+0.828 [+0.78, +0.89]",
+     "<.001",
+     "+0.61",
+     "+0.792",
+     "+0.56",
+     "5.9 \u2192 5.0"
+    ],
+    [
+     "object-level, frozen DINOv3 (GT boxes)",
+     "coverage of dose by ref",
+     "boxes",
+     "-0.833 [-0.89, -0.81]",
+     "<.001",
+     "+0.59",
+     "-0.764",
+     "+0.53",
+     "6.5 \u2192 5.1"
+    ],
+    [
+     "object-level, frozen DINOv3 (GT boxes)",
+     "paired object displacement",
+     "boxes",
+     "+0.843 [+0.80, +0.90]",
+     "<.001",
+     "+0.59",
+     "+0.807",
+     "+0.54",
+     "6.1 \u2192 5.0"
+    ],
+    [
+     "object-level, frozen DINOv3 (GT boxes)",
+     "task-projected displacement",
+     "boxes + probe",
+     "+0.797 [+0.69, +0.90]",
+     "<.001",
+     "+0.40",
+     "+0.786",
+     "+0.35",
+     "6.8 \u2192 5.8"
+    ],
+    [
+     "object-level, frozen DINOv3 (GT boxes)",
+     "probe flip rate",
+     "boxes + probe",
+     "+0.738 [+0.65, +0.89]",
+     "<.001",
+     "+0.30",
+     "+0.646",
+     "+0.22",
+     "9.5 \u2192 6.6"
+    ],
+    [
+     "object-level, detector-proposed boxes (label-free)",
+     "object FID",
+     "detector boxes",
+     "+0.838 [+0.78, +0.91]",
+     "<.001",
+     "+0.62",
+     "+0.818",
+     "+0.57",
+     "5.6 \u2192 4.7"
+    ],
+    [
+     "object-level, detector-proposed boxes (label-free)",
+     "directed NN distance",
+     "detector boxes",
+     "+0.841 [+0.79, +0.90]",
+     "<.001",
+     "+0.57",
+     "+0.778",
+     "+0.48",
+     "5.9 \u2192 5.3"
+    ],
+    [
+     "object-level, detector-proposed boxes (label-free)",
+     "paired object displacement",
+     "detector boxes",
+     "+0.851 [+0.81, +0.90]",
+     "<.001",
+     "+0.53",
+     "+0.787",
+     "+0.44",
+     "6.1 \u2192 5.3"
+    ],
+    [
+     "object-level, detector-proposed boxes (label-free)",
+     "probe flip rate",
+     "detector boxes + probe",
+     "+0.771 [+0.71, +0.89]",
+     "<.001",
+     "+0.36",
+     "+0.688",
+     "+0.28",
+     "9.2 \u2192 6.2"
+    ],
+    [
+     "object-level, detector-proposed boxes (label-free)",
+     "log detection-count ratio (detector itself)",
+     "the detector",
+     "-0.872 [-0.91, -0.84]",
+     "<.001",
+     "+0.55",
+     "-0.862",
+     "+0.49",
+     "5.4 \u2192 4.6"
+    ],
+    [
+     "object-level, detector-proposed boxes (label-free)",
+     "DoC (detector itself)",
+     "the detector",
+     "+0.274 [-0.02, +0.62]",
+     "0.018",
+     "-0.06",
+     "+0.195",
+     "-0.07",
+     "10.4 \u2192 8.9"
+    ],
+    [
+     "image-level, frozen DINOv3 (no boxes)",
+     "image FID",
+     "none",
+     "+0.717 [+0.63, +0.80]",
+     "<.001",
+     "+0.26",
+     "+0.682",
+     "+0.25",
+     "7.5 \u2192 7.0"
+    ],
+    [
+     "image-level, frozen DINOv3 (no boxes)",
+     "paired image displacement",
+     "none",
+     "+0.682 [+0.55, +0.80]",
+     "<.001",
+     "+0.29",
+     "+0.662",
+     "+0.28",
+     "7.4 \u2192 6.8"
+    ],
+    [
+     "modern distribution baselines (no boxes)",
+     "CMMD, CLIP ViT-L/14-336",
+     "none",
+     "+0.810 [+0.74, +0.88]",
+     "<.001",
+     "+0.59",
+     "+0.782",
+     "+0.55",
+     "5.6 \u2192 5.1"
+    ],
+    [
+     "modern distribution baselines (no boxes)",
+     "KID, Inception pool3",
+     "none",
+     "+0.701 [+0.59, +0.81]",
+     "<.001",
+     "+0.21",
+     "+0.680",
+     "+0.18",
+     "7.3 \u2192 7.3"
+    ],
+    [
+     "low-level / classic (no boxes)",
+     "LPIPS-AlexNet (paired)",
+     "none",
+     "+0.784 [+0.70, +0.84]",
+     "<.001",
+     "+0.44",
+     "+0.761",
+     "+0.42",
+     "6.6 \u2192 5.8"
+    ],
+    [
+     "low-level / classic (no boxes)",
+     "Inception-pool3 FID",
+     "none",
+     "+0.752 [+0.67, +0.85]",
+     "<.001",
+     "+0.49",
+     "+0.727",
+     "+0.45",
+     "6.5 \u2192 5.8"
+    ],
+    [
+     "low-level / classic (no boxes)",
+     "|\u0394 RMS contrast| (paired)",
+     "none",
+     "+0.736 [+0.64, +0.88]",
+     "<.001",
+     "+0.35",
+     "+0.741",
+     "+0.37",
+     "9.0 \u2192 6.3"
+    ],
+    [
+     "low-level / classic (no boxes)",
+     "SSIM (paired)",
+     "none",
+     "-0.652 [-0.72, -0.58]",
+     "<.001",
+     "+0.21",
+     "-0.621",
+     "+0.19",
+     "7.9 \u2192 7.4"
+    ],
+    [
+     "low-level / classic (no boxes)",
+     "PSNR (paired)",
+     "none",
+     "-0.417 [-0.54, -0.27]",
+     "<.001",
+     "+0.09",
+     "-0.428",
+     "+0.10",
+     "8.6 \u2192 8.0"
+    ],
+    [
+     "low-level / classic (no boxes)",
+     "|\u0394 luminance| (paired)",
+     "none",
+     "-0.068 [-0.18, +0.07]",
+     "0.565",
+     "-0.04",
+     "-0.043",
+     "-0.04",
+     "9.4 \u2192 9.0"
+    ]
+   ],
+   "note": "Pre-registered bar: |\u03c1| \u2265 .7 and LOTO R\u00b2 > 0. Predict-the-mean error = 8.8 pp. All metrics are computed from the two renders only (detector-independent except the two detector rows).",
+   "sources": [
+    "results/calib_dose",
+    "results/calib_dose_rep",
+    "results/calib_dose/dose_metrics*.json",
+    "results/calib_dose/dose_lowlevel.json"
+   ],
+   "data": {
+    "object-level, frozen DINOv3 (GT boxes)|obj_fid_ref": {
+     "rho": 0.8396681458614703,
+     "ci": [
+      0.7788909306256298,
+      0.9085263835263835
+     ],
+     "p": 0.0004997501249375312,
+     "loto_r2": 0.6157252400510984,
+     "n": 72,
+     "rho_b": 0.8141681137050615,
+     "loto_r2_b": 0.5692264573419964,
+     "cal_k1": 5.663202287601303,
+     "cal_k7": 4.684700599241385
+    },
+    "object-level, frozen DINOv3 (GT boxes)|nnd_dose_to_ref": {
+     "rho": 0.8281883079297705,
+     "ci": [
+      0.7769949653364215,
+      0.8895837284495626
+     ],
+     "p": 0.0004997501249375312,
+     "loto_r2": 0.6145240509082011,
+     "n": 72,
+     "rho_b": 0.7924625377837804,
+     "loto_r2_b": 0.5576472853423875,
+     "cal_k1": 5.875519887974591,
+     "cal_k7": 4.982930992837169
+    },
+    "object-level, frozen DINOv3 (GT boxes)|cov_dose_by_ref": {
+     "rho": -0.8330117692456108,
+     "ci": [
+      -0.8877437777104819,
+      -0.8077793375210186
+     ],
+     "p": 0.0004997501249375312,
+     "loto_r2": 0.5911852676555409,
+     "n": 72,
+     "rho_b": -0.7643899929255902,
+     "loto_r2_b": 0.5297574769841065,
+     "cal_k1": 6.531490256189092,
+     "cal_k7": 5.061843348225718
+    },
+    "object-level, frozen DINOv3 (GT boxes)|paired_obj_disp": {
+     "rho": 0.8431410380088753,
+     "ci": [
+      0.799767920712565,
+      0.895264100016875
+     ],
+     "p": 0.0004997501249375312,
+     "loto_r2": 0.5909533503711043,
+     "n": 72,
+     "rho_b": 0.8068686089137567,
+     "loto_r2_b": 0.5387611877229224,
+     "cal_k1": 6.075848747365766,
+     "cal_k7": 5.045783262668166
+    },
+    "object-level, frozen DINOv3 (GT boxes)|paired_task_disp": {
+     "rho": 0.7971895298733038,
+     "ci": [
+      0.6872521077266763,
+      0.9042658760734483
+     ],
+     "p": 0.0004997501249375312,
+     "loto_r2": 0.40307223037592144,
+     "n": 72,
+     "rho_b": 0.7858383175766932,
+     "loto_r2_b": 0.3530389314660861,
+     "cal_k1": 6.838288881745869,
+     "cal_k7": 5.797513496280595
+    },
+    "object-level, frozen DINOv3 (GT boxes)|probe_flip": {
+     "rho": 0.7379168412343557,
+     "ci": [
+      0.6524908291054488,
+      0.8930617871147453
+     ],
+     "p": 0.0004997501249375312,
+     "loto_r2": 0.30266348608578253,
+     "n": 72,
+     "rho_b": 0.6456249802354191,
+     "loto_r2_b": 0.222887350055069,
+     "cal_k1": 9.483484699068885,
+     "cal_k7": 6.597535926278724
+    },
+    "object-level, detector-proposed boxes (label-free)|obj_fid_ref": {
+     "rho": 0.8375458228825007,
+     "ci": [
+      0.7802127077601327,
+      0.9065522516527307
+     ],
+     "p": 0.0004997501249375312,
+     "loto_r2": 0.6171519931966856,
+     "n": 72,
+     "rho_b": 0.8175123802173775,
+     "loto_r2_b": 0.5711043277384702,
+     "cal_k1": 5.611126009651043,
+     "cal_k7": 4.738184534878132
+    },
+    "object-level, detector-proposed boxes (label-free)|nnd_dose_to_ref": {
+     "rho": 0.8411794970737669,
+     "ci": [
+      0.7948464900760367,
+      0.8951394044123049
+     ],
+     "p": 0.0004997501249375312,
+     "loto_r2": 0.5742177518199751,
+     "n": 72,
+     "rho_b": 0.7779599974274873,
+     "loto_r2_b": 0.4845558069546204,
+     "cal_k1": 5.907569854881853,
+     "cal_k7": 5.254778863112996
+    },
+    "object-level, detector-proposed boxes (label-free)|paired_obj_disp": {
+     "rho": 0.8506977940703584,
+     "ci": [
+      0.8114465835279144,
+      0.9017260850748737
+     ],
+     "p": 0.0004997501249375312,
+     "loto_r2": 0.5265797054637937,
+     "n": 72,
+     "rho_b": 0.7868351662486335,
+     "loto_r2_b": 0.441998278854456,
+     "cal_k1": 6.105144619139707,
+     "cal_k7": 5.325659988297076
+    },
+    "object-level, detector-proposed boxes (label-free)|probe_flip": {
+     "rho": 0.7712393079940832,
+     "ci": [
+      0.7092775166535248,
+      0.8916509790671109
+     ],
+     "p": 0.0004997501249375312,
+     "loto_r2": 0.3638890074775578,
+     "n": 72,
+     "rho_b": 0.6876326451861857,
+     "loto_r2_b": 0.2764099280340466,
+     "cal_k1": 9.166141371519668,
+     "cal_k7": 6.16462069083571
+    },
+    "object-level, detector-proposed boxes (label-free)|det_count_ratio": {
+     "rho": -0.8717280854074217,
+     "ci": [
+      -0.9139910974180133,
+      -0.8363326497299297
+     ],
+     "p": 0.0004997501249375312,
+     "loto_r2": 0.5531213927261638,
+     "n": 72,
+     "rho_b": -0.8619203807318799,
+     "loto_r2_b": 0.4940830127085507,
+     "cal_k1": 5.350667606569751,
+     "cal_k7": 4.631930473701573
+    },
+    "object-level, detector-proposed boxes (label-free)|det_doc": {
+     "rho": 0.27368319506077565,
+     "ci": [
+      -0.019721695162754172,
+      0.6191043767794235
+     ],
+     "p": 0.017991004497751123,
+     "loto_r2": -0.06301439706941392,
+     "n": 72,
+     "rho_b": 0.19483568075117372,
+     "loto_r2_b": -0.06724446151110453,
+     "cal_k1": 10.380692682808188,
+     "cal_k7": 8.91013660102842
+    },
+    "image-level, frozen DINOv3 (no boxes)|img_fid_ref": {
+     "rho": 0.7165091002636828,
+     "ci": [
+      0.6301684606844621,
+      0.7967250357837176
+     ],
+     "p": 0.0004997501249375312,
+     "loto_r2": 0.26241680943825063,
+     "n": 72,
+     "rho_b": 0.6815872403369992,
+     "loto_r2_b": 0.24691469218873907,
+     "cal_k1": 7.549392689287876,
+     "cal_k7": 6.953252255920622
+    },
+    "image-level, frozen DINOv3 (no boxes)|paired_img_disp": {
+     "rho": 0.6823268377387615,
+     "ci": [
+      0.552610625874632,
+      0.7989493330758958
+     ],
+     "p": 0.0004997501249375312,
+     "loto_r2": 0.29412748850327386,
+     "n": 72,
+     "rho_b": 0.662486333526272,
+     "loto_r2_b": 0.27792017638398714,
+     "cal_k1": 7.412303082172687,
+     "cal_k7": 6.7862541531226395
+    },
+    "modern distribution baselines (no boxes)|cmmd_ref": {
+     "rho": 0.8099234677471221,
+     "ci": [
+      0.7445082088667616,
+      0.8835095171437307
+     ],
+     "p": 0.0004997501249375312,
+     "loto_r2": 0.5852270064164968,
+     "n": 72,
+     "rho_b": 0.7823011126117436,
+     "loto_r2_b": 0.5488377910837658,
+     "cal_k1": 5.585829607796158,
+     "cal_k7": 5.109268048256115
+    },
+    "modern distribution baselines (no boxes)|kid_ref": {
+     "rho": 0.7012991189143998,
+     "ci": [
+      0.58709936769808,
+      0.812482357411984
+     ],
+     "p": 0.0004997501249375312,
+     "loto_r2": 0.21372278323541394,
+     "n": 72,
+     "rho_b": 0.679979419898386,
+     "loto_r2_b": 0.18347282002039011,
+     "cal_k1": 7.254044161435903,
+     "cal_k7": 7.256030642536563
+    },
+    "low-level / classic (no boxes)|lpips": {
+     "rho": 0.7838767766415847,
+     "ci": [
+      0.7016147620366608,
+      0.8431206846406725
+     ],
+     "p": 0.0004997501249375312,
+     "loto_r2": 0.44415018938796846,
+     "n": 72,
+     "rho_b": 0.7605955366904625,
+     "loto_r2_b": 0.4179472356965983,
+     "cal_k1": 6.582567229697288,
+     "cal_k7": 5.804823656532046
+    },
+    "low-level / classic (no boxes)|incfid_ref": {
+     "rho": 0.7524278088623064,
+     "ci": [
+      0.6692254514528723,
+      0.8466830783092789
+     ],
+     "p": 0.0004997501249375312,
+     "loto_r2": 0.48792498708120013,
+     "n": 72,
+     "rho_b": 0.7268956202971253,
+     "loto_r2_b": 0.45480324754818946,
+     "cal_k1": 6.5338386726827204,
+     "cal_k7": 5.787056293893383
+    },
+    "low-level / classic (no boxes)|dcontrast": {
+     "rho": 0.7356743198919546,
+     "ci": [
+      0.6367879677348733,
+      0.8829158018374603
+     ],
+     "p": 0.0004997501249375312,
+     "loto_r2": 0.35226334434638207,
+     "n": 72,
+     "rho_b": 0.7407228760692007,
+     "loto_r2_b": 0.3712265705382499,
+     "cal_k1": 9.029691159248804,
+     "cal_k7": 6.27741212104396
+    },
+    "low-level / classic (no boxes)|ssim": {
+     "rho": -0.6516817801787897,
+     "ci": [
+      -0.7189381065374175,
+      -0.5751315344885843
+     ],
+     "p": 0.0004997501249375312,
+     "loto_r2": 0.20716642503288485,
+     "n": 72,
+     "rho_b": -0.6208437841661845,
+     "loto_r2_b": 0.1927765866914899,
+     "cal_k1": 7.8818103030931885,
+     "cal_k7": 7.353509601268494
+    },
+    "low-level / classic (no boxes)|psnr": {
+     "rho": -0.41739018586404275,
+     "ci": [
+      -0.5387347329839929,
+      -0.2674249859160279
+     ],
+     "p": 0.0004997501249375312,
+     "loto_r2": 0.08999798341828191,
+     "n": 72,
+     "rho_b": -0.42774454948871315,
+     "loto_r2_b": 0.0961578172520885,
+     "cal_k1": 8.554601134688761,
+     "cal_k7": 8.030043789544022
+    },
+    "low-level / classic (no boxes)|dlum": {
+     "rho": -0.06768924046562481,
+     "ci": [
+      -0.1767469549967016,
+      0.06564610254307886
+     ],
+     "p": 0.5652173913043478,
+     "loto_r2": -0.03665315573940631,
+     "n": 72,
+     "rho_b": -0.042575085214483256,
+     "loto_r2_b": -0.03677887280099301,
+     "cal_k1": 9.354368906196989,
+     "cal_k7": 8.966261982427705
+    }
+   }
+  },
+  "T11": {
+   "title": "R2 robustness: other feature spaces (same 4 towns, 36 pairs, seed-42 drops), a second detector family (FCOS, 2 towns, 18 pairs), and visibility-filtered drops (72 pairs)",
+   "header": [
+    "metric",
+    "DINOv3 \u03c1 / LOTO R\u00b2",
+    "DINOv2 \u03c1 / LOTO R\u00b2",
+    "CLIP \u03c1 / LOTO R\u00b2",
+    "FCOS drop: \u03c1 (clustered p)",
+    "\u03c1 with drops on boxes \u226525 px / \u226540 px"
+   ],
+   "rows": [
+    [
+     "object FID",
+     "+0.86 / +0.64",
+     "+0.87 / +0.65",
+     "+0.88 / +0.64",
+     "+0.88 (p=<.001)",
+     "+0.86 / +0.83"
+    ],
+    [
+     "directed NN distance",
+     "+0.83 / +0.54",
+     "+0.87 / +0.64",
+     "+0.87 / +0.56",
+     "+0.87 (p=<.001)",
+     "+0.84 / +0.81"
+    ],
+    [
+     "coverage",
+     "-0.87 / +0.58",
+     "-0.88 / +0.64",
+     "-0.88 / +0.61",
+     "-0.91 (p=<.001)",
+     "-0.84 / -0.82"
+    ],
+    [
+     "paired object displacement",
+     "+0.86 / +0.55",
+     "+0.87 / +0.62",
+     "+0.88 / +0.60",
+     "+0.86 (p=<.001)",
+     "+0.85 / +0.83"
+    ],
+    [
+     "task-projected displacement",
+     "+0.84 / +0.59",
+     "+0.82 / +0.55",
+     "+0.82 / +0.51",
+     "+0.89 (p=<.001)",
+     "+0.81 / +0.78"
+    ],
+    [
+     "probe flip rate",
+     "+0.90 / +0.66",
+     "+0.85 / +0.60",
+     "+0.79 / +0.60",
+     "+0.95 (p=<.001)",
+     "+0.75 / +0.76"
+    ],
+    [
+     "image FID (no boxes)",
+     "+0.74 / +0.39",
+     "+0.77 / +0.47",
+     "+0.85 / +0.60",
+     "+0.78 (p=<.001)",
+     "+0.74 / +0.69"
+    ],
+    [
+     "paired image displacement (no boxes)",
+     "+0.74 / +0.45",
+     "+0.78 / +0.54",
+     "+0.86 / +0.63",
+     "+0.75 (p=<.001)",
+     "+0.69 / +0.65"
+    ]
+   ],
+   "note": "FCOS appearance-only drops are monotone in both towns (sun \u03c1 [1.0, 1.0], fog \u03c1 [1.0, 1.0]). The FCOS detectors see the SAME DINOv3 metrics (detector-independent).",
+   "sources": [
+    "results/calib_dose",
+    "results/calib_dose_arch2",
+    "results/calib_dose_h25",
+    "results/calib_dose_h40"
+   ],
+   "data": {
+    "obj_fid_ref": {
+     "DINOv3": {
+      "rho": 0.8635778635778637,
+      "loto_r2": 0.6443073447817926
+     },
+     "DINOv2": {
+      "rho": 0.8697554697554698,
+      "loto_r2": 0.6531264721094383
+     },
+     "CLIP": {
+      "rho": 0.8805662805662806,
+      "loto_r2": 0.6407806822410775
+     },
+     "FCOS": {
+      "rho": 0.8823529411764706,
+      "p": 0.0004997501249375312,
+      "n": 18
+     },
+     "h25": {
+      "rho": 0.8550389092546147,
+      "loto_r2": 0.618329526501928
+     },
+     "h40": {
+      "rho": 0.8349089973631746,
+      "loto_r2": 0.6090566699574167
+     }
+    },
+    "nnd_dose_to_ref": {
+     "DINOv3": {
+      "rho": 0.833976833976834,
+      "loto_r2": 0.5359390715297576
+     },
+     "DINOv2": {
+      "rho": 0.868983268983269,
+      "loto_r2": 0.641370222455508
+     },
+     "CLIP": {
+      "rho": 0.8733590733590734,
+      "loto_r2": 0.562182566547889
+     },
+     "FCOS": {
+      "rho": 0.8658410732714137,
+      "p": 0.0004997501249375312,
+      "n": 18
+     },
+     "h25": {
+      "rho": 0.8383175766930352,
+      "loto_r2": 0.6064981155546902
+     },
+     "h40": {
+      "rho": 0.8074795806804297,
+      "loto_r2": 0.5836144083924413
+     }
+    },
+    "cov_dose_by_ref": {
+     "DINOv3": {
+      "rho": -0.8697554697554698,
+      "loto_r2": 0.5829464883065341
+     },
+     "DINOv2": {
+      "rho": -0.8790218790218791,
+      "loto_r2": 0.6392491845278641
+     },
+     "CLIP": {
+      "rho": -0.880494242121871,
+      "loto_r2": 0.6069403782656603
+     },
+     "FCOS": {
+      "rho": -0.9133126934984519,
+      "p": 0.0004997501249375312,
+      "n": 18
+     },
+     "h25": {
+      "rho": -0.8395073638176089,
+      "loto_r2": 0.5822024541022894
+     },
+     "h40": {
+      "rho": -0.8232362209788412,
+      "loto_r2": 0.5712990219874513
+     }
+    },
+    "paired_obj_disp": {
+     "DINOv3": {
+      "rho": 0.8558558558558559,
+      "loto_r2": 0.546300273919224
+     },
+     "DINOv2": {
+      "rho": 0.868983268983269,
+      "loto_r2": 0.6187101734945596
+     },
+     "CLIP": {
+      "rho": 0.8805662805662806,
+      "loto_r2": 0.6015353341526694
+     },
+     "FCOS": {
+      "rho": 0.8617131062951496,
+      "p": 0.0004997501249375312,
+      "n": 18
+     },
+     "h25": {
+      "rho": 0.8521126760563383,
+      "loto_r2": 0.593327888787915
+     },
+     "h40": {
+      "rho": 0.827641648980642,
+      "loto_r2": 0.5734542976216566
+     }
+    },
+    "paired_task_disp": {
+     "DINOv3": {
+      "rho": 0.8378378378378378,
+      "loto_r2": 0.588503031589801
+     },
+     "DINOv2": {
+      "rho": 0.8223938223938224,
+      "loto_r2": 0.5510414813948341
+     },
+     "CLIP": {
+      "rho": 0.8244530244530245,
+      "loto_r2": 0.5064732320481942
+     },
+     "FCOS": {
+      "rho": 0.8885448916408669,
+      "p": 0.0004997501249375312,
+      "n": 18
+     },
+     "h25": {
+      "rho": 0.8105665959225675,
+      "loto_r2": 0.37687051770962765
+     },
+     "h40": {
+      "rho": 0.7823011126117436,
+      "loto_r2": 0.38330221558088506
+     }
+    },
+    "probe_flip": {
+     "DINOv3": {
+      "rho": 0.8971553684823578,
+      "loto_r2": 0.6590859811940697
+     },
+     "DINOv2": {
+      "rho": 0.8473420072768093,
+      "loto_r2": 0.5964009872842657
+     },
+     "CLIP": {
+      "rho": 0.7935649935649937,
+      "loto_r2": 0.5993143977143021
+     },
+     "FCOS": {
+      "rho": 0.9504643962848297,
+      "p": 0.0004997501249375312,
+      "n": 18
+     },
+     "h25": {
+      "rho": 0.7541885073198826,
+      "loto_r2": 0.34210916344962317
+     },
+     "h40": {
+      "rho": 0.7568575750769948,
+      "loto_r2": 0.3866825492765672
+     }
+    },
+    "img_fid_ref": {
+     "DINOv3": {
+      "rho": 0.7407979407979408,
+      "loto_r2": 0.3942277185309433
+     },
+     "DINOv2": {
+      "rho": 0.7703989703989704,
+      "loto_r2": 0.4652174112033536
+     },
+     "CLIP": {
+      "rho": 0.8517374517374519,
+      "loto_r2": 0.6049268618023881
+     },
+     "FCOS": {
+      "rho": 0.7750257997936018,
+      "p": 0.0004997501249375312,
+      "n": 18
+     },
+     "h25": {
+      "rho": 0.7425879477779923,
+      "loto_r2": 0.3097673377241992
+     },
+     "h40": {
+      "rho": 0.6896584989388386,
+      "loto_r2": 0.3320735792986398
+     }
+    },
+    "paired_img_disp": {
+     "DINOv3": {
+      "rho": 0.7431145431145432,
+      "loto_r2": 0.44661780566661435
+     },
+     "DINOv2": {
+      "rho": 0.7835263835263836,
+      "loto_r2": 0.541223772509497
+     },
+     "CLIP": {
+      "rho": 0.864092664092664,
+      "loto_r2": 0.6292302195130031
+     },
+     "FCOS": {
+      "rho": 0.7502579979360166,
+      "p": 0.0009995002498750624,
+      "n": 18
+     },
+     "h25": {
+      "rho": 0.6947392115248571,
+      "loto_r2": 0.2904404064871643
+     },
+     "h40": {
+      "rho": 0.6481445752138402,
+      "loto_r2": 0.28403071692244775
+     }
+    },
+    "fcos_monotone": {
+     "sun": [
+      1.0,
+      1.0
+     ],
+     "fog": [
+      1.0,
+      1.0
+     ]
+    }
+   }
+  },
+  "T12a": {
+   "title": "R3 \u2014 training on the re-rendered dose instead of the clean reference changes real-target mAP (dose-trained \u2212 reference-trained, pp)",
+   "header": [
+    "target",
+    "sun25",
+    "sun10",
+    "sun3",
+    "night",
+    "fog25",
+    "fog50",
+    "fog75",
+    "wet",
+    "rain"
+   ],
+   "rows": [
+    [
+     "KITTI: \u0394 real mAP, mean of 8 towns \u00d7 2 seeds [CI]",
+     "+1.2 [+0.12, +2.38]",
+     "+0.6 [-1.19, +2.65]",
+     "+0.6 [-1.52, +2.34]",
+     "+1.3 [+0.40, +2.20]",
+     "-0.6 [-3.34, +1.90]",
+     "-6.5 [-9.48, -3.73]",
+     "-9.0 [-12.45, -5.78]",
+     "-0.1 [-1.94, +1.79]",
+     "-0.9 [-2.78, +0.83]"
+    ],
+    [
+     "KITTI: FCOS (2 towns, 1 seed)",
+     "+2.8",
+     "+4.4",
+     "-0.3",
+     "+4.4",
+     "-5.9",
+     "-3.4",
+     "-12.0",
+     "+0.8",
+     "-10.0"
+    ],
+    [
+     "Cityscapes: \u0394 real mAP, mean of 8 towns \u00d7 2 seeds [CI]",
+     "+1.1 [+0.43, +1.92]",
+     "+0.4 [-0.31, +1.17]",
+     "+1.1 [+0.56, +1.59]",
+     "+1.5 [+0.63, +2.28]",
+     "+0.3 [-0.31, +0.88]",
+     "-2.1 [-3.09, -0.92]",
+     "-3.7 [-5.08, -2.34]",
+     "+0.7 [-0.07, +1.45]",
+     "+0.3 [-1.05, +1.67]"
+    ],
+    [
+     "Cityscapes: FCOS (2 towns, 1 seed)",
+     "+1.4",
+     "+2.4",
+     "-0.2",
+     "-0.6",
+     "-4.1",
+     "-2.0",
+     "-7.6",
+     "-1.3",
+     "-6.1"
+    ]
+   ],
+   "note": "",
+   "sources": [
+    "results/calib_dose",
+    "results/calib_dose_rep",
+    "results/calib_dose_arch2"
+   ],
+   "data": {
+    "KITTI": {
+     "d01_sun25": {
+      "mean": 1.2289007459346764,
+      "ci": [
+       0.11833799284345896,
+       2.3800037124370887
+      ],
+      "seed42": 1.3966944015467249,
+      "seed17": 1.0611070903226278,
+      "fcos": 2.848344782895131
+     },
+     "d02_sun10": {
+      "mean": 0.6350869094314058,
+      "ci": [
+       -1.1930560278362317,
+       2.6547931224919927
+      ],
+      "seed42": 0.6981916924757887,
+      "seed17": 0.5719821263870228,
+      "fcos": 4.387856899862669
+     },
+     "d03_sun3": {
+      "mean": 0.5620466379984508,
+      "ci": [
+       -1.5236642168763448,
+       2.335334228130485
+      ],
+      "seed42": 0.10231013618915652,
+      "seed17": 1.021783139807745,
+      "fcos": -0.32249480158721333
+     },
+     "d04_night": {
+      "mean": 1.3489652398270415,
+      "ci": [
+       0.39699360738313283,
+       2.2047392207900667
+      ],
+      "seed42": 1.512357431632621,
+      "seed17": 1.1855730480214621,
+      "fcos": 4.403613957910519
+     },
+     "d05_fog25": {
+      "mean": -0.6380043768162802,
+      "ci": [
+       -3.3378911344415148,
+       1.899609957280464
+      ],
+      "seed42": -0.9997733101893367,
+      "seed17": -0.2762354434432237,
+      "fcos": -5.878840416640751
+     },
+     "d06_fog50": {
+      "mean": -6.505645345925954,
+      "ci": [
+       -9.477667287597106,
+       -3.7325390129794815
+      ],
+      "seed42": -6.783857329393881,
+      "seed17": -6.227433362458026,
+      "fcos": -3.4436855880846835
+     },
+     "d07_fog75": {
+      "mean": -9.044136408047866,
+      "ci": [
+       -12.451014606789958,
+       -5.783919016602113
+      ],
+      "seed42": -9.457323608985595,
+      "seed17": -8.630949207110136,
+      "fcos": -12.01540497996198
+     },
+     "d08_wet": {
+      "mean": -0.08517756093397533,
+      "ci": [
+       -1.9360411905541466,
+       1.7903257965149384
+      ],
+      "seed42": -0.5076715669218914,
+      "seed17": 0.33731644505394076,
+      "fcos": 0.7864942790556739
+     },
+     "d09_rain": {
+      "mean": -0.8594105588551062,
+      "ci": [
+       -2.7798641373722766,
+       0.8336680274049393
+      ],
+      "seed42": -1.3159434762153444,
+      "seed17": -0.40287764149486804,
+      "fcos": -9.96173185582737
+     }
+    },
+    "Cityscapes": {
+     "d01_sun25": {
+      "mean": 1.1384843469520303,
+      "ci": [
+       0.427837948628508,
+       1.9191544479766336
+      ],
+      "seed42": 1.205686549814727,
+      "seed17": 1.0712821440893336,
+      "fcos": 1.40628652575342
+     },
+     "d02_sun10": {
+      "mean": 0.41263739322966586,
+      "ci": [
+       -0.31059242034026746,
+       1.165282213937056
+      ],
+      "seed42": 0.06396608039886886,
+      "seed17": 0.7613087060604629,
+      "fcos": 2.3921621016071324
+     },
+     "d03_sun3": {
+      "mean": 1.0896757758501927,
+      "ci": [
+       0.5633015534212681,
+       1.5870508034835262
+      ],
+      "seed42": 1.2730016510092557,
+      "seed17": 0.90634990069113,
+      "fcos": -0.1650053323244034
+     },
+     "d04_night": {
+      "mean": 1.4729721986203965,
+      "ci": [
+       0.6285332484335732,
+       2.2837870150712836
+      ],
+      "seed42": 1.2657874959463562,
+      "seed17": 1.6801569012944368,
+      "fcos": -0.6102945719340367
+     },
+     "d05_fog25": {
+      "mean": 0.26551612314243467,
+      "ci": [
+       -0.31027517160232393,
+       0.8767783235498486
+      ],
+      "seed42": 0.11917759659799665,
+      "seed17": 0.4118546496868727,
+      "fcos": -4.1414459152752325
+     },
+     "d06_fog50": {
+      "mean": -2.0734891534597537,
+      "ci": [
+       -3.0859717594562874,
+       -0.9198759232676429
+      ],
+      "seed42": -1.9199498356131302,
+      "seed17": -2.2270284713063773,
+      "fcos": -1.9659897422423045
+     },
+     "d07_fog75": {
+      "mean": -3.7277868036484763,
+      "ci": [
+       -5.075735458668002,
+       -2.336413505654798
+      ],
+      "seed42": -3.8213575080416096,
+      "seed17": -3.6342160992553425,
+      "fcos": -7.567878099403826
+     },
+     "d08_wet": {
+      "mean": 0.6525812878828999,
+      "ci": [
+       -0.07150743455420037,
+       1.4531403102556606
+      ],
+      "seed42": 0.3682966837348376,
+      "seed17": 0.9368658920309623,
+      "fcos": -1.3203144834534397
+     },
+     "d09_rain": {
+      "mean": 0.27414158981348513,
+      "ci": [
+       -1.0533370545206049,
+       1.6676923728665844
+      ],
+      "seed42": 0.06839739008009293,
+      "seed17": 0.47988578954687733,
+      "fcos": -6.135775483568824
+     }
+    }
+   }
+  },
+  "T12b": {
+   "title": "R3 \u2014 \u0394(distance to the real domain) vs \u0394(real mAP) over the 72 (town, dose) pairs, Spearman \u03c1 [CI], town-clustered p",
+   "header": [
+    "target",
+    "distance",
+    "detectors",
+    "all doses",
+    "without fog",
+    "fog only",
+    "sun + night"
+   ],
+   "rows": [
+    [
+     "KITTI",
+     "DINOv3 image FID to real",
+     "seed 42",
+     "-0.528 [-0.69, -0.41] p=<.001",
+     "-0.315 [-0.64, +0.05] p=0.013",
+     "-0.459 [-0.80, -0.15] p=<.001",
+     "-0.158 [-0.61, +0.36] p=0.668"
+    ],
+    [
+     "KITTI",
+     "DINOv3 image FID to real",
+     "seed 17",
+     "-0.490 [-0.65, -0.35] p=<.001",
+     "-0.158 [-0.56, +0.28] p=0.164",
+     "-0.580 [-0.84, -0.32] p=<.001",
+     "+0.000 [-0.63, +0.62] p=1.000"
+    ],
+    [
+     "KITTI",
+     "DINOv3 image FID to real",
+     "seed mean",
+     "-0.545 [-0.70, -0.39] p=<.001",
+     "-0.301 [-0.65, +0.12] p=0.003",
+     "-0.490 [-0.80, -0.17] p=<.001",
+     "-0.106 [-0.68, +0.52] p=0.865"
+    ],
+    [
+     "KITTI",
+     "Inception-pool3 FID to real",
+     "seed 42",
+     "-0.534 [-0.71, -0.40] p=<.001",
+     "-0.239 [-0.59, +0.14] p=0.092",
+     "-0.733 [-0.93, -0.50] p=<.001",
+     "-0.110 [-0.61, +0.43] p=0.927"
+    ],
+    [
+     "KITTI",
+     "Inception-pool3 FID to real",
+     "seed 17",
+     "-0.537 [-0.71, -0.39] p=<.001",
+     "-0.176 [-0.55, +0.26] p=0.196",
+     "-0.798 [-0.93, -0.60] p=<.001",
+     "-0.178 [-0.68, +0.44] p=0.529"
+    ],
+    [
+     "KITTI",
+     "Inception-pool3 FID to real",
+     "seed mean",
+     "-0.565 [-0.73, -0.41] p=<.001",
+     "-0.244 [-0.61, +0.18] p=0.066",
+     "-0.756 [-0.93, -0.53] p=<.001",
+     "-0.147 [-0.69, +0.55] p=0.943"
+    ],
+    [
+     "KITTI",
+     "CMMD to real",
+     "seed 42",
+     "-0.355 [-0.56, -0.14] p=<.001",
+     "-0.066 [-0.33, +0.32] p=0.732",
+     "-0.353 [-0.82, +0.15] p=0.003",
+     "-0.116 [-0.36, +0.26] p=0.689"
+    ],
+    [
+     "KITTI",
+     "CMMD to real",
+     "seed 17",
+     "-0.327 [-0.57, -0.10] p=<.001",
+     "+0.075 [-0.36, +0.54] p=0.377",
+     "-0.353 [-0.78, +0.10] p=0.006",
+     "-0.023 [-0.42, +0.49] p=0.797"
+    ],
+    [
+     "KITTI",
+     "CMMD to real",
+     "seed mean",
+     "-0.344 [-0.57, -0.10] p=<.001",
+     "+0.015 [-0.31, +0.50] p=0.925",
+     "-0.343 [-0.81, +0.11] p=0.004",
+     "-0.072 [-0.37, +0.51] p=0.817"
+    ],
+    [
+     "KITTI",
+     "KID to real",
+     "seed 42",
+     "-0.448 [-0.66, -0.26] p=<.001",
+     "-0.245 [-0.58, +0.14] p=0.089",
+     "-0.659 [-0.87, -0.41] p=<.001",
+     "-0.143 [-0.58, +0.43] p=0.979"
+    ],
+    [
+     "KITTI",
+     "KID to real",
+     "seed 17",
+     "-0.418 [-0.60, -0.26] p=<.001",
+     "-0.138 [-0.51, +0.31] p=0.182",
+     "-0.715 [-0.90, -0.45] p=<.001",
+     "-0.115 [-0.66, +0.53] p=0.697"
+    ],
+    [
+     "KITTI",
+     "KID to real",
+     "seed mean",
+     "-0.463 [-0.65, -0.28] p=<.001",
+     "-0.243 [-0.60, +0.21] p=0.036",
+     "-0.679 [-0.89, -0.40] p=<.001",
+     "-0.149 [-0.68, +0.53] p=0.993"
+    ],
+    [
+     "KITTI",
+     "DINOv3 image FID to real",
+     "FCOS (18 pairs)",
+     "-0.730 p=0.001",
+     "\u2014",
+     "\u2014",
+     "\u2014"
+    ],
+    [
+     "Cityscapes",
+     "DINOv3 image FID to real",
+     "seed 42",
+     "-0.512 [-0.69, -0.33] p=<.001",
+     "-0.233 [-0.53, -0.05] p=0.147",
+     "-0.651 [-0.90, -0.35] p=<.001",
+     "-0.088 [-0.52, +0.33] p=0.239"
+    ],
+    [
+     "Cityscapes",
+     "DINOv3 image FID to real",
+     "seed 17",
+     "-0.454 [-0.57, -0.31] p=<.001",
+     "-0.041 [-0.24, +0.27] p=0.776",
+     "-0.657 [-0.85, -0.48] p=<.001",
+     "+0.420 [+0.23, +0.63] p=0.002"
+    ],
+    [
+     "Cityscapes",
+     "DINOv3 image FID to real",
+     "seed mean",
+     "-0.537 [-0.67, -0.37] p=<.001",
+     "-0.159 [-0.40, +0.12] p=0.401",
+     "-0.703 [-0.87, -0.48] p=<.001",
+     "+0.177 [-0.16, +0.54] p=0.068"
+    ],
+    [
+     "Cityscapes",
+     "Inception-pool3 FID to real",
+     "seed 42",
+     "-0.502 [-0.66, -0.34] p=<.001",
+     "-0.189 [-0.45, +0.02] p=0.194",
+     "-0.767 [-0.93, -0.56] p=<.001",
+     "-0.066 [-0.39, +0.26] p=0.558"
+    ],
+    [
+     "Cityscapes",
+     "Inception-pool3 FID to real",
+     "seed 17",
+     "-0.464 [-0.60, -0.33] p=<.001",
+     "-0.090 [-0.38, +0.24] p=0.379",
+     "-0.629 [-0.80, -0.44] p=<.001",
+     "+0.165 [-0.26, +0.56] p=0.582"
+    ],
+    [
+     "Cityscapes",
+     "Inception-pool3 FID to real",
+     "seed mean",
+     "-0.541 [-0.66, -0.40] p=<.001",
+     "-0.182 [-0.41, +0.06] p=0.129",
+     "-0.757 [-0.89, -0.56] p=<.001",
+     "+0.034 [-0.33, +0.50] p=0.791"
+    ],
+    [
+     "Cityscapes",
+     "CMMD to real",
+     "seed 42",
+     "-0.388 [-0.53, -0.15] p=0.001",
+     "+0.049 [-0.26, +0.43] p=0.753",
+     "-0.566 [-0.84, -0.11] p=0.012",
+     "+0.111 [-0.18, +0.44] p=0.441"
+    ],
+    [
+     "Cityscapes",
+     "CMMD to real",
+     "seed 17",
+     "-0.277 [-0.51, -0.03] p=0.002",
+     "+0.112 [-0.26, +0.56] p=0.408",
+     "-0.177 [-0.53, +0.18] p=0.133",
+     "+0.146 [-0.27, +0.54] p=0.597"
+    ],
+    [
+     "Cityscapes",
+     "CMMD to real",
+     "seed mean",
+     "-0.359 [-0.58, -0.07] p=0.001",
+     "+0.076 [-0.33, +0.57] p=0.449",
+     "-0.417 [-0.72, -0.04] p=0.067",
+     "+0.125 [-0.26, +0.53] p=0.407"
+    ],
+    [
+     "Cityscapes",
+     "KID to real",
+     "seed 42",
+     "-0.435 [-0.63, -0.26] p=<.001",
+     "-0.162 [-0.41, +0.02] p=0.253",
+     "-0.708 [-0.95, -0.44] p=<.001",
+     "-0.003 [-0.34, +0.34] p=0.964"
+    ],
+    [
+     "Cityscapes",
+     "KID to real",
+     "seed 17",
+     "-0.406 [-0.53, -0.25] p=<.001",
+     "-0.051 [-0.31, +0.25] p=0.640",
+     "-0.665 [-0.82, -0.48] p=<.001",
+     "+0.225 [-0.19, +0.65] p=0.401"
+    ],
+    [
+     "Cityscapes",
+     "KID to real",
+     "seed mean",
+     "-0.474 [-0.60, -0.33] p=<.001",
+     "-0.145 [-0.37, +0.08] p=0.221",
+     "-0.739 [-0.93, -0.55] p=<.001",
+     "+0.097 [-0.30, +0.58] p=0.463"
+    ],
+    [
+     "Cityscapes",
+     "DINOv3 image FID to real",
+     "FCOS (18 pairs)",
+     "-0.554 p=0.008",
+     "\u2014",
+     "\u2014",
+     "\u2014"
+    ],
+    [
+     "Foggy Cityscapes \u03b2=.02",
+     "DINOv3 image FID to foggy CS",
+     "seed 42",
+     "-0.081 [-0.36, +0.11] p=0.574",
+     "\u2014",
+     "\u2014",
+     "\u2014"
+    ]
+   ],
+   "note": "\u0394 = dose cell \u2212 reference cell of the same town. Expected sign negative. Foggy Cityscapes row = pre-registered F2 (fails).",
+   "sources": [
+    "results/calib_dose",
+    "results/calib_dose_rep",
+    "results/calib_dose_arch2",
+    "results/calib_dose_foggy",
+    "results/calib_dose/dose_lowlevel.json"
+   ],
+   "data": {
+    "KITTI|DINOv3 image FID to real|seed 42": {
+     "all": {
+      "rho": -0.5279760756318735,
+      "ci": [
+       -0.6945214075397017,
+       -0.41065735499786693
+      ],
+      "p": 0.0004997501249375312,
+      "n": 72
+     },
+     "without fog": {
+      "rho": -0.314915327833261,
+      "ci": [
+       -0.6379522998288897,
+       0.054802268307296946
+      ],
+      "p": 0.013493253373313344,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.4591304347826086,
+      "ci": [
+       -0.8002256073121009,
+       -0.14741174868680246
+      ],
+      "p": 0.0004997501249375312,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": -0.15835777126099704,
+      "ci": [
+       -0.6067963379175193,
+       0.35779296944951794
+      ],
+      "p": 0.6676661669165417,
+      "n": 32
+     }
+    },
+    "KITTI|DINOv3 image FID to real|seed 17": {
+     "all": {
+      "rho": -0.4900636696893692,
+      "ci": [
+       -0.6524289108880077,
+       -0.3481303515357652
+      ],
+      "p": 0.0004997501249375312,
+      "n": 72
+     },
+     "without fog": {
+      "rho": -0.15848892748588797,
+      "ci": [
+       -0.5553405239751383,
+       0.27589373279097873
+      ],
+      "p": 0.16391804097951024,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.58,
+      "ci": [
+       -0.8376254910519425,
+       -0.3225802931527294
+      ],
+      "p": 0.0004997501249375312,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": 0.0,
+      "ci": [
+       -0.6277533039647576,
+       0.6212430685775696
+      ],
+      "p": 1.0,
+      "n": 32
+     }
+    },
+    "KITTI|DINOv3 image FID to real|seed mean": {
+     "all": {
+      "rho": -0.5445366261495916,
+      "ci": [
+       -0.7036363303616312,
+       -0.3948611113241352
+      ],
+      "p": 0.0004997501249375312,
+      "n": 72
+     },
+     "without fog": {
+      "rho": -0.30112896222318714,
+      "ci": [
+       -0.6504029623175778,
+       0.12358987106933847
+      ],
+      "p": 0.0034982508745627187,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.48956521739130426,
+      "ci": [
+       -0.8013372052777916,
+       -0.17347054070590945
+      ],
+      "p": 0.0004997501249375312,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": -0.10557184750733135,
+      "ci": [
+       -0.6836132808858896,
+       0.5230886736518311
+      ],
+      "p": 0.8645677161419291,
+      "n": 32
+     }
+    },
+    "KITTI|Inception-pool3 FID to real|seed 42": {
+     "all": {
+      "rho": -0.5337642292108817,
+      "ci": [
+       -0.7104498352113189,
+       -0.39835414392174673
+      ],
+      "p": 0.0004997501249375312,
+      "n": 72
+     },
+     "without fog": {
+      "rho": -0.23936170212765956,
+      "ci": [
+       -0.5899749918451669,
+       0.1386592152229979
+      ],
+      "p": 0.09245377311344327,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.7330434782608695,
+      "ci": [
+       -0.9293034589107781,
+       -0.5034981810001039
+      ],
+      "p": 0.0004997501249375312,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": -0.1099706744868035,
+      "ci": [
+       -0.6106593538976474,
+       0.42527750278782905
+      ],
+      "p": 0.9265367316341829,
+      "n": 32
+     }
+    },
+    "KITTI|Inception-pool3 FID to real|seed 17": {
+     "all": {
+      "rho": -0.5373335905846036,
+      "ci": [
+       -0.705725898957764,
+       -0.38962044053997535
+      ],
+      "p": 0.0004997501249375312,
+      "n": 72
+     },
+     "without fog": {
+      "rho": -0.17618323925314808,
+      "ci": [
+       -0.5456527039328254,
+       0.2646962946865153
+      ],
+      "p": 0.19590204897551225,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.7982608695652172,
+      "ci": [
+       -0.9275573243010509,
+       -0.6017505470459519
+      ],
+      "p": 0.0004997501249375312,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": -0.17815249266862168,
+      "ci": [
+       -0.6841368593817903,
+       0.43607641440117556
+      ],
+      "p": 0.5292353823088456,
+      "n": 32
+     }
+    },
+    "KITTI|Inception-pool3 FID to real|seed mean": {
+     "all": {
+      "rho": -0.5653739790340215,
+      "ci": [
+       -0.7267300606587185,
+       -0.40824765490498954
+      ],
+      "p": 0.0004997501249375312,
+      "n": 72
+     },
+     "without fog": {
+      "rho": -0.24413808076422058,
+      "ci": [
+       -0.6052194367368123,
+       0.18183646841361295
+      ],
+      "p": 0.06646676661669165,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.7556521739130433,
+      "ci": [
+       -0.929380993897123,
+       -0.5290590809628011
+      ],
+      "p": 0.0004997501249375312,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": -0.1473607038123167,
+      "ci": [
+       -0.686123348017621,
+       0.5474171066772453
+      ],
+      "p": 0.9425287356321839,
+      "n": 32
+     }
+    },
+    "KITTI|CMMD to real|seed 42": {
+     "all": {
+      "rho": -0.35455656312303047,
+      "ci": [
+       -0.5550185833602767,
+       -0.1410761439986858
+      ],
+      "p": 0.0004997501249375312,
+      "n": 72
+     },
+     "without fog": {
+      "rho": -0.06600086843247936,
+      "ci": [
+       -0.3298275776821221,
+       0.3163202782207231
+      ],
+      "p": 0.7316341829085458,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.3530434782608695,
+      "ci": [
+       -0.8161925601750547,
+       0.14573991403632552
+      ],
+      "p": 0.0034982508745627187,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": -0.1158357771260997,
+      "ci": [
+       -0.35680050783980743,
+       0.26059861277420676
+      ],
+      "p": 0.688655672163918,
+      "n": 32
+     }
+    },
+    "KITTI|CMMD to real|seed 17": {
+     "all": {
+      "rho": -0.3268055823525629,
+      "ci": [
+       -0.5672129498628308,
+       -0.09626421528414504
+      ],
+      "p": 0.0004997501249375312,
+      "n": 72
+     },
+     "without fog": {
+      "rho": 0.07501085540599217,
+      "ci": [
+       -0.35663593967181,
+       0.5426878329890181
+      ],
+      "p": 0.3773113443278361,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.3530434782608695,
+      "ci": [
+       -0.7750549716795216,
+       0.09972912790753624
+      ],
+      "p": 0.005997001499250375,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": -0.02346041055718475,
+      "ci": [
+       -0.41826724948102695,
+       0.4930198383541513
+      ],
+      "p": 0.7966016991504248,
+      "n": 32
+     }
+    },
+    "KITTI|CMMD to real|seed mean": {
+     "all": {
+      "rho": -0.34381632259309286,
+      "ci": [
+       -0.5670924477879843,
+       -0.09626102312689644
+      ],
+      "p": 0.0004997501249375312,
+      "n": 72
+     },
+     "without fog": {
+      "rho": 0.014763352149370385,
+      "ci": [
+       -0.31328309242963737,
+       0.5035006969127326
+      ],
+      "p": 0.9250374812593704,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.34347826086956523,
+      "ci": [
+       -0.81230903535574,
+       0.11169066852038517
+      ],
+      "p": 0.004497751124437781,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": -0.07184750733137829,
+      "ci": [
+       -0.3748417001945317,
+       0.507430198383541
+      ],
+      "p": 0.8170914542728636,
+      "n": 32
+     }
+    },
+    "KITTI|KID to real|seed 42": {
+     "all": {
+      "rho": -0.4479387741976977,
+      "ci": [
+       -0.6575318439893654,
+       -0.2589374547210819
+      ],
+      "p": 0.0004997501249375312,
+      "n": 72
+     },
+     "without fog": {
+      "rho": -0.24489795918367346,
+      "ci": [
+       -0.578712904887511,
+       0.1354195942280837
+      ],
+      "p": 0.08895552223888056,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.6591304347826087,
+      "ci": [
+       -0.8731072210065645,
+       -0.40811872544740296
+      ],
+      "p": 0.0004997501249375312,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": -0.14296187683284456,
+      "ci": [
+       -0.5811720078909184,
+       0.425471608981189
+      ],
+      "p": 0.9785107446276862,
+      "n": 32
+     }
+    },
+    "KITTI|KID to real|seed 17": {
+     "all": {
+      "rho": -0.41848350376229987,
+      "ci": [
+       -0.6016020846402547,
+       -0.255728739403883
+      ],
+      "p": 0.0004997501249375312,
+      "n": 72
+     },
+     "without fog": {
+      "rho": -0.1382978723404255,
+      "ci": [
+       -0.5124491133020771,
+       0.3052195445058589
+      ],
+      "p": 0.18240879560219891,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.7147826086956521,
+      "ci": [
+       -0.9032258064516129,
+       -0.45382932166301976
+      ],
+      "p": 0.0004997501249375312,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": -0.11510263929618768,
+      "ci": [
+       -0.6641310832382382,
+       0.5276384222287146
+      ],
+      "p": 0.6966516741629185,
+      "n": 32
+     }
+    },
+    "KITTI|KID to real|seed mean": {
+     "all": {
+      "rho": -0.4632773811820697,
+      "ci": [
+       -0.6505757919719488,
+       -0.27725194771746825
+      ],
+      "p": 0.0004997501249375312,
+      "n": 72
+     },
+     "without fog": {
+      "rho": -0.24337820234476767,
+      "ci": [
+       -0.5994295185421072,
+       0.20735698122888488
+      ],
+      "p": 0.03648175912043978,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.6791304347826086,
+      "ci": [
+       -0.8862256023228705,
+       -0.4011773483175996
+      ],
+      "p": 0.0004997501249375312,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": -0.14919354838709678,
+      "ci": [
+       -0.6771188923784164,
+       0.5255961803109837
+      ],
+      "p": 0.992503748125937,
+      "n": 32
+     }
+    },
+    "KITTI|fcos": {
+     "rho": -0.7296181630546955,
+     "p": 0.0014992503748125937
+    },
+    "Cityscapes|DINOv3 image FID to real|seed 42": {
+     "all": {
+      "rho": -0.5115441507492444,
+      "ci": [
+       -0.6930425552446203,
+       -0.32524900696203335
+      ],
+      "p": 0.0004997501249375312,
+      "n": 72
+     },
+     "without fog": {
+      "rho": -0.23328267477203646,
+      "ci": [
+       -0.5315826182566584,
+       -0.054131782102859724
+      ],
+      "p": 0.1469265367316342,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.6513043478260869,
+      "ci": [
+       -0.9012323422639933,
+       -0.3496503496503497
+      ],
+      "p": 0.0004997501249375312,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": -0.08760997067448678,
+      "ci": [
+       -0.5187637969094921,
+       0.3282284768211918
+      ],
+      "p": 0.23888055972013994,
+      "n": 32
+     }
+    },
+    "Cityscapes|DINOv3 image FID to real|seed 17": {
+     "all": {
+      "rho": -0.4537269277767059,
+      "ci": [
+       -0.5711027015969465,
+       -0.30753250633514084
+      ],
+      "p": 0.0004997501249375312,
+      "n": 72
+     },
+     "without fog": {
+      "rho": -0.041033434650455926,
+      "ci": [
+       -0.2404336324664797,
+       0.26651303995456416
+      ],
+      "p": 0.776111944027986,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.657391304347826,
+      "ci": [
+       -0.8489742470536884,
+       -0.48118659020732285
+      ],
+      "p": 0.0004997501249375312,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": 0.4204545454545454,
+      "ci": [
+       0.22628907234890744,
+       0.6256925380939734
+      ],
+      "p": 0.001999000499750125,
+      "n": 32
+     }
+    },
+    "Cityscapes|DINOv3 image FID to real|seed mean": {
+     "all": {
+      "rho": -0.5369798700881085,
+      "ci": [
+       -0.6668007419763616,
+       -0.37411852026717674
+      ],
+      "p": 0.0004997501249375312,
+      "n": 72
+     },
+     "without fog": {
+      "rho": -0.15870603560573165,
+      "ci": [
+       -0.39911240648220514,
+       0.11841186165798406
+      ],
+      "p": 0.4012993503248376,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.7026086956521739,
+      "ci": [
+       -0.8749063152733323,
+       -0.47890836497059247
+      ],
+      "p": 0.0004997501249375312,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": 0.17741935483870966,
+      "ci": [
+       -0.16302100146406195,
+       0.5369784299137391
+      ],
+      "p": 0.06796601699150424,
+      "n": 32
+     }
+    },
+    "Cityscapes|Inception-pool3 FID to real|seed 42": {
+     "all": {
+      "rho": -0.5022509486140588,
+      "ci": [
+       -0.663037658187846,
+       -0.3418823018248531
+      ],
+      "p": 0.0004997501249375312,
+      "n": 72
+     },
+     "without fog": {
+      "rho": -0.18942683456361267,
+      "ci": [
+       -0.44613460911166686,
+       0.015117608235567908
+      ],
+      "p": 0.19440279860069964,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.7669565217391304,
+      "ci": [
+       -0.9329510366122631,
+       -0.559138076402994
+      ],
+      "p": 0.0004997501249375312,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": -0.06598240469208211,
+      "ci": [
+       -0.3885209713024282,
+       0.25906916850625433
+      ],
+      "p": 0.5582208895552224,
+      "n": 32
+     }
+    },
+    "Cityscapes|Inception-pool3 FID to real|seed 17": {
+     "all": {
+      "rho": -0.4637275709048814,
+      "ci": [
+       -0.6011101496116111,
+       -0.3332368222104264
+      ],
+      "p": 0.0004997501249375312,
+      "n": 72
+     },
+     "without fog": {
+      "rho": -0.09020842379504994,
+      "ci": [
+       -0.37713998259734616,
+       0.23875669987853598
+      ],
+      "p": 0.3793103448275862,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.6286956521739131,
+      "ci": [
+       -0.7952011748303246,
+       -0.4441719510070172
+      ],
+      "p": 0.0004997501249375312,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": 0.16495601173020527,
+      "ci": [
+       -0.25811823182881405,
+       0.557996464878874
+      ],
+      "p": 0.5817091454272864,
+      "n": 32
+     }
+    },
+    "Cityscapes|Inception-pool3 FID to real|seed mean": {
+     "all": {
+      "rho": -0.5406457006881472,
+      "ci": [
+       -0.6592595407516325,
+       -0.39607704384323766
+      ],
+      "p": 0.0004997501249375312,
+      "n": 72
+     },
+     "without fog": {
+      "rho": -0.18237082066869298,
+      "ci": [
+       -0.4097291711986078,
+       0.061648371047400834
+      ],
+      "p": 0.1294352823588206,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.7565217391304346,
+      "ci": [
+       -0.8897266020082065,
+       -0.5640550264711981
+      ],
+      "p": 0.0004997501249375312,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": 0.0344574780058651,
+      "ci": [
+       -0.3269699303690549,
+       0.4993284491058139
+      ],
+      "p": 0.791104447776112,
+      "n": 32
+     }
+    },
+    "Cityscapes|CMMD to real|seed 42": {
+     "all": {
+      "rho": -0.3875168821146055,
+      "ci": [
+       -0.5307915057915058,
+       -0.14787948334889736
+      ],
+      "p": 0.0014992503748125937,
+      "n": 72
+     },
+     "without fog": {
+      "rho": 0.04906643508467217,
+      "ci": [
+       -0.26149831466782647,
+       0.43307738733683004
+      ],
+      "p": 0.7531234382808596,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.5660869565217391,
+      "ci": [
+       -0.8405397967539703,
+       -0.10864690915689554
+      ],
+      "p": 0.01249375312343828,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": 0.11107038123167154,
+      "ci": [
+       -0.18488130651234108,
+       0.4407755486300479
+      ],
+      "p": 0.44127936031984005,
+      "n": 32
+     }
+    },
+    "Cityscapes|CMMD to real|seed 17": {
+     "all": {
+      "rho": -0.27741333847835875,
+      "ci": [
+       -0.5142599296868731,
+       -0.02621277211951554
+      ],
+      "p": 0.0024987506246876563,
+      "n": 72
+     },
+     "without fog": {
+      "rho": 0.11213634389926183,
+      "ci": [
+       -0.2622811786452104,
+       0.5630301093199745
+      ],
+      "p": 0.408295852073963,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.17739130434782607,
+      "ci": [
+       -0.5316026386493965,
+       0.17858014473914166
+      ],
+      "p": 0.13343328335832083,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": 0.14626099706744866,
+      "ci": [
+       -0.2653961246014226,
+       0.5424762062246663
+      ],
+      "p": 0.5972013993003499,
+      "n": 32
+     }
+    },
+    "Cityscapes|CMMD to real|seed mean": {
+     "all": {
+      "rho": -0.3588012090809699,
+      "ci": [
+       -0.5846002615038004,
+       -0.07061246821795245
+      ],
+      "p": 0.0014992503748125937,
+      "n": 72
+     },
+     "without fog": {
+      "rho": 0.07566217976552322,
+      "ci": [
+       -0.3275019015538411,
+       0.5716695642725198
+      ],
+      "p": 0.4492753623188406,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.4165217391304347,
+      "ci": [
+       -0.7198111269529704,
+       -0.03628008752735254
+      ],
+      "p": 0.06696651674162919,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": 0.12463343108504396,
+      "ci": [
+       -0.2600895741556535,
+       0.5331868300675902
+      ],
+      "p": 0.40679660169915044,
+      "n": 32
+     }
+    },
+    "Cityscapes|KID to real|seed 42": {
+     "all": {
+      "rho": -0.435269149141424,
+      "ci": [
+       -0.6259754468954644,
+       -0.2584590965379566
+      ],
+      "p": 0.0009995002498750624,
+      "n": 72
+     },
+     "without fog": {
+      "rho": -0.16196265740338686,
+      "ci": [
+       -0.4149903150134032,
+       0.015461170328475006
+      ],
+      "p": 0.25287356321839083,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.7078260869565216,
+      "ci": [
+       -0.9510505535494623,
+       -0.44478033168684067
+      ],
+      "p": 0.0004997501249375312,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": -0.003299120234604105,
+      "ci": [
+       -0.3443720845998345,
+       0.34319200162046376
+      ],
+      "p": 0.9635182408795602,
+      "n": 32
+     }
+    },
+    "Cityscapes|KID to real|seed 17": {
+     "all": {
+      "rho": -0.40645700688147157,
+      "ci": [
+       -0.5295575791336264,
+       -0.2504302787562933
+      ],
+      "p": 0.0004997501249375312,
+      "n": 72
+     },
+     "without fog": {
+      "rho": -0.050911854103343465,
+      "ci": [
+       -0.3109736870718713,
+       0.2509469342404334
+      ],
+      "p": 0.63968015992004,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.6652173913043479,
+      "ci": [
+       -0.8181818181818181,
+       -0.4847428073234525
+      ],
+      "p": 0.0004997501249375312,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": 0.22507331378299117,
+      "ci": [
+       -0.19262296854615513,
+       0.6488207241137132
+      ],
+      "p": 0.4007996001999001,
+      "n": 32
+     }
+    },
+    "Cityscapes|KID to real|seed mean": {
+     "all": {
+      "rho": -0.4740176217120073,
+      "ci": [
+       -0.595337004476218,
+       -0.3255229721242573
+      ],
+      "p": 0.0004997501249375312,
+      "n": 72
+     },
+     "without fog": {
+      "rho": -0.14546244029526706,
+      "ci": [
+       -0.36876580890745797,
+       0.08115487401069256
+      ],
+      "p": 0.22088955522238882,
+      "n": 48
+     },
+     "fog only": {
+      "rho": -0.7391304347826086,
+      "ci": [
+       -0.9300699300699301,
+       -0.5509837753940806
+      ],
+      "p": 0.0004997501249375312,
+      "n": 24
+     },
+     "sun + night": {
+      "rho": 0.0971407624633431,
+      "ci": [
+       -0.3034322805869198,
+       0.5810513673318546
+      ],
+      "p": 0.46276861569215394,
+      "n": 32
+     }
+    },
+    "Cityscapes|fcos": {
+     "rho": -0.5541795665634675,
+     "p": 0.0079960019990005
+    },
+    "foggy|fid_to_foggy": {
+     "rho": -0.08055180397453214,
+     "ci": [
+      -0.3582683265827381,
+      0.10870817820288203
+     ],
+     "p": 0.5737131434282858,
+     "n": 72
+    }
+   }
+  },
+  "T13": {
+   "title": "Asymmetry: the clean\u2192degraded direction is harder than degraded\u2192clean (same frames, each detector scored on its own held-out frames)",
+   "header": [
+    "quantity",
+    "sun25",
+    "sun10",
+    "sun3",
+    "night",
+    "fog25",
+    "fog50",
+    "fog75",
+    "wet",
+    "rain"
+   ],
+   "rows": [
+    [
+     "seed 42: clean-trained on dose frames (pp drop)",
+     "0.9",
+     "3.0",
+     "5.3",
+     "19.6",
+     "11.5",
+     "23.1",
+     "27.7",
+     "2.0",
+     "7.1"
+    ],
+    [
+     "seed 42: dose-trained on clean frames (pp drop)",
+     "0.3",
+     "0.5",
+     "3.7",
+     "3.3",
+     "4.7",
+     "16.0",
+     "18.6",
+     "1.8",
+     "0.9"
+    ],
+    [
+     "seed 42: towns where clean\u2192dose is harder",
+     "5/8",
+     "8/8",
+     "6/8",
+     "8/8",
+     "8/8",
+     "7/8",
+     "8/8",
+     "4/8",
+     "7/8"
+    ],
+    [
+     "seed 17: clean-trained on dose frames (pp drop)",
+     "1.3",
+     "2.6",
+     "4.6",
+     "19.2",
+     "12.0",
+     "21.9",
+     "26.4",
+     "1.4",
+     "6.2"
+    ],
+    [
+     "seed 17: dose-trained on clean frames (pp drop)",
+     "0.6",
+     "1.1",
+     "3.1",
+     "2.8",
+     "5.3",
+     "15.8",
+     "18.5",
+     "1.0",
+     "1.3"
+    ],
+    [
+     "seed 17: towns where clean\u2192dose is harder",
+     "5/8",
+     "6/8",
+     "5/8",
+     "8/8",
+     "7/8",
+     "6/8",
+     "7/8",
+     "4/8",
+     "6/8"
+    ]
+   ],
+   "note": "Clean\u2192dose harder in 61/72 pairs (seed 42) and 54/72 (seed 17). Symmetric distances (FID, MMD, CORAL) cannot represent this; directed coverage / NN distance can.",
+   "sources": [
+    "results/calib_dose",
+    "results/calib_dose_rep"
+   ],
+   "data": {
+    "seed 42": {
+     "clean_to_dose_harder": 61,
+     "n": 72,
+     "by_dose": {
+      "d01_sun25": {
+       "ref_on_dose": 0.9479319055844568,
+       "dose_on_ref": 0.30349189764795836,
+       "harder": 5
+      },
+      "d02_sun10": {
+       "ref_on_dose": 3.0235610199287057,
+       "dose_on_ref": 0.5444883584745317,
+       "harder": 8
+      },
+      "d03_sun3": {
+       "ref_on_dose": 5.307195356168029,
+       "dose_on_ref": 3.7126530687281867,
+       "harder": 6
+      },
+      "d04_night": {
+       "ref_on_dose": 19.56465236637043,
+       "dose_on_ref": 3.275514850534794,
+       "harder": 8
+      },
+      "d05_fog25": {
+       "ref_on_dose": 11.484756461124897,
+       "dose_on_ref": 4.699349065949367,
+       "harder": 8
+      },
+      "d06_fog50": {
+       "ref_on_dose": 23.052042462117022,
+       "dose_on_ref": 15.969819244854667,
+       "harder": 7
+      },
+      "d07_fog75": {
+       "ref_on_dose": 27.65181831589343,
+       "dose_on_ref": 18.649869129661333,
+       "harder": 8
+      },
+      "d08_wet": {
+       "ref_on_dose": 2.034370534523838,
+       "dose_on_ref": 1.7572616750360375,
+       "harder": 4
+      },
+      "d09_rain": {
+       "ref_on_dose": 7.099600460546399,
+       "dose_on_ref": 0.9398363049867524,
+       "harder": 7
+      }
+     }
+    },
+    "seed 17": {
+     "clean_to_dose_harder": 54,
+     "n": 72,
+     "by_dose": {
+      "d01_sun25": {
+       "ref_on_dose": 1.2780632437242647,
+       "dose_on_ref": 0.5919420682356074,
+       "harder": 5
+      },
+      "d02_sun10": {
+       "ref_on_dose": 2.588340490062804,
+       "dose_on_ref": 1.1479263011436491,
+       "harder": 6
+      },
+      "d03_sun3": {
+       "ref_on_dose": 4.60433811009436,
+       "dose_on_ref": 3.1134362095375474,
+       "harder": 5
+      },
+      "d04_night": {
+       "ref_on_dose": 19.241631963707604,
+       "dose_on_ref": 2.7538712718734093,
+       "harder": 8
+      },
+      "d05_fog25": {
+       "ref_on_dose": 12.046347569079401,
+       "dose_on_ref": 5.2828717426370995,
+       "harder": 7
+      },
+      "d06_fog50": {
+       "ref_on_dose": 21.928812596126946,
+       "dose_on_ref": 15.769068272855678,
+       "harder": 6
+      },
+      "d07_fog75": {
+       "ref_on_dose": 26.399806928653156,
+       "dose_on_ref": 18.529560654964396,
+       "harder": 7
+      },
+      "d08_wet": {
+       "ref_on_dose": 1.44555753190647,
+       "dose_on_ref": 0.9767365033140778,
+       "harder": 4
+      },
+      "d09_rain": {
+       "ref_on_dose": 6.235226733994589,
+       "dose_on_ref": 1.2695375435567597,
+       "harder": 6
+      }
+     }
+    }
+   }
+  },
+  "T14": {
+   "title": "Foggy Cityscapes (third real target): town-mean mAP of dose-trained detectors on real fog of increasing density",
+   "header": [
+    "real target",
+    "clear-trained",
+    "fog25-trained",
+    "fog50-trained",
+    "fog75-trained",
+    "fog75 \u2212 clear [CI]",
+    "towns fog75 > clear"
+   ],
+   "rows": [
+    [
+     "clear (\u03b2 = 0)",
+     "14.2",
+     "14.4",
+     "12.3",
+     "10.4",
+     "-3.8 [-5.52, -2.06]",
+     "0/8"
+    ],
+    [
+     "\u03b2 = 0.005",
+     "12.8",
+     "14.7",
+     "12.9",
+     "10.5",
+     "-2.3 [-3.84, -0.62]",
+     "1/8"
+    ],
+    [
+     "\u03b2 = 0.01",
+     "12.0",
+     "14.8",
+     "13.4",
+     "11.2",
+     "-0.8 [-2.18, +0.77]",
+     "3/8"
+    ],
+    [
+     "\u03b2 = 0.02",
+     "10.0",
+     "14.8",
+     "13.1",
+     "11.7",
+     "+1.7 [-0.21, +3.43]",
+     "6/8"
+    ]
+   ],
+   "note": "F1 (pre-registered): fog75 beats clear-trained at \u03b2 = .02 in 6/8 towns (sign test p = 0.145), benefit monotone in \u03b2 = True \u2192 PASS. Mild simulated fog (fog25) is best at every real-fog level with no loss on clear images. F2/F3 (FID-to-foggy predicts the benefit) fail: see T12b.",
+   "sources": [
+    "results/calib_dose_foggy",
+    "results/calib_dose"
+   ],
+   "data": {
+    "0": {
+     "d00_ref": 14.234863070994626,
+     "d05_fog25": 14.354040667592624,
+     "d06_fog50": 12.314913235381496,
+     "d07_fog75": 10.413505562953016,
+     "fog75_minus_ref": -3.8213575080416096,
+     "towns_pos": 0,
+     "ci_fog75_minus_ref": [
+      -5.51572678750673,
+      -2.0620169317354256
+     ]
+    },
+    "0.005": {
+     "d00_ref": 12.79491768144298,
+     "d05_fog25": 14.694421000049966,
+     "d06_fog50": 12.899545222790131,
+     "d07_fog75": 10.528988902736868,
+     "fog75_minus_ref": -2.2659287787061118,
+     "towns_pos": 1,
+     "ci_fog75_minus_ref": [
+      -3.839556695895369,
+      -0.624457572799014
+     ]
+    },
+    "0.01": {
+     "d00_ref": 11.992417937097372,
+     "d05_fog25": 14.835333373038093,
+     "d06_fog50": 13.381476584977836,
+     "d07_fog75": 11.223215220372703,
+     "fog75_minus_ref": -0.7692027167246678,
+     "towns_pos": 3,
+     "ci_fog75_minus_ref": [
+      -2.1810402011899592,
+      0.7671022021402256
+     ]
+    },
+    "0.02": {
+     "d00_ref": 10.006776922862098,
+     "d05_fog25": 14.819204843049008,
+     "d06_fog50": 13.114530150771163,
+     "d07_fog75": 11.689695013160964,
+     "fog75_minus_ref": 1.6829180902988647,
+     "towns_pos": 6,
+     "ci_fog75_minus_ref": [
+      -0.20973909648859182,
+      3.4255436390870773
+     ]
+    },
+    "F1": {
+     "towns": 6,
+     "sign_p": 0.14453125,
+     "monotone": true,
+     "pass": true
+    }
+   }
+  },
+  "T15": {
+   "title": "Decomposition of real transfer (pp of real mAP): pretraining \u226b labeled content \u226b appearance",
+   "header": [
+    "target",
+    "COCO vs ImageNet init (same 24 cells)",
+    "spread of town means (ImageNet grid)",
+    "per doubling of labeled objects (causal)",
+    "weather share of variance (24-cell grid)",
+    "appearance at fixed content (frame-matched)"
+   ],
+   "rows": [
+    [
+     "KITTI",
+     "+20.4",
+     "10.5 (town means 23.0\u201333.5)",
+     "+2.9",
+     "12%",
+     "fog75 -9.0; night +1.3"
+    ],
+    [
+     "Cityscapes",
+     "+16.8",
+     "4.4 (town means 11.4\u201315.8)",
+     "+0.7",
+     "0%",
+     "fog75 -3.7; night +1.5"
+    ]
+   ],
+   "note": "Pretraining and content are between-configuration effects; the appearance column is the only within-configuration (content-fixed) manipulation.",
+   "sources": [
+    "results/calib_anchored",
+    "results/calib_imnet",
+    "results/calib_imnet_lc",
+    "results/calib_dose",
+    "results/calib_dose_rep"
+   ],
+   "data": {
+    "KITTI": {
+     "pretraining_pp": 20.361030565380293,
+     "town_range_pp": 10.465888246718123,
+     "pp_per_doubling": 2.868144024359681,
+     "fog75_pp": -9.044136408047866,
+     "night_pp": 1.3489652398270415,
+     "weather_share_24grid": 0.12032439237625135
+    },
+    "Cityscapes": {
+     "pretraining_pp": 16.77129627910419,
+     "town_range_pp": 4.397763285429727,
+     "pp_per_doubling": 0.6870745544436151,
+     "fog75_pp": -3.7277868036484763,
+     "night_pp": 1.4729721986203965,
+     "weather_share_24grid": 0.003371221547447493
+    }
+   }
+  },
+  "T16": {
+   "title": "Held-out-dose prediction (pre-registered, predictions hashed before evaluation): metric calibrated on the 9 original doses predicts 9 unseen doses (72 pairs)",
+   "header": [
+    "metric",
+    "Spearman(pred, obs) [CI]",
+    "MAE (pp)",
+    "90% PI coverage",
+    "interp. \u03c1 / MAE",
+    "extrap. \u03c1 / MAE",
+    "compound \u03c1 / MAE",
+    "novel \u03c1 / MAE"
+   ],
+   "rows": [
+    [
+     "object FID (primary)",
+     "+0.855 [+0.77, +0.94]",
+     "5.58",
+     "82%",
+     "+0.81 / 5.4",
+     "+0.38 / 6.1",
+     "+0.68 / 7.3",
+     "+0.16 / 2.9"
+    ],
+    [
+     "directed NN distance",
+     "+0.831 [+0.73, +0.93]",
+     "6.90",
+     "86%",
+     "+0.83 / 5.6",
+     "+0.40 / 7.1",
+     "+0.66 / 7.5",
+     "-0.20 / 7.8"
+    ],
+    [
+     "coverage",
+     "+0.822 [+0.73, +0.92]",
+     "6.35",
+     "86%",
+     "+0.78 / 5.4",
+     "+0.69 / 7.9",
+     "+0.68 / 6.9",
+     "+0.11 / 6.2"
+    ],
+    [
+     "paired object displacement",
+     "+0.837 [+0.74, +0.93]",
+     "6.82",
+     "85%",
+     "+0.82 / 5.6",
+     "+0.43 / 7.3",
+     "+0.68 / 7.6",
+     "-0.17 / 7.2"
+    ],
+    [
+     "Inception FID (no boxes)",
+     "+0.828 [+0.70, +0.94]",
+     "6.72",
+     "85%",
+     "+0.78 / 6.6",
+     "+0.14 / 8.3",
+     "+0.76 / 7.5",
+     "-0.26 / 4.9"
+    ],
+    [
+     "LPIPS (no boxes)",
+     "+0.809 [+0.73, +0.90]",
+     "7.28",
+     "85%",
+     "+0.82 / 6.9",
+     "+0.02 / 10.9",
+     "+0.64 / 7.4",
+     "-0.24 / 5.8"
+    ],
+    [
+     "DINOv3 image FID (no boxes)",
+     "+0.800 [+0.68, +0.91]",
+     "8.32",
+     "83%",
+     "+0.76 / 8.2",
+     "+0.29 / 12.9",
+     "+0.71 / 8.4",
+     "-0.28 / 6.2"
+    ]
+   ],
+   "note": "Rules (object FID): \u03c1 \u2265 .7, MAE \u2264 7.0 pp and < predict-the-calibration-mean (11.90), coverage \u2265 80%. Per dose (observed / predicted, pp): fog35 16.8 / 9.7; fog65 25.3 / 22.7; fog90 28.8 / 31.2; sun6 3.9 / 5.8; night_rain 28.7 / 29.1; night_fog50 24.1 / 25.2; sun10_wet 3.4 / 6.5; cloud90 0.1 / 3.1; dust50 2.9 / 0.2.",
+   "sources": [
+    "results/calib_dose_ho",
+    "results/calib_dose_ho_rep",
+    "results/calib_dose",
+    "results/calib_dose_rep"
+   ],
+   "data": {
+    "obj_fid_ref": {
+     "rho": 0.8553283169335651,
+     "ci": [
+      0.7723631956889427,
+      0.9433767696267695
+     ],
+     "mae": 5.576342573944727,
+     "coverage90": 0.8194444444444444,
+     "subsets": {
+      "interpolation": {
+       "rho": 0.8113043478260868,
+       "mae": 5.429556367024574
+      },
+      "extrapolation": {
+       "rho": 0.38095238095238104,
+       "mae": 6.137984621239808
+      },
+      "compound": {
+       "rho": 0.6765217391304347,
+       "mae": 7.322902563286635
+      },
+      "novel": {
+       "rho": 0.16176470588235295,
+       "mae": 2.8958608766645537
+      }
+     }
+    },
+    "nnd_dose_to_ref": {
+     "rho": 0.8311466975368192,
+     "ci": [
+      0.7325844021288093,
+      0.9250104599143897
+     ],
+     "mae": 6.898141921246755,
+     "coverage90": 0.8611111111111112,
+     "subsets": {
+      "interpolation": {
+       "rho": 0.8278260869565216,
+       "mae": 5.571408585478575
+      },
+      "extrapolation": {
+       "rho": 0.4047619047619048,
+       "mae": 7.065133346138219
+      },
+      "compound": {
+       "rho": 0.6643478260869564,
+       "mae": 7.537606171039921
+      },
+      "novel": {
+       "rho": -0.2029411764705882,
+       "mae": 7.845549837763544
+      }
+     }
+    },
+    "cov_dose_by_ref": {
+     "rho": 0.8216803739054562,
+     "ci": [
+      0.733805795796613,
+      0.9201812483015798
+     ],
+     "mae": 6.34890119682965,
+     "coverage90": 0.8611111111111112,
+     "subsets": {
+      "interpolation": {
+       "rho": 0.784083514947815,
+       "mae": 5.395345235035355
+      },
+      "extrapolation": {
+       "rho": 0.6904761904761906,
+       "mae": 7.91142781584621
+      },
+      "compound": {
+       "rho": 0.6788432428361282,
+       "mae": 6.87705746693355
+      },
+      "novel": {
+       "rho": 0.11479031805252574,
+       "mae": 6.205737424856961
+      }
+     }
+    },
+    "paired_obj_disp": {
+     "rho": 0.8371921023860055,
+     "ci": [
+      0.7413688667253019,
+      0.9346444747995382
+     ],
+     "mae": 6.81745029624105,
+     "coverage90": 0.8472222222222222,
+     "subsets": {
+      "interpolation": {
+       "rho": 0.8226086956521739,
+       "mae": 5.635932211725263
+      },
+      "extrapolation": {
+       "rho": 0.4285714285714286,
+       "mae": 7.334733796851905
+      },
+      "compound": {
+       "rho": 0.6834782608695652,
+       "mae": 7.5878169408362455
+      },
+      "novel": {
+       "rho": -0.17058823529411765,
+       "mae": 7.175535705816508
+      }
+     }
+    },
+    "incfid_ref": {
+     "rho": 0.8281883079297705,
+     "ci": [
+      0.6997312995768372,
+      0.9358703605672773
+     ],
+     "mae": 6.720830886748488,
+     "coverage90": 0.8472222222222222,
+     "subsets": {
+      "interpolation": {
+       "rho": 0.7782608695652173,
+       "mae": 6.6217886803963815
+      },
+      "extrapolation": {
+       "rho": 0.14285714285714288,
+       "mae": 8.273402065552899
+      },
+      "compound": {
+       "rho": 0.76,
+       "mae": 7.4959434976119255
+      },
+      "novel": {
+       "rho": -0.26176470588235295,
+       "mae": 4.930439690579288
+      }
+     }
+    },
+    "lpips": {
+     "rho": 0.8089266190751818,
+     "ci": [
+      0.72836864031913,
+      0.9006097166783925
+     ],
+     "mae": 7.281445838394755,
+     "coverage90": 0.8472222222222222,
+     "subsets": {
+      "interpolation": {
+       "rho": 0.8173913043478259,
+       "mae": 6.9497658649065714
+      },
+      "extrapolation": {
+       "rho": 0.023809523809523815,
+       "mae": 10.851261577074249
+      },
+      "compound": {
+       "rho": 0.6391304347826086,
+       "mae": 7.43958438835039
+      },
+      "novel": {
+       "rho": -0.2352941176470588,
+       "mae": 5.756850104353825
+      }
+     }
+    },
+    "img_fid_ref": {
+     "rho": 0.7996977297575407,
+     "ci": [
+      0.679001859174178,
+      0.9056461839993915
+     ],
+     "mae": 8.324865368382943,
+     "coverage90": 0.8333333333333334,
+     "subsets": {
+      "interpolation": {
+       "rho": 0.7565217391304346,
+       "mae": 8.163424224047835
+      },
+      "extrapolation": {
+       "rho": 0.28571428571428575,
+       "mae": 12.862893495344704
+      },
+      "compound": {
+       "rho": 0.7121739130434783,
+       "mae": 8.423168967274927
+      },
+      "novel": {
+       "rho": -0.27941176470588236,
+       "mae": 6.150557623066749
+      }
+     }
+    },
+    "mean_pred_mae": 11.900674110961024,
+    "per_dose": {
+     "d10_fog35": {
+      "observed": 16.7922182258696,
+      "predicted": 9.72929251017547
+     },
+     "d11_fog65": {
+      "observed": 25.27272132500095,
+      "predicted": 22.654037789484263
+     },
+     "d12_fog90": {
+      "observed": 28.84363788286893,
+      "predicted": 31.239417041174043
+     },
+     "d13_sun6": {
+      "observed": 3.902481817277666,
+      "predicted": 5.812096920358353
+     },
+     "d14_night_rain": {
+      "observed": 28.669676582188874,
+      "predicted": 29.077601840065746
+     },
+     "d15_night_fog50": {
+      "observed": 24.147386848859867,
+      "predicted": 25.171574646196945
+     },
+     "d16_sun10_wet": {
+      "observed": 3.4467559310760856,
+      "predicted": 6.501336708675073
+     },
+     "d17_cloud90": {
+      "observed": 0.07590445146228575,
+      "predicted": 3.0709060870497398
+     },
+     "d18_dust50": {
+      "observed": 2.93743821023618,
+      "predicted": 0.18365946087350765
+     }
+    }
+   }
+  },
+  "T17": {
+   "title": "Real fog: RTTS (4,322 real hazy images; Car + Pedestrian mAP@0.5, difficult boxes included) \u2014 dose-trained detectors, town mean",
+   "header": [
+    "detectors",
+    "clear-trained",
+    "fog25 (\u0394 [CI]; towns better)",
+    "fog50",
+    "fog75"
+   ],
+   "rows": [
+    [
+     "seed 42",
+     "15.7",
+     "20.5 (+4.8 [+3.38, +6.06]; 8/8)",
+     "20.4 (+4.7 [+2.46, +6.98]; 8/8)",
+     "19.0 (+3.2 [+0.53, +5.84]; 7/8)"
+    ],
+    [
+     "seed 17",
+     "16.1",
+     "21.4 (+5.3 [+4.05, +6.72]; 8/8)",
+     "20.8 (+4.7 [+3.33, +6.11]; 8/8)",
+     "17.9 (+1.8 [-0.24, +3.56]; 7/8)"
+    ]
+   ],
+   "note": "\u0394 FID-to-RTTS vs \u0394 RTTS mAP over 72 pairs: \u03c1 -0.441 [-0.70, -0.10], clustered p = <.001. Every non-clear training dose also beats clear on RTTS (seed 42: sun25 17.8, sun10 18.9, sun3 17.5, night 16.5, wet 16.0, rain 17.9); fog's gain over the non-fog mean is \u2248 +3 pp.",
+   "sources": [
+    "results/calib_dose_rtts",
+    "results/calib_dose_rtts_rep"
+   ],
+   "data": {
+    "seed 42": {
+     "d00_ref": 15.721067554213791,
+     "d01_sun25": 17.769223688020798,
+     "d02_sun10": 18.858776415546572,
+     "d03_sun3": 17.485583828824666,
+     "d04_night": 16.530529123447074,
+     "d05_fog25": 20.504278021276292,
+     "d06_fog50": 20.396017758753118,
+     "d07_fog75": 18.955585140593136,
+     "d08_wet": 15.958102902135652,
+     "d09_rain": 17.88761184289486,
+     "d05_fog25_minus_ref": {
+      "mean": 4.783210467062503,
+      "ci": [
+       3.3768236582416837,
+       6.055684339805465
+      ],
+      "towns": 8
+     },
+     "d06_fog50_minus_ref": {
+      "mean": 4.674950204539327,
+      "ci": [
+       2.461426620465149,
+       6.980445928268272
+      ],
+      "towns": 8
+     },
+     "d07_fog75_minus_ref": {
+      "mean": 3.234517586379347,
+      "ci": [
+       0.5333895364506854,
+       5.835991094996038
+      ],
+      "towns": 7
+     }
+    },
+    "seed 17": {
+     "d00_ref": 16.0797329072865,
+     "d05_fog25": 21.354330822656244,
+     "d06_fog50": 20.77929213521795,
+     "d07_fog75": 17.886670389153494,
+     "d05_fog25_minus_ref": {
+      "mean": 5.274597915369746,
+      "ci": [
+       4.051009754941879,
+       6.717596138278396
+      ],
+      "towns": 8
+     },
+     "d06_fog50_minus_ref": {
+      "mean": 4.699559227931449,
+      "ci": [
+       3.331106692455903,
+       6.11443826421733
+      ],
+      "towns": 8
+     },
+     "d07_fog75_minus_ref": {
+      "mean": 1.8069374818669957,
+      "ci": [
+       -0.24201872947633435,
+       3.557552689642337
+      ],
+      "towns": 7
+     }
+    },
+    "G2": {
+     "rho": -0.44108945912920455,
+     "ci": [
+      -0.7033899531921053,
+      -0.09941835207800376
+     ],
+     "p": 0.0004997501249375312
+    }
+   }
+  },
+  "T18": {
+   "title": "The measurement across detector families (same renders, same detector-independent DINOv3 metrics)",
+   "header": [
+    "detector family",
+    "towns monotone in sun and fog (R1)",
+    "object FID vs appearance-only drop, \u03c1 (R2)",
+    "KITTI \u0394 mAP of fog75-trained (pp)",
+    "\u0394 FID-to-KITTI vs \u0394 KITTI mAP, \u03c1 (R3)"
+   ],
+   "rows": [
+    [
+     "Faster R-CNN R50 (8 towns, seed 42)",
+     "8/8",
+     "+0.840",
+     "-9.5",
+     "-0.528 (p=<.001)"
+    ],
+    [
+     "FCOS R50 (2 towns)",
+     "2/2",
+     "+0.882",
+     "-12.0",
+     "-0.730 (p=<.001)"
+    ],
+    [
+     "Faster R-CNN Swin-T (2 towns)",
+     "2/2",
+     "+0.868",
+     "-1.3",
+     "+0.096 (p=0.711)"
+    ]
+   ],
+   "note": "Deformable DETR (ImageNet-init) did not train on 800-frame cells (own-cell mAP 0.0; wrapper verified; \u00a715.68). R3 holds where a training appearance costs real transfer (R50 families) and has nothing to predict where it does not (Swin-T).",
+   "sources": [
+    "results/calib_dose",
+    "results/calib_dose_arch2",
+    "results/calib_dose_arch3"
+   ],
+   "data": {
+    "Faster R-CNN R50 (8 towns, seed 42)": {
+     "monotone_min_rho": [
+      1.0,
+      1.0,
+      1.0,
+      0.7999999999999999,
+      0.7999999999999999,
+      1.0,
+      0.7999999999999999,
+      1.0
+     ],
+     "r2_objfid": 0.8396681458614703,
+     "r3_rho": -0.5279760756318735,
+     "r3_p": 0.0004997501249375312,
+     "fog75_kitti": -9.457323608985595
+    },
+    "FCOS R50 (2 towns)": {
+     "monotone_min_rho": [
+      1.0,
+      1.0
+     ],
+     "r2_objfid": 0.8823529411764706,
+     "r3_rho": -0.7296181630546955,
+     "r3_p": 0.0009995002498750624,
+     "fog75_kitti": -12.01540497996198
+    },
+    "Faster R-CNN Swin-T (2 towns)": {
+     "monotone_min_rho": [
+      0.7999999999999999,
+      1.0
+     ],
+     "r2_objfid": 0.8679050567595459,
+     "r3_rho": 0.09597523219814243,
+     "r3_p": 0.711144427786107,
+     "fog75_kitti": -1.3266149691186229
+    }
+   }
+  },
+  "T19": {
+   "title": "Second rendering engine: Virtual KITTI 2 (Unity; frame-matched variants; Car AP@0.5) and the content-matched sim\u2192real gap (KITTI tracking, same sequences)",
+   "header": [
+    "scene",
+    "held-out GT cars",
+    "morning drop",
+    "sunset",
+    "overcast",
+    "fog",
+    "rain",
+    "sim\u2192real drop (clone det. on real frames)",
+    "object FID fog / real",
+    "KITTI Car AP \u0394, fog- vs clone-trained"
+   ],
+   "rows": [
+    [
+     "Scene01",
+     314,
+     "-0.1",
+     "-0.1",
+     "0.0",
+     "27.2",
+     "0.7",
+     "1.1",
+     "260 / 613",
+     "-10.4"
+    ],
+    [
+     "Scene02",
+     215,
+     "0.0",
+     "0.0",
+     "0.0",
+     "68.3",
+     "8.3",
+     "69.0",
+     "389 / 1083",
+     "-13.8"
+    ],
+    [
+     "Scene06",
+     19,
+     "97.8",
+     "93.6",
+     "28.7",
+     "99.2",
+     "97.0",
+     "40.7",
+     "267 / 662",
+     "-13.2"
+    ],
+    [
+     "Scene18",
+     426,
+     "0.2",
+     "0.4",
+     "1.0",
+     "9.1",
+     "1.1",
+     "8.1",
+     "265 / 617",
+     "-3.4"
+    ],
+    [
+     "Scene20",
+     615,
+     "8.4",
+     "4.5",
+     "-0.4",
+     "36.1",
+     "8.3",
+     "16.6",
+     "242 / 564",
+     "-23.3"
+    ]
+   ],
+   "note": "Drops = clone-trained detector, held-out frames, seed mean (pp). Object FID vs drop over 25 pairs \u03c1 +0.595 (V2 fails). \u0394 FID-to-KITTI vs \u0394 KITTI Car AP \u03c1 -0.608, clustered p = <.001 (V4 passes). Scene06's held-out stretch has 19 cars (unstable AP). In the reliable scenes the sim\u2192real feature distance is 2.3\u20132.8\u00d7 fog's while the sim\u2192real drop is no larger than fog's.",
+   "sources": [
+    "results/calib_vkitti",
+    "results/calib_vkitti_rep"
+   ],
+   "data": {
+    "Scene01": {
+     "d20_morning": -0.06157888205304829,
+     "d21_sunset": -0.06263093666310482,
+     "d22_overcast": 0.020104505956183516,
+     "d23_fog": 27.201973597762418,
+     "d24_rain": 0.6787901165858443,
+     "real": 1.0863881359711058,
+     "n_gt_heldout": 314,
+     "objfid_fog": 260.2291275438181,
+     "objfid_real": 613.3744705615593,
+     "kitti_clone": 66.4552811503195,
+     "kitti_fog": 56.095420639192696
+    },
+    "Scene02": {
+     "d20_morning": 0.0,
+     "d21_sunset": 0.0,
+     "d22_overcast": 0.0,
+     "d23_fog": 68.3155080213904,
+     "d24_rain": 8.33797266703904,
+     "real": 69.02614858260023,
+     "n_gt_heldout": 215,
+     "objfid_fog": 388.81738805172427,
+     "objfid_real": 1083.3911829950864,
+     "kitti_clone": 46.21334540495346,
+     "kitti_fog": 32.40285543919186
+    },
+    "Scene06": {
+     "d20_morning": 97.75429116338208,
+     "d21_sunset": 93.63694881074562,
+     "d22_overcast": 28.68402641129915,
+     "d23_fog": 99.15289256198349,
+     "d24_rain": 97.04565934533358,
+     "real": 40.67562405754106,
+     "n_gt_heldout": 19,
+     "objfid_fog": 266.6129706143913,
+     "objfid_real": 662.3186549675438,
+     "kitti_clone": 55.10605384584251,
+     "kitti_fog": 41.85854539459587
+    },
+    "Scene18": {
+     "d20_morning": 0.1856293340041688,
+     "d21_sunset": 0.4121166141501931,
+     "d22_overcast": 1.0429903839946917,
+     "d23_fog": 9.071722334917915,
+     "d24_rain": 1.1037723012489948,
+     "real": 8.12205641701739,
+     "n_gt_heldout": 426,
+     "objfid_fog": 265.36415572857084,
+     "objfid_real": 617.0487957479622,
+     "kitti_clone": 57.23217019717467,
+     "kitti_fog": 53.85715311150307
+    },
+    "Scene20": {
+     "d20_morning": 8.417455732716043,
+     "d21_sunset": 4.536342391832484,
+     "d22_overcast": -0.3526834805889081,
+     "d23_fog": 36.133680311111334,
+     "d24_rain": 8.275560365086584,
+     "real": 16.5675106796361,
+     "n_gt_heldout": 615,
+     "objfid_fog": 242.30190889715095,
+     "objfid_real": 563.6814490234073,
+     "kitti_clone": 64.56450684874238,
+     "kitti_fog": 41.27972688831301
+    },
+    "V2_objfid_rho": 0.595073309507757,
+    "V4": {
+     "rho": -0.6076923076923076,
+     "p": 0.0004997501249375312
+    }
+   }
+  }
+ }
+}

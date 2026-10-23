@@ -1,0 +1,54 @@
+{
+ "created": "2026-10-15T05:10:55",
+ "fit_on": [
+  "Town01_ClearNight",
+  "Town01_ClearNoon",
+  "Town01_OvercastNoon",
+  "Town01_SoftRainNoon",
+  "Town02_ClearNight",
+  "Town02_ClearNoon",
+  "Town02_OvercastNoon",
+  "Town02_SoftRainNoon",
+  "Town03_ClearNight",
+  "Town03_ClearNoon",
+  "Town03_OvercastNoon",
+  "Town03_SoftRainNoon",
+  "Town04_ClearNight",
+  "Town04_ClearNoon",
+  "Town04_OvercastNoon",
+  "Town04_SoftRainNoon",
+  "Town05_ClearNight",
+  "Town05_ClearNoon",
+  "Town05_OvercastNoon",
+  "Town05_SoftRainNoon",
+  "Town10HD_ClearNight",
+  "Town10HD_ClearNoon",
+  "Town10HD_OvercastNoon",
+  "Town10HD_SoftRainNoon"
+ ],
+ "feature": "nnd_T_to_S from tools/nnd_to_real.py (fixed crc32 seeds), log(training boxes frames 0:800)",
+ "models": {
+  "KITTI": {
+   "full": {
+    "intercept": -9.837494057674023,
+    "log_boxes": 5.483077811895641,
+    "nnd": -3.1507412050248984
+   },
+   "boxes_only": {
+    "intercept": -6.682564395382083,
+    "log_boxes": 4.187976372220247
+   }
+  },
+  "Cityscapes": {
+   "full": {
+    "intercept": -4.35836381005618,
+    "log_boxes": 2.535379810387564,
+    "nnd": -0.9174332020917992
+   },
+   "boxes_only": {
+    "intercept": -3.3795452592989323,
+    "log_boxes": 2.123125908101563
+   }
+  }
+ }
+}

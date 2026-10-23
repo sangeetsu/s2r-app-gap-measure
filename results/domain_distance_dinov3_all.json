@@ -1,0 +1,4416 @@
+{
+  "domains": [
+    "Cityscapes",
+    "KITTI",
+    "Town01_ClearNight",
+    "Town01_ClearNoon",
+    "Town01_OvercastNoon",
+    "Town01_SoftRainNoon",
+    "Town02_ClearNight",
+    "Town02_ClearNoon",
+    "Town02_OvercastNoon",
+    "Town02_SoftRainNoon",
+    "Town03_ClearNight",
+    "Town03_ClearNoon",
+    "Town03_OvercastNoon",
+    "Town03_SoftRainNoon",
+    "Town04_ClearNight",
+    "Town04_ClearNoon",
+    "Town04_OvercastNoon",
+    "Town04_SoftRainNoon",
+    "Town05_ClearNight",
+    "Town05_ClearNoon",
+    "Town05_OvercastNoon",
+    "Town05_SoftRainNoon",
+    "Town10HD_ClearNight",
+    "Town10HD_ClearNoon",
+    "Town10HD_OvercastNoon",
+    "Town10HD_SoftRainNoon"
+  ],
+  "metrics": {
+    "image": {
+      "Cityscapes||KITTI": {
+        "fid": 4.611490505109449,
+        "mmd_rbf": 0.22368144989013672,
+        "coral": 2.9796640662660443e-07,
+        "cos_mean": 0.06181216239929199,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town01_ClearNight": {
+        "fid": 13.691094043538827,
+        "mmd_rbf": 0.7752805948257446,
+        "coral": 2.178822997639669e-07,
+        "cos_mean": 0.26397740840911865,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town01_ClearNoon": {
+        "fid": 13.59357282376497,
+        "mmd_rbf": 0.7750903964042664,
+        "coral": 1.9369689255182079e-07,
+        "cos_mean": 0.27027976512908936,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town01_OvercastNoon": {
+        "fid": 14.173462826371484,
+        "mmd_rbf": 0.7921716570854187,
+        "coral": 2.0081442184747516e-07,
+        "cos_mean": 0.2741903066635132,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town01_SoftRainNoon": {
+        "fid": 14.238553951594852,
+        "mmd_rbf": 0.78717041015625,
+        "coral": 2.4639398075295274e-07,
+        "cos_mean": 0.2796472907066345,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town02_ClearNight": {
+        "fid": 12.18383388037823,
+        "mmd_rbf": 0.6937122344970703,
+        "coral": 2.3542182497483389e-07,
+        "cos_mean": 0.22850960493087769,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town02_ClearNoon": {
+        "fid": 11.934731209223278,
+        "mmd_rbf": 0.7090691924095154,
+        "coral": 2.021087931706535e-07,
+        "cos_mean": 0.2321840524673462,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town02_OvercastNoon": {
+        "fid": 12.562840426626037,
+        "mmd_rbf": 0.7035380601882935,
+        "coral": 2.6595659370879146e-07,
+        "cos_mean": 0.23682749271392822,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town02_SoftRainNoon": {
+        "fid": 12.616098019909948,
+        "mmd_rbf": 0.6543123126029968,
+        "coral": 2.9898535786432433e-07,
+        "cos_mean": 0.23564374446868896,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town03_ClearNight": {
+        "fid": 13.97556702186563,
+        "mmd_rbf": 0.5656194686889648,
+        "coral": 5.844114640542761e-07,
+        "cos_mean": 0.23999232053756714,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town03_ClearNoon": {
+        "fid": 13.674939804989155,
+        "mmd_rbf": 0.5806399583816528,
+        "coral": 5.246628201018453e-07,
+        "cos_mean": 0.24211889505386353,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town03_OvercastNoon": {
+        "fid": 15.631282285805094,
+        "mmd_rbf": 0.5418941974639893,
+        "coral": 1.0410471914742502e-06,
+        "cos_mean": 0.25703346729278564,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town03_SoftRainNoon": {
+        "fid": 14.136583904108974,
+        "mmd_rbf": 0.5725499391555786,
+        "coral": 6.388836752472906e-07,
+        "cos_mean": 0.246537983417511,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town04_ClearNight": {
+        "fid": 16.04790366393053,
+        "mmd_rbf": 0.8783925771713257,
+        "coral": 2.1633438594600184e-07,
+        "cos_mean": 0.3139265179634094,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town04_ClearNoon": {
+        "fid": 16.33116713976868,
+        "mmd_rbf": 0.8998786211013794,
+        "coral": 2.3172173947001503e-07,
+        "cos_mean": 0.3233366012573242,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town04_OvercastNoon": {
+        "fid": 15.90759105658903,
+        "mmd_rbf": 0.8764559030532837,
+        "coral": 2.3243858679489163e-07,
+        "cos_mean": 0.3105403780937195,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town04_SoftRainNoon": {
+        "fid": 16.641927386706328,
+        "mmd_rbf": 0.8941453695297241,
+        "coral": 2.2067692327900397e-07,
+        "cos_mean": 0.3296799659729004,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town05_ClearNight": {
+        "fid": 13.126307194049973,
+        "mmd_rbf": 0.7237859964370728,
+        "coral": 2.5281664667998796e-07,
+        "cos_mean": 0.2467583417892456,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town05_ClearNoon": {
+        "fid": 11.97963811990454,
+        "mmd_rbf": 0.682434618473053,
+        "coral": 2.616022770769173e-07,
+        "cos_mean": 0.22349637746810913,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town05_OvercastNoon": {
+        "fid": 12.290837874008435,
+        "mmd_rbf": 0.7164046764373779,
+        "coral": 2.6232249291758414e-07,
+        "cos_mean": 0.22747492790222168,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town05_SoftRainNoon": {
+        "fid": 12.403068256023092,
+        "mmd_rbf": 0.6983662843704224,
+        "coral": 2.6448766878803363e-07,
+        "cos_mean": 0.23108094930648804,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town10HD_ClearNight": {
+        "fid": 11.416817397756702,
+        "mmd_rbf": 0.6404589414596558,
+        "coral": 2.8205912223741335e-07,
+        "cos_mean": 0.2010747194290161,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town10HD_ClearNoon": {
+        "fid": 10.41962221954833,
+        "mmd_rbf": 0.598150908946991,
+        "coral": 2.12765988933326e-07,
+        "cos_mean": 0.18261802196502686,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town10HD_OvercastNoon": {
+        "fid": 10.596708728729038,
+        "mmd_rbf": 0.6292846202850342,
+        "coral": 1.9742824681871069e-07,
+        "cos_mean": 0.18955010175704956,
+        "domain_acc": 1.0
+      },
+      "Cityscapes||Town10HD_SoftRainNoon": {
+        "fid": 11.155147181761205,
+        "mmd_rbf": 0.6431087255477905,
+        "coral": 2.3636744788736945e-07,
+        "cos_mean": 0.1981813907623291,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town01_ClearNight": {
+        "fid": 12.934721166168512,
+        "mmd_rbf": 0.620194673538208,
+        "coral": 4.6132641309575546e-07,
+        "cos_mean": 0.230796217918396,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town01_ClearNoon": {
+        "fid": 13.151387876186078,
+        "mmd_rbf": 0.6452007293701172,
+        "coral": 4.4928548238667535e-07,
+        "cos_mean": 0.24376177787780762,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town01_OvercastNoon": {
+        "fid": 13.819162076831066,
+        "mmd_rbf": 0.6601631045341492,
+        "coral": 4.5913549652039157e-07,
+        "cos_mean": 0.24929183721542358,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town01_SoftRainNoon": {
+        "fid": 13.72719690617193,
+        "mmd_rbf": 0.6393159627914429,
+        "coral": 5.007054957207399e-07,
+        "cos_mean": 0.2517600655555725,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town02_ClearNight": {
+        "fid": 12.085218023524007,
+        "mmd_rbf": 0.5698977708816528,
+        "coral": 4.7288622919223204e-07,
+        "cos_mean": 0.20925849676132202,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town02_ClearNoon": {
+        "fid": 12.134687680750293,
+        "mmd_rbf": 0.5947751998901367,
+        "coral": 4.502151243567315e-07,
+        "cos_mean": 0.2180132269859314,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town02_OvercastNoon": {
+        "fid": 12.75203306817794,
+        "mmd_rbf": 0.589654266834259,
+        "coral": 5.0118840877801e-07,
+        "cos_mean": 0.22325432300567627,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town02_SoftRainNoon": {
+        "fid": 12.609085471455467,
+        "mmd_rbf": 0.5465068817138672,
+        "coral": 5.422369481499554e-07,
+        "cos_mean": 0.21725457906723022,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town03_ClearNight": {
+        "fid": 13.705633278637617,
+        "mmd_rbf": 0.4747611880302429,
+        "coral": 7.937390610083125e-07,
+        "cos_mean": 0.21987241506576538,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town03_ClearNoon": {
+        "fid": 13.903267485480345,
+        "mmd_rbf": 0.4991343021392822,
+        "coral": 7.566846374248778e-07,
+        "cos_mean": 0.23179954290390015,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town03_OvercastNoon": {
+        "fid": 15.795144218478114,
+        "mmd_rbf": 0.4697348475456238,
+        "coral": 1.2557332039063883e-06,
+        "cos_mean": 0.24733597040176392,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town03_SoftRainNoon": {
+        "fid": 14.50132477172013,
+        "mmd_rbf": 0.4967055320739746,
+        "coral": 8.618072151875783e-07,
+        "cos_mean": 0.23927545547485352,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town04_ClearNight": {
+        "fid": 15.946279919700956,
+        "mmd_rbf": 0.7431595921516418,
+        "coral": 4.692638070688307e-07,
+        "cos_mean": 0.2937769889831543,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town04_ClearNoon": {
+        "fid": 16.951975217994118,
+        "mmd_rbf": 0.7805933952331543,
+        "coral": 4.798080539932788e-07,
+        "cos_mean": 0.3210446834564209,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town04_OvercastNoon": {
+        "fid": 16.618701104427718,
+        "mmd_rbf": 0.7619815468788147,
+        "coral": 4.836843652318257e-07,
+        "cos_mean": 0.31068354845046997,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town04_SoftRainNoon": {
+        "fid": 17.238433572901315,
+        "mmd_rbf": 0.7851581573486328,
+        "coral": 4.668698683548206e-07,
+        "cos_mean": 0.32795101404190063,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town05_ClearNight": {
+        "fid": 13.993178374393272,
+        "mmd_rbf": 0.6316538453102112,
+        "coral": 5.195250115819537e-07,
+        "cos_mean": 0.24718528985977173,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town05_ClearNoon": {
+        "fid": 13.504641979282574,
+        "mmd_rbf": 0.6166003346443176,
+        "coral": 5.300202287989566e-07,
+        "cos_mean": 0.23899060487747192,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town05_OvercastNoon": {
+        "fid": 14.004287464924984,
+        "mmd_rbf": 0.6469468474388123,
+        "coral": 5.32642903053314e-07,
+        "cos_mean": 0.24610388278961182,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town05_SoftRainNoon": {
+        "fid": 13.969847825187243,
+        "mmd_rbf": 0.6322992444038391,
+        "coral": 5.344672211846847e-07,
+        "cos_mean": 0.24741268157958984,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town10HD_ClearNight": {
+        "fid": 13.462177170150207,
+        "mmd_rbf": 0.5935866832733154,
+        "coral": 5.581551213026661e-07,
+        "cos_mean": 0.22644031047821045,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town10HD_ClearNoon": {
+        "fid": 12.861250560314092,
+        "mmd_rbf": 0.5722402930259705,
+        "coral": 5.029642303993561e-07,
+        "cos_mean": 0.21501457691192627,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town10HD_OvercastNoon": {
+        "fid": 13.049684339881832,
+        "mmd_rbf": 0.6011066436767578,
+        "coral": 4.836629909905675e-07,
+        "cos_mean": 0.22274452447891235,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town10HD_SoftRainNoon": {
+        "fid": 13.479506930478255,
+        "mmd_rbf": 0.6042810678482056,
+        "coral": 5.220325620375472e-07,
+        "cos_mean": 0.22830694913864136,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town01_ClearNoon": {
+        "fid": 4.779999329791573,
+        "mmd_rbf": 0.42136961221694946,
+        "coral": 1.0577868582539252e-07,
+        "cos_mean": 0.08848297595977783,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town01_OvercastNoon": {
+        "fid": 4.1517857170924115,
+        "mmd_rbf": 0.38084888458251953,
+        "coral": 8.808561107370602e-08,
+        "cos_mean": 0.07575184106826782,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town01_SoftRainNoon": {
+        "fid": 4.703268630667523,
+        "mmd_rbf": 0.42418110370635986,
+        "coral": 1.1331968411102302e-07,
+        "cos_mean": 0.08882260322570801,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town02_ClearNight": {
+        "fid": 2.644940852162282,
+        "mmd_rbf": 0.14425671100616455,
+        "coral": 1.2644733884473135e-07,
+        "cos_mean": 0.026427090167999268,
+        "domain_acc": 0.9983333333333333
+      },
+      "Town01_ClearNight||Town02_ClearNoon": {
+        "fid": 5.474351692009279,
+        "mmd_rbf": 0.4285762310028076,
+        "coral": 1.4022477582975636e-07,
+        "cos_mean": 0.09439647197723389,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town02_OvercastNoon": {
+        "fid": 5.181675996628449,
+        "mmd_rbf": 0.40134191513061523,
+        "coral": 1.5587039959610129e-07,
+        "cos_mean": 0.08774441480636597,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town02_SoftRainNoon": {
+        "fid": 5.440634873644891,
+        "mmd_rbf": 0.39847707748413086,
+        "coral": 1.6232047901082268e-07,
+        "cos_mean": 0.09498018026351929,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town03_ClearNight": {
+        "fid": 5.529911955540619,
+        "mmd_rbf": 0.21717262268066406,
+        "coral": 5.187595080508669e-07,
+        "cos_mean": 0.046593546867370605,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town03_ClearNoon": {
+        "fid": 8.159121487496657,
+        "mmd_rbf": 0.4139508605003357,
+        "coral": 4.850054513410917e-07,
+        "cos_mean": 0.11595374345779419,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town03_OvercastNoon": {
+        "fid": 9.274437959104826,
+        "mmd_rbf": 0.373778760433197,
+        "coral": 9.651364251584868e-07,
+        "cos_mean": 0.11355680227279663,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town03_SoftRainNoon": {
+        "fid": 8.380742620825485,
+        "mmd_rbf": 0.4055176377296448,
+        "coral": 5.819840421700711e-07,
+        "cos_mean": 0.11765313148498535,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town04_ClearNight": {
+        "fid": 4.225912601342854,
+        "mmd_rbf": 0.3326111435890198,
+        "coral": 1.7156263613810313e-07,
+        "cos_mean": 0.054599881172180176,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town04_ClearNoon": {
+        "fid": 8.26831409103719,
+        "mmd_rbf": 0.639428436756134,
+        "coral": 1.9366344451904988e-07,
+        "cos_mean": 0.15076738595962524,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town04_OvercastNoon": {
+        "fid": 7.204145008228526,
+        "mmd_rbf": 0.5777420997619629,
+        "coral": 1.729239532720251e-07,
+        "cos_mean": 0.12722337245941162,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town04_SoftRainNoon": {
+        "fid": 8.013856577990902,
+        "mmd_rbf": 0.6203783750534058,
+        "coral": 1.7926274900208733e-07,
+        "cos_mean": 0.14498084783554077,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town05_ClearNight": {
+        "fid": 3.4701884513666057,
+        "mmd_rbf": 0.2158171534538269,
+        "coral": 1.7538312257075962e-07,
+        "cos_mean": 0.03617757558822632,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town05_ClearNoon": {
+        "fid": 6.642124290562687,
+        "mmd_rbf": 0.4918498396873474,
+        "coral": 1.8709524479607013e-07,
+        "cos_mean": 0.11639153957366943,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town05_OvercastNoon": {
+        "fid": 6.350771699105534,
+        "mmd_rbf": 0.48559635877609253,
+        "coral": 1.881275836785464e-07,
+        "cos_mean": 0.1063339114189148,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town05_SoftRainNoon": {
+        "fid": 6.886935905995649,
+        "mmd_rbf": 0.48698240518569946,
+        "coral": 2.066482962199552e-07,
+        "cos_mean": 0.11495089530944824,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town10HD_ClearNight": {
+        "fid": 6.043600338632343,
+        "mmd_rbf": 0.4069681763648987,
+        "coral": 2.112694067353175e-07,
+        "cos_mean": 0.09124100208282471,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town10HD_ClearNoon": {
+        "fid": 8.316488096534218,
+        "mmd_rbf": 0.5626388788223267,
+        "coral": 1.618663504306288e-07,
+        "cos_mean": 0.14957666397094727,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town10HD_OvercastNoon": {
+        "fid": 8.151214935617393,
+        "mmd_rbf": 0.5570622682571411,
+        "coral": 1.6951919460981098e-07,
+        "cos_mean": 0.14155983924865723,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town10HD_SoftRainNoon": {
+        "fid": 8.560813388088498,
+        "mmd_rbf": 0.5724219083786011,
+        "coral": 1.9949768794069047e-07,
+        "cos_mean": 0.14809679985046387,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town01_OvercastNoon": {
+        "fid": 0.8828334576111558,
+        "mmd_rbf": 0.058979332447052,
+        "coral": 3.1994945673267634e-08,
+        "cos_mean": 0.007882773876190186,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town01_SoftRainNoon": {
+        "fid": 1.2451895953618033,
+        "mmd_rbf": 0.055774688720703125,
+        "coral": 9.75535135774176e-08,
+        "cos_mean": 0.00800389051437378,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town02_ClearNight": {
+        "fid": 5.093203715147631,
+        "mmd_rbf": 0.381977915763855,
+        "coral": 1.611870304962385e-07,
+        "cos_mean": 0.0828978419303894,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town02_ClearNoon": {
+        "fid": 2.1871841313306097,
+        "mmd_rbf": 0.1371864676475525,
+        "coral": 9.58332018643008e-08,
+        "cos_mean": 0.022707641124725342,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town02_OvercastNoon": {
+        "fid": 2.7237667436075883,
+        "mmd_rbf": 0.1634523868560791,
+        "coral": 1.4297977837733673e-07,
+        "cos_mean": 0.02849411964416504,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town02_SoftRainNoon": {
+        "fid": 3.2401309534176495,
+        "mmd_rbf": 0.16427457332611084,
+        "coral": 1.880999343339909e-07,
+        "cos_mean": 0.033109188079833984,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town03_ClearNight": {
+        "fid": 8.164095654121718,
+        "mmd_rbf": 0.3782274127006531,
+        "coral": 5.710517468392462e-07,
+        "cos_mean": 0.10794907808303833,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town03_ClearNoon": {
+        "fid": 5.534000867758024,
+        "mmd_rbf": 0.21638214588165283,
+        "coral": 4.7414123182174076e-07,
+        "cos_mean": 0.05090516805648804,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town03_OvercastNoon": {
+        "fid": 7.660395302453135,
+        "mmd_rbf": 0.2501823306083679,
+        "coral": 9.93236227066221e-07,
+        "cos_mean": 0.06804585456848145,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town03_SoftRainNoon": {
+        "fid": 6.148588400136646,
+        "mmd_rbf": 0.22319269180297852,
+        "coral": 6.035117627351754e-07,
+        "cos_mean": 0.05657374858856201,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town04_ClearNight": {
+        "fid": 8.315953095461728,
+        "mmd_rbf": 0.6472902297973633,
+        "coral": 1.670446573364623e-07,
+        "cos_mean": 0.15411114692687988,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town04_ClearNoon": {
+        "fid": 4.493569936864466,
+        "mmd_rbf": 0.3895037770271301,
+        "coral": 1.6091510314398182e-07,
+        "cos_mean": 0.06886738538742065,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town04_OvercastNoon": {
+        "fid": 4.433527453029082,
+        "mmd_rbf": 0.3838484287261963,
+        "coral": 1.5023550777491398e-07,
+        "cos_mean": 0.06709527969360352,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town04_SoftRainNoon": {
+        "fid": 4.12109965593177,
+        "mmd_rbf": 0.3527393937110901,
+        "coral": 1.481743504954853e-07,
+        "cos_mean": 0.05973094701766968,
+        "domain_acc": 0.9983333333333333
+      },
+      "Town01_ClearNoon||Town05_ClearNight": {
+        "fid": 7.1396678808035645,
+        "mmd_rbf": 0.5031552314758301,
+        "coral": 1.9766550329460096e-07,
+        "cos_mean": 0.12393271923065186,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town05_ClearNoon": {
+        "fid": 3.407124058709136,
+        "mmd_rbf": 0.22335469722747803,
+        "coral": 1.651632679688988e-07,
+        "cos_mean": 0.040744245052337646,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town05_OvercastNoon": {
+        "fid": 3.650279037388114,
+        "mmd_rbf": 0.2603105902671814,
+        "coral": 1.7244438924801645e-07,
+        "cos_mean": 0.04441946744918823,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town05_SoftRainNoon": {
+        "fid": 3.3645834128990373,
+        "mmd_rbf": 0.21539998054504395,
+        "coral": 1.693931725867597e-07,
+        "cos_mean": 0.038415372371673584,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town10HD_ClearNight": {
+        "fid": 7.543901478819361,
+        "mmd_rbf": 0.505785346031189,
+        "coral": 2.3492562136216016e-07,
+        "cos_mean": 0.12468427419662476,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town10HD_ClearNoon": {
+        "fid": 6.6260038229082365,
+        "mmd_rbf": 0.44530189037323,
+        "coral": 1.7253535811409992e-07,
+        "cos_mean": 0.10534524917602539,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town10HD_OvercastNoon": {
+        "fid": 6.1442339899019665,
+        "mmd_rbf": 0.4351154565811157,
+        "coral": 1.54257049334313e-07,
+        "cos_mean": 0.09793341159820557,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town10HD_SoftRainNoon": {
+        "fid": 6.309255285458766,
+        "mmd_rbf": 0.4334404468536377,
+        "coral": 1.9140598372195096e-07,
+        "cos_mean": 0.09806311130523682,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town01_SoftRainNoon": {
+        "fid": 1.5025984138561608,
+        "mmd_rbf": 0.08594274520874023,
+        "coral": 1.0744865087112383e-07,
+        "cos_mean": 0.011317729949951172,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town02_ClearNight": {
+        "fid": 4.89055941105539,
+        "mmd_rbf": 0.3567327857017517,
+        "coral": 1.6450837259090983e-07,
+        "cos_mean": 0.07422935962677002,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town02_ClearNoon": {
+        "fid": 2.711747642263142,
+        "mmd_rbf": 0.17396700382232666,
+        "coral": 1.1040986414253876e-07,
+        "cos_mean": 0.02958613634109497,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town02_OvercastNoon": {
+        "fid": 2.7103919105752556,
+        "mmd_rbf": 0.15274935960769653,
+        "coral": 1.4924619124603966e-07,
+        "cos_mean": 0.026677727699279785,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town02_SoftRainNoon": {
+        "fid": 3.2906959401877716,
+        "mmd_rbf": 0.1790185570716858,
+        "coral": 1.849700188539838e-07,
+        "cos_mean": 0.03467726707458496,
+        "domain_acc": 0.9983333333333333
+      },
+      "Town01_OvercastNoon||Town03_ClearNight": {
+        "fid": 7.967282306804278,
+        "mmd_rbf": 0.3614201545715332,
+        "coral": 5.726774589000583e-07,
+        "cos_mean": 0.09762293100357056,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town03_ClearNoon": {
+        "fid": 6.2424111865474545,
+        "mmd_rbf": 0.26518046855926514,
+        "coral": 4.919670049526474e-07,
+        "cos_mean": 0.059981346130371094,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town03_OvercastNoon": {
+        "fid": 7.75226860207345,
+        "mmd_rbf": 0.25777435302734375,
+        "coral": 9.953170629926441e-07,
+        "cos_mean": 0.06547552347183228,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town03_SoftRainNoon": {
+        "fid": 6.645486043790148,
+        "mmd_rbf": 0.2604077458381653,
+        "coral": 6.138325054067241e-07,
+        "cos_mean": 0.06279462575912476,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town04_ClearNight": {
+        "fid": 7.7282604634226075,
+        "mmd_rbf": 0.6058632731437683,
+        "coral": 1.6974721836786198e-07,
+        "cos_mean": 0.13551992177963257,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town04_ClearNoon": {
+        "fid": 4.638240612014702,
+        "mmd_rbf": 0.39247578382492065,
+        "coral": 1.7032424334100164e-07,
+        "cos_mean": 0.06725746393203735,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town04_OvercastNoon": {
+        "fid": 3.939715539144352,
+        "mmd_rbf": 0.3340263366699219,
+        "coral": 1.53733730713435e-07,
+        "cos_mean": 0.053555190563201904,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town04_SoftRainNoon": {
+        "fid": 4.050251232515873,
+        "mmd_rbf": 0.33706068992614746,
+        "coral": 1.545388870672678e-07,
+        "cos_mean": 0.05458176136016846,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town05_ClearNight": {
+        "fid": 7.0525460910878675,
+        "mmd_rbf": 0.4849156141281128,
+        "coral": 2.0279921167342305e-07,
+        "cos_mean": 0.11552590131759644,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town05_ClearNoon": {
+        "fid": 3.9011678936097782,
+        "mmd_rbf": 0.26391083002090454,
+        "coral": 1.7589121455130334e-07,
+        "cos_mean": 0.04898196458816528,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town05_OvercastNoon": {
+        "fid": 3.5591228354745557,
+        "mmd_rbf": 0.24631434679031372,
+        "coral": 1.7071314437625153e-07,
+        "cos_mean": 0.0416947603225708,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town05_SoftRainNoon": {
+        "fid": 3.8078172059177953,
+        "mmd_rbf": 0.23802554607391357,
+        "coral": 1.835378817537703e-07,
+        "cos_mean": 0.04311329126358032,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town10HD_ClearNight": {
+        "fid": 7.634894767219348,
+        "mmd_rbf": 0.5056614279747009,
+        "coral": 2.391888802492268e-07,
+        "cos_mean": 0.12222027778625488,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town10HD_ClearNoon": {
+        "fid": 7.0298431927194756,
+        "mmd_rbf": 0.47354716062545776,
+        "coral": 1.731435173661298e-07,
+        "cos_mean": 0.11245596408843994,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town10HD_OvercastNoon": {
+        "fid": 6.496613840334581,
+        "mmd_rbf": 0.45035111904144287,
+        "coral": 1.633000043842593e-07,
+        "cos_mean": 0.10127133131027222,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town10HD_SoftRainNoon": {
+        "fid": 6.792747276242515,
+        "mmd_rbf": 0.45990437269210815,
+        "coral": 1.9932287708460813e-07,
+        "cos_mean": 0.10404801368713379,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town02_ClearNight": {
+        "fid": 5.009545283257541,
+        "mmd_rbf": 0.37986183166503906,
+        "coral": 1.600524506060661e-07,
+        "cos_mean": 0.07978308200836182,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town02_ClearNoon": {
+        "fid": 2.662990642359599,
+        "mmd_rbf": 0.15961211919784546,
+        "coral": 1.5071432126074703e-07,
+        "cos_mean": 0.02539139986038208,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town02_OvercastNoon": {
+        "fid": 2.817500938324968,
+        "mmd_rbf": 0.17073947191238403,
+        "coral": 1.6360054928580696e-07,
+        "cos_mean": 0.02777421474456787,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town02_SoftRainNoon": {
+        "fid": 2.5371617871464425,
+        "mmd_rbf": 0.1381216049194336,
+        "coral": 1.3688345555351923e-07,
+        "cos_mean": 0.024970412254333496,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town03_ClearNight": {
+        "fid": 7.933514830209209,
+        "mmd_rbf": 0.36807721853256226,
+        "coral": 5.604685806331365e-07,
+        "cos_mean": 0.10309743881225586,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town03_ClearNoon": {
+        "fid": 5.6860072644561175,
+        "mmd_rbf": 0.24305224418640137,
+        "coral": 4.6122614042838954e-07,
+        "cos_mean": 0.05547928810119629,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town03_OvercastNoon": {
+        "fid": 7.249229382449922,
+        "mmd_rbf": 0.25298643112182617,
+        "coral": 9.239263027749523e-07,
+        "cos_mean": 0.06594932079315186,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town03_SoftRainNoon": {
+        "fid": 5.69237958033723,
+        "mmd_rbf": 0.2154276967048645,
+        "coral": 5.428702319324434e-07,
+        "cos_mean": 0.05103182792663574,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town04_ClearNight": {
+        "fid": 8.65508410911539,
+        "mmd_rbf": 0.6358804702758789,
+        "coral": 2.2080114455096665e-07,
+        "cos_mean": 0.1539815068244934,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town04_ClearNoon": {
+        "fid": 5.337833491396939,
+        "mmd_rbf": 0.42537492513656616,
+        "coral": 2.1586449405092447e-07,
+        "cos_mean": 0.07998430728912354,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town04_OvercastNoon": {
+        "fid": 5.0007207100271,
+        "mmd_rbf": 0.40326666831970215,
+        "coral": 1.9953267454055978e-07,
+        "cos_mean": 0.07294732332229614,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town04_SoftRainNoon": {
+        "fid": 4.3645341234811905,
+        "mmd_rbf": 0.34107506275177,
+        "coral": 1.9826616060394993e-07,
+        "cos_mean": 0.05806463956832886,
+        "domain_acc": 0.9983333333333333
+      },
+      "Town01_SoftRainNoon||Town05_ClearNight": {
+        "fid": 7.497542137736075,
+        "mmd_rbf": 0.5011308789253235,
+        "coral": 2.469189841528535e-07,
+        "cos_mean": 0.12420135736465454,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town05_ClearNoon": {
+        "fid": 3.941375773652908,
+        "mmd_rbf": 0.2708236575126648,
+        "coral": 1.869114218672996e-07,
+        "cos_mean": 0.05079609155654907,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town05_OvercastNoon": {
+        "fid": 4.009912838033161,
+        "mmd_rbf": 0.29094016551971436,
+        "coral": 1.8988023055299064e-07,
+        "cos_mean": 0.05021017789840698,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town05_SoftRainNoon": {
+        "fid": 3.6259531377970697,
+        "mmd_rbf": 0.21197140216827393,
+        "coral": 2.1500556997489833e-07,
+        "cos_mean": 0.03658348321914673,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town10HD_ClearNight": {
+        "fid": 7.3473336428267535,
+        "mmd_rbf": 0.49637240171432495,
+        "coral": 2.1618976263918156e-07,
+        "cos_mean": 0.12096351385116577,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town10HD_ClearNoon": {
+        "fid": 6.493839773716947,
+        "mmd_rbf": 0.4465140104293823,
+        "coral": 1.6555258767234493e-07,
+        "cos_mean": 0.10496282577514648,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town10HD_OvercastNoon": {
+        "fid": 6.182472373106902,
+        "mmd_rbf": 0.4322162866592407,
+        "coral": 1.753667682557763e-07,
+        "cos_mean": 0.095736563205719,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town10HD_SoftRainNoon": {
+        "fid": 6.112281531018143,
+        "mmd_rbf": 0.41949009895324707,
+        "coral": 1.867850890530297e-07,
+        "cos_mean": 0.09260541200637817,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town02_ClearNoon": {
+        "fid": 3.1318211555281508,
+        "mmd_rbf": 0.2582901120185852,
+        "coral": 1.0215815796152273e-07,
+        "cos_mean": 0.051653146743774414,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town02_OvercastNoon": {
+        "fid": 2.8199593263992346,
+        "mmd_rbf": 0.22077268362045288,
+        "coral": 1.194497051516906e-07,
+        "cos_mean": 0.04317271709442139,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town02_SoftRainNoon": {
+        "fid": 3.281535920515621,
+        "mmd_rbf": 0.23188894987106323,
+        "coral": 1.4739170743543475e-07,
+        "cos_mean": 0.04840660095214844,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town03_ClearNight": {
+        "fid": 4.444830096042274,
+        "mmd_rbf": 0.1508711576461792,
+        "coral": 4.932263424745619e-07,
+        "cos_mean": 0.025703728199005127,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town03_ClearNoon": {
+        "fid": 6.544839797059967,
+        "mmd_rbf": 0.2987707257270813,
+        "coral": 4.958304722865756e-07,
+        "cos_mean": 0.07496088743209839,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town03_OvercastNoon": {
+        "fid": 7.6002762882701935,
+        "mmd_rbf": 0.26634740829467773,
+        "coral": 9.576469301661812e-07,
+        "cos_mean": 0.07271313667297363,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town03_SoftRainNoon": {
+        "fid": 6.5153936444146225,
+        "mmd_rbf": 0.2830885052680969,
+        "coral": 5.716016595953622e-07,
+        "cos_mean": 0.07149171829223633,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town04_ClearNight": {
+        "fid": 6.557588861955257,
+        "mmd_rbf": 0.46907180547714233,
+        "coral": 2.1695340569547632e-07,
+        "cos_mean": 0.1024969220161438,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town04_ClearNoon": {
+        "fid": 9.494015554835633,
+        "mmd_rbf": 0.6637192964553833,
+        "coral": 2.433991379159088e-07,
+        "cos_mean": 0.17307883501052856,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town04_OvercastNoon": {
+        "fid": 8.299644226567482,
+        "mmd_rbf": 0.5999819040298462,
+        "coral": 2.2235468521633878e-07,
+        "cos_mean": 0.14633619785308838,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town04_SoftRainNoon": {
+        "fid": 8.922999015651952,
+        "mmd_rbf": 0.6287042498588562,
+        "coral": 2.2873298921314147e-07,
+        "cos_mean": 0.15913242101669312,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town05_ClearNight": {
+        "fid": 4.318632508122339,
+        "mmd_rbf": 0.25303035974502563,
+        "coral": 2.1752656754207115e-07,
+        "cos_mean": 0.05230510234832764,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town05_ClearNoon": {
+        "fid": 6.100387163741385,
+        "mmd_rbf": 0.42929166555404663,
+        "coral": 2.112727745809693e-07,
+        "cos_mean": 0.1004030704498291,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town05_OvercastNoon": {
+        "fid": 5.857765080601598,
+        "mmd_rbf": 0.42548197507858276,
+        "coral": 2.157124229128248e-07,
+        "cos_mean": 0.0916663408279419,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town05_SoftRainNoon": {
+        "fid": 5.85063000970535,
+        "mmd_rbf": 0.40108931064605713,
+        "coral": 2.2334305315147606e-07,
+        "cos_mean": 0.09111875295639038,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town10HD_ClearNight": {
+        "fid": 4.088420728030254,
+        "mmd_rbf": 0.26106590032577515,
+        "coral": 1.7693245329993822e-07,
+        "cos_mean": 0.05059373378753662,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town10HD_ClearNoon": {
+        "fid": 5.977986096371669,
+        "mmd_rbf": 0.3994053602218628,
+        "coral": 1.6772592292101406e-07,
+        "cos_mean": 0.093059241771698,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town10HD_OvercastNoon": {
+        "fid": 5.718417937383836,
+        "mmd_rbf": 0.3897840976715088,
+        "coral": 1.7277603340021264e-07,
+        "cos_mean": 0.08699077367782593,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town10HD_SoftRainNoon": {
+        "fid": 5.82316050799159,
+        "mmd_rbf": 0.4024508595466614,
+        "coral": 1.713060184077492e-07,
+        "cos_mean": 0.09026539325714111,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNoon||Town02_OvercastNoon": {
+        "fid": 0.763542475480655,
+        "mmd_rbf": 0.028253793716430664,
+        "coral": 4.307992597521731e-08,
+        "cos_mean": 0.004264414310455322,
+        "domain_acc": 0.995
+      },
+      "Town02_ClearNoon||Town02_SoftRainNoon": {
+        "fid": 1.3781419876634677,
+        "mmd_rbf": 0.04818093776702881,
+        "coral": 1.11254927076042e-07,
+        "cos_mean": 0.008765220642089844,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNoon||Town03_ClearNight": {
+        "fid": 6.913404894320319,
+        "mmd_rbf": 0.3115612864494324,
+        "coral": 5.470633719140005e-07,
+        "cos_mean": 0.0822901725769043,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNoon||Town03_ClearNoon": {
+        "fid": 4.928079849760042,
+        "mmd_rbf": 0.16459959745407104,
+        "coral": 4.85688242607858e-07,
+        "cos_mean": 0.035244643688201904,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNoon||Town03_OvercastNoon": {
+        "fid": 6.919171414055209,
+        "mmd_rbf": 0.1946810483932495,
+        "coral": 9.887988501611523e-07,
+        "cos_mean": 0.05070728063583374,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNoon||Town03_SoftRainNoon": {
+        "fid": 5.249529019900697,
+        "mmd_rbf": 0.16210538148880005,
+        "coral": 5.954868987926504e-07,
+        "cos_mean": 0.03578156232833862,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNoon||Town04_ClearNight": {
+        "fid": 9.387007520899456,
+        "mmd_rbf": 0.6825066804885864,
+        "coral": 1.8884861003312504e-07,
+        "cos_mean": 0.1775314211845398,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNoon||Town04_ClearNoon": {
+        "fid": 6.705430898976058,
+        "mmd_rbf": 0.5306015014648438,
+        "coral": 1.915220663763082e-07,
+        "cos_mean": 0.116604745388031,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNoon||Town04_OvercastNoon": {
+        "fid": 6.379251824005521,
+        "mmd_rbf": 0.5059967637062073,
+        "coral": 1.7763984826390357e-07,
+        "cos_mean": 0.10875153541564941,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNoon||Town04_SoftRainNoon": {
+        "fid": 6.161343646472367,
+        "mmd_rbf": 0.48406022787094116,
+        "coral": 1.788784233471876e-07,
+        "cos_mean": 0.10234659910202026,
+        "domain_acc": 0.9983333333333333
+      },
+      "Town02_ClearNoon||Town05_ClearNight": {
+        "fid": 6.992843021609129,
+        "mmd_rbf": 0.47957730293273926,
+        "coral": 2.1120850370078426e-07,
+        "cos_mean": 0.12008076906204224,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNoon||Town05_ClearNoon": {
+        "fid": 3.745661362253836,
+        "mmd_rbf": 0.2575851082801819,
+        "coral": 1.7371225646585938e-07,
+        "cos_mean": 0.047817885875701904,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNoon||Town05_OvercastNoon": {
+        "fid": 3.9654662435506323,
+        "mmd_rbf": 0.28667986392974854,
+        "coral": 1.8098827198791418e-07,
+        "cos_mean": 0.05048412084579468,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNoon||Town05_SoftRainNoon": {
+        "fid": 3.4471252082613475,
+        "mmd_rbf": 0.22571277618408203,
+        "coral": 1.766640511346613e-07,
+        "cos_mean": 0.039903998374938965,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNoon||Town10HD_ClearNight": {
+        "fid": 5.964333273332695,
+        "mmd_rbf": 0.3940988779067993,
+        "coral": 2.404351416434059e-07,
+        "cos_mean": 0.08785241842269897,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNoon||Town10HD_ClearNoon": {
+        "fid": 5.08002148983253,
+        "mmd_rbf": 0.322054386138916,
+        "coral": 1.8560705859078918e-07,
+        "cos_mean": 0.06796687841415405,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNoon||Town10HD_OvercastNoon": {
+        "fid": 4.713176102763663,
+        "mmd_rbf": 0.31905895471572876,
+        "coral": 1.645629250094188e-07,
+        "cos_mean": 0.06434530019760132,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNoon||Town10HD_SoftRainNoon": {
+        "fid": 4.893718223461063,
+        "mmd_rbf": 0.31323909759521484,
+        "coral": 2.0901171396729798e-07,
+        "cos_mean": 0.062409937381744385,
+        "domain_acc": 1.0
+      },
+      "Town02_OvercastNoon||Town02_SoftRainNoon": {
+        "fid": 1.0598943211569969,
+        "mmd_rbf": 0.041455745697021484,
+        "coral": 7.380980940459468e-08,
+        "cos_mean": 0.006583571434020996,
+        "domain_acc": 0.9983333333333333
+      },
+      "Town02_OvercastNoon||Town03_ClearNight": {
+        "fid": 6.77390984658843,
+        "mmd_rbf": 0.2822137475013733,
+        "coral": 5.821333864316936e-07,
+        "cos_mean": 0.07369214296340942,
+        "domain_acc": 1.0
+      },
+      "Town02_OvercastNoon||Town03_ClearNoon": {
+        "fid": 5.206522861946999,
+        "mmd_rbf": 0.1787816882133484,
+        "coral": 5.153787314852336e-07,
+        "cos_mean": 0.03820931911468506,
+        "domain_acc": 1.0
+      },
+      "Town02_OvercastNoon||Town03_OvercastNoon": {
+        "fid": 6.594016676234974,
+        "mmd_rbf": 0.1784733533859253,
+        "coral": 9.747155577135746e-07,
+        "cos_mean": 0.04459500312805176,
+        "domain_acc": 1.0
+      },
+      "Town02_OvercastNoon||Town03_SoftRainNoon": {
+        "fid": 5.222405462378742,
+        "mmd_rbf": 0.16539812088012695,
+        "coral": 5.974935876762981e-07,
+        "cos_mean": 0.0355982780456543,
+        "domain_acc": 1.0
+      },
+      "Town02_OvercastNoon||Town04_ClearNight": {
+        "fid": 9.50111323158244,
+        "mmd_rbf": 0.653073251247406,
+        "coral": 2.562103394543204e-07,
+        "cos_mean": 0.1708993911743164,
+        "domain_acc": 1.0
+      },
+      "Town02_OvercastNoon||Town04_ClearNoon": {
+        "fid": 7.218675731053236,
+        "mmd_rbf": 0.5280284285545349,
+        "coral": 2.524783914422394e-07,
+        "cos_mean": 0.12019562721252441,
+        "domain_acc": 1.0
+      },
+      "Town02_OvercastNoon||Town04_OvercastNoon": {
+        "fid": 6.431553106423044,
+        "mmd_rbf": 0.4768698811531067,
+        "coral": 2.3211512899778668e-07,
+        "cos_mean": 0.10319000482559204,
+        "domain_acc": 1.0
+      },
+      "Town02_OvercastNoon||Town04_SoftRainNoon": {
+        "fid": 6.501790723581713,
+        "mmd_rbf": 0.4709934592247009,
+        "coral": 2.4024265473379844e-07,
+        "cos_mean": 0.10222005844116211,
+        "domain_acc": 0.9983333333333333
+      },
+      "Town02_OvercastNoon||Town05_ClearNight": {
+        "fid": 7.2084859553807314,
+        "mmd_rbf": 0.46464693546295166,
+        "coral": 2.656241785903734e-07,
+        "cos_mean": 0.11817163228988647,
+        "domain_acc": 1.0
+      },
+      "Town02_OvercastNoon||Town05_ClearNoon": {
+        "fid": 4.0838042959034215,
+        "mmd_rbf": 0.2795643210411072,
+        "coral": 1.9577904652836883e-07,
+        "cos_mean": 0.05489832162857056,
+        "domain_acc": 1.0
+      },
+      "Town02_OvercastNoon||Town05_OvercastNoon": {
+        "fid": 4.1262254531027684,
+        "mmd_rbf": 0.2799150347709656,
+        "coral": 2.1612892878754243e-07,
+        "cos_mean": 0.050328612327575684,
+        "domain_acc": 1.0
+      },
+      "Town02_OvercastNoon||Town05_SoftRainNoon": {
+        "fid": 3.806017952607476,
+        "mmd_rbf": 0.23268824815750122,
+        "coral": 2.149697651863547e-07,
+        "cos_mean": 0.04312342405319214,
+        "domain_acc": 1.0
+      },
+      "Town02_OvercastNoon||Town10HD_ClearNight": {
+        "fid": 5.911815701187644,
+        "mmd_rbf": 0.3719090223312378,
+        "coral": 2.7475523330141035e-07,
+        "cos_mean": 0.0832207202911377,
+        "domain_acc": 1.0
+      },
+      "Town02_OvercastNoon||Town10HD_ClearNoon": {
+        "fid": 5.126029032019964,
+        "mmd_rbf": 0.31923389434814453,
+        "coral": 2.1598918523534485e-07,
+        "cos_mean": 0.06897866725921631,
+        "domain_acc": 1.0
+      },
+      "Town02_OvercastNoon||Town10HD_OvercastNoon": {
+        "fid": 4.866279533734225,
+        "mmd_rbf": 0.3038035035133362,
+        "coral": 2.1607142070077e-07,
+        "cos_mean": 0.06211370229721069,
+        "domain_acc": 1.0
+      },
+      "Town02_OvercastNoon||Town10HD_SoftRainNoon": {
+        "fid": 5.0359186864620735,
+        "mmd_rbf": 0.30573803186416626,
+        "coral": 2.5136212109908196e-07,
+        "cos_mean": 0.06201350688934326,
+        "domain_acc": 1.0
+      },
+      "Town02_SoftRainNoon||Town03_ClearNight": {
+        "fid": 6.874718427052573,
+        "mmd_rbf": 0.2570062279701233,
+        "coral": 5.933790506495573e-07,
+        "cos_mean": 0.07436734437942505,
+        "domain_acc": 1.0
+      },
+      "Town02_SoftRainNoon||Town03_ClearNoon": {
+        "fid": 5.255737392882505,
+        "mmd_rbf": 0.1563372015953064,
+        "coral": 5.085555461087645e-07,
+        "cos_mean": 0.039262592792510986,
+        "domain_acc": 1.0
+      },
+      "Town02_SoftRainNoon||Town03_OvercastNoon": {
+        "fid": 6.65530811459989,
+        "mmd_rbf": 0.16271424293518066,
+        "coral": 9.503920542171123e-07,
+        "cos_mean": 0.048239827156066895,
+        "domain_acc": 1.0
+      },
+      "Town02_SoftRainNoon||Town03_SoftRainNoon": {
+        "fid": 5.014606255825764,
+        "mmd_rbf": 0.1267501711845398,
+        "coral": 5.678105854194343e-07,
+        "cos_mean": 0.03182661533355713,
+        "domain_acc": 1.0
+      },
+      "Town02_SoftRainNoon||Town04_ClearNight": {
+        "fid": 10.068711982969221,
+        "mmd_rbf": 0.6298927068710327,
+        "coral": 2.931665861470815e-07,
+        "cos_mean": 0.1785106062889099,
+        "domain_acc": 1.0
+      },
+      "Town02_SoftRainNoon||Town04_ClearNoon": {
+        "fid": 7.9837093976438105,
+        "mmd_rbf": 0.5186996459960938,
+        "coral": 2.955853803083446e-07,
+        "cos_mean": 0.13081520795822144,
+        "domain_acc": 1.0
+      },
+      "Town02_SoftRainNoon||Town04_OvercastNoon": {
+        "fid": 7.233303105585101,
+        "mmd_rbf": 0.47819870710372925,
+        "coral": 2.7162746846245816e-07,
+        "cos_mean": 0.11519056558609009,
+        "domain_acc": 1.0
+      },
+      "Town02_SoftRainNoon||Town04_SoftRainNoon": {
+        "fid": 6.947699783443406,
+        "mmd_rbf": 0.44716745615005493,
+        "coral": 2.8092815889287935e-07,
+        "cos_mean": 0.1056361198425293,
+        "domain_acc": 0.9983333333333333
+      },
+      "Town02_SoftRainNoon||Town05_ClearNight": {
+        "fid": 7.590388939246939,
+        "mmd_rbf": 0.445293664932251,
+        "coral": 3.0163880513402544e-07,
+        "cos_mean": 0.1219063401222229,
+        "domain_acc": 1.0
+      },
+      "Town02_SoftRainNoon||Town05_ClearNoon": {
+        "fid": 4.36255014468548,
+        "mmd_rbf": 0.26630306243896484,
+        "coral": 2.1853152100064427e-07,
+        "cos_mean": 0.05816078186035156,
+        "domain_acc": 1.0
+      },
+      "Town02_SoftRainNoon||Town05_OvercastNoon": {
+        "fid": 4.516824137614048,
+        "mmd_rbf": 0.2837660312652588,
+        "coral": 2.340495412726214e-07,
+        "cos_mean": 0.05693066120147705,
+        "domain_acc": 1.0
+      },
+      "Town02_SoftRainNoon||Town05_SoftRainNoon": {
+        "fid": 3.9644879409292493,
+        "mmd_rbf": 0.19853639602661133,
+        "coral": 2.5672336174504653e-07,
+        "cos_mean": 0.04001009464263916,
+        "domain_acc": 1.0
+      },
+      "Town02_SoftRainNoon||Town10HD_ClearNight": {
+        "fid": 5.917750091882759,
+        "mmd_rbf": 0.34616589546203613,
+        "coral": 2.7154598582062443e-07,
+        "cos_mean": 0.08195477724075317,
+        "domain_acc": 1.0
+      },
+      "Town02_SoftRainNoon||Town10HD_ClearNoon": {
+        "fid": 4.947181735244401,
+        "mmd_rbf": 0.2875971794128418,
+        "coral": 2.0216540230408103e-07,
+        "cos_mean": 0.06618964672088623,
+        "domain_acc": 1.0
+      },
+      "Town02_SoftRainNoon||Town10HD_OvercastNoon": {
+        "fid": 4.938172996553125,
+        "mmd_rbf": 0.2787984609603882,
+        "coral": 2.2831389063250572e-07,
+        "cos_mean": 0.06070888042449951,
+        "domain_acc": 1.0
+      },
+      "Town02_SoftRainNoon||Town10HD_SoftRainNoon": {
+        "fid": 4.93354826600301,
+        "mmd_rbf": 0.2685885429382324,
+        "coral": 2.455701986852006e-07,
+        "cos_mean": 0.057548344135284424,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNight||Town03_ClearNoon": {
+        "fid": 4.89579474553286,
+        "mmd_rbf": 0.17443865537643433,
+        "coral": 4.114586202964589e-07,
+        "cos_mean": 0.05624282360076904,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNight||Town03_OvercastNoon": {
+        "fid": 5.488153923735835,
+        "mmd_rbf": 0.13224279880523682,
+        "coral": 7.002308006269761e-07,
+        "cos_mean": 0.048902928829193115,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNight||Town03_SoftRainNoon": {
+        "fid": 5.2684046840436976,
+        "mmd_rbf": 0.16791415214538574,
+        "coral": 4.83965096096802e-07,
+        "cos_mean": 0.056259334087371826,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNight||Town04_ClearNight": {
+        "fid": 7.847779777050547,
+        "mmd_rbf": 0.3818485736846924,
+        "coral": 5.716101482588441e-07,
+        "cos_mean": 0.09956246614456177,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNight||Town04_ClearNoon": {
+        "fid": 11.200121672664551,
+        "mmd_rbf": 0.5435466766357422,
+        "coral": 6.1821658262109e-07,
+        "cos_mean": 0.1756306290626526,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNight||Town04_OvercastNoon": {
+        "fid": 9.904095485259296,
+        "mmd_rbf": 0.49006617069244385,
+        "coral": 5.814137829131177e-07,
+        "cos_mean": 0.14869505167007446,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNight||Town04_SoftRainNoon": {
+        "fid": 10.734569740759653,
+        "mmd_rbf": 0.5218285322189331,
+        "coral": 6.01856906332494e-07,
+        "cos_mean": 0.16558659076690674,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNight||Town05_ClearNight": {
+        "fid": 5.413827105812105,
+        "mmd_rbf": 0.19498950242996216,
+        "coral": 5.206154148586954e-07,
+        "cos_mean": 0.04868018627166748,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNight||Town05_ClearNoon": {
+        "fid": 7.588782073421184,
+        "mmd_rbf": 0.3308536410331726,
+        "coral": 5.777421157431912e-07,
+        "cos_mean": 0.09816157817840576,
+        "domain_acc": 0.9983333333333333
+      },
+      "Town03_ClearNight||Town05_OvercastNoon": {
+        "fid": 7.3897657300032655,
+        "mmd_rbf": 0.3303799033164978,
+        "coral": 5.873965496075933e-07,
+        "cos_mean": 0.08867138624191284,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNight||Town05_SoftRainNoon": {
+        "fid": 7.559721171920804,
+        "mmd_rbf": 0.3202885389328003,
+        "coral": 5.907447584075981e-07,
+        "cos_mean": 0.09276103973388672,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNight||Town10HD_ClearNight": {
+        "fid": 5.90433606353907,
+        "mmd_rbf": 0.21809911727905273,
+        "coral": 5.384139885503903e-07,
+        "cos_mean": 0.05308806896209717,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNight||Town10HD_ClearNoon": {
+        "fid": 7.751283233710937,
+        "mmd_rbf": 0.31823527812957764,
+        "coral": 5.455742979715151e-07,
+        "cos_mean": 0.09529691934585571,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNight||Town10HD_OvercastNoon": {
+        "fid": 7.3767849946175605,
+        "mmd_rbf": 0.31256330013275146,
+        "coral": 5.349789409626661e-07,
+        "cos_mean": 0.08857935667037964,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNight||Town10HD_SoftRainNoon": {
+        "fid": 7.822547004180774,
+        "mmd_rbf": 0.32975995540618896,
+        "coral": 5.620856333520155e-07,
+        "cos_mean": 0.0948367714881897,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNoon||Town03_OvercastNoon": {
+        "fid": 3.0780438747907652,
+        "mmd_rbf": 0.03634810447692871,
+        "coral": 4.690113584670389e-07,
+        "cos_mean": 0.011486470699310303,
+        "domain_acc": 0.995
+      },
+      "Town03_ClearNoon||Town03_SoftRainNoon": {
+        "fid": 2.7673293568737147,
+        "mmd_rbf": 0.029868721961975098,
+        "coral": 3.4225618293243914e-07,
+        "cos_mean": 0.007261812686920166,
+        "domain_acc": 0.995
+      },
+      "Town03_ClearNoon||Town04_ClearNight": {
+        "fid": 11.233841550828114,
+        "mmd_rbf": 0.5774737000465393,
+        "coral": 5.319530480296341e-07,
+        "cos_mean": 0.18449389934539795,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNoon||Town04_ClearNoon": {
+        "fid": 8.559737802630792,
+        "mmd_rbf": 0.44091737270355225,
+        "coral": 5.278581098842855e-07,
+        "cos_mean": 0.11945533752441406,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNoon||Town04_OvercastNoon": {
+        "fid": 8.125953677154957,
+        "mmd_rbf": 0.4288329482078552,
+        "coral": 4.984729736302112e-07,
+        "cos_mean": 0.11271071434020996,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNoon||Town04_SoftRainNoon": {
+        "fid": 8.341884085004134,
+        "mmd_rbf": 0.42918258905410767,
+        "coral": 5.183880520274789e-07,
+        "cos_mean": 0.11404865980148315,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNoon||Town05_ClearNight": {
+        "fid": 8.391574922598192,
+        "mmd_rbf": 0.38990646600723267,
+        "coral": 5.298948090619381e-07,
+        "cos_mean": 0.11910063028335571,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNoon||Town05_ClearNoon": {
+        "fid": 5.034352144759923,
+        "mmd_rbf": 0.16345936059951782,
+        "coral": 4.939753668475332e-07,
+        "cos_mean": 0.04127156734466553,
+        "domain_acc": 0.9983333333333333
+      },
+      "Town03_ClearNoon||Town05_OvercastNoon": {
+        "fid": 5.486622900608819,
+        "mmd_rbf": 0.20852667093276978,
+        "coral": 5.21916016291857e-07,
+        "cos_mean": 0.046175360679626465,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNoon||Town05_SoftRainNoon": {
+        "fid": 5.280009799155281,
+        "mmd_rbf": 0.17193162441253662,
+        "coral": 5.222864189975154e-07,
+        "cos_mean": 0.04116535186767578,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNoon||Town10HD_ClearNight": {
+        "fid": 7.291957127610967,
+        "mmd_rbf": 0.3181232810020447,
+        "coral": 5.011314535007384e-07,
+        "cos_mean": 0.08724546432495117,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNoon||Town10HD_ClearNoon": {
+        "fid": 6.274941817379017,
+        "mmd_rbf": 0.2390792965888977,
+        "coral": 4.551441952120676e-07,
+        "cos_mean": 0.06495565176010132,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNoon||Town10HD_OvercastNoon": {
+        "fid": 6.113460850316339,
+        "mmd_rbf": 0.24209028482437134,
+        "coral": 4.591960402657796e-07,
+        "cos_mean": 0.06106668710708618,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNoon||Town10HD_SoftRainNoon": {
+        "fid": 6.4031006076149035,
+        "mmd_rbf": 0.2528197765350342,
+        "coral": 4.794929471085123e-07,
+        "cos_mean": 0.06460762023925781,
+        "domain_acc": 1.0
+      },
+      "Town03_OvercastNoon||Town03_SoftRainNoon": {
+        "fid": 2.9028225464361945,
+        "mmd_rbf": 0.03382974863052368,
+        "coral": 4.153613391395723e-07,
+        "cos_mean": 0.010127782821655273,
+        "domain_acc": 0.9916666666666667
+      },
+      "Town03_OvercastNoon||Town04_ClearNight": {
+        "fid": 12.45911367780434,
+        "mmd_rbf": 0.5183296203613281,
+        "coral": 1.049057871030196e-06,
+        "cos_mean": 0.17918330430984497,
+        "domain_acc": 1.0
+      },
+      "Town03_OvercastNoon||Town04_ClearNoon": {
+        "fid": 10.4736239900376,
+        "mmd_rbf": 0.42504680156707764,
+        "coral": 1.0462012711759974e-06,
+        "cos_mean": 0.13016051054000854,
+        "domain_acc": 1.0
+      },
+      "Town03_OvercastNoon||Town04_OvercastNoon": {
+        "fid": 9.563883032798605,
+        "mmd_rbf": 0.38886481523513794,
+        "coral": 1.0091004071489496e-06,
+        "cos_mean": 0.11241322755813599,
+        "domain_acc": 1.0
+      },
+      "Town03_OvercastNoon||Town04_SoftRainNoon": {
+        "fid": 9.963900909560824,
+        "mmd_rbf": 0.4027126431465149,
+        "coral": 1.0317546751074449e-06,
+        "cos_mean": 0.11926329135894775,
+        "domain_acc": 1.0
+      },
+      "Town03_OvercastNoon||Town05_ClearNight": {
+        "fid": 9.692334757752747,
+        "mmd_rbf": 0.34616124629974365,
+        "coral": 1.023532100523499e-06,
+        "cos_mean": 0.11771100759506226,
+        "domain_acc": 1.0
+      },
+      "Town03_OvercastNoon||Town05_ClearNoon": {
+        "fid": 6.977189608537725,
+        "mmd_rbf": 0.18631517887115479,
+        "coral": 9.881655559320727e-07,
+        "cos_mean": 0.057513296604156494,
+        "domain_acc": 0.9983333333333333
+      },
+      "Town03_OvercastNoon||Town05_OvercastNoon": {
+        "fid": 7.0265543101944345,
+        "mmd_rbf": 0.1967247724533081,
+        "coral": 1.008173640386269e-06,
+        "cos_mean": 0.05189758539199829,
+        "domain_acc": 1.0
+      },
+      "Town03_OvercastNoon||Town05_SoftRainNoon": {
+        "fid": 7.0997391625876975,
+        "mmd_rbf": 0.17833209037780762,
+        "coral": 1.0222032406305428e-06,
+        "cos_mean": 0.05220586061477661,
+        "domain_acc": 1.0
+      },
+      "Town03_OvercastNoon||Town10HD_ClearNight": {
+        "fid": 8.682117520047816,
+        "mmd_rbf": 0.2842490077018738,
+        "coral": 9.70330032575122e-07,
+        "cos_mean": 0.09062623977661133,
+        "domain_acc": 1.0
+      },
+      "Town03_OvercastNoon||Town10HD_ClearNoon": {
+        "fid": 8.025860513140508,
+        "mmd_rbf": 0.23452520370483398,
+        "coral": 9.311345253833744e-07,
+        "cos_mean": 0.0786290168762207,
+        "domain_acc": 1.0
+      },
+      "Town03_OvercastNoon||Town10HD_OvercastNoon": {
+        "fid": 7.907486967079393,
+        "mmd_rbf": 0.22776532173156738,
+        "coral": 9.675049200382824e-07,
+        "cos_mean": 0.07054364681243896,
+        "domain_acc": 1.0
+      },
+      "Town03_OvercastNoon||Town10HD_SoftRainNoon": {
+        "fid": 8.09219193022249,
+        "mmd_rbf": 0.2421475052833557,
+        "coral": 9.497880608773091e-07,
+        "cos_mean": 0.07538819313049316,
+        "domain_acc": 1.0
+      },
+      "Town03_SoftRainNoon||Town04_ClearNight": {
+        "fid": 11.818345298882864,
+        "mmd_rbf": 0.5692347884178162,
+        "coral": 6.664473173304347e-07,
+        "cos_mean": 0.18978476524353027,
+        "domain_acc": 1.0
+      },
+      "Town03_SoftRainNoon||Town04_ClearNoon": {
+        "fid": 9.441810046747193,
+        "mmd_rbf": 0.4528481364250183,
+        "coral": 6.679500826962369e-07,
+        "cos_mean": 0.13126635551452637,
+        "domain_acc": 1.0
+      },
+      "Town03_SoftRainNoon||Town04_OvercastNoon": {
+        "fid": 8.905594073397666,
+        "mmd_rbf": 0.4310704469680786,
+        "coral": 6.383896243105185e-07,
+        "cos_mean": 0.12076359987258911,
+        "domain_acc": 1.0
+      },
+      "Town03_SoftRainNoon||Town04_SoftRainNoon": {
+        "fid": 8.725711021089857,
+        "mmd_rbf": 0.4125085473060608,
+        "coral": 6.522131751578326e-07,
+        "cos_mean": 0.1144598126411438,
+        "domain_acc": 1.0
+      },
+      "Town03_SoftRainNoon||Town05_ClearNight": {
+        "fid": 8.627581667110453,
+        "mmd_rbf": 0.3780354857444763,
+        "coral": 6.304417216015449e-07,
+        "cos_mean": 0.11990267038345337,
+        "domain_acc": 1.0
+      },
+      "Town03_SoftRainNoon||Town05_ClearNoon": {
+        "fid": 5.548168213250383,
+        "mmd_rbf": 0.17312079668045044,
+        "coral": 6.017154922016103e-07,
+        "cos_mean": 0.04796016216278076,
+        "domain_acc": 1.0
+      },
+      "Town03_SoftRainNoon||Town05_OvercastNoon": {
+        "fid": 5.927146666510193,
+        "mmd_rbf": 0.20758146047592163,
+        "coral": 6.36115714256046e-07,
+        "cos_mean": 0.049948930740356445,
+        "domain_acc": 1.0
+      },
+      "Town03_SoftRainNoon||Town05_SoftRainNoon": {
+        "fid": 5.415799163542484,
+        "mmd_rbf": 0.1426066756248474,
+        "coral": 6.354265102987372e-07,
+        "cos_mean": 0.03757375478744507,
+        "domain_acc": 1.0
+      },
+      "Town03_SoftRainNoon||Town10HD_ClearNight": {
+        "fid": 7.132808046189301,
+        "mmd_rbf": 0.28816109895706177,
+        "coral": 5.601834266081522e-07,
+        "cos_mean": 0.08118224143981934,
+        "domain_acc": 1.0
+      },
+      "Town03_SoftRainNoon||Town10HD_ClearNoon": {
+        "fid": 6.208743666618041,
+        "mmd_rbf": 0.2106505036354065,
+        "coral": 5.28893387347091e-07,
+        "cos_mean": 0.060303568840026855,
+        "domain_acc": 1.0
+      },
+      "Town03_SoftRainNoon||Town10HD_OvercastNoon": {
+        "fid": 6.181671487534234,
+        "mmd_rbf": 0.20968759059906006,
+        "coral": 5.580183150750552e-07,
+        "cos_mean": 0.05584228038787842,
+        "domain_acc": 1.0
+      },
+      "Town03_SoftRainNoon||Town10HD_SoftRainNoon": {
+        "fid": 6.168367868468752,
+        "mmd_rbf": 0.20799005031585693,
+        "coral": 5.441760145718629e-07,
+        "cos_mean": 0.05521893501281738,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNight||Town04_ClearNoon": {
+        "fid": 5.647815722213106,
+        "mmd_rbf": 0.5779144763946533,
+        "coral": 7.189173445432675e-08,
+        "cos_mean": 0.11325216293334961,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNight||Town04_OvercastNoon": {
+        "fid": 5.0826686824695,
+        "mmd_rbf": 0.5207717418670654,
+        "coral": 7.45753266190758e-08,
+        "cos_mean": 0.0974729061126709,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNight||Town04_SoftRainNoon": {
+        "fid": 5.91059379862799,
+        "mmd_rbf": 0.585070013999939,
+        "coral": 6.842237944375993e-08,
+        "cos_mean": 0.11834079027175903,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNight||Town05_ClearNight": {
+        "fid": 3.7588539302676818,
+        "mmd_rbf": 0.2886306047439575,
+        "coral": 1.645565658717659e-07,
+        "cos_mean": 0.049739301204681396,
+        "domain_acc": 0.9983333333333333
+      },
+      "Town04_ClearNight||Town05_ClearNoon": {
+        "fid": 8.53822122850503,
+        "mmd_rbf": 0.614326000213623,
+        "coral": 2.3401036790590764e-07,
+        "cos_mean": 0.1520417332649231,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNight||Town05_OvercastNoon": {
+        "fid": 7.968211787777374,
+        "mmd_rbf": 0.6037431359291077,
+        "coral": 2.261211111086159e-07,
+        "cos_mean": 0.13837093114852905,
+        "domain_acc": 0.9983333333333333
+      },
+      "Town04_ClearNight||Town05_SoftRainNoon": {
+        "fid": 8.687989242098864,
+        "mmd_rbf": 0.6226310729980469,
+        "coral": 2.32818644206016e-07,
+        "cos_mean": 0.1547895073890686,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNight||Town10HD_ClearNight": {
+        "fid": 8.86990323717894,
+        "mmd_rbf": 0.5807451605796814,
+        "coral": 2.813606590481302e-07,
+        "cos_mean": 0.14380502700805664,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNight||Town10HD_ClearNoon": {
+        "fid": 11.620521443995756,
+        "mmd_rbf": 0.7278706431388855,
+        "coral": 2.156770114105637e-07,
+        "cos_mean": 0.20961838960647583,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNight||Town10HD_OvercastNoon": {
+        "fid": 11.032914286245624,
+        "mmd_rbf": 0.7276417016983032,
+        "coral": 1.9672603126356268e-07,
+        "cos_mean": 0.20020604133605957,
+        "domain_acc": 0.9983333333333333
+      },
+      "Town04_ClearNight||Town10HD_SoftRainNoon": {
+        "fid": 11.693584534104597,
+        "mmd_rbf": 0.7410895824432373,
+        "coral": 2.392557741275001e-07,
+        "cos_mean": 0.2098265290260315,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNoon||Town04_OvercastNoon": {
+        "fid": 0.710518561087806,
+        "mmd_rbf": 0.08255529403686523,
+        "coral": 2.5991831041762352e-08,
+        "cos_mean": 0.008874118328094482,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNoon||Town04_SoftRainNoon": {
+        "fid": 0.6817699491804197,
+        "mmd_rbf": 0.089011549949646,
+        "coral": 1.7563323052523114e-08,
+        "cos_mean": 0.010213315486907959,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNoon||Town05_ClearNight": {
+        "fid": 8.591257113539298,
+        "mmd_rbf": 0.6276797652244568,
+        "coral": 2.163021511407779e-07,
+        "cos_mean": 0.15655696392059326,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNoon||Town05_ClearNoon": {
+        "fid": 4.7618391771805655,
+        "mmd_rbf": 0.3553203344345093,
+        "coral": 2.1400660603907444e-07,
+        "cos_mean": 0.06904405355453491,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNoon||Town05_OvercastNoon": {
+        "fid": 4.753569579448128,
+        "mmd_rbf": 0.37586885690689087,
+        "coral": 2.1386167766877108e-07,
+        "cos_mean": 0.06836169958114624,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNoon||Town05_SoftRainNoon": {
+        "fid": 5.117713060803917,
+        "mmd_rbf": 0.3876015543937683,
+        "coral": 2.162057805899352e-07,
+        "cos_mean": 0.0771363377571106,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNoon||Town10HD_ClearNight": {
+        "fid": 11.093702255150808,
+        "mmd_rbf": 0.7090393304824829,
+        "coral": 2.979749386508978e-07,
+        "cos_mean": 0.19703304767608643,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNoon||Town10HD_ClearNoon": {
+        "fid": 10.017611859429344,
+        "mmd_rbf": 0.6608589291572571,
+        "coral": 2.2437803552608972e-07,
+        "cos_mean": 0.1755327582359314,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNoon||Town10HD_OvercastNoon": {
+        "fid": 9.425479956772087,
+        "mmd_rbf": 0.6586156487464905,
+        "coral": 2.0456417064914224e-07,
+        "cos_mean": 0.16597414016723633,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNoon||Town10HD_SoftRainNoon": {
+        "fid": 9.868633587013322,
+        "mmd_rbf": 0.6657026410102844,
+        "coral": 2.454051081554553e-07,
+        "cos_mean": 0.17162162065505981,
+        "domain_acc": 1.0
+      },
+      "Town04_OvercastNoon||Town04_SoftRainNoon": {
+        "fid": 0.862375226471463,
+        "mmd_rbf": 0.10422635078430176,
+        "coral": 2.5371674321426953e-08,
+        "cos_mean": 0.01209104061126709,
+        "domain_acc": 1.0
+      },
+      "Town04_OvercastNoon||Town05_ClearNight": {
+        "fid": 7.853767564520001,
+        "mmd_rbf": 0.5773170590400696,
+        "coral": 2.0777519214403044e-07,
+        "cos_mean": 0.13833928108215332,
+        "domain_acc": 1.0
+      },
+      "Town04_OvercastNoon||Town05_ClearNoon": {
+        "fid": 4.645941340367725,
+        "mmd_rbf": 0.35720503330230713,
+        "coral": 1.8834393565796946e-07,
+        "cos_mean": 0.06859666109085083,
+        "domain_acc": 1.0
+      },
+      "Town04_OvercastNoon||Town05_OvercastNoon": {
+        "fid": 4.113270667272499,
+        "mmd_rbf": 0.32424426078796387,
+        "coral": 1.8761014135019392e-07,
+        "cos_mean": 0.056728243827819824,
+        "domain_acc": 0.9983333333333333
+      },
+      "Town04_OvercastNoon||Town05_SoftRainNoon": {
+        "fid": 4.81633355979422,
+        "mmd_rbf": 0.36563920974731445,
+        "coral": 1.9656731263021277e-07,
+        "cos_mean": 0.07114440202713013,
+        "domain_acc": 1.0
+      },
+      "Town04_OvercastNoon||Town10HD_ClearNight": {
+        "fid": 9.93117113586815,
+        "mmd_rbf": 0.6559484601020813,
+        "coral": 2.6661072209487537e-07,
+        "cos_mean": 0.17393887042999268,
+        "domain_acc": 1.0
+      },
+      "Town04_OvercastNoon||Town10HD_ClearNoon": {
+        "fid": 9.36794406712206,
+        "mmd_rbf": 0.6272916793823242,
+        "coral": 2.0656469572100088e-07,
+        "cos_mean": 0.16245949268341064,
+        "domain_acc": 1.0
+      },
+      "Town04_OvercastNoon||Town10HD_OvercastNoon": {
+        "fid": 8.554649877711679,
+        "mmd_rbf": 0.6117688417434692,
+        "coral": 1.8582427393586738e-07,
+        "cos_mean": 0.14871007204055786,
+        "domain_acc": 1.0
+      },
+      "Town04_OvercastNoon||Town10HD_SoftRainNoon": {
+        "fid": 9.181534677028894,
+        "mmd_rbf": 0.6297960877418518,
+        "coral": 2.2764171732944963e-07,
+        "cos_mean": 0.15770941972732544,
+        "domain_acc": 1.0
+      },
+      "Town04_SoftRainNoon||Town05_ClearNight": {
+        "fid": 8.604256650368148,
+        "mmd_rbf": 0.6189557313919067,
+        "coral": 2.069254648118299e-07,
+        "cos_mean": 0.15564948320388794,
+        "domain_acc": 1.0
+      },
+      "Town04_SoftRainNoon||Town05_ClearNoon": {
+        "fid": 4.884163295672584,
+        "mmd_rbf": 0.3670796751976013,
+        "coral": 2.010016636995607e-07,
+        "cos_mean": 0.07226777076721191,
+        "domain_acc": 1.0
+      },
+      "Town04_SoftRainNoon||Town05_OvercastNoon": {
+        "fid": 4.701325228827894,
+        "mmd_rbf": 0.3690198063850403,
+        "coral": 1.9970830682797328e-07,
+        "cos_mean": 0.06755459308624268,
+        "domain_acc": 1.0
+      },
+      "Town04_SoftRainNoon||Town05_SoftRainNoon": {
+        "fid": 4.497072990755797,
+        "mmd_rbf": 0.3315088152885437,
+        "coral": 2.0081452346199832e-07,
+        "cos_mean": 0.06327921152114868,
+        "domain_acc": 1.0
+      },
+      "Town04_SoftRainNoon||Town10HD_ClearNight": {
+        "fid": 10.537225847232595,
+        "mmd_rbf": 0.6775051355361938,
+        "coral": 2.84030612498739e-07,
+        "cos_mean": 0.1838701367378235,
+        "domain_acc": 1.0
+      },
+      "Town04_SoftRainNoon||Town10HD_ClearNoon": {
+        "fid": 9.594834044305468,
+        "mmd_rbf": 0.6335691213607788,
+        "coral": 2.1244900900492074e-07,
+        "cos_mean": 0.16539722681045532,
+        "domain_acc": 1.0
+      },
+      "Town04_SoftRainNoon||Town10HD_OvercastNoon": {
+        "fid": 8.876596735435847,
+        "mmd_rbf": 0.6220462918281555,
+        "coral": 1.9178648128275367e-07,
+        "cos_mean": 0.15320616960525513,
+        "domain_acc": 1.0
+      },
+      "Town04_SoftRainNoon||Town10HD_SoftRainNoon": {
+        "fid": 9.018560581695205,
+        "mmd_rbf": 0.615923285484314,
+        "coral": 2.3110779669410259e-07,
+        "cos_mean": 0.15275752544403076,
+        "domain_acc": 1.0
+      },
+      "Town05_ClearNight||Town05_ClearNoon": {
+        "fid": 5.157463241834108,
+        "mmd_rbf": 0.38304030895233154,
+        "coral": 1.6967177831716312e-07,
+        "cos_mean": 0.0918433666229248,
+        "domain_acc": 1.0
+      },
+      "Town05_ClearNight||Town05_OvercastNoon": {
+        "fid": 4.894765417720393,
+        "mmd_rbf": 0.3764600157737732,
+        "coral": 1.6428019412030849e-07,
+        "cos_mean": 0.08457565307617188,
+        "domain_acc": 1.0
+      },
+      "Town05_ClearNight||Town05_SoftRainNoon": {
+        "fid": 5.336153572758759,
+        "mmd_rbf": 0.392971932888031,
+        "coral": 1.6422013075728326e-07,
+        "cos_mean": 0.09528243541717529,
+        "domain_acc": 1.0
+      },
+      "Town05_ClearNight||Town10HD_ClearNight": {
+        "fid": 5.016426690861316,
+        "mmd_rbf": 0.26640182733535767,
+        "coral": 2.6827160520741307e-07,
+        "cos_mean": 0.06294780969619751,
+        "domain_acc": 1.0
+      },
+      "Town05_ClearNight||Town10HD_ClearNoon": {
+        "fid": 7.610504743587965,
+        "mmd_rbf": 0.4607257843017578,
+        "coral": 2.2363518522211712e-07,
+        "cos_mean": 0.12325102090835571,
+        "domain_acc": 1.0
+      },
+      "Town05_ClearNight||Town10HD_OvercastNoon": {
+        "fid": 7.224931429797942,
+        "mmd_rbf": 0.4569917321205139,
+        "coral": 2.065440265291122e-07,
+        "cos_mean": 0.11831045150756836,
+        "domain_acc": 1.0
+      },
+      "Town05_ClearNight||Town10HD_SoftRainNoon": {
+        "fid": 7.803927772279965,
+        "mmd_rbf": 0.4790099263191223,
+        "coral": 2.5037659182463297e-07,
+        "cos_mean": 0.12621349096298218,
+        "domain_acc": 1.0
+      },
+      "Town05_ClearNoon||Town05_OvercastNoon": {
+        "fid": 0.8146497032635871,
+        "mmd_rbf": 0.041144728660583496,
+        "coral": 5.12333315062498e-08,
+        "cos_mean": 0.005517721176147461,
+        "domain_acc": 1.0
+      },
+      "Town05_ClearNoon||Town05_SoftRainNoon": {
+        "fid": 0.9316792322336935,
+        "mmd_rbf": 0.057527124881744385,
+        "coral": 4.1877989517847945e-08,
+        "cos_mean": 0.008960485458374023,
+        "domain_acc": 1.0
+      },
+      "Town05_ClearNoon||Town10HD_ClearNight": {
+        "fid": 5.814354387772115,
+        "mmd_rbf": 0.38542360067367554,
+        "coral": 2.3489575703614907e-07,
+        "cos_mean": 0.0885055661201477,
+        "domain_acc": 1.0
+      },
+      "Town05_ClearNoon||Town10HD_ClearNoon": {
+        "fid": 4.531185484155416,
+        "mmd_rbf": 0.2857459783554077,
+        "coral": 1.866302586668407e-07,
+        "cos_mean": 0.06109333038330078,
+        "domain_acc": 1.0
+      },
+      "Town05_ClearNoon||Town10HD_OvercastNoon": {
+        "fid": 4.390794323169697,
+        "mmd_rbf": 0.28677237033843994,
+        "coral": 1.782811102767551e-07,
+        "cos_mean": 0.05831432342529297,
+        "domain_acc": 1.0
+      },
+      "Town05_ClearNoon||Town10HD_SoftRainNoon": {
+        "fid": 4.722295586623306,
+        "mmd_rbf": 0.30505943298339844,
+        "coral": 2.0465982204482514e-07,
+        "cos_mean": 0.06376415491104126,
+        "domain_acc": 1.0
+      },
+      "Town05_OvercastNoon||Town05_SoftRainNoon": {
+        "fid": 1.057735975866433,
+        "mmd_rbf": 0.06910490989685059,
+        "coral": 5.4259566684917854e-08,
+        "cos_mean": 0.009972572326660156,
+        "domain_acc": 1.0
+      },
+      "Town05_OvercastNoon||Town10HD_ClearNight": {
+        "fid": 5.827808443091744,
+        "mmd_rbf": 0.39458709955215454,
+        "coral": 2.5536389238270115e-07,
+        "cos_mean": 0.08534318208694458,
+        "domain_acc": 1.0
+      },
+      "Town05_OvercastNoon||Town10HD_ClearNoon": {
+        "fid": 4.903777282914449,
+        "mmd_rbf": 0.3159787058830261,
+        "coral": 2.031173952192961e-07,
+        "cos_mean": 0.06513023376464844,
+        "domain_acc": 1.0
+      },
+      "Town05_OvercastNoon||Town10HD_OvercastNoon": {
+        "fid": 4.510883866855776,
+        "mmd_rbf": 0.2990211248397827,
+        "coral": 1.9758036677733138e-07,
+        "cos_mean": 0.05823630094528198,
+        "domain_acc": 1.0
+      },
+      "Town05_OvercastNoon||Town10HD_SoftRainNoon": {
+        "fid": 5.017019113823862,
+        "mmd_rbf": 0.3293834328651428,
+        "coral": 2.3016176955365406e-07,
+        "cos_mean": 0.06604307889938354,
+        "domain_acc": 1.0
+      },
+      "Town05_SoftRainNoon||Town10HD_ClearNight": {
+        "fid": 5.6919044366889455,
+        "mmd_rbf": 0.36019134521484375,
+        "coral": 2.655172205045851e-07,
+        "cos_mean": 0.08127743005752563,
+        "domain_acc": 1.0
+      },
+      "Town05_SoftRainNoon||Town10HD_ClearNoon": {
+        "fid": 4.6314495977298655,
+        "mmd_rbf": 0.26562750339508057,
+        "coral": 2.1764652766094642e-07,
+        "cos_mean": 0.05638808012008667,
+        "domain_acc": 1.0
+      },
+      "Town05_SoftRainNoon||Town10HD_OvercastNoon": {
+        "fid": 4.1927588922237,
+        "mmd_rbf": 0.25434887409210205,
+        "coral": 1.96303213777354e-07,
+        "cos_mean": 0.05104660987854004,
+        "domain_acc": 1.0
+      },
+      "Town05_SoftRainNoon||Town10HD_SoftRainNoon": {
+        "fid": 4.357064385324526,
+        "mmd_rbf": 0.25155436992645264,
+        "coral": 2.326621751653626e-07,
+        "cos_mean": 0.050935983657836914,
+        "domain_acc": 1.0
+      },
+      "Town10HD_ClearNight||Town10HD_ClearNoon": {
+        "fid": 2.2593743953673906,
+        "mmd_rbf": 0.15603303909301758,
+        "coral": 9.635466424349833e-08,
+        "cos_mean": 0.028927981853485107,
+        "domain_acc": 1.0
+      },
+      "Town10HD_ClearNight||Town10HD_OvercastNoon": {
+        "fid": 2.1969869162167255,
+        "mmd_rbf": 0.1510975956916809,
+        "coral": 1.122983343519155e-07,
+        "cos_mean": 0.02713674306869507,
+        "domain_acc": 1.0
+      },
+      "Town10HD_ClearNight||Town10HD_SoftRainNoon": {
+        "fid": 2.3075820270855463,
+        "mmd_rbf": 0.17179042100906372,
+        "coral": 8.835090928008699e-08,
+        "cos_mean": 0.0315166711807251,
+        "domain_acc": 1.0
+      },
+      "Town10HD_ClearNoon||Town10HD_OvercastNoon": {
+        "fid": 0.79327290767894,
+        "mmd_rbf": 0.01764589548110962,
+        "coral": 4.385458043752243e-08,
+        "cos_mean": 0.0024753212928771973,
+        "domain_acc": 0.995
+      },
+      "Town10HD_ClearNoon||Town10HD_SoftRainNoon": {
+        "fid": 0.8909357699252984,
+        "mmd_rbf": 0.03216308355331421,
+        "coral": 5.063025824661293e-08,
+        "cos_mean": 0.004683196544647217,
+        "domain_acc": 0.9983333333333333
+      },
+      "Town10HD_OvercastNoon||Town10HD_SoftRainNoon": {
+        "fid": 0.8880029590727974,
+        "mmd_rbf": 0.030540883541107178,
+        "coral": 6.669867775268166e-08,
+        "cos_mean": 0.004217267036437988,
+        "domain_acc": 0.9983333333333333
+      }
+    },
+    "box": {
+      "KITTI||Town01_ClearNight": {
+        "fid": 34.0879381398509,
+        "mmd_rbf": 0.1895633339881897,
+        "coral": 1.700173108223641e-05,
+        "cos_mean": 0.25530779361724854,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town01_ClearNoon": {
+        "fid": 23.91741938376577,
+        "mmd_rbf": 0.17351174354553223,
+        "coral": 6.0879342241856275e-06,
+        "cos_mean": 0.21079802513122559,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town01_OvercastNoon": {
+        "fid": 27.71292489739593,
+        "mmd_rbf": 0.17448705434799194,
+        "coral": 9.332466805726077e-06,
+        "cos_mean": 0.21943283081054688,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town01_SoftRainNoon": {
+        "fid": 34.71499931018944,
+        "mmd_rbf": 0.19089597463607788,
+        "coral": 1.4451409283402086e-05,
+        "cos_mean": 0.26400214433670044,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town02_ClearNight": {
+        "fid": 27.880916448987286,
+        "mmd_rbf": 0.17370259761810303,
+        "coral": 9.824163863069268e-06,
+        "cos_mean": 0.21576088666915894,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town02_ClearNoon": {
+        "fid": 23.885152427417502,
+        "mmd_rbf": 0.15968763828277588,
+        "coral": 7.562809237353129e-06,
+        "cos_mean": 0.189072847366333,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town02_OvercastNoon": {
+        "fid": 28.180686594644115,
+        "mmd_rbf": 0.17379415035247803,
+        "coral": 1.0417815845611272e-05,
+        "cos_mean": 0.2145441174507141,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town02_SoftRainNoon": {
+        "fid": 27.06647787676306,
+        "mmd_rbf": 0.16639232635498047,
+        "coral": 8.854912077897007e-06,
+        "cos_mean": 0.205588698387146,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town03_ClearNight": {
+        "fid": 29.261703365407747,
+        "mmd_rbf": 0.1674821972846985,
+        "coral": 6.8978618082014016e-06,
+        "cos_mean": 0.22328239679336548,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town03_ClearNoon": {
+        "fid": 30.321351904732964,
+        "mmd_rbf": 0.17045187950134277,
+        "coral": 7.659427256061449e-06,
+        "cos_mean": 0.23346877098083496,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town03_OvercastNoon": {
+        "fid": 33.41897095263735,
+        "mmd_rbf": 0.1763179898262024,
+        "coral": 8.737415661928841e-06,
+        "cos_mean": 0.25116288661956787,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town03_SoftRainNoon": {
+        "fid": 35.095473718894105,
+        "mmd_rbf": 0.18638557195663452,
+        "coral": 9.140673840895684e-06,
+        "cos_mean": 0.27337610721588135,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town04_ClearNight": {
+        "fid": 30.37244603111101,
+        "mmd_rbf": 0.21555852890014648,
+        "coral": 7.818553419878028e-06,
+        "cos_mean": 0.2670742869377136,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town04_ClearNoon": {
+        "fid": 29.270832119933523,
+        "mmd_rbf": 0.20371341705322266,
+        "coral": 8.387929674718581e-06,
+        "cos_mean": 0.2578403353691101,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town04_OvercastNoon": {
+        "fid": 27.155533265788677,
+        "mmd_rbf": 0.18114250898361206,
+        "coral": 8.864031387593024e-06,
+        "cos_mean": 0.22438013553619385,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town04_SoftRainNoon": {
+        "fid": 28.0685116880421,
+        "mmd_rbf": 0.19869208335876465,
+        "coral": 7.84929521070887e-06,
+        "cos_mean": 0.2481568455696106,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town05_ClearNight": {
+        "fid": 24.198284754847883,
+        "mmd_rbf": 0.18201768398284912,
+        "coral": 5.3353425384558066e-06,
+        "cos_mean": 0.2143855094909668,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town05_ClearNoon": {
+        "fid": 23.225030196338096,
+        "mmd_rbf": 0.15513837337493896,
+        "coral": 5.4328287987912e-06,
+        "cos_mean": 0.18469107151031494,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town05_OvercastNoon": {
+        "fid": 23.37791452963903,
+        "mmd_rbf": 0.1655963659286499,
+        "coral": 5.4673076707999365e-06,
+        "cos_mean": 0.19503569602966309,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town05_SoftRainNoon": {
+        "fid": 23.017502122121336,
+        "mmd_rbf": 0.17635071277618408,
+        "coral": 4.804605631724098e-06,
+        "cos_mean": 0.2015342116355896,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town10HD_ClearNight": {
+        "fid": 27.128744091596488,
+        "mmd_rbf": 0.16139304637908936,
+        "coral": 9.66530940061555e-06,
+        "cos_mean": 0.1935378909111023,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town10HD_ClearNoon": {
+        "fid": 24.281703630919466,
+        "mmd_rbf": 0.14921027421951294,
+        "coral": 6.944808402209973e-06,
+        "cos_mean": 0.17555654048919678,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town10HD_OvercastNoon": {
+        "fid": 22.309264485984762,
+        "mmd_rbf": 0.15336507558822632,
+        "coral": 5.689112830503827e-06,
+        "cos_mean": 0.17160671949386597,
+        "domain_acc": 1.0
+      },
+      "KITTI||Town10HD_SoftRainNoon": {
+        "fid": 22.913239944023736,
+        "mmd_rbf": 0.15737783908843994,
+        "coral": 5.8303406948707206e-06,
+        "cos_mean": 0.17902177572250366,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town01_ClearNoon": {
+        "fid": 19.131522202464147,
+        "mmd_rbf": 0.05893516540527344,
+        "coral": 1.3526639260780257e-05,
+        "cos_mean": 0.09517782926559448,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town01_OvercastNoon": {
+        "fid": 16.722425274235697,
+        "mmd_rbf": 0.04234558343887329,
+        "coral": 1.233387138334046e-05,
+        "cos_mean": 0.06810027360916138,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town01_SoftRainNoon": {
+        "fid": 12.361792163372897,
+        "mmd_rbf": 0.02923482656478882,
+        "coral": 6.487699720477602e-06,
+        "cos_mean": 0.04422926902770996,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town02_ClearNight": {
+        "fid": 17.572224790246985,
+        "mmd_rbf": 0.027351737022399902,
+        "coral": 1.3782469318867363e-05,
+        "cos_mean": 0.038718342781066895,
+        "domain_acc": 0.9805555555555555
+      },
+      "Town01_ClearNight||Town02_ClearNoon": {
+        "fid": 21.392851106301066,
+        "mmd_rbf": 0.057388246059417725,
+        "coral": 1.475245130172256e-05,
+        "cos_mean": 0.09141778945922852,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town02_OvercastNoon": {
+        "fid": 16.32827800769389,
+        "mmd_rbf": 0.04461163282394409,
+        "coral": 1.0974633224452376e-05,
+        "cos_mean": 0.06978875398635864,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town02_SoftRainNoon": {
+        "fid": 15.307574863355711,
+        "mmd_rbf": 0.04068535566329956,
+        "coral": 9.695483300662465e-06,
+        "cos_mean": 0.06625831127166748,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town03_ClearNight": {
+        "fid": 23.463665135207506,
+        "mmd_rbf": 0.050427138805389404,
+        "coral": 1.455375622096085e-05,
+        "cos_mean": 0.09096473455429077,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town01_ClearNight||Town03_ClearNoon": {
+        "fid": 25.300703074724495,
+        "mmd_rbf": 0.0640304684638977,
+        "coral": 1.5173036577306505e-05,
+        "cos_mean": 0.12179261445999146,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town03_OvercastNoon": {
+        "fid": 23.72188717830096,
+        "mmd_rbf": 0.05486994981765747,
+        "coral": 1.4276922704118586e-05,
+        "cos_mean": 0.10305535793304443,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town03_SoftRainNoon": {
+        "fid": 24.5934018607443,
+        "mmd_rbf": 0.06430751085281372,
+        "coral": 1.3212534294883518e-05,
+        "cos_mean": 0.12486845254898071,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town01_ClearNight||Town04_ClearNight": {
+        "fid": 26.69465528960228,
+        "mmd_rbf": 0.08665812015533447,
+        "coral": 1.7451856005785473e-05,
+        "cos_mean": 0.13756775856018066,
+        "domain_acc": 0.9944444444444445
+      },
+      "Town01_ClearNight||Town04_ClearNoon": {
+        "fid": 28.911177594912132,
+        "mmd_rbf": 0.10147738456726074,
+        "coral": 1.852732915065858e-05,
+        "cos_mean": 0.17589986324310303,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town01_ClearNight||Town04_OvercastNoon": {
+        "fid": 25.874247442472672,
+        "mmd_rbf": 0.08072465658187866,
+        "coral": 1.783823928125065e-05,
+        "cos_mean": 0.1348419189453125,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town04_SoftRainNoon": {
+        "fid": 27.297795786039515,
+        "mmd_rbf": 0.09417188167572021,
+        "coral": 1.776729587998407e-05,
+        "cos_mean": 0.15646791458129883,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town05_ClearNight": {
+        "fid": 20.921957023061722,
+        "mmd_rbf": 0.0645555853843689,
+        "coral": 1.4684768735111251e-05,
+        "cos_mean": 0.09424620866775513,
+        "domain_acc": 0.9930555555555556
+      },
+      "Town01_ClearNight||Town05_ClearNoon": {
+        "fid": 19.963534336573737,
+        "mmd_rbf": 0.06921565532684326,
+        "coral": 1.263980513925547e-05,
+        "cos_mean": 0.1141100525856018,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town05_OvercastNoon": {
+        "fid": 22.010241466076863,
+        "mmd_rbf": 0.08018052577972412,
+        "coral": 1.4326850971283946e-05,
+        "cos_mean": 0.12451338768005371,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town05_SoftRainNoon": {
+        "fid": 21.985913569671297,
+        "mmd_rbf": 0.08279770612716675,
+        "coral": 1.3773577564235111e-05,
+        "cos_mean": 0.12256556749343872,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town10HD_ClearNight": {
+        "fid": 21.653135791912447,
+        "mmd_rbf": 0.05599242448806763,
+        "coral": 1.5163697094923075e-05,
+        "cos_mean": 0.08496230840682983,
+        "domain_acc": 0.9930555555555556
+      },
+      "Town01_ClearNight||Town10HD_ClearNoon": {
+        "fid": 19.82405766917087,
+        "mmd_rbf": 0.07668858766555786,
+        "coral": 1.1312257708909333e-05,
+        "cos_mean": 0.12135171890258789,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town10HD_OvercastNoon": {
+        "fid": 23.630828959842958,
+        "mmd_rbf": 0.08694934844970703,
+        "coral": 1.3969683953951544e-05,
+        "cos_mean": 0.13035190105438232,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNight||Town10HD_SoftRainNoon": {
+        "fid": 22.23344198467418,
+        "mmd_rbf": 0.0849030613899231,
+        "coral": 1.308422720936246e-05,
+        "cos_mean": 0.12683427333831787,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town01_OvercastNoon": {
+        "fid": 9.441901998283264,
+        "mmd_rbf": 0.01814877986907959,
+        "coral": 4.955570919812066e-06,
+        "cos_mean": 0.023750901222229004,
+        "domain_acc": 0.9541666666666667
+      },
+      "Town01_ClearNoon||Town01_SoftRainNoon": {
+        "fid": 16.703652361520938,
+        "mmd_rbf": 0.03259456157684326,
+        "coral": 1.1754777867311497e-05,
+        "cos_mean": 0.05277979373931885,
+        "domain_acc": 0.975
+      },
+      "Town01_ClearNoon||Town02_ClearNight": {
+        "fid": 15.580310623992638,
+        "mmd_rbf": 0.048479557037353516,
+        "coral": 7.0574476112951795e-06,
+        "cos_mean": 0.06915205717086792,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town02_ClearNoon": {
+        "fid": 10.715584398561326,
+        "mmd_rbf": 0.019459545612335205,
+        "coral": 4.4191336904769115e-06,
+        "cos_mean": 0.025156676769256592,
+        "domain_acc": 0.9819444444444444
+      },
+      "Town01_ClearNoon||Town02_OvercastNoon": {
+        "fid": 13.063846083678271,
+        "mmd_rbf": 0.02898728847503662,
+        "coral": 6.577400345723949e-06,
+        "cos_mean": 0.040113091468811035,
+        "domain_acc": 0.9888888888888889
+      },
+      "Town01_ClearNoon||Town02_SoftRainNoon": {
+        "fid": 13.027145430090194,
+        "mmd_rbf": 0.026105821132659912,
+        "coral": 5.505422967004731e-06,
+        "cos_mean": 0.03675484657287598,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town01_ClearNoon||Town03_ClearNight": {
+        "fid": 20.2509107462728,
+        "mmd_rbf": 0.0647057294845581,
+        "coral": 7.731138795865452e-06,
+        "cos_mean": 0.10152643918991089,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town01_ClearNoon||Town03_ClearNoon": {
+        "fid": 17.972457706322167,
+        "mmd_rbf": 0.0450778603553772,
+        "coral": 7.459428313307807e-06,
+        "cos_mean": 0.06940734386444092,
+        "domain_acc": 0.9944444444444445
+      },
+      "Town01_ClearNoon||Town03_OvercastNoon": {
+        "fid": 19.776268110037684,
+        "mmd_rbf": 0.048032164573669434,
+        "coral": 8.346772266331273e-06,
+        "cos_mean": 0.07748204469680786,
+        "domain_acc": 0.9902777777777778
+      },
+      "Town01_ClearNoon||Town03_SoftRainNoon": {
+        "fid": 21.813581101159244,
+        "mmd_rbf": 0.05853700637817383,
+        "coral": 9.278250996553902e-06,
+        "cos_mean": 0.09823048114776611,
+        "domain_acc": 0.9930555555555556
+      },
+      "Town01_ClearNoon||Town04_ClearNight": {
+        "fid": 19.23186220569884,
+        "mmd_rbf": 0.09054404497146606,
+        "coral": 7.276496055432719e-06,
+        "cos_mean": 0.11851286888122559,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town04_ClearNoon": {
+        "fid": 15.238100879795333,
+        "mmd_rbf": 0.049624621868133545,
+        "coral": 7.67796184619117e-06,
+        "cos_mean": 0.064139723777771,
+        "domain_acc": 0.9944444444444445
+      },
+      "Town01_ClearNoon||Town04_OvercastNoon": {
+        "fid": 14.976075975796022,
+        "mmd_rbf": 0.04285246133804321,
+        "coral": 7.718584830958197e-06,
+        "cos_mean": 0.05825430154800415,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town04_SoftRainNoon": {
+        "fid": 13.675870621459744,
+        "mmd_rbf": 0.039317190647125244,
+        "coral": 5.9581514377478165e-06,
+        "cos_mean": 0.04863637685775757,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town01_ClearNoon||Town05_ClearNight": {
+        "fid": 14.809965896128347,
+        "mmd_rbf": 0.06339216232299805,
+        "coral": 5.314466523029953e-06,
+        "cos_mean": 0.08194541931152344,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town05_ClearNoon": {
+        "fid": 11.980441051823014,
+        "mmd_rbf": 0.03077399730682373,
+        "coral": 4.598627151780228e-06,
+        "cos_mean": 0.039862871170043945,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town01_ClearNoon||Town05_OvercastNoon": {
+        "fid": 11.63142387305107,
+        "mmd_rbf": 0.03265547752380371,
+        "coral": 4.2288474727074465e-06,
+        "cos_mean": 0.03971672058105469,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town01_ClearNoon||Town05_SoftRainNoon": {
+        "fid": 10.802442404948536,
+        "mmd_rbf": 0.031600117683410645,
+        "coral": 3.97825992406357e-06,
+        "cos_mean": 0.03709816932678223,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town01_ClearNoon||Town10HD_ClearNight": {
+        "fid": 19.273919878357503,
+        "mmd_rbf": 0.07007342576980591,
+        "coral": 9.009883911845962e-06,
+        "cos_mean": 0.09570914506912231,
+        "domain_acc": 1.0
+      },
+      "Town01_ClearNoon||Town10HD_ClearNoon": {
+        "fid": 16.29856496660252,
+        "mmd_rbf": 0.056758105754852295,
+        "coral": 6.4715602349621485e-06,
+        "cos_mean": 0.0760543942451477,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town01_ClearNoon||Town10HD_OvercastNoon": {
+        "fid": 15.701126947658132,
+        "mmd_rbf": 0.060846924781799316,
+        "coral": 5.789477823687862e-06,
+        "cos_mean": 0.07768452167510986,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town01_ClearNoon||Town10HD_SoftRainNoon": {
+        "fid": 14.755207053842675,
+        "mmd_rbf": 0.057613492012023926,
+        "coral": 5.237407011915742e-06,
+        "cos_mean": 0.07373392581939697,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town01_OvercastNoon||Town01_SoftRainNoon": {
+        "fid": 14.684637159656234,
+        "mmd_rbf": 0.021405041217803955,
+        "coral": 9.983554625894852e-06,
+        "cos_mean": 0.031216144561767578,
+        "domain_acc": 0.9722222222222222
+      },
+      "Town01_OvercastNoon||Town02_ClearNight": {
+        "fid": 15.588556446857062,
+        "mmd_rbf": 0.03894925117492676,
+        "coral": 7.878845187343831e-06,
+        "cos_mean": 0.05271649360656738,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town02_ClearNoon": {
+        "fid": 13.411984773962729,
+        "mmd_rbf": 0.024124562740325928,
+        "coral": 6.6271051984323655e-06,
+        "cos_mean": 0.030902504920959473,
+        "domain_acc": 0.9902777777777778
+      },
+      "Town01_OvercastNoon||Town02_OvercastNoon": {
+        "fid": 13.58602274362189,
+        "mmd_rbf": 0.022461652755737305,
+        "coral": 6.855823119707737e-06,
+        "cos_mean": 0.028827548027038574,
+        "domain_acc": 0.9847222222222223
+      },
+      "Town01_OvercastNoon||Town02_SoftRainNoon": {
+        "fid": 14.258357131696634,
+        "mmd_rbf": 0.02387106418609619,
+        "coral": 6.863397383571153e-06,
+        "cos_mean": 0.032389938831329346,
+        "domain_acc": 0.9944444444444445
+      },
+      "Town01_OvercastNoon||Town03_ClearNight": {
+        "fid": 20.60927972186606,
+        "mmd_rbf": 0.05471646785736084,
+        "coral": 9.275979723408383e-06,
+        "cos_mean": 0.08717930316925049,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town03_ClearNoon": {
+        "fid": 19.37113750550018,
+        "mmd_rbf": 0.03943800926208496,
+        "coral": 8.815411698468119e-06,
+        "cos_mean": 0.060259103775024414,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town01_OvercastNoon||Town03_OvercastNoon": {
+        "fid": 20.205970898417604,
+        "mmd_rbf": 0.03742492198944092,
+        "coral": 9.763178973321692e-06,
+        "cos_mean": 0.059594810009002686,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town01_OvercastNoon||Town03_SoftRainNoon": {
+        "fid": 22.20976003525645,
+        "mmd_rbf": 0.04921656847000122,
+        "coral": 1.0633057159984785e-05,
+        "cos_mean": 0.0829542875289917,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town04_ClearNight": {
+        "fid": 23.42653311490315,
+        "mmd_rbf": 0.09659755229949951,
+        "coral": 1.1225903995685141e-05,
+        "cos_mean": 0.1359267234802246,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town04_ClearNoon": {
+        "fid": 19.798350255642596,
+        "mmd_rbf": 0.0604822039604187,
+        "coral": 1.1284951802340142e-05,
+        "cos_mean": 0.0894048810005188,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town01_OvercastNoon||Town04_OvercastNoon": {
+        "fid": 17.807152729431863,
+        "mmd_rbf": 0.04565310478210449,
+        "coral": 1.0487896447264151e-05,
+        "cos_mean": 0.0631757378578186,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town01_OvercastNoon||Town04_SoftRainNoon": {
+        "fid": 18.69641727335327,
+        "mmd_rbf": 0.05313420295715332,
+        "coral": 1.0633031124845714e-05,
+        "cos_mean": 0.07435178756713867,
+        "domain_acc": 0.9944444444444445
+      },
+      "Town01_OvercastNoon||Town05_ClearNight": {
+        "fid": 19.124949517584717,
+        "mmd_rbf": 0.07691186666488647,
+        "coral": 9.11741253468069e-06,
+        "cos_mean": 0.10336655378341675,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town05_ClearNoon": {
+        "fid": 15.237276280976602,
+        "mmd_rbf": 0.040361225605010986,
+        "coral": 7.318993773592385e-06,
+        "cos_mean": 0.055141448974609375,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town01_OvercastNoon||Town05_OvercastNoon": {
+        "fid": 15.023739939296995,
+        "mmd_rbf": 0.046279191970825195,
+        "coral": 7.553293764229377e-06,
+        "cos_mean": 0.06055349111557007,
+        "domain_acc": 0.9944444444444445
+      },
+      "Town01_OvercastNoon||Town05_SoftRainNoon": {
+        "fid": 15.004537632896962,
+        "mmd_rbf": 0.045566022396087646,
+        "coral": 7.422309894005781e-06,
+        "cos_mean": 0.05594289302825928,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town01_OvercastNoon||Town10HD_ClearNight": {
+        "fid": 19.428686517097205,
+        "mmd_rbf": 0.06460785865783691,
+        "coral": 9.556736169929132e-06,
+        "cos_mean": 0.08888322114944458,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town10HD_ClearNoon": {
+        "fid": 17.271844653025006,
+        "mmd_rbf": 0.05789762735366821,
+        "coral": 8.101386150666543e-06,
+        "cos_mean": 0.07949942350387573,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town01_OvercastNoon||Town10HD_OvercastNoon": {
+        "fid": 17.417988985534528,
+        "mmd_rbf": 0.06188654899597168,
+        "coral": 7.560903175248955e-06,
+        "cos_mean": 0.08040434122085571,
+        "domain_acc": 1.0
+      },
+      "Town01_OvercastNoon||Town10HD_SoftRainNoon": {
+        "fid": 16.999979003418225,
+        "mmd_rbf": 0.062056899070739746,
+        "coral": 7.248435870407453e-06,
+        "cos_mean": 0.08043563365936279,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town01_SoftRainNoon||Town02_ClearNight": {
+        "fid": 20.4658464811109,
+        "mmd_rbf": 0.04192650318145752,
+        "coral": 1.4309018871648298e-05,
+        "cos_mean": 0.0609973669052124,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town02_ClearNoon": {
+        "fid": 20.269551887731026,
+        "mmd_rbf": 0.04001319408416748,
+        "coral": 1.4054595946731787e-05,
+        "cos_mean": 0.06366586685180664,
+        "domain_acc": 0.9944444444444445
+      },
+      "Town01_SoftRainNoon||Town02_OvercastNoon": {
+        "fid": 15.712121864587417,
+        "mmd_rbf": 0.03087306022644043,
+        "coral": 1.0591882076738734e-05,
+        "cos_mean": 0.046636760234832764,
+        "domain_acc": 0.9888888888888889
+      },
+      "Town01_SoftRainNoon||Town02_SoftRainNoon": {
+        "fid": 14.02166241096549,
+        "mmd_rbf": 0.024970531463623047,
+        "coral": 8.972659295640625e-06,
+        "cos_mean": 0.03898477554321289,
+        "domain_acc": 0.9805555555555555
+      },
+      "Town01_SoftRainNoon||Town03_ClearNight": {
+        "fid": 25.488449684653027,
+        "mmd_rbf": 0.05701327323913574,
+        "coral": 1.5089964622426448e-05,
+        "cos_mean": 0.10221678018569946,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town03_ClearNoon": {
+        "fid": 23.70345387386503,
+        "mmd_rbf": 0.042561233043670654,
+        "coral": 1.4775316182619563e-05,
+        "cos_mean": 0.08043253421783447,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town01_SoftRainNoon||Town03_OvercastNoon": {
+        "fid": 22.025755472659867,
+        "mmd_rbf": 0.03665196895599365,
+        "coral": 1.3722724717801566e-05,
+        "cos_mean": 0.06794458627700806,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town01_SoftRainNoon||Town03_SoftRainNoon": {
+        "fid": 21.681603368168382,
+        "mmd_rbf": 0.04022836685180664,
+        "coral": 1.2409588969214813e-05,
+        "cos_mean": 0.07598751783370972,
+        "domain_acc": 0.9944444444444445
+      },
+      "Town01_SoftRainNoon||Town04_ClearNight": {
+        "fid": 30.168817064304363,
+        "mmd_rbf": 0.10451996326446533,
+        "coral": 1.8289229268504816e-05,
+        "cos_mean": 0.1686684489250183,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town04_ClearNoon": {
+        "fid": 27.439982326294768,
+        "mmd_rbf": 0.07707422971725464,
+        "coral": 1.8206489769292263e-05,
+        "cos_mean": 0.13652724027633667,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town04_OvercastNoon": {
+        "fid": 25.11240061794659,
+        "mmd_rbf": 0.060913681983947754,
+        "coral": 1.7683747894555158e-05,
+        "cos_mean": 0.10260415077209473,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town01_SoftRainNoon||Town04_SoftRainNoon": {
+        "fid": 26.19447079868246,
+        "mmd_rbf": 0.06911218166351318,
+        "coral": 1.772149046955855e-05,
+        "cos_mean": 0.11639750003814697,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town01_SoftRainNoon||Town05_ClearNight": {
+        "fid": 24.123048029165723,
+        "mmd_rbf": 0.08344030380249023,
+        "coral": 1.5118426792002953e-05,
+        "cos_mean": 0.12549501657485962,
+        "domain_acc": 1.0
+      },
+      "Town01_SoftRainNoon||Town05_ClearNoon": {
+        "fid": 19.566278314767636,
+        "mmd_rbf": 0.05349498987197876,
+        "coral": 1.2522234705843458e-05,
+        "cos_mean": 0.08867818117141724,
+        "domain_acc": 0.9944444444444445
+      },
+      "Town01_SoftRainNoon||Town05_OvercastNoon": {
+        "fid": 20.767448558803295,
+        "mmd_rbf": 0.06086224317550659,
+        "coral": 1.3565437320743007e-05,
+        "cos_mean": 0.09434103965759277,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town01_SoftRainNoon||Town05_SoftRainNoon": {
+        "fid": 20.996668384030166,
+        "mmd_rbf": 0.06095308065414429,
+        "coral": 1.337791591657957e-05,
+        "cos_mean": 0.08785891532897949,
+        "domain_acc": 0.9930555555555556
+      },
+      "Town01_SoftRainNoon||Town10HD_ClearNight": {
+        "fid": 23.73804124435793,
+        "mmd_rbf": 0.06435579061508179,
+        "coral": 1.5245167601872421e-05,
+        "cos_mean": 0.09983766078948975,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town01_SoftRainNoon||Town10HD_ClearNoon": {
+        "fid": 19.202309517393104,
+        "mmd_rbf": 0.06303375959396362,
+        "coral": 1.0850515262365757e-05,
+        "cos_mean": 0.10183489322662354,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town01_SoftRainNoon||Town10HD_OvercastNoon": {
+        "fid": 23.927521055413564,
+        "mmd_rbf": 0.07323789596557617,
+        "coral": 1.412286026982055e-05,
+        "cos_mean": 0.11003464460372925,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town01_SoftRainNoon||Town10HD_SoftRainNoon": {
+        "fid": 21.561331342564188,
+        "mmd_rbf": 0.06970071792602539,
+        "coral": 1.273994799131708e-05,
+        "cos_mean": 0.1042056679725647,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town02_ClearNight||Town02_ClearNoon": {
+        "fid": 11.705436305157995,
+        "mmd_rbf": 0.0342065691947937,
+        "coral": 5.417037114994221e-06,
+        "cos_mean": 0.045519888401031494,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town02_OvercastNoon": {
+        "fid": 10.946087634119735,
+        "mmd_rbf": 0.026852428913116455,
+        "coral": 5.252139185651724e-06,
+        "cos_mean": 0.03543645143508911,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town02_SoftRainNoon": {
+        "fid": 11.66108876496078,
+        "mmd_rbf": 0.029052019119262695,
+        "coral": 5.334244850679877e-06,
+        "cos_mean": 0.03970581293106079,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town02_ClearNight||Town03_ClearNight": {
+        "fid": 17.90080495355805,
+        "mmd_rbf": 0.03990137577056885,
+        "coral": 8.351051481164233e-06,
+        "cos_mean": 0.05712097883224487,
+        "domain_acc": 0.9916666666666667
+      },
+      "Town02_ClearNight||Town03_ClearNoon": {
+        "fid": 19.787475510265807,
+        "mmd_rbf": 0.05596202611923218,
+        "coral": 9.122591223440083e-06,
+        "cos_mean": 0.08506548404693604,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town03_OvercastNoon": {
+        "fid": 21.010506130107167,
+        "mmd_rbf": 0.049974143505096436,
+        "coral": 9.956484262754101e-06,
+        "cos_mean": 0.07555925846099854,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town03_SoftRainNoon": {
+        "fid": 23.067592853511826,
+        "mmd_rbf": 0.06299293041229248,
+        "coral": 1.0743369869721263e-05,
+        "cos_mean": 0.10215955972671509,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town04_ClearNight": {
+        "fid": 21.12698011493093,
+        "mmd_rbf": 0.07979393005371094,
+        "coral": 1.0073776734944707e-05,
+        "cos_mean": 0.10871046781539917,
+        "domain_acc": 0.9930555555555556
+      },
+      "Town02_ClearNight||Town04_ClearNoon": {
+        "fid": 23.609135294260852,
+        "mmd_rbf": 0.09013831615447998,
+        "coral": 1.1751305117492193e-05,
+        "cos_mean": 0.13441282510757446,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town02_ClearNight||Town04_OvercastNoon": {
+        "fid": 21.371464686603375,
+        "mmd_rbf": 0.07487702369689941,
+        "coral": 1.136207280885596e-05,
+        "cos_mean": 0.1081392765045166,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town04_SoftRainNoon": {
+        "fid": 22.479359969685305,
+        "mmd_rbf": 0.08550256490707397,
+        "coral": 1.0793623249195274e-05,
+        "cos_mean": 0.12339168787002563,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town05_ClearNight": {
+        "fid": 15.178031637816972,
+        "mmd_rbf": 0.04968446493148804,
+        "coral": 7.90929332099099e-06,
+        "cos_mean": 0.06094855070114136,
+        "domain_acc": 0.9944444444444445
+      },
+      "Town02_ClearNight||Town05_ClearNoon": {
+        "fid": 16.270383106430366,
+        "mmd_rbf": 0.05601233243942261,
+        "coral": 7.380652797170548e-06,
+        "cos_mean": 0.07677465677261353,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town05_OvercastNoon": {
+        "fid": 17.256838274949658,
+        "mmd_rbf": 0.06532114744186401,
+        "coral": 8.047561760035403e-06,
+        "cos_mean": 0.08606356382369995,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town05_SoftRainNoon": {
+        "fid": 15.578170187925323,
+        "mmd_rbf": 0.06387609243392944,
+        "coral": 7.0284836039122744e-06,
+        "cos_mean": 0.0813494324684143,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town10HD_ClearNight": {
+        "fid": 16.325926788958277,
+        "mmd_rbf": 0.04404652118682861,
+        "coral": 9.499582304210255e-06,
+        "cos_mean": 0.05506855249404907,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town02_ClearNight||Town10HD_ClearNoon": {
+        "fid": 17.227349677701156,
+        "mmd_rbf": 0.06171506643295288,
+        "coral": 7.918729597510534e-06,
+        "cos_mean": 0.08295536041259766,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town02_ClearNight||Town10HD_OvercastNoon": {
+        "fid": 16.988565346834378,
+        "mmd_rbf": 0.06799352169036865,
+        "coral": 7.4240800494891765e-06,
+        "cos_mean": 0.08860433101654053,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNight||Town10HD_SoftRainNoon": {
+        "fid": 14.942987006794553,
+        "mmd_rbf": 0.06492185592651367,
+        "coral": 6.213875712013904e-06,
+        "cos_mean": 0.08387982845306396,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town02_ClearNoon||Town02_OvercastNoon": {
+        "fid": 8.722836121249912,
+        "mmd_rbf": 0.015769898891448975,
+        "coral": 4.432527012076277e-06,
+        "cos_mean": 0.019052088260650635,
+        "domain_acc": 0.9472222222222222
+      },
+      "Town02_ClearNoon||Town02_SoftRainNoon": {
+        "fid": 8.160414721768795,
+        "mmd_rbf": 0.012727916240692139,
+        "coral": 3.246545006681623e-06,
+        "cos_mean": 0.015098035335540771,
+        "domain_acc": 0.9736111111111111
+      },
+      "Town02_ClearNoon||Town03_ClearNight": {
+        "fid": 20.187202367449046,
+        "mmd_rbf": 0.05736339092254639,
+        "coral": 7.99934075515824e-06,
+        "cos_mean": 0.08576977252960205,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNoon||Town03_ClearNoon": {
+        "fid": 17.720497913066765,
+        "mmd_rbf": 0.03995192050933838,
+        "coral": 7.5778570609891934e-06,
+        "cos_mean": 0.05719137191772461,
+        "domain_acc": 0.9944444444444445
+      },
+      "Town02_ClearNoon||Town03_OvercastNoon": {
+        "fid": 20.66895289928827,
+        "mmd_rbf": 0.04377061128616333,
+        "coral": 8.834553072595999e-06,
+        "cos_mean": 0.06693726778030396,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town02_ClearNoon||Town03_SoftRainNoon": {
+        "fid": 22.090517962067395,
+        "mmd_rbf": 0.05373424291610718,
+        "coral": 9.566853996439503e-06,
+        "cos_mean": 0.0849834680557251,
+        "domain_acc": 0.9944444444444445
+      },
+      "Town02_ClearNoon||Town04_ClearNight": {
+        "fid": 21.78715546950808,
+        "mmd_rbf": 0.10148972272872925,
+        "coral": 8.685488748709838e-06,
+        "cos_mean": 0.13433986902236938,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNoon||Town04_ClearNoon": {
+        "fid": 18.188015982820886,
+        "mmd_rbf": 0.060961246490478516,
+        "coral": 9.074438132888366e-06,
+        "cos_mean": 0.0821007490158081,
+        "domain_acc": 0.9944444444444445
+      },
+      "Town02_ClearNoon||Town04_OvercastNoon": {
+        "fid": 17.454250374006563,
+        "mmd_rbf": 0.054452717304229736,
+        "coral": 9.004237384745931e-06,
+        "cos_mean": 0.07255595922470093,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town02_ClearNoon||Town04_SoftRainNoon": {
+        "fid": 17.300028486934714,
+        "mmd_rbf": 0.057429730892181396,
+        "coral": 7.955770093156183e-06,
+        "cos_mean": 0.07505685091018677,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town02_ClearNoon||Town05_ClearNight": {
+        "fid": 15.151156945848719,
+        "mmd_rbf": 0.06485885381698608,
+        "coral": 6.004109865914124e-06,
+        "cos_mean": 0.08136063814163208,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNoon||Town05_ClearNoon": {
+        "fid": 12.361625090225367,
+        "mmd_rbf": 0.02895796298980713,
+        "coral": 5.05613297378242e-06,
+        "cos_mean": 0.03404951095581055,
+        "domain_acc": 0.9930555555555556
+      },
+      "Town02_ClearNoon||Town05_OvercastNoon": {
+        "fid": 12.857296578905341,
+        "mmd_rbf": 0.03634363412857056,
+        "coral": 5.399606715966103e-06,
+        "cos_mean": 0.04222607612609863,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town02_ClearNoon||Town05_SoftRainNoon": {
+        "fid": 11.243704666892569,
+        "mmd_rbf": 0.032592952251434326,
+        "coral": 4.502375394208542e-06,
+        "cos_mean": 0.03652083873748779,
+        "domain_acc": 0.9944444444444445
+      },
+      "Town02_ClearNoon||Town10HD_ClearNight": {
+        "fid": 19.074070800373356,
+        "mmd_rbf": 0.06054896116256714,
+        "coral": 9.66219628046974e-06,
+        "cos_mean": 0.07800567150115967,
+        "domain_acc": 1.0
+      },
+      "Town02_ClearNoon||Town10HD_ClearNoon": {
+        "fid": 15.440497152622221,
+        "mmd_rbf": 0.04420965909957886,
+        "coral": 6.70774997559066e-06,
+        "cos_mean": 0.05385267734527588,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town02_ClearNoon||Town10HD_OvercastNoon": {
+        "fid": 14.31020415245338,
+        "mmd_rbf": 0.04710882902145386,
+        "coral": 5.8840539459866894e-06,
+        "cos_mean": 0.055631160736083984,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town02_ClearNoon||Town10HD_SoftRainNoon": {
+        "fid": 13.627431166351663,
+        "mmd_rbf": 0.044857800006866455,
+        "coral": 5.385218239338532e-06,
+        "cos_mean": 0.05288898944854736,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town02_OvercastNoon||Town02_SoftRainNoon": {
+        "fid": 7.759747178492034,
+        "mmd_rbf": 0.010488450527191162,
+        "coral": 3.3008271124555457e-06,
+        "cos_mean": 0.012359797954559326,
+        "domain_acc": 0.9777777777777777
+      },
+      "Town02_OvercastNoon||Town03_ClearNight": {
+        "fid": 21.55736005129448,
+        "mmd_rbf": 0.0547294020652771,
+        "coral": 1.0198804819520935e-05,
+        "cos_mean": 0.08694666624069214,
+        "domain_acc": 1.0
+      },
+      "Town02_OvercastNoon||Town03_ClearNoon": {
+        "fid": 19.575385446911774,
+        "mmd_rbf": 0.04042583703994751,
+        "coral": 9.417769106394408e-06,
+        "cos_mean": 0.06393778324127197,
+        "domain_acc": 1.0
+      },
+      "Town02_OvercastNoon||Town03_OvercastNoon": {
+        "fid": 20.186070832444052,
+        "mmd_rbf": 0.03871959447860718,
+        "coral": 9.960427371675602e-06,
+        "cos_mean": 0.06260716915130615,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town02_OvercastNoon||Town03_SoftRainNoon": {
+        "fid": 21.39865714163514,
+        "mmd_rbf": 0.049538254737854004,
+        "coral": 1.0412713478612025e-05,
+        "cos_mean": 0.08455419540405273,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town02_OvercastNoon||Town04_ClearNight": {
+        "fid": 25.929687798221742,
+        "mmd_rbf": 0.10817748308181763,
+        "coral": 1.1978320049459794e-05,
+        "cos_mean": 0.15488290786743164,
+        "domain_acc": 1.0
+      },
+      "Town02_OvercastNoon||Town04_ClearNoon": {
+        "fid": 22.78417590959974,
+        "mmd_rbf": 0.07468611001968384,
+        "coral": 1.215086261194423e-05,
+        "cos_mean": 0.11320561170578003,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town02_OvercastNoon||Town04_OvercastNoon": {
+        "fid": 21.158927832351154,
+        "mmd_rbf": 0.06243610382080078,
+        "coral": 1.193550544678505e-05,
+        "cos_mean": 0.09095019102096558,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town02_OvercastNoon||Town04_SoftRainNoon": {
+        "fid": 21.969971349040776,
+        "mmd_rbf": 0.07053440809249878,
+        "coral": 1.1384383121113122e-05,
+        "cos_mean": 0.10244166851043701,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town02_OvercastNoon||Town05_ClearNight": {
+        "fid": 18.5094446580419,
+        "mmd_rbf": 0.07319939136505127,
+        "coral": 9.095679088273143e-06,
+        "cos_mean": 0.09752660989761353,
+        "domain_acc": 1.0
+      },
+      "Town02_OvercastNoon||Town05_ClearNoon": {
+        "fid": 13.531383654634908,
+        "mmd_rbf": 0.03697878122329712,
+        "coral": 6.695236874554957e-06,
+        "cos_mean": 0.04981338977813721,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town02_OvercastNoon||Town05_OvercastNoon": {
+        "fid": 15.800500274165735,
+        "mmd_rbf": 0.04664599895477295,
+        "coral": 7.968703285842885e-06,
+        "cos_mean": 0.06059455871582031,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town02_OvercastNoon||Town05_SoftRainNoon": {
+        "fid": 14.465040663279254,
+        "mmd_rbf": 0.045069992542266846,
+        "coral": 7.234411298644415e-06,
+        "cos_mean": 0.05530482530593872,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town02_OvercastNoon||Town10HD_ClearNight": {
+        "fid": 19.550170515920442,
+        "mmd_rbf": 0.05625087022781372,
+        "coral": 1.052777268600662e-05,
+        "cos_mean": 0.07611143589019775,
+        "domain_acc": 1.0
+      },
+      "Town02_OvercastNoon||Town10HD_ClearNoon": {
+        "fid": 15.683573738299856,
+        "mmd_rbf": 0.04938387870788574,
+        "coral": 7.702580284705837e-06,
+        "cos_mean": 0.0664559006690979,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town02_OvercastNoon||Town10HD_OvercastNoon": {
+        "fid": 17.191841159736803,
+        "mmd_rbf": 0.054365336894989014,
+        "coral": 8.035612885236531e-06,
+        "cos_mean": 0.07008320093154907,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town02_OvercastNoon||Town10HD_SoftRainNoon": {
+        "fid": 15.185999537694528,
+        "mmd_rbf": 0.05171668529510498,
+        "coral": 6.639234939925237e-06,
+        "cos_mean": 0.06615543365478516,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town02_SoftRainNoon||Town03_ClearNight": {
+        "fid": 21.364875288831072,
+        "mmd_rbf": 0.054228901863098145,
+        "coral": 8.594947779737669e-06,
+        "cos_mean": 0.08775317668914795,
+        "domain_acc": 1.0
+      },
+      "Town02_SoftRainNoon||Town03_ClearNoon": {
+        "fid": 18.369498607428724,
+        "mmd_rbf": 0.03748190402984619,
+        "coral": 7.640214327247044e-06,
+        "cos_mean": 0.06032902002334595,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town02_SoftRainNoon||Town03_OvercastNoon": {
+        "fid": 19.74596528147913,
+        "mmd_rbf": 0.03798043727874756,
+        "coral": 8.37693297875896e-06,
+        "cos_mean": 0.0634227991104126,
+        "domain_acc": 0.9944444444444445
+      },
+      "Town02_SoftRainNoon||Town03_SoftRainNoon": {
+        "fid": 20.666624783281996,
+        "mmd_rbf": 0.04574209451675415,
+        "coral": 8.597065611125764e-06,
+        "cos_mean": 0.07834285497665405,
+        "domain_acc": 0.9930555555555556
+      },
+      "Town02_SoftRainNoon||Town04_ClearNight": {
+        "fid": 24.782946445184947,
+        "mmd_rbf": 0.10384172201156616,
+        "coral": 1.0109504819662612e-05,
+        "cos_mean": 0.14884841442108154,
+        "domain_acc": 1.0
+      },
+      "Town02_SoftRainNoon||Town04_ClearNoon": {
+        "fid": 21.907654236117914,
+        "mmd_rbf": 0.07156914472579956,
+        "coral": 1.0579390144816828e-05,
+        "cos_mean": 0.10721319913864136,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town02_SoftRainNoon||Town04_OvercastNoon": {
+        "fid": 19.97976407411027,
+        "mmd_rbf": 0.05603623390197754,
+        "coral": 1.0098685391509583e-05,
+        "cos_mean": 0.08176285028457642,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town02_SoftRainNoon||Town04_SoftRainNoon": {
+        "fid": 20.56853831856246,
+        "mmd_rbf": 0.06416666507720947,
+        "coral": 9.562501490347725e-06,
+        "cos_mean": 0.09312707185745239,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town02_SoftRainNoon||Town05_ClearNight": {
+        "fid": 17.48018987618606,
+        "mmd_rbf": 0.06985878944396973,
+        "coral": 7.253363604604037e-06,
+        "cos_mean": 0.0939258337020874,
+        "domain_acc": 1.0
+      },
+      "Town02_SoftRainNoon||Town05_ClearNoon": {
+        "fid": 12.827198667795265,
+        "mmd_rbf": 0.03353691101074219,
+        "coral": 5.194317312006353e-06,
+        "cos_mean": 0.04563337564468384,
+        "domain_acc": 0.9916666666666667
+      },
+      "Town02_SoftRainNoon||Town05_OvercastNoon": {
+        "fid": 14.527094613965119,
+        "mmd_rbf": 0.04346543550491333,
+        "coral": 6.22551381201759e-06,
+        "cos_mean": 0.0564766526222229,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town02_SoftRainNoon||Town05_SoftRainNoon": {
+        "fid": 13.120017715742932,
+        "mmd_rbf": 0.038726747035980225,
+        "coral": 5.394329666902155e-06,
+        "cos_mean": 0.04721403121948242,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town02_SoftRainNoon||Town10HD_ClearNight": {
+        "fid": 18.77275371843416,
+        "mmd_rbf": 0.05358743667602539,
+        "coral": 9.036277816789559e-06,
+        "cos_mean": 0.07342910766601562,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town02_SoftRainNoon||Town10HD_ClearNoon": {
+        "fid": 14.453033562638687,
+        "mmd_rbf": 0.044687628746032715,
+        "coral": 6.00608418595897e-06,
+        "cos_mean": 0.059660375118255615,
+        "domain_acc": 0.9944444444444445
+      },
+      "Town02_SoftRainNoon||Town10HD_OvercastNoon": {
+        "fid": 15.822286358284117,
+        "mmd_rbf": 0.048768699169158936,
+        "coral": 6.469780327901092e-06,
+        "cos_mean": 0.06160932779312134,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town02_SoftRainNoon||Town10HD_SoftRainNoon": {
+        "fid": 14.585708692639585,
+        "mmd_rbf": 0.04628956317901611,
+        "coral": 5.611054410941046e-06,
+        "cos_mean": 0.05856519937515259,
+        "domain_acc": 0.9944444444444445
+      },
+      "Town03_ClearNight||Town03_ClearNoon": {
+        "fid": 14.112977305373157,
+        "mmd_rbf": 0.0274541974067688,
+        "coral": 4.1948124185914585e-06,
+        "cos_mean": 0.04411947727203369,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town03_ClearNight||Town03_OvercastNoon": {
+        "fid": 14.654407412457616,
+        "mmd_rbf": 0.023523151874542236,
+        "coral": 4.7315576660278175e-06,
+        "cos_mean": 0.03820616006851196,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town03_ClearNight||Town03_SoftRainNoon": {
+        "fid": 16.928783211225138,
+        "mmd_rbf": 0.032093048095703125,
+        "coral": 5.635111048434617e-06,
+        "cos_mean": 0.05516916513442993,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town03_ClearNight||Town04_ClearNight": {
+        "fid": 22.51324972125763,
+        "mmd_rbf": 0.07146763801574707,
+        "coral": 8.774203937924071e-06,
+        "cos_mean": 0.10370904207229614,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town03_ClearNight||Town04_ClearNoon": {
+        "fid": 24.811344834807386,
+        "mmd_rbf": 0.07926028966903687,
+        "coral": 1.0069909939022253e-05,
+        "cos_mean": 0.12868857383728027,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town03_ClearNight||Town04_OvercastNoon": {
+        "fid": 22.2600397795672,
+        "mmd_rbf": 0.06699168682098389,
+        "coral": 9.414896799826813e-06,
+        "cos_mean": 0.10644286870956421,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNight||Town04_SoftRainNoon": {
+        "fid": 23.599876131710246,
+        "mmd_rbf": 0.07844221591949463,
+        "coral": 9.513276409795999e-06,
+        "cos_mean": 0.12327194213867188,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town03_ClearNight||Town05_ClearNight": {
+        "fid": 16.745383780770176,
+        "mmd_rbf": 0.046759605407714844,
+        "coral": 5.676632660159385e-06,
+        "cos_mean": 0.0638396143913269,
+        "domain_acc": 0.9902777777777778
+      },
+      "Town03_ClearNight||Town05_ClearNoon": {
+        "fid": 18.26592515547199,
+        "mmd_rbf": 0.04990619421005249,
+        "coral": 5.834734520204283e-06,
+        "cos_mean": 0.08030879497528076,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNight||Town05_OvercastNoon": {
+        "fid": 18.45447557088464,
+        "mmd_rbf": 0.05661243200302124,
+        "coral": 6.056448832457662e-06,
+        "cos_mean": 0.08429056406021118,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town03_ClearNight||Town05_SoftRainNoon": {
+        "fid": 19.44868013666295,
+        "mmd_rbf": 0.0680742859840393,
+        "coral": 5.903621964610558e-06,
+        "cos_mean": 0.09782004356384277,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNight||Town10HD_ClearNight": {
+        "fid": 18.855736546970697,
+        "mmd_rbf": 0.04532581567764282,
+        "coral": 8.081368895830769e-06,
+        "cos_mean": 0.0650404691696167,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town03_ClearNight||Town10HD_ClearNoon": {
+        "fid": 18.86247555575583,
+        "mmd_rbf": 0.05373203754425049,
+        "coral": 6.282056349845107e-06,
+        "cos_mean": 0.08358848094940186,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town03_ClearNight||Town10HD_OvercastNoon": {
+        "fid": 18.91850861422214,
+        "mmd_rbf": 0.06256091594696045,
+        "coral": 5.7021337863144775e-06,
+        "cos_mean": 0.09085249900817871,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNight||Town10HD_SoftRainNoon": {
+        "fid": 19.619042909654326,
+        "mmd_rbf": 0.06613755226135254,
+        "coral": 6.145604009561195e-06,
+        "cos_mean": 0.09610456228256226,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town03_ClearNoon||Town03_OvercastNoon": {
+        "fid": 12.488477755040485,
+        "mmd_rbf": 0.01030188798904419,
+        "coral": 4.282881218573999e-06,
+        "cos_mean": 0.016034722328186035,
+        "domain_acc": 0.9638888888888889
+      },
+      "Town03_ClearNoon||Town03_SoftRainNoon": {
+        "fid": 14.121905354471878,
+        "mmd_rbf": 0.01313018798828125,
+        "coral": 5.18116077875976e-06,
+        "cos_mean": 0.022944152355194092,
+        "domain_acc": 0.9694444444444444
+      },
+      "Town03_ClearNoon||Town04_ClearNight": {
+        "fid": 25.975602820024832,
+        "mmd_rbf": 0.10143375396728516,
+        "coral": 9.607097853446667e-06,
+        "cos_mean": 0.15375781059265137,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNoon||Town04_ClearNoon": {
+        "fid": 22.569416190348896,
+        "mmd_rbf": 0.06361991167068481,
+        "coral": 1.0049303224308294e-05,
+        "cos_mean": 0.09983831644058228,
+        "domain_acc": 0.9930555555555556
+      },
+      "Town03_ClearNoon||Town04_OvercastNoon": {
+        "fid": 18.64244333315102,
+        "mmd_rbf": 0.04680061340332031,
+        "coral": 8.031147416044588e-06,
+        "cos_mean": 0.07131868600845337,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town03_ClearNoon||Town04_SoftRainNoon": {
+        "fid": 21.735062165428083,
+        "mmd_rbf": 0.06351393461227417,
+        "coral": 9.529350094558381e-06,
+        "cos_mean": 0.09623855352401733,
+        "domain_acc": 0.9930555555555556
+      },
+      "Town03_ClearNoon||Town05_ClearNight": {
+        "fid": 19.455530933437977,
+        "mmd_rbf": 0.07219153642654419,
+        "coral": 6.652973712831929e-06,
+        "cos_mean": 0.10655820369720459,
+        "domain_acc": 1.0
+      },
+      "Town03_ClearNoon||Town05_ClearNoon": {
+        "fid": 15.894081977799331,
+        "mmd_rbf": 0.03330618143081665,
+        "coral": 5.525959099270258e-06,
+        "cos_mean": 0.05289936065673828,
+        "domain_acc": 0.9944444444444445
+      },
+      "Town03_ClearNoon||Town05_OvercastNoon": {
+        "fid": 16.772084462588225,
+        "mmd_rbf": 0.04284262657165527,
+        "coral": 6.1617017021025895e-06,
+        "cos_mean": 0.060662269592285156,
+        "domain_acc": 0.9930555555555556
+      },
+      "Town03_ClearNoon||Town05_SoftRainNoon": {
+        "fid": 17.17121507986294,
+        "mmd_rbf": 0.050615012645721436,
+        "coral": 5.836800634392181e-06,
+        "cos_mean": 0.06930124759674072,
+        "domain_acc": 0.9930555555555556
+      },
+      "Town03_ClearNoon||Town10HD_ClearNight": {
+        "fid": 21.093816179158267,
+        "mmd_rbf": 0.0598331093788147,
+        "coral": 8.850672022115419e-06,
+        "cos_mean": 0.08950549364089966,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town03_ClearNoon||Town10HD_ClearNoon": {
+        "fid": 18.376570321658413,
+        "mmd_rbf": 0.047725141048431396,
+        "coral": 6.5598061047053374e-06,
+        "cos_mean": 0.07145047187805176,
+        "domain_acc": 0.9930555555555556
+      },
+      "Town03_ClearNoon||Town10HD_OvercastNoon": {
+        "fid": 18.652812030324007,
+        "mmd_rbf": 0.05447655916213989,
+        "coral": 6.064970953252576e-06,
+        "cos_mean": 0.07592034339904785,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town03_ClearNoon||Town10HD_SoftRainNoon": {
+        "fid": 18.590307142318238,
+        "mmd_rbf": 0.0568164587020874,
+        "coral": 6.101508864381318e-06,
+        "cos_mean": 0.08051133155822754,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town03_OvercastNoon||Town03_SoftRainNoon": {
+        "fid": 13.397912073825594,
+        "mmd_rbf": 0.013311505317687988,
+        "coral": 5.003056392926779e-06,
+        "cos_mean": 0.02349644899368286,
+        "domain_acc": 0.9736111111111111
+      },
+      "Town03_OvercastNoon||Town04_ClearNight": {
+        "fid": 27.5269021423357,
+        "mmd_rbf": 0.09889853000640869,
+        "coral": 1.0635826952702003e-05,
+        "cos_mean": 0.1557888388633728,
+        "domain_acc": 1.0
+      },
+      "Town03_OvercastNoon||Town04_ClearNoon": {
+        "fid": 25.00852126063708,
+        "mmd_rbf": 0.06855249404907227,
+        "coral": 1.1245613663086377e-05,
+        "cos_mean": 0.1162375807762146,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town03_OvercastNoon||Town04_OvercastNoon": {
+        "fid": 22.660058678706953,
+        "mmd_rbf": 0.05254650115966797,
+        "coral": 1.066133549259293e-05,
+        "cos_mean": 0.08720219135284424,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town03_OvercastNoon||Town04_SoftRainNoon": {
+        "fid": 23.940063761419395,
+        "mmd_rbf": 0.0661468505859375,
+        "coral": 1.0501109539745037e-05,
+        "cos_mean": 0.1082301139831543,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town03_OvercastNoon||Town05_ClearNight": {
+        "fid": 21.17359139167231,
+        "mmd_rbf": 0.07126003503799438,
+        "coral": 7.880607519804414e-06,
+        "cos_mean": 0.10748052597045898,
+        "domain_acc": 1.0
+      },
+      "Town03_OvercastNoon||Town05_ClearNoon": {
+        "fid": 17.960850347226483,
+        "mmd_rbf": 0.037834227085113525,
+        "coral": 6.766723360659453e-06,
+        "cos_mean": 0.06455928087234497,
+        "domain_acc": 0.9930555555555556
+      },
+      "Town03_OvercastNoon||Town05_OvercastNoon": {
+        "fid": 19.068828495530042,
+        "mmd_rbf": 0.04581093788146973,
+        "coral": 7.510630428244416e-06,
+        "cos_mean": 0.0702776312828064,
+        "domain_acc": 0.9930555555555556
+      },
+      "Town03_OvercastNoon||Town05_SoftRainNoon": {
+        "fid": 18.995205189569504,
+        "mmd_rbf": 0.05239760875701904,
+        "coral": 6.9000287639771536e-06,
+        "cos_mean": 0.07624715566635132,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town03_OvercastNoon||Town10HD_ClearNight": {
+        "fid": 21.84677045616324,
+        "mmd_rbf": 0.054254770278930664,
+        "coral": 9.436840282184934e-06,
+        "cos_mean": 0.08502107858657837,
+        "domain_acc": 1.0
+      },
+      "Town03_OvercastNoon||Town10HD_ClearNoon": {
+        "fid": 18.94315208506235,
+        "mmd_rbf": 0.046529293060302734,
+        "coral": 6.8068218275818145e-06,
+        "cos_mean": 0.07678204774856567,
+        "domain_acc": 0.9930555555555556
+      },
+      "Town03_OvercastNoon||Town10HD_OvercastNoon": {
+        "fid": 20.42370103951138,
+        "mmd_rbf": 0.0544435977935791,
+        "coral": 7.091371759079392e-06,
+        "cos_mean": 0.08360344171524048,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town03_OvercastNoon||Town10HD_SoftRainNoon": {
+        "fid": 20.08066903422346,
+        "mmd_rbf": 0.0570719838142395,
+        "coral": 7.016444079196652e-06,
+        "cos_mean": 0.08778834342956543,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town03_SoftRainNoon||Town04_ClearNight": {
+        "fid": 28.086222671552804,
+        "mmd_rbf": 0.10289335250854492,
+        "coral": 1.0762551930239194e-05,
+        "cos_mean": 0.1646999716758728,
+        "domain_acc": 1.0
+      },
+      "Town03_SoftRainNoon||Town04_ClearNoon": {
+        "fid": 25.771948044594836,
+        "mmd_rbf": 0.0691487193107605,
+        "coral": 1.1356927048655443e-05,
+        "cos_mean": 0.11751025915145874,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town03_SoftRainNoon||Town04_OvercastNoon": {
+        "fid": 24.13405927833562,
+        "mmd_rbf": 0.060698866844177246,
+        "coral": 1.1020656592014867e-05,
+        "cos_mean": 0.1022917628288269,
+        "domain_acc": 1.0
+      },
+      "Town03_SoftRainNoon||Town04_SoftRainNoon": {
+        "fid": 24.396683449664927,
+        "mmd_rbf": 0.0687149167060852,
+        "coral": 1.0700931772367162e-05,
+        "cos_mean": 0.11285287141799927,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town03_SoftRainNoon||Town05_ClearNight": {
+        "fid": 22.31911345573733,
+        "mmd_rbf": 0.07929271459579468,
+        "coral": 7.885274683073311e-06,
+        "cos_mean": 0.12372404336929321,
+        "domain_acc": 1.0
+      },
+      "Town03_SoftRainNoon||Town05_ClearNoon": {
+        "fid": 19.1718889765844,
+        "mmd_rbf": 0.04485362768173218,
+        "coral": 6.811193477865246e-06,
+        "cos_mean": 0.07855314016342163,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town03_SoftRainNoon||Town05_OvercastNoon": {
+        "fid": 20.115410286172057,
+        "mmd_rbf": 0.05325502157211304,
+        "coral": 7.513125728464972e-06,
+        "cos_mean": 0.08305579423904419,
+        "domain_acc": 0.9944444444444445
+      },
+      "Town03_SoftRainNoon||Town05_SoftRainNoon": {
+        "fid": 20.1642382779188,
+        "mmd_rbf": 0.0601840615272522,
+        "coral": 6.946045923272971e-06,
+        "cos_mean": 0.08911097049713135,
+        "domain_acc": 0.9902777777777778
+      },
+      "Town03_SoftRainNoon||Town10HD_ClearNight": {
+        "fid": 23.83815983231962,
+        "mmd_rbf": 0.06585866212844849,
+        "coral": 9.76682482689331e-06,
+        "cos_mean": 0.10596293210983276,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town03_SoftRainNoon||Town10HD_ClearNoon": {
+        "fid": 19.70065872675964,
+        "mmd_rbf": 0.05338597297668457,
+        "coral": 6.536379159501271e-06,
+        "cos_mean": 0.08869963884353638,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town03_SoftRainNoon||Town10HD_OvercastNoon": {
+        "fid": 21.860013841061537,
+        "mmd_rbf": 0.0641888976097107,
+        "coral": 7.2098921034860335e-06,
+        "cos_mean": 0.09782981872558594,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town03_SoftRainNoon||Town10HD_SoftRainNoon": {
+        "fid": 20.96470948605858,
+        "mmd_rbf": 0.06488698720932007,
+        "coral": 6.914252232488338e-06,
+        "cos_mean": 0.09918355941772461,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town04_ClearNight||Town04_ClearNoon": {
+        "fid": 11.336742543536538,
+        "mmd_rbf": 0.04975813627243042,
+        "coral": 3.911872120348171e-06,
+        "cos_mean": 0.063900887966156,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNight||Town04_OvercastNoon": {
+        "fid": 13.516861366577913,
+        "mmd_rbf": 0.059743642807006836,
+        "coral": 5.919119563299625e-06,
+        "cos_mean": 0.07992494106292725,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNight||Town04_SoftRainNoon": {
+        "fid": 11.130114343493666,
+        "mmd_rbf": 0.05025506019592285,
+        "coral": 3.638746698207593e-06,
+        "cos_mean": 0.06423830986022949,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNight||Town05_ClearNight": {
+        "fid": 13.325099295625996,
+        "mmd_rbf": 0.055127620697021484,
+        "coral": 5.742351222329317e-06,
+        "cos_mean": 0.06184947490692139,
+        "domain_acc": 0.9847222222222223
+      },
+      "Town04_ClearNight||Town05_ClearNoon": {
+        "fid": 19.5394169321768,
+        "mmd_rbf": 0.09103477001190186,
+        "coral": 7.230818495153283e-06,
+        "cos_mean": 0.12163662910461426,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNight||Town05_OvercastNoon": {
+        "fid": 18.185566662659966,
+        "mmd_rbf": 0.09397226572036743,
+        "coral": 6.714133560047121e-06,
+        "cos_mean": 0.1202438473701477,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNight||Town05_SoftRainNoon": {
+        "fid": 18.63968062636772,
+        "mmd_rbf": 0.09931743144989014,
+        "coral": 6.777737907555455e-06,
+        "cos_mean": 0.12188541889190674,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town04_ClearNight||Town10HD_ClearNight": {
+        "fid": 24.133310024543924,
+        "mmd_rbf": 0.09526163339614868,
+        "coral": 1.1200307228263596e-05,
+        "cos_mean": 0.13244599103927612,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town04_ClearNight||Town10HD_ClearNoon": {
+        "fid": 24.123795694966866,
+        "mmd_rbf": 0.10707926750183105,
+        "coral": 9.104369712760709e-06,
+        "cos_mean": 0.15046387910842896,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town04_ClearNight||Town10HD_OvercastNoon": {
+        "fid": 24.164302143861825,
+        "mmd_rbf": 0.12189662456512451,
+        "coral": 8.529273988578e-06,
+        "cos_mean": 0.16315799951553345,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNight||Town10HD_SoftRainNoon": {
+        "fid": 24.09044926095371,
+        "mmd_rbf": 0.1223839521408081,
+        "coral": 8.406692210986758e-06,
+        "cos_mean": 0.1646031141281128,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNoon||Town04_OvercastNoon": {
+        "fid": 7.742162170563205,
+        "mmd_rbf": 0.02010929584503174,
+        "coral": 4.489174426160509e-06,
+        "cos_mean": 0.02644979953765869,
+        "domain_acc": 0.9597222222222223
+      },
+      "Town04_ClearNoon||Town04_SoftRainNoon": {
+        "fid": 6.641299158031835,
+        "mmd_rbf": 0.011583924293518066,
+        "coral": 2.891488314799273e-06,
+        "cos_mean": 0.012289047241210938,
+        "domain_acc": 0.9694444444444444
+      },
+      "Town04_ClearNoon||Town05_ClearNight": {
+        "fid": 16.60850486504664,
+        "mmd_rbf": 0.07684481143951416,
+        "coral": 7.124065560416463e-06,
+        "cos_mean": 0.09932690858840942,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNoon||Town05_ClearNoon": {
+        "fid": 14.946874222857204,
+        "mmd_rbf": 0.04744851589202881,
+        "coral": 7.060793106793429e-06,
+        "cos_mean": 0.06224536895751953,
+        "domain_acc": 0.9861111111111112
+      },
+      "Town04_ClearNoon||Town05_OvercastNoon": {
+        "fid": 13.770468611894145,
+        "mmd_rbf": 0.049868881702423096,
+        "coral": 6.525238186014975e-06,
+        "cos_mean": 0.06132197380065918,
+        "domain_acc": 0.9902777777777778
+      },
+      "Town04_ClearNoon||Town05_SoftRainNoon": {
+        "fid": 13.768049679006253,
+        "mmd_rbf": 0.05244165658950806,
+        "coral": 6.3986220445390864e-06,
+        "cos_mean": 0.061219096183776855,
+        "domain_acc": 0.9916666666666667
+      },
+      "Town04_ClearNoon||Town10HD_ClearNight": {
+        "fid": 25.92271139061826,
+        "mmd_rbf": 0.09979647397994995,
+        "coral": 1.2595686023109387e-05,
+        "cos_mean": 0.1478162407875061,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNoon||Town10HD_ClearNoon": {
+        "fid": 21.93862847572027,
+        "mmd_rbf": 0.07707101106643677,
+        "coral": 9.811019637110722e-06,
+        "cos_mean": 0.1108282208442688,
+        "domain_acc": 1.0
+      },
+      "Town04_ClearNoon||Town10HD_OvercastNoon": {
+        "fid": 21.500985707350246,
+        "mmd_rbf": 0.08859395980834961,
+        "coral": 9.082507922828228e-06,
+        "cos_mean": 0.11943012475967407,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town04_ClearNoon||Town10HD_SoftRainNoon": {
+        "fid": 21.436674106678446,
+        "mmd_rbf": 0.08904820680618286,
+        "coral": 8.964617114024904e-06,
+        "cos_mean": 0.12136709690093994,
+        "domain_acc": 1.0
+      },
+      "Town04_OvercastNoon||Town04_SoftRainNoon": {
+        "fid": 8.632684386581118,
+        "mmd_rbf": 0.01789957284927368,
+        "coral": 4.949998388133532e-06,
+        "cos_mean": 0.022874176502227783,
+        "domain_acc": 0.9833333333333333
+      },
+      "Town04_OvercastNoon||Town05_ClearNight": {
+        "fid": 16.199149160453395,
+        "mmd_rbf": 0.07152855396270752,
+        "coral": 7.4666793894249925e-06,
+        "cos_mean": 0.09451919794082642,
+        "domain_acc": 1.0
+      },
+      "Town04_OvercastNoon||Town05_ClearNoon": {
+        "fid": 13.480173615877803,
+        "mmd_rbf": 0.03745114803314209,
+        "coral": 6.542082051089266e-06,
+        "cos_mean": 0.04844927787780762,
+        "domain_acc": 0.9916666666666667
+      },
+      "Town04_OvercastNoon||Town05_OvercastNoon": {
+        "fid": 12.677623898140908,
+        "mmd_rbf": 0.04027128219604492,
+        "coral": 6.4871847089492685e-06,
+        "cos_mean": 0.04925394058227539,
+        "domain_acc": 0.9847222222222223
+      },
+      "Town04_OvercastNoon||Town05_SoftRainNoon": {
+        "fid": 13.10408959564456,
+        "mmd_rbf": 0.04345846176147461,
+        "coral": 6.517556348724448e-06,
+        "cos_mean": 0.05004459619522095,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town04_OvercastNoon||Town10HD_ClearNight": {
+        "fid": 22.463367717518715,
+        "mmd_rbf": 0.07968604564666748,
+        "coral": 1.1599825952467567e-05,
+        "cos_mean": 0.11298894882202148,
+        "domain_acc": 1.0
+      },
+      "Town04_OvercastNoon||Town10HD_ClearNoon": {
+        "fid": 19.108564280159733,
+        "mmd_rbf": 0.0633246898651123,
+        "coral": 8.955468765008521e-06,
+        "cos_mean": 0.08567190170288086,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town04_OvercastNoon||Town10HD_OvercastNoon": {
+        "fid": 18.144870823400673,
+        "mmd_rbf": 0.06791287660598755,
+        "coral": 8.222069174324648e-06,
+        "cos_mean": 0.08661818504333496,
+        "domain_acc": 1.0
+      },
+      "Town04_OvercastNoon||Town10HD_SoftRainNoon": {
+        "fid": 18.355098343384228,
+        "mmd_rbf": 0.0700499415397644,
+        "coral": 8.24922070071007e-06,
+        "cos_mean": 0.09153866767883301,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town04_SoftRainNoon||Town05_ClearNight": {
+        "fid": 15.557267428832844,
+        "mmd_rbf": 0.0708581805229187,
+        "coral": 6.042801151960303e-06,
+        "cos_mean": 0.08978790044784546,
+        "domain_acc": 1.0
+      },
+      "Town04_SoftRainNoon||Town05_ClearNoon": {
+        "fid": 13.846274615154968,
+        "mmd_rbf": 0.04304301738739014,
+        "coral": 5.894071367618789e-06,
+        "cos_mean": 0.05480307340621948,
+        "domain_acc": 0.9888888888888889
+      },
+      "Town04_SoftRainNoon||Town05_OvercastNoon": {
+        "fid": 12.389707295672643,
+        "mmd_rbf": 0.0417252779006958,
+        "coral": 5.118392632851061e-06,
+        "cos_mean": 0.05020564794540405,
+        "domain_acc": 0.9902777777777778
+      },
+      "Town04_SoftRainNoon||Town05_SoftRainNoon": {
+        "fid": 12.371515490257579,
+        "mmd_rbf": 0.04161262512207031,
+        "coral": 5.109685207105019e-06,
+        "cos_mean": 0.047280073165893555,
+        "domain_acc": 0.9861111111111112
+      },
+      "Town04_SoftRainNoon||Town10HD_ClearNight": {
+        "fid": 23.20715729981537,
+        "mmd_rbf": 0.09008139371871948,
+        "coral": 1.0678441640859564e-05,
+        "cos_mean": 0.12834447622299194,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town04_SoftRainNoon||Town10HD_ClearNoon": {
+        "fid": 19.453528499089742,
+        "mmd_rbf": 0.06988972425460815,
+        "coral": 7.98419873298744e-06,
+        "cos_mean": 0.09709060192108154,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town04_SoftRainNoon||Town10HD_OvercastNoon": {
+        "fid": 19.275554353673783,
+        "mmd_rbf": 0.07903140783309937,
+        "coral": 7.660513756257046e-06,
+        "cos_mean": 0.10314345359802246,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town04_SoftRainNoon||Town10HD_SoftRainNoon": {
+        "fid": 19.209321883574624,
+        "mmd_rbf": 0.07835060358047485,
+        "coral": 7.557394275747285e-06,
+        "cos_mean": 0.10371285676956177,
+        "domain_acc": 1.0
+      },
+      "Town05_ClearNight||Town05_ClearNoon": {
+        "fid": 10.071691454500822,
+        "mmd_rbf": 0.04248148202896118,
+        "coral": 2.891296494284178e-06,
+        "cos_mean": 0.05531710386276245,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town05_ClearNight||Town05_OvercastNoon": {
+        "fid": 8.811123681150796,
+        "mmd_rbf": 0.04093748331069946,
+        "coral": 2.2843500581166402e-06,
+        "cos_mean": 0.05182534456253052,
+        "domain_acc": 1.0
+      },
+      "Town05_ClearNight||Town05_SoftRainNoon": {
+        "fid": 9.316908366968377,
+        "mmd_rbf": 0.04673731327056885,
+        "coral": 2.3095794308466327e-06,
+        "cos_mean": 0.05690467357635498,
+        "domain_acc": 1.0
+      },
+      "Town05_ClearNight||Town10HD_ClearNight": {
+        "fid": 16.22048592770308,
+        "mmd_rbf": 0.04698902368545532,
+        "coral": 7.788153814289326e-06,
+        "cos_mean": 0.05936896800994873,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town05_ClearNight||Town10HD_ClearNoon": {
+        "fid": 15.287747011530506,
+        "mmd_rbf": 0.05860334634780884,
+        "coral": 5.295840482573515e-06,
+        "cos_mean": 0.07476967573165894,
+        "domain_acc": 1.0
+      },
+      "Town05_ClearNight||Town10HD_OvercastNoon": {
+        "fid": 15.198250484359342,
+        "mmd_rbf": 0.06668359041213989,
+        "coral": 4.8680111108868305e-06,
+        "cos_mean": 0.08368885517120361,
+        "domain_acc": 1.0
+      },
+      "Town05_ClearNight||Town10HD_SoftRainNoon": {
+        "fid": 14.900076061212395,
+        "mmd_rbf": 0.06476956605911255,
+        "coral": 4.717128707446301e-06,
+        "cos_mean": 0.0814809799194336,
+        "domain_acc": 1.0
+      },
+      "Town05_ClearNoon||Town05_OvercastNoon": {
+        "fid": 6.437191962086061,
+        "mmd_rbf": 0.009704649448394775,
+        "coral": 2.26404520479032e-06,
+        "cos_mean": 0.009756863117218018,
+        "domain_acc": 0.9444444444444444
+      },
+      "Town05_ClearNoon||Town05_SoftRainNoon": {
+        "fid": 6.1212659963386855,
+        "mmd_rbf": 0.012096703052520752,
+        "coral": 1.8555616315809421e-06,
+        "cos_mean": 0.011829555034637451,
+        "domain_acc": 0.9722222222222222
+      },
+      "Town05_ClearNoon||Town10HD_ClearNight": {
+        "fid": 15.703594203255932,
+        "mmd_rbf": 0.048369407653808594,
+        "coral": 6.799186521660136e-06,
+        "cos_mean": 0.06194710731506348,
+        "domain_acc": 1.0
+      },
+      "Town05_ClearNoon||Town10HD_ClearNoon": {
+        "fid": 11.00223412045785,
+        "mmd_rbf": 0.027788937091827393,
+        "coral": 3.8671280387662235e-06,
+        "cos_mean": 0.031066834926605225,
+        "domain_acc": 0.9916666666666667
+      },
+      "Town05_ClearNoon||Town10HD_OvercastNoon": {
+        "fid": 11.663624868223508,
+        "mmd_rbf": 0.03261113166809082,
+        "coral": 3.822397142274318e-06,
+        "cos_mean": 0.03625011444091797,
+        "domain_acc": 0.9930555555555556
+      },
+      "Town05_ClearNoon||Town10HD_SoftRainNoon": {
+        "fid": 11.538006727910599,
+        "mmd_rbf": 0.033399879932403564,
+        "coral": 3.580436974120477e-06,
+        "cos_mean": 0.03832435607910156,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town05_OvercastNoon||Town05_SoftRainNoon": {
+        "fid": 5.814012453139938,
+        "mmd_rbf": 0.012842416763305664,
+        "coral": 1.6649220533056364e-06,
+        "cos_mean": 0.013103246688842773,
+        "domain_acc": 0.9736111111111111
+      },
+      "Town05_OvercastNoon||Town10HD_ClearNight": {
+        "fid": 16.66453544446663,
+        "mmd_rbf": 0.05539393424987793,
+        "coral": 7.645461639615044e-06,
+        "cos_mean": 0.07082200050354004,
+        "domain_acc": 1.0
+      },
+      "Town05_OvercastNoon||Town10HD_ClearNoon": {
+        "fid": 12.709370762123733,
+        "mmd_rbf": 0.034316420555114746,
+        "coral": 4.737064013165141e-06,
+        "cos_mean": 0.040912926197052,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town05_OvercastNoon||Town10HD_OvercastNoon": {
+        "fid": 12.693753927253972,
+        "mmd_rbf": 0.03843480348587036,
+        "coral": 4.571188602113001e-06,
+        "cos_mean": 0.043593764305114746,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town05_OvercastNoon||Town10HD_SoftRainNoon": {
+        "fid": 12.397904270482329,
+        "mmd_rbf": 0.038354694843292236,
+        "coral": 4.184850643470343e-06,
+        "cos_mean": 0.04475134611129761,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town05_SoftRainNoon||Town10HD_ClearNight": {
+        "fid": 16.576776475602898,
+        "mmd_rbf": 0.060718417167663574,
+        "coral": 7.165077941356018e-06,
+        "cos_mean": 0.07530176639556885,
+        "domain_acc": 1.0
+      },
+      "Town05_SoftRainNoon||Town10HD_ClearNoon": {
+        "fid": 12.259282250673081,
+        "mmd_rbf": 0.03583008050918579,
+        "coral": 4.181908884919119e-06,
+        "cos_mean": 0.0394434928894043,
+        "domain_acc": 0.9972222222222222
+      },
+      "Town05_SoftRainNoon||Town10HD_OvercastNoon": {
+        "fid": 11.714139051391648,
+        "mmd_rbf": 0.03890568017959595,
+        "coral": 3.714310491904728e-06,
+        "cos_mean": 0.043593764305114746,
+        "domain_acc": 0.9958333333333333
+      },
+      "Town05_SoftRainNoon||Town10HD_SoftRainNoon": {
+        "fid": 11.01862813664188,
+        "mmd_rbf": 0.03693211078643799,
+        "coral": 3.2839782112598435e-06,
+        "cos_mean": 0.04173773527145386,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town10HD_ClearNight||Town10HD_ClearNoon": {
+        "fid": 9.994151388454426,
+        "mmd_rbf": 0.021928608417510986,
+        "coral": 4.702709895627347e-06,
+        "cos_mean": 0.02817249298095703,
+        "domain_acc": 1.0
+      },
+      "Town10HD_ClearNight||Town10HD_OvercastNoon": {
+        "fid": 9.252984154813447,
+        "mmd_rbf": 0.0241888165473938,
+        "coral": 4.264183664196302e-06,
+        "cos_mean": 0.02883601188659668,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town10HD_ClearNight||Town10HD_SoftRainNoon": {
+        "fid": 9.158420574037002,
+        "mmd_rbf": 0.02520078420639038,
+        "coral": 4.377272274465002e-06,
+        "cos_mean": 0.030463218688964844,
+        "domain_acc": 0.9986111111111111
+      },
+      "Town10HD_ClearNoon||Town10HD_OvercastNoon": {
+        "fid": 5.795698033304468,
+        "mmd_rbf": 0.0067670345306396484,
+        "coral": 1.8013194832151926e-06,
+        "cos_mean": 0.006420910358428955,
+        "domain_acc": 0.9041666666666667
+      },
+      "Town10HD_ClearNoon||Town10HD_SoftRainNoon": {
+        "fid": 5.755580619742723,
+        "mmd_rbf": 0.007858872413635254,
+        "coral": 1.7677929576551457e-06,
+        "cos_mean": 0.007796049118041992,
+        "domain_acc": 0.9138888888888889
+      },
+      "Town10HD_OvercastNoon||Town10HD_SoftRainNoon": {
+        "fid": 5.096750181329703,
+        "mmd_rbf": 0.00546342134475708,
+        "coral": 1.7348126946706159e-06,
+        "cos_mean": 0.005137145519256592,
+        "domain_acc": 0.9152777777777777
+      }
+    }
+  },
+  "axis_summary": {
+    "appearance_mean_fid": 3.472185356316141,
+    "content_mean_fid": 6.127140251427331,
+    "sim2real_mean_fid": 14.008284436800755
+  }
+}

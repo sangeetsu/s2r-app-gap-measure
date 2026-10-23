@@ -1,0 +1,13 @@
+{
+  "source_ckpt": "checkpoints/anchind_Town01_d00_ref/last.pt",
+  "dataset": "RTTS (car->Car, person->Pedestrian; difficult dropped)",
+  "n_frames": 4322,
+  "metrics": {
+    "AP_Car": 0.19329618133459403,
+    "n_gt_Car": 25317,
+    "AP_Pedestrian": 0.11144219308700834,
+    "n_gt_Pedestrian": 11366,
+    "mAP@IoU=0.5": 0.15236918721080117
+  },
+  "seconds": 764.1892576217651
+}

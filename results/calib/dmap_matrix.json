@@ -1,0 +1,90 @@
+{
+  "matrix": {
+    "Town01_ClearNoon": {
+      "Town01_OvercastNoon": 33.652435783894425,
+      "Town01_SoftRainNoon": 31.903853804166495,
+      "Town01_ClearNight": 25.3539406003275,
+      "Town03_ClearNoon": 31.617499245062763,
+      "Town03_OvercastNoon": 29.1142416218683,
+      "Town03_SoftRainNoon": 22.464656802583598,
+      "Town03_ClearNight": 24.938920496111603,
+      "KITTI": 51.681024274557174
+    },
+    "Town01_OvercastNoon": {
+      "Town01_ClearNoon": 42.18940213630169,
+      "Town01_SoftRainNoon": 31.8122307939255,
+      "Town01_ClearNight": 22.52457427321127,
+      "Town03_ClearNoon": 31.85633388740238,
+      "Town03_OvercastNoon": 29.177221154544743,
+      "Town03_SoftRainNoon": 23.080596176166125,
+      "Town03_ClearNight": 23.620795493863632,
+      "KITTI": 48.99852667033446
+    },
+    "Town01_SoftRainNoon": {
+      "Town01_ClearNoon": 43.27757839521417,
+      "Town01_OvercastNoon": 33.81349139283385,
+      "Town01_ClearNight": 26.40272507316776,
+      "Town03_ClearNoon": 28.939925703522867,
+      "Town03_OvercastNoon": 28.368029898893983,
+      "Town03_SoftRainNoon": 23.23254923205488,
+      "Town03_ClearNight": 21.410990068751897,
+      "KITTI": 48.777427859996095
+    },
+    "Town01_ClearNight": {
+      "Town01_ClearNoon": 36.748120267081845,
+      "Town01_OvercastNoon": 29.75738183276005,
+      "Town01_SoftRainNoon": 31.839137504646825,
+      "Town03_ClearNoon": 30.12420170574635,
+      "Town03_OvercastNoon": 26.356989432027355,
+      "Town03_SoftRainNoon": 20.879033593971684,
+      "Town03_ClearNight": 26.62224490796316,
+      "KITTI": 46.300734089811726
+    },
+    "Town03_ClearNoon": {
+      "Town01_ClearNoon": 37.24945072933377,
+      "Town01_OvercastNoon": 30.74141841963937,
+      "Town01_SoftRainNoon": 28.712800315675068,
+      "Town01_ClearNight": 20.328677299621937,
+      "Town03_OvercastNoon": 31.923245935792494,
+      "Town03_SoftRainNoon": 26.756635488858414,
+      "Town03_ClearNight": 24.002283451191396,
+      "KITTI": 47.429894716092555
+    },
+    "Town03_OvercastNoon": {
+      "Town01_ClearNoon": 36.20146815569541,
+      "Town01_OvercastNoon": 29.072716448675735,
+      "Town01_SoftRainNoon": 26.24307524822282,
+      "Town01_ClearNight": 19.9089435361943,
+      "Town03_ClearNoon": 31.637877868205244,
+      "Town03_SoftRainNoon": 23.0100532227017,
+      "Town03_ClearNight": 24.76134358652877,
+      "KITTI": 43.86055853382851
+    },
+    "Town03_SoftRainNoon": {
+      "Town01_ClearNoon": 33.99047743375665,
+      "Town01_OvercastNoon": 29.19617633018628,
+      "Town01_SoftRainNoon": 26.17915291652993,
+      "Town01_ClearNight": 21.608174146568672,
+      "Town03_ClearNoon": 32.6133605008925,
+      "Town03_OvercastNoon": 29.099145719378534,
+      "Town03_ClearNight": 24.732529255573667,
+      "KITTI": 46.11657090086293
+    },
+    "Town03_ClearNight": {
+      "Town01_ClearNoon": 32.25452668348921,
+      "Town01_OvercastNoon": 27.039717410296387,
+      "Town01_SoftRainNoon": 25.912224857650116,
+      "Town01_ClearNight": 22.95205510261165,
+      "Town03_ClearNoon": 29.263104914521502,
+      "Town03_OvercastNoon": 25.726304009582556,
+      "Town03_SoftRainNoon": 23.096739982236084,
+      "KITTI": 42.78845969797108
+    }
+  },
+  "axis_means": {
+    "appearance": 29.82906232470809,
+    "content": 28.262861217097083,
+    "both": 26.80384977991275,
+    "sim2real": 46.99414959293182
+  }
+}

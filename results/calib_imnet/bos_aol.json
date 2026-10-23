@@ -1,0 +1,2546 @@
+{
+ "Town01_ClearNight": {
+  "KITTI": {
+   "bos_stability": 0.6596398534143362,
+   "aol_mean_agreement": 0.4950682657795108
+  },
+  "Cityscapes": {
+   "bos_stability": 0.6339159982996024,
+   "aol_mean_agreement": 0.4769527757362179
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.35203671716175067,
+   "aol_mean_agreement": 0.18314766301732996
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.6590035521820897,
+   "aol_mean_agreement": 0.5564032125473023
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.3960895186611498,
+   "aol_mean_agreement": 0.3620980478402065
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.33407942018480524,
+   "aol_mean_agreement": 0.2489968966854655
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.5682569151880503,
+   "aol_mean_agreement": 0.27399625593229476
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.6816106158203162,
+   "aol_mean_agreement": 0.47383989536891813
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.5227420429440436,
+   "aol_mean_agreement": 0.37731368691053074
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.6473244340345984,
+   "aol_mean_agreement": 0.46596915833004143
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.6190850586116409,
+   "aol_mean_agreement": 0.3563763456791639
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.6031389880429249,
+   "aol_mean_agreement": 0.54096253576486
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.5765035121121411,
+   "aol_mean_agreement": 0.5462116923539534
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.7058687938192877,
+   "aol_mean_agreement": 0.6286148369182711
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.3346054833134015,
+   "aol_mean_agreement": 0.09869565229053082
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.7515735478649538,
+   "aol_mean_agreement": 0.13357246483149737
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.7082814990894479,
+   "aol_mean_agreement": 0.234393311071655
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.37505907648180925,
+   "aol_mean_agreement": 0.15372463856054389
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.6198078610021084,
+   "aol_mean_agreement": 0.2496231139872385
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.6743496738027236,
+   "aol_mean_agreement": 0.3967884876417076
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.6753591268645778,
+   "aol_mean_agreement": 0.404186340952697
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.6228374628062759,
+   "aol_mean_agreement": 0.5710207102609718
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.6831895133943743,
+   "aol_mean_agreement": 0.3336819140532094
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.6299183309744898,
+   "aol_mean_agreement": 0.5374449073782434
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.6140625593060772,
+   "aol_mean_agreement": 0.574073081129919
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.6558277117644112,
+   "aol_mean_agreement": 0.6488410260722689
+  }
+ },
+ "Town01_ClearNoon": {
+  "KITTI": {
+   "bos_stability": 0.7522455814813488,
+   "aol_mean_agreement": 0.6518934286029444
+  },
+  "Cityscapes": {
+   "bos_stability": 0.7620199276456898,
+   "aol_mean_agreement": 0.6234763660476258
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.2749151534211068,
+   "aol_mean_agreement": 0.2564327135163805
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.6764421890106356,
+   "aol_mean_agreement": 0.5299109775702591
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.5432001429457126,
+   "aol_mean_agreement": 0.31406672625114085
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.3446507491946653,
+   "aol_mean_agreement": 0.2605144941288492
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.5794838347832362,
+   "aol_mean_agreement": 0.3997029022030208
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.7591320304425938,
+   "aol_mean_agreement": 0.6297965912618068
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.5885629546408143,
+   "aol_mean_agreement": 0.4726692639647618
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.6548849227953525,
+   "aol_mean_agreement": 0.5547769201968026
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.5717722993010566,
+   "aol_mean_agreement": 0.5041221570320753
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.7271641021058673,
+   "aol_mean_agreement": 0.6423436900357837
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.667951130301072,
+   "aol_mean_agreement": 0.5846311941580927
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.7827613629834299,
+   "aol_mean_agreement": 0.6894011761669231
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.16328458070755006,
+   "aol_mean_agreement": 0.05927536256935286
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.33274370501438777,
+   "aol_mean_agreement": 0.24286956561000453
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.5193573011703048,
+   "aol_mean_agreement": 0.44086693344232836
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.4141363830169042,
+   "aol_mean_agreement": 0.3090797106468159
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.5202261052628357,
+   "aol_mean_agreement": 0.32504347959938257
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.5580844479830018,
+   "aol_mean_agreement": 0.5164213282874097
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.6036340276808528,
+   "aol_mean_agreement": 0.5191718077594819
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.7081215646694307,
+   "aol_mean_agreement": 0.6298442022243272
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.6910563554254939,
+   "aol_mean_agreement": 0.5650168911140898
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.7239326756703035,
+   "aol_mean_agreement": 0.5412981759335684
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.7656323823303454,
+   "aol_mean_agreement": 0.5852273855228788
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.7267918552275181,
+   "aol_mean_agreement": 0.6048740259234024
+  }
+ },
+ "Town01_OvercastNoon": {
+  "KITTI": {
+   "bos_stability": 0.6601241561452202,
+   "aol_mean_agreement": 0.5858030857631693
+  },
+  "Cityscapes": {
+   "bos_stability": 0.6888523209471272,
+   "aol_mean_agreement": 0.5884132097207981
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.21845908462575506,
+   "aol_mean_agreement": 0.17442029188508573
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.6498350954606803,
+   "aol_mean_agreement": 0.4632862068664121
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.533167162114593,
+   "aol_mean_agreement": 0.3030521022366441
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.4568666426114401,
+   "aol_mean_agreement": 0.27294634379446503
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.45155450132988056,
+   "aol_mean_agreement": 0.32859096089782924
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.7088906221729211,
+   "aol_mean_agreement": 0.5461905838128017
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.6590339973132635,
+   "aol_mean_agreement": 0.43568329901151037
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.6316407449534015,
+   "aol_mean_agreement": 0.5219758496271527
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.5274984238122626,
+   "aol_mean_agreement": 0.4066745253684729
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.6781468371226202,
+   "aol_mean_agreement": 0.5683907911084268
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.5959911621863714,
+   "aol_mean_agreement": 0.4746715661527023
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.7463656532734596,
+   "aol_mean_agreement": 0.653562850981303
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.05767541587352753,
+   "aol_mean_agreement": 0.0423188406099444
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.25487559489905837,
+   "aol_mean_agreement": 0.19938405816969662
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.4757218461295679,
+   "aol_mean_agreement": 0.4121563178883947
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.35578332418841974,
+   "aol_mean_agreement": 0.30373706097836084
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.3853870701250575,
+   "aol_mean_agreement": 0.21431263073630955
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.5416110677198328,
+   "aol_mean_agreement": 0.46031878907719387
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.5662523411668482,
+   "aol_mean_agreement": 0.48698378699629197
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.6628392413102842,
+   "aol_mean_agreement": 0.5714917693449102
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.5986469121770489,
+   "aol_mean_agreement": 0.4692598413708417
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.6464045894608441,
+   "aol_mean_agreement": 0.4335175542824942
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.7097524845965688,
+   "aol_mean_agreement": 0.5411489074110335
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.7103664746387449,
+   "aol_mean_agreement": 0.5881758050879707
+  }
+ },
+ "Town01_SoftRainNoon": {
+  "KITTI": {
+   "bos_stability": 0.7016357477964698,
+   "aol_mean_agreement": 0.6091176370887652
+  },
+  "Cityscapes": {
+   "bos_stability": 0.6777733917800846,
+   "aol_mean_agreement": 0.5076721867011942
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.2545626344871082,
+   "aol_mean_agreement": 0.21519405385074405
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.6988338434588546,
+   "aol_mean_agreement": 0.5218004579712515
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.45714362221672417,
+   "aol_mean_agreement": 0.3581755544115669
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.4163562341293731,
+   "aol_mean_agreement": 0.25437775486837255
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.5542167271115477,
+   "aol_mean_agreement": 0.29606453138201133
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.7079050903627006,
+   "aol_mean_agreement": 0.5661976378670204
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.5983615311186271,
+   "aol_mean_agreement": 0.41607123145266717
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.6352677660750448,
+   "aol_mean_agreement": 0.43726060876865747
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.557426194944079,
+   "aol_mean_agreement": 0.4519824069479237
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.6683381134926647,
+   "aol_mean_agreement": 0.5352873953917753
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.610890459076637,
+   "aol_mean_agreement": 0.5146961570142404
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.7418701308782589,
+   "aol_mean_agreement": 0.6015470458923475
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.666056616504987,
+   "aol_mean_agreement": 0.13496376838373103
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.28207836305101713,
+   "aol_mean_agreement": 0.1971739136006521
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.5589650967064358,
+   "aol_mean_agreement": 0.41709748554164955
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.4023941681981087,
+   "aol_mean_agreement": 0.3290797110420206
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.655733627113558,
+   "aol_mean_agreement": 0.25964182510324146
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.5660862441754494,
+   "aol_mean_agreement": 0.493862627019053
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.5018691667601101,
+   "aol_mean_agreement": 0.455078870077496
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.6517664084831875,
+   "aol_mean_agreement": 0.6069991428113503
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.6554436941297384,
+   "aol_mean_agreement": 0.4706552108506793
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.666515806052271,
+   "aol_mean_agreement": 0.5109378300396644
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.6868950649425406,
+   "aol_mean_agreement": 0.5393225317464574
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.6808794817774495,
+   "aol_mean_agreement": 0.5765825577630944
+  }
+ },
+ "Town02_ClearNight": {
+  "KITTI": {
+   "bos_stability": 0.7056701709387555,
+   "aol_mean_agreement": 0.4739763840433695
+  },
+  "Cityscapes": {
+   "bos_stability": 0.7166339329436052,
+   "aol_mean_agreement": 0.4704457961524958
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.5216486037782797,
+   "aol_mean_agreement": 0.1436865043445774
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.7249690309906376,
+   "aol_mean_agreement": 0.5345975959139027
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.619302605478386,
+   "aol_mean_agreement": 0.3240594645621984
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.40470829937586084,
+   "aol_mean_agreement": 0.23716073958122214
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.5991040361860902,
+   "aol_mean_agreement": 0.2947757468210614
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.7179845506500159,
+   "aol_mean_agreement": 0.404921552637673
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.6096419943710277,
+   "aol_mean_agreement": 0.39328460153030315
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.6089665789774487,
+   "aol_mean_agreement": 0.5204110726649346
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.5942976032474117,
+   "aol_mean_agreement": 0.17584459460461915
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.6615962488921351,
+   "aol_mean_agreement": 0.42349836798789725
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.6851340958847804,
+   "aol_mean_agreement": 0.4468892913441296
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.7241484161548517,
+   "aol_mean_agreement": 0.5046683196383326
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.42537427805630224,
+   "aol_mean_agreement": 0.08805279533500256
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.5348591692484915,
+   "aol_mean_agreement": 0.15430797199840135
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.4701685931737579,
+   "aol_mean_agreement": 0.334899417191096
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.3590019396334177,
+   "aol_mean_agreement": 0.207467910349369
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.6884113332044843,
+   "aol_mean_agreement": 0.22414996147803637
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.6244941912232186,
+   "aol_mean_agreement": 0.3835711031050786
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.6104146129304,
+   "aol_mean_agreement": 0.40304430673951686
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.6938795406882798,
+   "aol_mean_agreement": 0.5784406402269783
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.7391937918769901,
+   "aol_mean_agreement": 0.301006674884778
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.6512475944293052,
+   "aol_mean_agreement": 0.4271641150343678
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.7200631899586918,
+   "aol_mean_agreement": 0.5346938806820821
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.6923195665584605,
+   "aol_mean_agreement": 0.5317800708341859
+  }
+ },
+ "Town02_ClearNoon": {
+  "KITTI": {
+   "bos_stability": 0.7443199829755263,
+   "aol_mean_agreement": 0.6018619504247024
+  },
+  "Cityscapes": {
+   "bos_stability": 0.7331424517781402,
+   "aol_mean_agreement": 0.5606182967255945
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.3095536364820741,
+   "aol_mean_agreement": 0.20272153353561526
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.6772890805795562,
+   "aol_mean_agreement": 0.5126715397284083
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.5550644720619733,
+   "aol_mean_agreement": 0.3509477068127498
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.4239364367844094,
+   "aol_mean_agreement": 0.23781884166857467
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.46616226154565815,
+   "aol_mean_agreement": 0.3900869609674681
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.727986899096132,
+   "aol_mean_agreement": 0.638764540647035
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.5734390893071655,
+   "aol_mean_agreement": 0.4547987243144408
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.7233024110167272,
+   "aol_mean_agreement": 0.5031454505674217
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.6221433013779518,
+   "aol_mean_agreement": 0.419312915150886
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.712140089755701,
+   "aol_mean_agreement": 0.45183437042748154
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.6565942372766426,
+   "aol_mean_agreement": 0.4197700712376315
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.7260090028068824,
+   "aol_mean_agreement": 0.4458154576109803
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.12239751492937405,
+   "aol_mean_agreement": 0.05053623208533163
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.2844907567898432,
+   "aol_mean_agreement": 0.21318840655943622
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.4549146000892354,
+   "aol_mean_agreement": 0.38728974842506914
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.38233847705785634,
+   "aol_mean_agreement": 0.2775368917247524
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.4460280496052333,
+   "aol_mean_agreement": 0.2913219477754572
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.5685531996077015,
+   "aol_mean_agreement": 0.5058533501203942
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.5589649254743445,
+   "aol_mean_agreement": 0.48290067050767976
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.6836687013189944,
+   "aol_mean_agreement": 0.574847830404406
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.6510954878483933,
+   "aol_mean_agreement": 0.4291443397428679
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.687981093892757,
+   "aol_mean_agreement": 0.4724744187344028
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.7117715631336801,
+   "aol_mean_agreement": 0.4546530191405961
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.6911079458915499,
+   "aol_mean_agreement": 0.4803702891439848
+  }
+ },
+ "Town02_OvercastNoon": {
+  "KITTI": {
+   "bos_stability": 0.7323153055057514,
+   "aol_mean_agreement": 0.5984267612838228
+  },
+  "Cityscapes": {
+   "bos_stability": 0.7150309204648931,
+   "aol_mean_agreement": 0.5762704960451177
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.42279875185144844,
+   "aol_mean_agreement": 0.17491645084289106
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.7051520494299405,
+   "aol_mean_agreement": 0.51967101584958
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.6007247287160248,
+   "aol_mean_agreement": 0.304651845674152
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.47915365543630384,
+   "aol_mean_agreement": 0.29542270620879924
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.5763894468148549,
+   "aol_mean_agreement": 0.46416666992980504
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.7130217225658619,
+   "aol_mean_agreement": 0.6149568090296311
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.6396333311889943,
+   "aol_mean_agreement": 0.44465691259373785
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.695556488282651,
+   "aol_mean_agreement": 0.5418572272651869
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.5634474516262611,
+   "aol_mean_agreement": 0.4172608726860388
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.7121301714452831,
+   "aol_mean_agreement": 0.49965832912241626
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.6884534974053619,
+   "aol_mean_agreement": 0.44009659884254576
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.7427284675003268,
+   "aol_mean_agreement": 0.4925987862730804
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.1416033065567414,
+   "aol_mean_agreement": 0.04195652173913044
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.2652214021484057,
+   "aol_mean_agreement": 0.22242753646943883
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.47559089816874495,
+   "aol_mean_agreement": 0.4410878527034884
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.34423419408996897,
+   "aol_mean_agreement": 0.31974637749402424
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.4314889521648486,
+   "aol_mean_agreement": 0.31283333451203676
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.606588105793037,
+   "aol_mean_agreement": 0.5329551463476989
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.5520166484281357,
+   "aol_mean_agreement": 0.4684819838922957
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.6848958837413628,
+   "aol_mean_agreement": 0.6029100970437993
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.6176453044795328,
+   "aol_mean_agreement": 0.4905027657941631
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.7054064668422606,
+   "aol_mean_agreement": 0.41595634624847905
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.7273528688134063,
+   "aol_mean_agreement": 0.4429557928977454
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.6956253220950217,
+   "aol_mean_agreement": 0.44169052394673886
+  }
+ },
+ "Town02_SoftRainNoon": {
+  "KITTI": {
+   "bos_stability": 0.7473687025475267,
+   "aol_mean_agreement": 0.6166721240171918
+  },
+  "Cityscapes": {
+   "bos_stability": 0.7401649772812884,
+   "aol_mean_agreement": 0.49203689111153714
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.32627448556030336,
+   "aol_mean_agreement": 0.23912944743814676
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.7254613824787122,
+   "aol_mean_agreement": 0.5318771614944157
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.5075908535052989,
+   "aol_mean_agreement": 0.33918837630554394
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.5769117768108845,
+   "aol_mean_agreement": 0.24204244456861326
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.6369883090555668,
+   "aol_mean_agreement": 0.38610869904575135
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.744198277511955,
+   "aol_mean_agreement": 0.6432636221012343
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.6095852076212135,
+   "aol_mean_agreement": 0.5270468416129765
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.7373461448994034,
+   "aol_mean_agreement": 0.5290989130087521
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.5771676167984093,
+   "aol_mean_agreement": 0.45081987941070734
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.6910983854445107,
+   "aol_mean_agreement": 0.40690188232971275
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.6753655374280372,
+   "aol_mean_agreement": 0.4094623548602282
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.7347207127163419,
+   "aol_mean_agreement": 0.462814388084023
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.5876639906429884,
+   "aol_mean_agreement": 0.0997101453464964
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.29570705657203994,
+   "aol_mean_agreement": 0.1984057975916759
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.4477855406864768,
+   "aol_mean_agreement": 0.38219203274535096
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.32981116087096085,
+   "aol_mean_agreement": 0.25911283761910775
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.6990409955923401,
+   "aol_mean_agreement": 0.30204037532858224
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.5898236225328166,
+   "aol_mean_agreement": 0.5436722175938927
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.570584526504316,
+   "aol_mean_agreement": 0.47220048966291156
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.7170827580596848,
+   "aol_mean_agreement": 0.6438047766491123
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.6709542626219104,
+   "aol_mean_agreement": 0.4916616230198871
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.7490622890769697,
+   "aol_mean_agreement": 0.4954485151706183
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.7171495395723825,
+   "aol_mean_agreement": 0.5127298528344734
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.6926149613784922,
+   "aol_mean_agreement": 0.4932376350462437
+  }
+ },
+ "Town03_ClearNight": {
+  "KITTI": {
+   "bos_stability": 0.7099492456622012,
+   "aol_mean_agreement": 0.35213419193158974
+  },
+  "Cityscapes": {
+   "bos_stability": 0.6816507203217729,
+   "aol_mean_agreement": 0.32947250491898994
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.46649443682991376,
+   "aol_mean_agreement": 0.115746525608651
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.6675181570694089,
+   "aol_mean_agreement": 0.3066273343627868
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.6165733221220688,
+   "aol_mean_agreement": 0.17968365663743538
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.6185009557272525,
+   "aol_mean_agreement": 0.16148252945555294
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.6119613709342335,
+   "aol_mean_agreement": 0.2440413190246276
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.6992359755621794,
+   "aol_mean_agreement": 0.447278004826411
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.5587068752021143,
+   "aol_mean_agreement": 0.42012929661280435
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.6235872253579754,
+   "aol_mean_agreement": 0.36257556012467196
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.6335789226180146,
+   "aol_mean_agreement": 0.27369483884261997
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.6810564647317743,
+   "aol_mean_agreement": 0.37453657687682174
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.6609222361461464,
+   "aol_mean_agreement": 0.3465829649016909
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.7084367528747498,
+   "aol_mean_agreement": 0.5174056294949159
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.5209664816898959,
+   "aol_mean_agreement": 0.0777204975421014
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.5813093148710637,
+   "aol_mean_agreement": 0.12454020179160263
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.6157566574997273,
+   "aol_mean_agreement": 0.2591219052931537
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.6109109354549798,
+   "aol_mean_agreement": 0.1731832319206518
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.6168786773090325,
+   "aol_mean_agreement": 0.22596306556268878
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.6465399499910791,
+   "aol_mean_agreement": 0.36144426123765505
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.5543904367679121,
+   "aol_mean_agreement": 0.36177334180668647
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.6717412949760962,
+   "aol_mean_agreement": 0.44969086796693175
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.6781096654743631,
+   "aol_mean_agreement": 0.32376831749373153
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.6733814538116343,
+   "aol_mean_agreement": 0.3661297309852165
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.7008486935443307,
+   "aol_mean_agreement": 0.3910295218601822
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.6732900876020368,
+   "aol_mean_agreement": 0.37242913092931973
+  }
+ },
+ "Town03_ClearNoon": {
+  "KITTI": {
+   "bos_stability": 0.6879664550992236,
+   "aol_mean_agreement": 0.5955234065846255
+  },
+  "Cityscapes": {
+   "bos_stability": 0.732823393395694,
+   "aol_mean_agreement": 0.5922330732449241
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.3100272312561671,
+   "aol_mean_agreement": 0.20669565312240437
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.6251505528482653,
+   "aol_mean_agreement": 0.488084890337094
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.48426228445508174,
+   "aol_mean_agreement": 0.3445277811165737
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.5155839737731785,
+   "aol_mean_agreement": 0.23494099593680834
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.452067296986069,
+   "aol_mean_agreement": 0.36098861632787665
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.7709713918778394,
+   "aol_mean_agreement": 0.561201382532068
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.5391427618341771,
+   "aol_mean_agreement": 0.4933210197917145
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.5408300214926994,
+   "aol_mean_agreement": 0.5155222640510486
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.6213766944128133,
+   "aol_mean_agreement": 0.49356314937705575
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.6726328530930101,
+   "aol_mean_agreement": 0.5540093231233566
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.6344365046697495,
+   "aol_mean_agreement": 0.5044278929252988
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.7855930749478321,
+   "aol_mean_agreement": 0.7030664319706998
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.09648931807279587,
+   "aol_mean_agreement": 0.059739130443852886
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.30697026212655365,
+   "aol_mean_agreement": 0.16787525944735693
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.4733154088757061,
+   "aol_mean_agreement": 0.38255392653462683
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.4448916097796625,
+   "aol_mean_agreement": 0.28549034022118736
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.40057010717902863,
+   "aol_mean_agreement": 0.32350103568771615
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.5660203590877946,
+   "aol_mean_agreement": 0.5092774353791838
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.5139272482743974,
+   "aol_mean_agreement": 0.4458848113566637
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.669618545384707,
+   "aol_mean_agreement": 0.6171801550070876
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.6524362541668944,
+   "aol_mean_agreement": 0.5203961402890475
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.7099592299202938,
+   "aol_mean_agreement": 0.49115512694029717
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.7289538682655438,
+   "aol_mean_agreement": 0.5572038722426995
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.7007098357177306,
+   "aol_mean_agreement": 0.5414094285375399
+  }
+ },
+ "Town03_OvercastNoon": {
+  "KITTI": {
+   "bos_stability": 0.7133467713658126,
+   "aol_mean_agreement": 0.5375048060358865
+  },
+  "Cityscapes": {
+   "bos_stability": 0.7287319655993545,
+   "aol_mean_agreement": 0.5444555690042351
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.2900217081606388,
+   "aol_mean_agreement": 0.21528985556053076
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.7076548421408921,
+   "aol_mean_agreement": 0.5865671193275763
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.44389576582042944,
+   "aol_mean_agreement": 0.25433178488974983
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.41017448648834043,
+   "aol_mean_agreement": 0.23349793184710582
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.4561942057822431,
+   "aol_mean_agreement": 0.3538452413678169
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.7072480051720088,
+   "aol_mean_agreement": 0.4573121364187935
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.5848970502457389,
+   "aol_mean_agreement": 0.4362819955789525
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.5407439924793112,
+   "aol_mean_agreement": 0.43494532798619384
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.6328549678275982,
+   "aol_mean_agreement": 0.49456521924423136
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.6633386876148104,
+   "aol_mean_agreement": 0.5227622404791739
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.6707228956590011,
+   "aol_mean_agreement": 0.5628416529621767
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.7798253884775533,
+   "aol_mean_agreement": 0.6593809586536625
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.04085438042879105,
+   "aol_mean_agreement": 0.028913043478260875
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.4046195208430291,
+   "aol_mean_agreement": 0.20028260954696195
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.5259594178201918,
+   "aol_mean_agreement": 0.41167088780066236
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.4622076636850834,
+   "aol_mean_agreement": 0.27687681275217424
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.3338236963748932,
+   "aol_mean_agreement": 0.24876811641713845
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.6410325254738573,
+   "aol_mean_agreement": 0.4697202838439008
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.6011207055440024,
+   "aol_mean_agreement": 0.4760779898646086
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.7008273099823572,
+   "aol_mean_agreement": 0.5528363607386532
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.6731233998488212,
+   "aol_mean_agreement": 0.4862327258677587
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.7275551313065215,
+   "aol_mean_agreement": 0.4984649218132962
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.7456326217700184,
+   "aol_mean_agreement": 0.5418842031774312
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.7261114432852648,
+   "aol_mean_agreement": 0.5674054223720146
+  }
+ },
+ "Town03_SoftRainNoon": {
+  "KITTI": {
+   "bos_stability": 0.7439253580490183,
+   "aol_mean_agreement": 0.5536540341409651
+  },
+  "Cityscapes": {
+   "bos_stability": 0.7385051516361627,
+   "aol_mean_agreement": 0.5119602564949056
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.2701657021294037,
+   "aol_mean_agreement": 0.24318840653999993
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.6086114725068448,
+   "aol_mean_agreement": 0.48675172893573404
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.5008062725080685,
+   "aol_mean_agreement": 0.34705347151212074
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.5033786862719627,
+   "aol_mean_agreement": 0.24758281806240912
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.4759400215659823,
+   "aol_mean_agreement": 0.3468519707153673
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.6906494731171509,
+   "aol_mean_agreement": 0.46446840873878925
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.5589787416017992,
+   "aol_mean_agreement": 0.42686850758026473
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.6130906507898851,
+   "aol_mean_agreement": 0.4977934665394867
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.5529032091207448,
+   "aol_mean_agreement": 0.44567754020509515
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.650489614280044,
+   "aol_mean_agreement": 0.4689470397259878
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.6413979512671929,
+   "aol_mean_agreement": 0.4619752535223961
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.750074270546458,
+   "aol_mean_agreement": 0.551963431103074
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.10814722761511802,
+   "aol_mean_agreement": 0.06717391304347826
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.3711447477994693,
+   "aol_mean_agreement": 0.16372429328768148
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.5071779068368467,
+   "aol_mean_agreement": 0.34295972416258375
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.4033270334771702,
+   "aol_mean_agreement": 0.2568053845542928
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.4853914691060781,
+   "aol_mean_agreement": 0.32134058042064956
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.5779212611353841,
+   "aol_mean_agreement": 0.4179209036963142
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.5820235097329124,
+   "aol_mean_agreement": 0.4521388662898022
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.6755951992287431,
+   "aol_mean_agreement": 0.5732929427354881
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.6834967284996527,
+   "aol_mean_agreement": 0.47324743762612337
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.6816686122868402,
+   "aol_mean_agreement": 0.45192545773866394
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.6683279886226771,
+   "aol_mean_agreement": 0.49057118698630653
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.70286076314966,
+   "aol_mean_agreement": 0.5114753277373054
+  }
+ },
+ "Town04_ClearNight": {
+  "KITTI": {
+   "bos_stability": 0.5831416905443405,
+   "aol_mean_agreement": 0.5180286467917588
+  },
+  "Cityscapes": {
+   "bos_stability": 0.4352561795016129,
+   "aol_mean_agreement": 0.4259710163396338
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.46031301439301175,
+   "aol_mean_agreement": 0.1476909244190092
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.476483924833082,
+   "aol_mean_agreement": 0.49339544631864724
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.13656661058465638,
+   "aol_mean_agreement": 0.10920289942751761
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.10693592655658722,
+   "aol_mean_agreement": 0.05262318911111873
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.48420247437268116,
+   "aol_mean_agreement": 0.18456004913734353
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.4367440796613781,
+   "aol_mean_agreement": 0.3816121497102406
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.433016883238419,
+   "aol_mean_agreement": 0.3231651911009913
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.2961802468973966,
+   "aol_mean_agreement": 0.25612577753222504
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.5583123089813601,
+   "aol_mean_agreement": 0.25875877336963365
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.42317257100986494,
+   "aol_mean_agreement": 0.4537647073651137
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.5378299434168471,
+   "aol_mean_agreement": 0.43139907067884564
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.6198422921335414,
+   "aol_mean_agreement": 0.5853540403233922
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.4248383078227441,
+   "aol_mean_agreement": 0.06827898594996205
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.21394181684652963,
+   "aol_mean_agreement": 0.18268115955202477
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.4144836989939213,
+   "aol_mean_agreement": 0.36769565296561824
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.248572862247626,
+   "aol_mean_agreement": 0.20253623199203732
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.5512661527231951,
+   "aol_mean_agreement": 0.20085528117645043
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.4290167840189404,
+   "aol_mean_agreement": 0.42357626081160876
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.4784543893635273,
+   "aol_mean_agreement": 0.5243498996677605
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.5256610964141668,
+   "aol_mean_agreement": 0.5020374424755573
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.6757465160577144,
+   "aol_mean_agreement": 0.2759280904382468
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.5352984848676877,
+   "aol_mean_agreement": 0.49807995174242103
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.5013833818932375,
+   "aol_mean_agreement": 0.4777764002071775
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.5840661212894178,
+   "aol_mean_agreement": 0.5874689481439799
+  }
+ },
+ "Town04_ClearNoon": {
+  "KITTI": {
+   "bos_stability": 0.6901332973255907,
+   "aol_mean_agreement": 0.6256209933790177
+  },
+  "Cityscapes": {
+   "bos_stability": 0.710651320887585,
+   "aol_mean_agreement": 0.582268212363124
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.2028904763062795,
+   "aol_mean_agreement": 0.14457729653171872
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.6568427393126582,
+   "aol_mean_agreement": 0.6028956211844215
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.40269732808026054,
+   "aol_mean_agreement": 0.32256729007415147
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.287639564961195,
+   "aol_mean_agreement": 0.2070289868245954
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.31802676444252337,
+   "aol_mean_agreement": 0.232900624372389
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.6520295099507787,
+   "aol_mean_agreement": 0.5768395707205586
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.5003029002534214,
+   "aol_mean_agreement": 0.46210267033265984
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.5384874825259566,
+   "aol_mean_agreement": 0.4700001447712598
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.46619523469619933,
+   "aol_mean_agreement": 0.39727188460852786
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.629362497992104,
+   "aol_mean_agreement": 0.5033395032746636
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.6152707594085246,
+   "aol_mean_agreement": 0.4294340011769015
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.7160106972349541,
+   "aol_mean_agreement": 0.615666673105696
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.12702618022759757,
+   "aol_mean_agreement": 0.05355072468519211
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.3165403432150682,
+   "aol_mean_agreement": 0.23467391328967133
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.5309278368162258,
+   "aol_mean_agreement": 0.45064251467909505
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.4040142359336217,
+   "aol_mean_agreement": 0.30978260960267934
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.4100945340692997,
+   "aol_mean_agreement": 0.3032101456367451
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.5778412906485589,
+   "aol_mean_agreement": 0.5128697106047817
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.5157888094907908,
+   "aol_mean_agreement": 0.4884304646240629
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.6319101681789279,
+   "aol_mean_agreement": 0.5440498851110105
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.5266936036052686,
+   "aol_mean_agreement": 0.41838181848111355
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.6135337306292804,
+   "aol_mean_agreement": 0.5011251949454131
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.6342862100712889,
+   "aol_mean_agreement": 0.4870292212166217
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.7140726124013104,
+   "aol_mean_agreement": 0.5329058453699816
+  }
+ },
+ "Town04_OvercastNoon": {
+  "KITTI": {
+   "bos_stability": 0.676147691213032,
+   "aol_mean_agreement": 0.5695396141999441
+  },
+  "Cityscapes": {
+   "bos_stability": 0.7015646310753566,
+   "aol_mean_agreement": 0.5674271571571414
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.18593645472327872,
+   "aol_mean_agreement": 0.1964420301629149
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.6540506338051388,
+   "aol_mean_agreement": 0.6129596312408861
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.42999197357065144,
+   "aol_mean_agreement": 0.2845157030872677
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.2981770222783089,
+   "aol_mean_agreement": 0.2505072477200757
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.3832314781972341,
+   "aol_mean_agreement": 0.33261853376160494
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.6686596255986959,
+   "aol_mean_agreement": 0.5837721693774929
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.5173542261230524,
+   "aol_mean_agreement": 0.45243908766171215
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.4978880852732866,
+   "aol_mean_agreement": 0.45382885351453156
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.45088595819887184,
+   "aol_mean_agreement": 0.4307584566720154
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.5944747273330112,
+   "aol_mean_agreement": 0.49977197868992446
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.5917033896998541,
+   "aol_mean_agreement": 0.49924910954807106
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.7249708872045919,
+   "aol_mean_agreement": 0.6396117144013228
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.044212068617343905,
+   "aol_mean_agreement": 0.04507246385449948
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.32022369274780865,
+   "aol_mean_agreement": 0.2320341620432294
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.5449992909194501,
+   "aol_mean_agreement": 0.40956865414491167
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.4072174316233113,
+   "aol_mean_agreement": 0.27605072549503784
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.3051368605097135,
+   "aol_mean_agreement": 0.28981884121246965
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.5477515617483273,
+   "aol_mean_agreement": 0.49227502890903013
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.5726828787860362,
+   "aol_mean_agreement": 0.5011394040416116
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.6406891594555898,
+   "aol_mean_agreement": 0.590874467994208
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.5274792448435339,
+   "aol_mean_agreement": 0.44818994967509873
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.6447238639100273,
+   "aol_mean_agreement": 0.5270287583120491
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.6663605169069249,
+   "aol_mean_agreement": 0.5813576836738249
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.7024198790352546,
+   "aol_mean_agreement": 0.6118330413103105
+  }
+ },
+ "Town04_SoftRainNoon": {
+  "KITTI": {
+   "bos_stability": 0.6872850503532265,
+   "aol_mean_agreement": 0.5786614505460728
+  },
+  "Cityscapes": {
+   "bos_stability": 0.684848035245851,
+   "aol_mean_agreement": 0.524258656096847
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.24036871032062032,
+   "aol_mean_agreement": 0.18904244528516478
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.6860203766264612,
+   "aol_mean_agreement": 0.5757284376154775
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.4594759475120477,
+   "aol_mean_agreement": 0.28538699462685896
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.34338094470898306,
+   "aol_mean_agreement": 0.251962734700545
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.4461590879419966,
+   "aol_mean_agreement": 0.35681384186705817
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.7159714336406613,
+   "aol_mean_agreement": 0.5779941327691727
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.5524874383834383,
+   "aol_mean_agreement": 0.44357904425781713
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.5313097774730015,
+   "aol_mean_agreement": 0.45109525918960575
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.4753743480609788,
+   "aol_mean_agreement": 0.4218965433797111
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.6727450249105003,
+   "aol_mean_agreement": 0.5542734065165986
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.5657027402259878,
+   "aol_mean_agreement": 0.4788658182063828
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.7229735699251932,
+   "aol_mean_agreement": 0.6477083593056253
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.12018927513808013,
+   "aol_mean_agreement": 0.06520289879130281
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.34347904821236924,
+   "aol_mean_agreement": 0.23239130481429723
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.5502723782161871,
+   "aol_mean_agreement": 0.41616252838593465
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.43498901041845484,
+   "aol_mean_agreement": 0.2980217397407346
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.4445077073474725,
+   "aol_mean_agreement": 0.32918840798994764
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.5802357545134239,
+   "aol_mean_agreement": 0.45440151409610463
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.5988537766544678,
+   "aol_mean_agreement": 0.5138611945963424
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.642801657746783,
+   "aol_mean_agreement": 0.5952072153208049
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.5860636568452995,
+   "aol_mean_agreement": 0.4444078059559283
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.6568850924769649,
+   "aol_mean_agreement": 0.47349147071656966
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.6656579791411872,
+   "aol_mean_agreement": 0.5066179789456985
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.6838549811303914,
+   "aol_mean_agreement": 0.5587511729659593
+  }
+ },
+ "Town05_ClearNight": {
+  "KITTI": {
+   "bos_stability": 0.7408466586695412,
+   "aol_mean_agreement": 0.6003436920370745
+  },
+  "Cityscapes": {
+   "bos_stability": 0.7480743562345391,
+   "aol_mean_agreement": 0.521645016984447
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.5510242941022097,
+   "aol_mean_agreement": 0.15580613863209017
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.6631528108129424,
+   "aol_mean_agreement": 0.5121233642360439
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.5644630381893717,
+   "aol_mean_agreement": 0.25078901111107804
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.5311110003591766,
+   "aol_mean_agreement": 0.2292713966414981
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.5991413093248616,
+   "aol_mean_agreement": 0.27679099066101986
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.7418863736834598,
+   "aol_mean_agreement": 0.5564417314011117
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.6916516882454679,
+   "aol_mean_agreement": 0.4943721905609836
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.6392894192756642,
+   "aol_mean_agreement": 0.43755625160491995
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.6383515761936944,
+   "aol_mean_agreement": 0.2610011384992496
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.6835117535257622,
+   "aol_mean_agreement": 0.5028840635392975
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.6805563218068242,
+   "aol_mean_agreement": 0.4162713725929675
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.7559607088882773,
+   "aol_mean_agreement": 0.5984516209266755
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.628274803560469,
+   "aol_mean_agreement": 0.08294861710589865
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.29766354597794514,
+   "aol_mean_agreement": 0.2165579713427502
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.5209499967010721,
+   "aol_mean_agreement": 0.42424223930291505
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.3744311892191569,
+   "aol_mean_agreement": 0.26656625316842747
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.6450723438001007,
+   "aol_mean_agreement": 0.259531098762932
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.6266608432708334,
+   "aol_mean_agreement": 0.5027029644730299
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.5753740025068086,
+   "aol_mean_agreement": 0.5010220892921738
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.6607669781824899,
+   "aol_mean_agreement": 0.6183022834101449
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.7187997973453452,
+   "aol_mean_agreement": 0.3169997552361178
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.7137228677157147,
+   "aol_mean_agreement": 0.48614258019172635
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.7302376967557582,
+   "aol_mean_agreement": 0.5338401035510976
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.7392942518710691,
+   "aol_mean_agreement": 0.5459626121624656
+  }
+ },
+ "Town05_ClearNoon": {
+  "KITTI": {
+   "bos_stability": 0.7380728568765801,
+   "aol_mean_agreement": 0.5621207614469788
+  },
+  "Cityscapes": {
+   "bos_stability": 0.7183177850598358,
+   "aol_mean_agreement": 0.5409001098832358
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.3172412863075733,
+   "aol_mean_agreement": 0.22234058079512223
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.7162372036130742,
+   "aol_mean_agreement": 0.5806470172528339
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.5116767421583893,
+   "aol_mean_agreement": 0.32686883165136627
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.5534276562262148,
+   "aol_mean_agreement": 0.32711905003889746
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.4647764939566453,
+   "aol_mean_agreement": 0.3899178781587144
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.7095245962163513,
+   "aol_mean_agreement": 0.5442340630487256
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.5871987172036235,
+   "aol_mean_agreement": 0.5074287458606388
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.5834770225265197,
+   "aol_mean_agreement": 0.4599958662300007
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.5886029006751283,
+   "aol_mean_agreement": 0.44368927220611476
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.7556077112605173,
+   "aol_mean_agreement": 0.5969290953647832
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.6459289880488143,
+   "aol_mean_agreement": 0.4834077999870414
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.7985971754146,
+   "aol_mean_agreement": 0.6568062533017086
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.1775655460357666,
+   "aol_mean_agreement": 0.07369565217391305
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.39985145598649974,
+   "aol_mean_agreement": 0.22315217476824056
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.5284254060922161,
+   "aol_mean_agreement": 0.3959042481559774
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.4114601615071296,
+   "aol_mean_agreement": 0.2937318849369236
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.5254421654800397,
+   "aol_mean_agreement": 0.35670290059369547
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.642335858777875,
+   "aol_mean_agreement": 0.553921328637263
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.6199597149427664,
+   "aol_mean_agreement": 0.5097769036629926
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.7155430582273661,
+   "aol_mean_agreement": 0.5978760973461297
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.7245932944629874,
+   "aol_mean_agreement": 0.5409054578678764
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.7388930513987095,
+   "aol_mean_agreement": 0.5246043651567205
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.72395682264632,
+   "aol_mean_agreement": 0.5299134611986254
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.7444179882349292,
+   "aol_mean_agreement": 0.564968362873339
+  }
+ },
+ "Town05_OvercastNoon": {
+  "KITTI": {
+   "bos_stability": 0.7155308967691151,
+   "aol_mean_agreement": 0.4634778202713831
+  },
+  "Cityscapes": {
+   "bos_stability": 0.7046326062380888,
+   "aol_mean_agreement": 0.4729349727232171
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.5654875643262468,
+   "aol_mean_agreement": 0.17498232452765755
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.724896145352059,
+   "aol_mean_agreement": 0.458142345149232
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.5338880388637384,
+   "aol_mean_agreement": 0.27602381240414536
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.6090293829739095,
+   "aol_mean_agreement": 0.26572463857738865
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.5940697376466697,
+   "aol_mean_agreement": 0.2925705699687419
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.7134203798161054,
+   "aol_mean_agreement": 0.4893958246286797
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.7115896203326304,
+   "aol_mean_agreement": 0.4296290586078945
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.7018274311469477,
+   "aol_mean_agreement": 0.4551944341186596
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.5670994556841324,
+   "aol_mean_agreement": 0.29842200385811535
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.7046760049440733,
+   "aol_mean_agreement": 0.45178657242461384
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.6345974034568518,
+   "aol_mean_agreement": 0.4852253149449825
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.7734433902098827,
+   "aol_mean_agreement": 0.5691601578696914
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.5122531808096739,
+   "aol_mean_agreement": 0.09258540400344392
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.3966688939432303,
+   "aol_mean_agreement": 0.20081884139905803
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.5472482263545195,
+   "aol_mean_agreement": 0.42728261216827057
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.4028002804815769,
+   "aol_mean_agreement": 0.2960869577948166
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.5741802749121672,
+   "aol_mean_agreement": 0.2227246406253265
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.6473008159654481,
+   "aol_mean_agreement": 0.5393926017893398
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.574197521610629,
+   "aol_mean_agreement": 0.5078137479754894
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.7254649037865418,
+   "aol_mean_agreement": 0.5907893448323013
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.6789769789064475,
+   "aol_mean_agreement": 0.31876655550106703
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.7246425049115726,
+   "aol_mean_agreement": 0.46286659863332047
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.702224587225614,
+   "aol_mean_agreement": 0.5059043962378864
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.7281221793075889,
+   "aol_mean_agreement": 0.5897581764958475
+  }
+ },
+ "Town05_SoftRainNoon": {
+  "KITTI": {
+   "bos_stability": 0.7789305600380313,
+   "aol_mean_agreement": 0.562132891199511
+  },
+  "Cityscapes": {
+   "bos_stability": 0.6828358422769586,
+   "aol_mean_agreement": 0.5038184991867646
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.3778849677166769,
+   "aol_mean_agreement": 0.21893012604635695
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.7294285989084415,
+   "aol_mean_agreement": 0.5520805771940427
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.5301884710450708,
+   "aol_mean_agreement": 0.304629873678736
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.6395462138227054,
+   "aol_mean_agreement": 0.2654792984607427
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.4354331018767316,
+   "aol_mean_agreement": 0.30279528704674347
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.7688918008567149,
+   "aol_mean_agreement": 0.6100898161984009
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.7101383473943832,
+   "aol_mean_agreement": 0.4709839250017767
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.6330217721267868,
+   "aol_mean_agreement": 0.5148727686379267
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.5801494975899807,
+   "aol_mean_agreement": 0.4270985679587592
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.7248936261397506,
+   "aol_mean_agreement": 0.5325276111357886
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.6559438980569442,
+   "aol_mean_agreement": 0.5263752662196107
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.7682041811585898,
+   "aol_mean_agreement": 0.6616002467469029
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.24913903946677846,
+   "aol_mean_agreement": 0.07786956547718982
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.4218683694303036,
+   "aol_mean_agreement": 0.22559420328749266
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.5346753686983433,
+   "aol_mean_agreement": 0.36205021120607855
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.49758514482445193,
+   "aol_mean_agreement": 0.2814544529759366
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.5282818584723605,
+   "aol_mean_agreement": 0.2967282633191865
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.6062616275193171,
+   "aol_mean_agreement": 0.49317443413578943
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.6218730408163771,
+   "aol_mean_agreement": 0.5164094251329484
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.7260054843912449,
+   "aol_mean_agreement": 0.6483240751403829
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.6991074603581989,
+   "aol_mean_agreement": 0.39522009322176815
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.7178692066265897,
+   "aol_mean_agreement": 0.43836656564927623
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.7255743287924868,
+   "aol_mean_agreement": 0.44592060459858707
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.7546746406802796,
+   "aol_mean_agreement": 0.5615840638866243
+  }
+ },
+ "Town10HD_ClearNight": {
+  "KITTI": {
+   "bos_stability": 0.7188389873353764,
+   "aol_mean_agreement": 0.5062386965022787
+  },
+  "Cityscapes": {
+   "bos_stability": 0.686139157384759,
+   "aol_mean_agreement": 0.4929827990399107
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.45905530357783775,
+   "aol_mean_agreement": 0.1885072307288647
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.6723149020655288,
+   "aol_mean_agreement": 0.5779468624423381
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.5208918596846717,
+   "aol_mean_agreement": 0.33316045782488324
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.3878628581062196,
+   "aol_mean_agreement": 0.26829037387085997
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.5296464276040197,
+   "aol_mean_agreement": 0.3329342210001272
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.6832905724676616,
+   "aol_mean_agreement": 0.48163942187700576
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.5735657903872656,
+   "aol_mean_agreement": 0.4802848184756612
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.6892611538087838,
+   "aol_mean_agreement": 0.4916294047916713
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.6189606589425951,
+   "aol_mean_agreement": 0.32115506645777947
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.7415773971180122,
+   "aol_mean_agreement": 0.5888654308215431
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.6557190852414816,
+   "aol_mean_agreement": 0.5938314125492522
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.7774438950078774,
+   "aol_mean_agreement": 0.6237500209247936
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.32599505165580545,
+   "aol_mean_agreement": 0.09478722048194514
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.2858468497792879,
+   "aol_mean_agreement": 0.12775362347779065
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.4071176956912978,
+   "aol_mean_agreement": 0.35665730601743506
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.32404112404584884,
+   "aol_mean_agreement": 0.19305797159671784
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.6500784927614217,
+   "aol_mean_agreement": 0.2667578059046165
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.6007278492979995,
+   "aol_mean_agreement": 0.5064248097914716
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.555128362218252,
+   "aol_mean_agreement": 0.49498109433961957
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.7150756982262405,
+   "aol_mean_agreement": 0.6565252776638322
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.671138368407799,
+   "aol_mean_agreement": 0.2762357340915047
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.7045995977199481,
+   "aol_mean_agreement": 0.4521297022886575
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.6779857624549831,
+   "aol_mean_agreement": 0.4888031782161283
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.698822868931941,
+   "aol_mean_agreement": 0.5460680159408112
+  }
+ },
+ "Town10HD_ClearNoon": {
+  "KITTI": {
+   "bos_stability": 0.7269848104385005,
+   "aol_mean_agreement": 0.5435369931064222
+  },
+  "Cityscapes": {
+   "bos_stability": 0.723630273612217,
+   "aol_mean_agreement": 0.5547292204217419
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.3343056095654056,
+   "aol_mean_agreement": 0.22657350024937292
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.7062921477258206,
+   "aol_mean_agreement": 0.6153302311184614
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.4922471528905961,
+   "aol_mean_agreement": 0.34308540697007084
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.422849335381436,
+   "aol_mean_agreement": 0.28884092663941174
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.4630483073393503,
+   "aol_mean_agreement": 0.3862173944711685
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.7091258881922125,
+   "aol_mean_agreement": 0.5155009896664516
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.5932526071768336,
+   "aol_mean_agreement": 0.4389420784880285
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.6406799623644132,
+   "aol_mean_agreement": 0.47943777921083175
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.5764110135287046,
+   "aol_mean_agreement": 0.4699026942706625
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.6837119426616838,
+   "aol_mean_agreement": 0.5497870666306952
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.6030672477904494,
+   "aol_mean_agreement": 0.5250899890745463
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.7846933802119732,
+   "aol_mean_agreement": 0.644604279667787
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.3460275694727898,
+   "aol_mean_agreement": 0.061666666852391284
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.3503051827351252,
+   "aol_mean_agreement": 0.23594202933104144
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.4918866644303004,
+   "aol_mean_agreement": 0.47137318985293747
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.3927688321322203,
+   "aol_mean_agreement": 0.29954347914327745
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.4708340438554684,
+   "aol_mean_agreement": 0.28496376949159996
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.6058718802160966,
+   "aol_mean_agreement": 0.488272824925573
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.5909202837621362,
+   "aol_mean_agreement": 0.493017630259628
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.6786108207307682,
+   "aol_mean_agreement": 0.5919047895138678
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.6698888182079509,
+   "aol_mean_agreement": 0.4751749529106462
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.7205113802723554,
+   "aol_mean_agreement": 0.46568206109025545
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.7328272481128983,
+   "aol_mean_agreement": 0.4993225616232856
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.7296871658162791,
+   "aol_mean_agreement": 0.5356781964392765
+  }
+ },
+ "Town10HD_OvercastNoon": {
+  "KITTI": {
+   "bos_stability": 0.7014114580639839,
+   "aol_mean_agreement": 0.5469651437955705
+  },
+  "Cityscapes": {
+   "bos_stability": 0.7190880060062653,
+   "aol_mean_agreement": 0.47754696649863665
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.5048914394279321,
+   "aol_mean_agreement": 0.22702898631925164
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.7129311587427821,
+   "aol_mean_agreement": 0.580129841601719
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.4610352022929029,
+   "aol_mean_agreement": 0.3800574564804201
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.524870577553908,
+   "aol_mean_agreement": 0.3227318854953932
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.556466027845939,
+   "aol_mean_agreement": 0.35260145340276805
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.6827634499447791,
+   "aol_mean_agreement": 0.5476687617502782
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.6544318247322762,
+   "aol_mean_agreement": 0.47039657455099676
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.7139297693915221,
+   "aol_mean_agreement": 0.5056799185146456
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.5153365770971556,
+   "aol_mean_agreement": 0.4349372324347497
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.7188687645159303,
+   "aol_mean_agreement": 0.6201249242314825
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.665864468934044,
+   "aol_mean_agreement": 0.590506091500106
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.7849578053600237,
+   "aol_mean_agreement": 0.6703337957969178
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.533087459554275,
+   "aol_mean_agreement": 0.08065217406853385
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.5404174571835125,
+   "aol_mean_agreement": 0.195586957089279
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.5001870139241218,
+   "aol_mean_agreement": 0.3997044543371252
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.5360054764013528,
+   "aol_mean_agreement": 0.2539104097822438
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.5858407019532862,
+   "aol_mean_agreement": 0.2367204987549264
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.5951734448612425,
+   "aol_mean_agreement": 0.4653564257887394
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.5747355480249569,
+   "aol_mean_agreement": 0.5094715844256722
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.7105476059147073,
+   "aol_mean_agreement": 0.5904465054429097
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.6852794499696485,
+   "aol_mean_agreement": 0.4951494179244923
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.7033894027411158,
+   "aol_mean_agreement": 0.46781260792166
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.7202885362832562,
+   "aol_mean_agreement": 0.5066754027472242
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.7317118657171987,
+   "aol_mean_agreement": 0.5311999734361534
+  }
+ },
+ "Town10HD_SoftRainNoon": {
+  "KITTI": {
+   "bos_stability": 0.7415395183481608,
+   "aol_mean_agreement": 0.5607222322957671
+  },
+  "Cityscapes": {
+   "bos_stability": 0.7073651207033117,
+   "aol_mean_agreement": 0.4553308200658014
+  },
+  "Town01_ClearNight": {
+   "bos_stability": 0.5221122353020168,
+   "aol_mean_agreement": 0.2379285726404708
+  },
+  "Town01_ClearNoon": {
+   "bos_stability": 0.7306939214279963,
+   "aol_mean_agreement": 0.5335600454522215
+  },
+  "Town01_OvercastNoon": {
+   "bos_stability": 0.5954168298843964,
+   "aol_mean_agreement": 0.3224169052003519
+  },
+  "Town01_SoftRainNoon": {
+   "bos_stability": 0.5704182737093596,
+   "aol_mean_agreement": 0.307256213562644
+  },
+  "Town03_ClearNight": {
+   "bos_stability": 0.535702185666632,
+   "aol_mean_agreement": 0.3572598390507957
+  },
+  "Town03_ClearNoon": {
+   "bos_stability": 0.7066011391408697,
+   "aol_mean_agreement": 0.49855114960476105
+  },
+  "Town03_OvercastNoon": {
+   "bos_stability": 0.7197147357829049,
+   "aol_mean_agreement": 0.44669777789193643
+  },
+  "Town03_SoftRainNoon": {
+   "bos_stability": 0.7125368894228946,
+   "aol_mean_agreement": 0.47952190152652874
+  },
+  "Town02_ClearNight": {
+   "bos_stability": 0.5957239852037932,
+   "aol_mean_agreement": 0.41038716805046027
+  },
+  "Town02_ClearNoon": {
+   "bos_stability": 0.6940367820031293,
+   "aol_mean_agreement": 0.48133845000811243
+  },
+  "Town02_OvercastNoon": {
+   "bos_stability": 0.7061550446669195,
+   "aol_mean_agreement": 0.4179546479265327
+  },
+  "Town02_SoftRainNoon": {
+   "bos_stability": 0.7764740978092638,
+   "aol_mean_agreement": 0.6442497587819462
+  },
+  "Town04_ClearNight": {
+   "bos_stability": 0.5876797656416893,
+   "aol_mean_agreement": 0.08539130435041759
+  },
+  "Town04_ClearNoon": {
+   "bos_stability": 0.5494661161312981,
+   "aol_mean_agreement": 0.22597722670630271
+  },
+  "Town04_OvercastNoon": {
+   "bos_stability": 0.5891791932476419,
+   "aol_mean_agreement": 0.42817495040595527
+  },
+  "Town04_SoftRainNoon": {
+   "bos_stability": 0.5355091978013515,
+   "aol_mean_agreement": 0.3094311608568482
+  },
+  "Town05_ClearNight": {
+   "bos_stability": 0.4926088984211286,
+   "aol_mean_agreement": 0.2189275370279084
+  },
+  "Town05_ClearNoon": {
+   "bos_stability": 0.631655285493722,
+   "aol_mean_agreement": 0.4901382025687591
+  },
+  "Town05_OvercastNoon": {
+   "bos_stability": 0.6132127649192074,
+   "aol_mean_agreement": 0.4685109690576791
+  },
+  "Town05_SoftRainNoon": {
+   "bos_stability": 0.6994934020863758,
+   "aol_mean_agreement": 0.6131134506395978
+  },
+  "Town10HD_ClearNight": {
+   "bos_stability": 0.6240044005884833,
+   "aol_mean_agreement": 0.4208794040524442
+  },
+  "Town10HD_ClearNoon": {
+   "bos_stability": 0.7519887469758831,
+   "aol_mean_agreement": 0.44218731264057354
+  },
+  "Town10HD_OvercastNoon": {
+   "bos_stability": 0.7100192064306047,
+   "aol_mean_agreement": 0.4928560151985805
+  },
+  "Town10HD_SoftRainNoon": {
+   "bos_stability": 0.7306126678888796,
+   "aol_mean_agreement": 0.47614040137309094
+  }
+ }
+}
