@@ -85,7 +85,8 @@ use its plain Faster R-CNN path.
 
 `results/` holds the evaluation files behind every number in Chapters 4–6 (one JSON per detector and evaluation set),
 the analysis outputs of each experiment, and the prediction files of the pre-registered tests with their SHA-256 hashes
-(`*.sha256`, `results/pilot_realtwin/prereg_sha256.txt`). `python tools/consolidate.py` rebuilds
+(`*.sha256`, `results/pilot_realtwin/prereg_sha256.txt`). `results/realtwin/` holds the label-survival and realism evaluations of the generative real-twin set-up tests and of the
+first cluster run (generated images are not included). `python tools/consolidate.py` rebuilds
 `results/consolidated/tables.{json,md}` from these files. A rebuild reproduces every estimate, bootstrap interval
 and leave-one-town-out R² exactly. The permutation p-values are Monte Carlo estimates (B = 2,000) and can differ slightly
 between runs: in a check rebuild they differed by at most 0.024, and none crossed 0.05. The tables shipped here are the

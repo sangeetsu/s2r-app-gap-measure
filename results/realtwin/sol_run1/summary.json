@@ -1,0 +1,266 @@
+{
+ "J1": {
+  "shipped_mp4/Town03": {
+   "expected": 30,
+   "done": 30
+  },
+  "png_input/Town03": {
+   "expected": 30,
+   "done": 30
+  }
+ },
+ "J2": {
+  "M1/Town03": {
+   "expected": 125,
+   "done": 125
+  },
+  "M1/Town05": {
+   "expected": 125,
+   "done": 125
+  },
+  "M1/Town07": {
+   "expected": 6,
+   "done": 6
+  },
+  "M1/Town10HD": {
+   "expected": 6,
+   "done": 6
+  },
+  "NV4/Town03": {
+   "expected": 125,
+   "done": 125
+  },
+  "NV4/Town05": {
+   "expected": 125,
+   "done": 125
+  },
+  "NV4/Town07": {
+   "expected": 6,
+   "done": 6
+  },
+  "NV4/Town10HD": {
+   "expected": 6,
+   "done": 6
+  },
+  "V25/Town03": {
+   "expected": 125,
+   "done": 50
+  },
+  "V25/Town05": {
+   "expected": 125,
+   "done": 0
+  },
+  "V25/Town07": {
+   "expected": 6,
+   "done": 0
+  },
+  "V25/Town10HD": {
+   "expected": 6,
+   "done": 0
+  },
+  "G35/Town03": {
+   "expected": 125,
+   "done": 0
+  },
+  "G35/Town05": {
+   "expected": 125,
+   "done": 0
+  },
+  "G35/Town07": {
+   "expected": 6,
+   "done": 0
+  },
+  "G35/Town10HD": {
+   "expected": 6,
+   "done": 0
+  }
+ },
+ "J4": {
+  "video_base/Town03": {
+   "expected": 1,
+   "done": 0
+  },
+  "video_distilled/Town03": {
+   "expected": 1,
+   "done": 0
+  },
+  "video_base/Town10HD": {
+   "expected": 1,
+   "done": 0
+  },
+  "video_distilled/Town10HD": {
+   "expected": 1,
+   "done": 0
+  }
+ },
+ "J3": {
+  "M1/Town03": {
+   "expected": 1050,
+   "done": 125
+  },
+  "M1/Town05": {
+   "expected": 1050,
+   "done": 125
+  },
+  "M1/Town10HD": {
+   "expected": 1050,
+   "done": 6
+  },
+  "M1/Town07": {
+   "expected": 1050,
+   "done": 6
+  },
+  "M1/Town01": {
+   "expected": 1000,
+   "done": 0
+  },
+  "M1/Town02": {
+   "expected": 1050,
+   "done": 0
+  },
+  "M1/Town04": {
+   "expected": 1050,
+   "done": 0
+  },
+  "M1/Town06": {
+   "expected": 1050,
+   "done": 0
+  }
+ },
+ "J5": {
+  "M1_seed11/Town03": {
+   "expected": 250,
+   "done": 0
+  },
+  "M1_seed11/Town05": {
+   "expected": 250,
+   "done": 0
+  },
+  "M1_seed11/Town10HD": {
+   "expected": 250,
+   "done": 0
+  },
+  "M1_seed11/Town07": {
+   "expected": 250,
+   "done": 0
+  },
+  "M1_seed11/Town01": {
+   "expected": 200,
+   "done": 0
+  },
+  "M1_seed11/Town02": {
+   "expected": 250,
+   "done": 0
+  },
+  "M1_seed11/Town04": {
+   "expected": 250,
+   "done": 0
+  },
+  "M1_seed11/Town06": {
+   "expected": 250,
+   "done": 0
+  }
+ },
+ "speed": {
+  "J1": {
+   "outputs": 60,
+   "process_seconds": 7657,
+   "seconds_per_output_per_slot": 127.6
+  },
+  "J2": {
+   "outputs": 574,
+   "process_seconds": 93964,
+   "seconds_per_output_per_slot": 163.7
+  }
+ },
+ "repro_vs_local_A6000": {
+  "shipped_mp4": {
+   "n": 30,
+   "psnr_vs_local_median": 38.75,
+   "mean_abs_diff_median": 1.99
+  },
+  "png_input": {
+   "n": 30,
+   "psnr_vs_local_median": 20.62,
+   "mean_abs_diff_median": 15.5
+  }
+ },
+ "sanity_J3": {
+  "Town03_d54_edge_depth_seg": {
+   "n_sampled": 3,
+   "mean": 95.0,
+   "share_near_black": 0.003
+  },
+  "Town05_d54_edge_depth_seg": {
+   "n_sampled": 3,
+   "mean": 109.4,
+   "share_near_black": 0.016
+  },
+  "Town07_d54_edge_depth_seg": {
+   "n_sampled": 1,
+   "mean": 100.1,
+   "share_near_black": 0.006
+  },
+  "Town10HD_d54_edge_depth_seg": {
+   "n_sampled": 1,
+   "mean": 104.9,
+   "share_near_black": 0.002
+  }
+ },
+ "check": {
+  "host": "sg022",
+  "gpus": [
+   {
+    "index": 0,
+    "name": "NVIDIA A100-SXM4-80GB",
+    "total": 81920,
+    "used": 0
+   },
+   {
+    "index": 1,
+    "name": "NVIDIA A100-SXM4-80GB",
+    "total": 81920,
+    "used": 0
+   }
+  ],
+  "gpu_ids": [
+   "0",
+   "1"
+  ],
+  "ram_total_gb": 503,
+  "ram_available_gb": 128,
+  "disk_free_gb": 278104,
+  "D": {
+   "ok": true,
+   "rc": 0,
+   "seconds": 494.4,
+   "peak_vram_mib": 32981,
+   "peak_ram_mib": 33131
+  },
+  "M1": {
+   "ok": true,
+   "rc": 0,
+   "seconds": 247.7,
+   "peak_vram_mib": 41763,
+   "peak_ram_mib": 38656
+  },
+  "NV4": {
+   "ok": true,
+   "rc": 0,
+   "seconds": 138.0,
+   "peak_vram_mib": 29877,
+   "peak_ram_mib": 39489
+  },
+  "G35": {
+   "ok": true,
+   "rc": 0,
+   "seconds": 111.6,
+   "peak_vram_mib": 41341,
+   "peak_ram_mib": 39059
+  },
+  "version": 3,
+  "in_container": true,
+  "passed": true,
+  "workers": 2
+ }
+}

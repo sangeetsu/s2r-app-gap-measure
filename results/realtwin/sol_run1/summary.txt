@@ -1,0 +1,9 @@
+J1: shipped_mp4/Town03 30/30; png_input/Town03 30/30
+J2: M1/Town03 125/125; M1/Town05 125/125; M1/Town07 6/6; M1/Town10HD 6/6; NV4/Town03 125/125; NV4/Town05 125/125; NV4/Town07 6/6; NV4/Town10HD 6/6; V25/Town03 50/125; V25/Town05 0/125; V25/Town07 0/6; V25/Town10HD 0/6; G35/Town03 0/125; G35/Town05 0/125; G35/Town07 0/6; G35/Town10HD 0/6
+J4: video_base/Town03 0/1; video_distilled/Town03 0/1; video_base/Town10HD 0/1; video_distilled/Town10HD 0/1
+J3: M1/Town03 125/1050; M1/Town05 125/1050; M1/Town10HD 6/1050; M1/Town07 6/1050; M1/Town01 0/1000; M1/Town02 0/1050; M1/Town04 0/1050; M1/Town06 0/1050
+J5: M1_seed11/Town03 0/250; M1_seed11/Town05 0/250; M1_seed11/Town10HD 0/250; M1_seed11/Town07 0/250; M1_seed11/Town01 0/200; M1_seed11/Town02 0/250; M1_seed11/Town04 0/250; M1_seed11/Town06 0/250
+speed J1: 60 outputs, 127.6 s per output per worker slot (incl. model loads)
+speed J2: 574 outputs, 163.7 s per output per worker slot (incl. model loads)
+reproducibility vs local A6000: {'shipped_mp4': {'n': 30, 'psnr_vs_local_median': 38.75, 'mean_abs_diff_median': 1.99}, 'png_input': {'n': 30, 'psnr_vs_local_median': 20.62, 'mean_abs_diff_median': 15.5}}
+bulk sanity (every 50th frame): {'Town03_d54_edge_depth_seg': {'n_sampled': 3, 'mean': 95.0, 'share_near_black': 0.003}, 'Town05_d54_edge_depth_seg': {'n_sampled': 3, 'mean': 109.4, 'share_near_black': 0.016}, 'Town07_d54_edge_depth_seg': {'n_sampled': 1, 'mean': 100.1, 'share_near_black': 0.006}, 'Town10HD_d54_edge_depth_seg': {'n_sampled': 1, 'mean': 104.9, 'share_near_black': 0.002}}

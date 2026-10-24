@@ -1,0 +1,3157 @@
+{
+ "args": {
+  "orig": "/mnt/features/carla_doses/Town03_d00_ref",
+  "restyled": "/mnt/features/cosmos/sol_results_20261022/results/realtwin/M1/Town03_d54_edge_depth_seg",
+  "labels": null,
+  "names": [
+   "frame_000800",
+   "frame_000802",
+   "frame_000804",
+   "frame_000806",
+   "frame_000808",
+   "frame_000810",
+   "frame_000812",
+   "frame_000814",
+   "frame_000816",
+   "frame_000818",
+   "frame_000820",
+   "frame_000822",
+   "frame_000824",
+   "frame_000826",
+   "frame_000828",
+   "frame_000830",
+   "frame_000832",
+   "frame_000834",
+   "frame_000836",
+   "frame_000838",
+   "frame_000840",
+   "frame_000842",
+   "frame_000844",
+   "frame_000846",
+   "frame_000848",
+   "frame_000850",
+   "frame_000852",
+   "frame_000854",
+   "frame_000856",
+   "frame_000858",
+   "frame_000860",
+   "frame_000862",
+   "frame_000864",
+   "frame_000866",
+   "frame_000868",
+   "frame_000870",
+   "frame_000872",
+   "frame_000874",
+   "frame_000876",
+   "frame_000878",
+   "frame_000880",
+   "frame_000882",
+   "frame_000884",
+   "frame_000886",
+   "frame_000888",
+   "frame_000890",
+   "frame_000892",
+   "frame_000894",
+   "frame_000896",
+   "frame_000898",
+   "frame_000900",
+   "frame_000902",
+   "frame_000904",
+   "frame_000906",
+   "frame_000908",
+   "frame_000910",
+   "frame_000912",
+   "frame_000914",
+   "frame_000916",
+   "frame_000918",
+   "frame_000920",
+   "frame_000922",
+   "frame_000924",
+   "frame_000926",
+   "frame_000928",
+   "frame_000930",
+   "frame_000932",
+   "frame_000934",
+   "frame_000936",
+   "frame_000938",
+   "frame_000940",
+   "frame_000942",
+   "frame_000944",
+   "frame_000946",
+   "frame_000948",
+   "frame_000950",
+   "frame_000952",
+   "frame_000954",
+   "frame_000956",
+   "frame_000958",
+   "frame_000960",
+   "frame_000962",
+   "frame_000964",
+   "frame_000966",
+   "frame_000968",
+   "frame_000970",
+   "frame_000972",
+   "frame_000974",
+   "frame_000976",
+   "frame_000978",
+   "frame_000980",
+   "frame_000982",
+   "frame_000984",
+   "frame_000986",
+   "frame_000988",
+   "frame_000990",
+   "frame_000992",
+   "frame_000994",
+   "frame_000996",
+   "frame_000998",
+   "frame_001000",
+   "frame_001002",
+   "frame_001004",
+   "frame_001006",
+   "frame_001008",
+   "frame_001010",
+   "frame_001012",
+   "frame_001014",
+   "frame_001016",
+   "frame_001018",
+   "frame_001020",
+   "frame_001022",
+   "frame_001024",
+   "frame_001026",
+   "frame_001028",
+   "frame_001030",
+   "frame_001032",
+   "frame_001034",
+   "frame_001036",
+   "frame_001038",
+   "frame_001040",
+   "frame_001042",
+   "frame_001044",
+   "frame_001046",
+   "frame_001048"
+  ],
+  "control_size": "1280x387",
+  "min_h": 25.0,
+  "out": "/mnt/features/cosmos/sol_eval/surv_M1_Town03.json"
+ },
+ "summary": {
+  "all": {
+   "ctrl": [
+    143,
+    144
+   ],
+   "rest": [
+    130,
+    144
+   ],
+   "gt_evaluable": 200,
+   "found_in_orig": 144
+  },
+  "Car": {
+   "ctrl": [
+    125,
+    126
+   ],
+   "rest": [
+    119,
+    126
+   ],
+   "gt_evaluable": 166,
+   "found_in_orig": 126
+  },
+  "Pedestrian": {
+   "ctrl": [
+    18,
+    18
+   ],
+   "rest": [
+    11,
+    18
+   ],
+   "gt_evaluable": 34,
+   "found_in_orig": 18
+  },
+  "inserted_per_frame": {
+   "orig": 1.784,
+   "ctrl": 1.72,
+   "rest": 1.584
+  }
+ },
+ "rows": [
+  {
+   "name": "frame_000800",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 1,
+    "ctrl": 1,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000802",
+   "n_gt": 7,
+   "classes": [
+    "Car",
+    "Car",
+    "Car",
+    "Car",
+    "Car",
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true,
+     false,
+     false,
+     false,
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     true,
+     false,
+     false,
+     false,
+     true,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 2,
+    "ctrl": 2,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000804",
+   "n_gt": 9,
+   "classes": [
+    "Car",
+    "Car",
+    "Car",
+    "Car",
+    "Car",
+    "Car",
+    "Car",
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     false,
+     true,
+     true,
+     false,
+     true,
+     true,
+     true,
+     false
+    ],
+    "ctrl": [
+     true,
+     false,
+     true,
+     true,
+     false,
+     true,
+     true,
+     true,
+     false
+    ],
+    "rest": [
+     true,
+     false,
+     false,
+     true,
+     false,
+     true,
+     true,
+     true,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 1,
+    "ctrl": 1,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000806",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000808",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 5
+   }
+  },
+  {
+   "name": "frame_000810",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000812",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000814",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000816",
+   "n_gt": 1,
+   "classes": [
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     false
+    ],
+    "ctrl": [
+     false
+    ],
+    "rest": [
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000818",
+   "n_gt": 1,
+   "classes": [
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     false
+    ],
+    "ctrl": [
+     false
+    ],
+    "rest": [
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000820",
+   "n_gt": 1,
+   "classes": [
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     false
+    ],
+    "ctrl": [
+     false
+    ],
+    "rest": [
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000822",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000824",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000826",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000828",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000830",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000832",
+   "n_gt": 1,
+   "classes": [
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true
+    ],
+    "ctrl": [
+     true
+    ],
+    "rest": [
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000834",
+   "n_gt": 1,
+   "classes": [
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true
+    ],
+    "ctrl": [
+     true
+    ],
+    "rest": [
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000836",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000838",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 1,
+    "ctrl": 1,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000840",
+   "n_gt": 1,
+   "classes": [
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true
+    ],
+    "ctrl": [
+     true
+    ],
+    "rest": [
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 2,
+    "ctrl": 2,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000842",
+   "n_gt": 3,
+   "classes": [
+    "Car",
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     false,
+     false
+    ],
+    "ctrl": [
+     true,
+     false,
+     false
+    ],
+    "rest": [
+     true,
+     false,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 1,
+    "ctrl": 1,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000844",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     false
+    ],
+    "ctrl": [
+     true,
+     false
+    ],
+    "rest": [
+     true,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 1,
+    "ctrl": 1,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000846",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000848",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 1,
+    "ctrl": 1,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000850",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     false,
+     true
+    ],
+    "ctrl": [
+     false,
+     true
+    ],
+    "rest": [
+     false,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 1,
+    "ctrl": 1,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000852",
+   "n_gt": 5,
+   "classes": [
+    "Car",
+    "Car",
+    "Car",
+    "Pedestrian",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true,
+     false,
+     false,
+     false
+    ],
+    "ctrl": [
+     true,
+     true,
+     false,
+     false,
+     false
+    ],
+    "rest": [
+     false,
+     true,
+     false,
+     false,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 3,
+    "ctrl": 3,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000854",
+   "n_gt": 4,
+   "classes": [
+    "Car",
+    "Car",
+    "Pedestrian",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     false,
+     true,
+     false
+    ],
+    "ctrl": [
+     true,
+     false,
+     true,
+     false
+    ],
+    "rest": [
+     true,
+     false,
+     true,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 2,
+    "ctrl": 2,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000856",
+   "n_gt": 3,
+   "classes": [
+    "Car",
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     true,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 2,
+    "ctrl": 2,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000858",
+   "n_gt": 4,
+   "classes": [
+    "Car",
+    "Car",
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     true,
+     true,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 5,
+    "ctrl": 5,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000860",
+   "n_gt": 4,
+   "classes": [
+    "Car",
+    "Car",
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     true,
+     true,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 2,
+    "ctrl": 1,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000862",
+   "n_gt": 4,
+   "classes": [
+    "Car",
+    "Car",
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     true,
+     true,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 1,
+    "ctrl": 2,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000864",
+   "n_gt": 3,
+   "classes": [
+    "Car",
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     true,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 3,
+    "ctrl": 3,
+    "rest": 3
+   }
+  },
+  {
+   "name": "frame_000866",
+   "n_gt": 4,
+   "classes": [
+    "Car",
+    "Car",
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true,
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     true,
+     true,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 3,
+    "ctrl": 3,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000868",
+   "n_gt": 4,
+   "classes": [
+    "Car",
+    "Car",
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     false,
+     true,
+     true,
+     true
+    ],
+    "ctrl": [
+     false,
+     true,
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     true,
+     true,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 2,
+    "ctrl": 1,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000870",
+   "n_gt": 3,
+   "classes": [
+    "Car",
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     true,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 1,
+    "ctrl": 1,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000872",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 3,
+    "ctrl": 3,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000874",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 3,
+    "ctrl": 3,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000876",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 3,
+    "ctrl": 3,
+    "rest": 3
+   }
+  },
+  {
+   "name": "frame_000878",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 2,
+    "ctrl": 2,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000880",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 1,
+    "ctrl": 1,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000882",
+   "n_gt": 3,
+   "classes": [
+    "Car",
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     true,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 1,
+    "ctrl": 1,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000884",
+   "n_gt": 4,
+   "classes": [
+    "Car",
+    "Car",
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true,
+     true,
+     false
+    ],
+    "ctrl": [
+     true,
+     true,
+     true,
+     false
+    ],
+    "rest": [
+     true,
+     true,
+     true,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 3,
+    "ctrl": 3,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000886",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 5,
+    "ctrl": 6,
+    "rest": 3
+   }
+  },
+  {
+   "name": "frame_000888",
+   "n_gt": 1,
+   "classes": [
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true
+    ],
+    "ctrl": [
+     true
+    ],
+    "rest": [
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 4,
+    "ctrl": 4,
+    "rest": 6
+   }
+  },
+  {
+   "name": "frame_000890",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 5,
+    "ctrl": 5,
+    "rest": 5
+   }
+  },
+  {
+   "name": "frame_000892",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     false
+    ],
+    "ctrl": [
+     true,
+     false
+    ],
+    "rest": [
+     true,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 4,
+    "ctrl": 4,
+    "rest": 4
+   }
+  },
+  {
+   "name": "frame_000894",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     false
+    ],
+    "ctrl": [
+     true,
+     false
+    ],
+    "rest": [
+     true,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 4,
+    "ctrl": 4,
+    "rest": 5
+   }
+  },
+  {
+   "name": "frame_000896",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 4,
+    "ctrl": 4,
+    "rest": 3
+   }
+  },
+  {
+   "name": "frame_000898",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 4,
+    "ctrl": 4,
+    "rest": 3
+   }
+  },
+  {
+   "name": "frame_000900",
+   "n_gt": 3,
+   "classes": [
+    "Car",
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     true,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 5,
+    "ctrl": 4,
+    "rest": 4
+   }
+  },
+  {
+   "name": "frame_000902",
+   "n_gt": 3,
+   "classes": [
+    "Car",
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     true,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 2,
+    "ctrl": 2,
+    "rest": 5
+   }
+  },
+  {
+   "name": "frame_000904",
+   "n_gt": 5,
+   "classes": [
+    "Car",
+    "Car",
+    "Car",
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "ctrl": [
+     true,
+     true,
+     true,
+     true,
+     false
+    ],
+    "rest": [
+     true,
+     true,
+     true,
+     true,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 3,
+    "ctrl": 3,
+    "rest": 5
+   }
+  },
+  {
+   "name": "frame_000906",
+   "n_gt": 5,
+   "classes": [
+    "Car",
+    "Car",
+    "Car",
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     false,
+     true,
+     false,
+     true,
+     true
+    ],
+    "ctrl": [
+     false,
+     true,
+     false,
+     true,
+     true
+    ],
+    "rest": [
+     false,
+     true,
+     false,
+     true,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 2,
+    "ctrl": 2,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000908",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     false,
+     true
+    ],
+    "ctrl": [
+     false,
+     true
+    ],
+    "rest": [
+     false,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 2,
+    "ctrl": 2,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000910",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 3
+   }
+  },
+  {
+   "name": "frame_000912",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000914",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 2,
+    "ctrl": 1,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000916",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000918",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000920",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 2,
+    "ctrl": 2,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000922",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000924",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000926",
+   "n_gt": 1,
+   "classes": [
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true
+    ],
+    "ctrl": [
+     true
+    ],
+    "rest": [
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 1,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000928",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 1,
+    "ctrl": 1,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000930",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 1,
+    "ctrl": 1,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000932",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 1,
+    "ctrl": 1,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000934",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 1,
+    "ctrl": 1,
+    "rest": 3
+   }
+  },
+  {
+   "name": "frame_000936",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000938",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 1,
+    "ctrl": 2,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000940",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 1,
+    "ctrl": 1,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000942",
+   "n_gt": 1,
+   "classes": [
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true
+    ],
+    "ctrl": [
+     true
+    ],
+    "rest": [
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 2,
+    "ctrl": 2,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000944",
+   "n_gt": 1,
+   "classes": [
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true
+    ],
+    "ctrl": [
+     true
+    ],
+    "rest": [
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 2,
+    "ctrl": 2,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000946",
+   "n_gt": 3,
+   "classes": [
+    "Car",
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     false,
+     false,
+     true
+    ],
+    "ctrl": [
+     false,
+     false,
+     true
+    ],
+    "rest": [
+     false,
+     false,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 4,
+    "ctrl": 4,
+    "rest": 3
+   }
+  },
+  {
+   "name": "frame_000948",
+   "n_gt": 4,
+   "classes": [
+    "Car",
+    "Car",
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     false,
+     false,
+     true,
+     true
+    ],
+    "ctrl": [
+     false,
+     false,
+     true,
+     true
+    ],
+    "rest": [
+     false,
+     true,
+     true,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 3,
+    "ctrl": 3,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000950",
+   "n_gt": 5,
+   "classes": [
+    "Car",
+    "Car",
+    "Car",
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     false,
+     true,
+     false,
+     true,
+     true
+    ],
+    "ctrl": [
+     false,
+     true,
+     false,
+     true,
+     true
+    ],
+    "rest": [
+     false,
+     true,
+     false,
+     true,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 3,
+    "ctrl": 3,
+    "rest": 7
+   }
+  },
+  {
+   "name": "frame_000952",
+   "n_gt": 5,
+   "classes": [
+    "Car",
+    "Car",
+    "Car",
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     false,
+     false,
+     true,
+     true,
+     false
+    ],
+    "ctrl": [
+     false,
+     false,
+     true,
+     true,
+     false
+    ],
+    "rest": [
+     false,
+     false,
+     true,
+     true,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 3,
+    "ctrl": 3,
+    "rest": 4
+   }
+  },
+  {
+   "name": "frame_000954",
+   "n_gt": 4,
+   "classes": [
+    "Car",
+    "Car",
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     false,
+     true,
+     true,
+     true
+    ],
+    "ctrl": [
+     false,
+     true,
+     true,
+     true
+    ],
+    "rest": [
+     false,
+     true,
+     false,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 3,
+    "ctrl": 4,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000956",
+   "n_gt": 3,
+   "classes": [
+    "Car",
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true,
+     false,
+     true
+    ],
+    "ctrl": [
+     true,
+     false,
+     true
+    ],
+    "rest": [
+     true,
+     false,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 5,
+    "ctrl": 5,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000958",
+   "n_gt": 3,
+   "classes": [
+    "Car",
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true,
+     false,
+     true
+    ],
+    "ctrl": [
+     true,
+     false,
+     true
+    ],
+    "rest": [
+     true,
+     false,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 4,
+    "ctrl": 3,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000960",
+   "n_gt": 4,
+   "classes": [
+    "Car",
+    "Car",
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     false,
+     true,
+     false
+    ],
+    "ctrl": [
+     true,
+     false,
+     true,
+     false
+    ],
+    "rest": [
+     true,
+     false,
+     true,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 6,
+    "ctrl": 3,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000962",
+   "n_gt": 4,
+   "classes": [
+    "Car",
+    "Car",
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     false,
+     true,
+     false
+    ],
+    "ctrl": [
+     true,
+     false,
+     true,
+     false
+    ],
+    "rest": [
+     true,
+     false,
+     true,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 3,
+    "ctrl": 4,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000964",
+   "n_gt": 4,
+   "classes": [
+    "Car",
+    "Car",
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     false,
+     true,
+     false
+    ],
+    "ctrl": [
+     true,
+     false,
+     true,
+     false
+    ],
+    "rest": [
+     true,
+     false,
+     true,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 6,
+    "ctrl": 6,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000966",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     false,
+     true
+    ],
+    "ctrl": [
+     false,
+     true
+    ],
+    "rest": [
+     false,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 4,
+    "ctrl": 4,
+    "rest": 4
+   }
+  },
+  {
+   "name": "frame_000968",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     false,
+     true
+    ],
+    "ctrl": [
+     false,
+     true
+    ],
+    "rest": [
+     false,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 9,
+    "ctrl": 8,
+    "rest": 4
+   }
+  },
+  {
+   "name": "frame_000970",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     false,
+     true
+    ],
+    "ctrl": [
+     false,
+     true
+    ],
+    "rest": [
+     false,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 5,
+    "ctrl": 3,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000972",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     false,
+     true
+    ],
+    "ctrl": [
+     false,
+     true
+    ],
+    "rest": [
+     false,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 4,
+    "ctrl": 5,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000974",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     false,
+     true
+    ],
+    "ctrl": [
+     false,
+     true
+    ],
+    "rest": [
+     false,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 4,
+    "ctrl": 3,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000976",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     false,
+     true
+    ],
+    "ctrl": [
+     false,
+     true
+    ],
+    "rest": [
+     false,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 4,
+    "ctrl": 4,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000978",
+   "n_gt": 3,
+   "classes": [
+    "Car",
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true,
+     false,
+     true
+    ],
+    "ctrl": [
+     true,
+     false,
+     true
+    ],
+    "rest": [
+     true,
+     false,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 1,
+    "ctrl": 0,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000980",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 2,
+    "ctrl": 2,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000982",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000984",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 4
+   }
+  },
+  {
+   "name": "frame_000986",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 3,
+    "ctrl": 2,
+    "rest": 3
+   }
+  },
+  {
+   "name": "frame_000988",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000990",
+   "n_gt": 1,
+   "classes": [
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true
+    ],
+    "ctrl": [
+     true
+    ],
+    "rest": [
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 1,
+    "ctrl": 1,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_000992",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_000994",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000996",
+   "n_gt": 1,
+   "classes": [
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true
+    ],
+    "ctrl": [
+     true
+    ],
+    "rest": [
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_000998",
+   "n_gt": 1,
+   "classes": [
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true
+    ],
+    "ctrl": [
+     true
+    ],
+    "rest": [
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 3,
+    "ctrl": 2,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_001000",
+   "n_gt": 1,
+   "classes": [
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true
+    ],
+    "ctrl": [
+     true
+    ],
+    "rest": [
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 2,
+    "ctrl": 2,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_001002",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     true,
+     false
+    ],
+    "ctrl": [
+     true,
+     false
+    ],
+    "rest": [
+     true,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 5,
+    "ctrl": 5,
+    "rest": 5
+   }
+  },
+  {
+   "name": "frame_001004",
+   "n_gt": 4,
+   "classes": [
+    "Car",
+    "Car",
+    "Pedestrian",
+    "Pedestrian"
+   ],
+   "found": {
+    "orig": [
+     false,
+     true,
+     false,
+     false
+    ],
+    "ctrl": [
+     false,
+     true,
+     false,
+     false
+    ],
+    "rest": [
+     true,
+     true,
+     false,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 2,
+    "ctrl": 2,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_001006",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 3,
+    "ctrl": 3,
+    "rest": 3
+   }
+  },
+  {
+   "name": "frame_001008",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 1,
+    "ctrl": 1,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_001010",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 3,
+    "ctrl": 3,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_001012",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true
+    ],
+    "ctrl": [
+     false,
+     true
+    ],
+    "rest": [
+     true,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 3,
+    "ctrl": 3,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_001014",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 2,
+    "ctrl": 2,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_001016",
+   "n_gt": 2,
+   "classes": [
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true,
+     false
+    ],
+    "ctrl": [
+     true,
+     false
+    ],
+    "rest": [
+     true,
+     false
+    ]
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_001018",
+   "n_gt": 3,
+   "classes": [
+    "Car",
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     true,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_001020",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_001022",
+   "n_gt": 1,
+   "classes": [
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true
+    ],
+    "ctrl": [
+     true
+    ],
+    "rest": [
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 1,
+    "ctrl": 1,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_001024",
+   "n_gt": 3,
+   "classes": [
+    "Car",
+    "Car",
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true,
+     true,
+     true
+    ],
+    "ctrl": [
+     true,
+     true,
+     true
+    ],
+    "rest": [
+     true,
+     true,
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_001026",
+   "n_gt": 1,
+   "classes": [
+    "Car"
+   ],
+   "found": {
+    "orig": [
+     true
+    ],
+    "ctrl": [
+     true
+    ],
+    "rest": [
+     true
+    ]
+   },
+   "inserted": {
+    "orig": 3,
+    "ctrl": 3,
+    "rest": 3
+   }
+  },
+  {
+   "name": "frame_001028",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 2,
+    "ctrl": 2,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_001030",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 2,
+    "ctrl": 2,
+    "rest": 3
+   }
+  },
+  {
+   "name": "frame_001032",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 2,
+    "ctrl": 2,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_001034",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 2,
+    "ctrl": 2,
+    "rest": 3
+   }
+  },
+  {
+   "name": "frame_001036",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_001038",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 1
+   }
+  },
+  {
+   "name": "frame_001040",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 2
+   }
+  },
+  {
+   "name": "frame_001042",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_001044",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_001046",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 1,
+    "ctrl": 1,
+    "rest": 0
+   }
+  },
+  {
+   "name": "frame_001048",
+   "n_gt": 0,
+   "classes": [],
+   "found": {
+    "orig": [],
+    "ctrl": [],
+    "rest": []
+   },
+   "inserted": {
+    "orig": 0,
+    "ctrl": 0,
+    "rest": 0
+   }
+  }
+ ]
+}
