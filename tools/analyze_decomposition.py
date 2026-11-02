@@ -39,9 +39,12 @@ def loo(cols,yv=y):
         if te.sum()==0 or tr.sum()<len(cols)+2: continue
         b=np.linalg.lstsq(A[tr],yv[tr],rcond=None)[0]; errs+=list(np.abs(yv[te]-A[te]@b))
     e=np.array(errs); return e.mean(),100*(e<=4).mean(),1-np.mean(e**2)/yv[ok].var(),int(ok.sum())
+def _partial_r(rx,ry,k):
+    """Pearson r of two residual vectors with its two-sided p-value on n - 2 - k degrees of freedom (k controlled variables)."""
+    r=float(stats.pearsonr(rx,ry)[0]); df=len(rx)-2-k; t=r*np.sqrt(df/max(1e-12,1-r*r)); return r,float(2*stats.t.sf(abs(t),df))
 def partial(x,zs,yv):
     Z=np.column_stack([np.ones(len(yv))]+zs); ok=~np.isnan(x)&~np.isnan(Z).any(1); x,Z,yy=x[ok],Z[ok],yv[ok]
-    rx=x-Z@np.linalg.lstsq(Z,x,rcond=None)[0]; ry=yy-Z@np.linalg.lstsq(Z,yy,rcond=None)[0]; r,p=stats.pearsonr(rx,ry); return r,p,int(ok.sum())
+    rx=x-Z@np.linalg.lstsq(Z,x,rcond=None)[0]; ry=yy-Z@np.linalg.lstsq(Z,yy,rcond=None)[0]; r,p=_partial_r(rx,ry,len(zs)); return r,p,int(ok.sum())
 print(f"{len(cells)} anchored cells, {len(pairs)} directional pairs; drop mean {y.mean():.1f} sd {y.std():.1f} pp; LOO by cell\n")
 print(f"  {'model (predicting the anchored drop)':<56} {'|err|':>6} {'<=4pp':>6} {'LOO R2':>7} {'n':>4}")
 for name,cols in [("source anchor",[src]),("target anchor",[tgt]),("both anchors",[src,tgt])]+[(f"both anchors + {k}",[src,tgt,X[k]]) for k in X]+[(f"source anchor + {k}  [deployable]",[src,X[k]]) for k in X]:

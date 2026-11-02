@@ -9,8 +9,11 @@ MEAS=["fid_full","fid_task","fid_nuis","cov_T_by_S","cov_task_T_by_S","nnd_T_to_
 grid=sorted(c for c in P if "@low" not in c and glob.glob(f"{G}/eval_{c}__on__{c}.json")); anchor={c:m(f"{G}/eval_{c}__on__{c}.json") for c in grid}
 pairs=[(S,T) for S in grid for T in grid if S!=T and T in P[S]]; y=np.array([anchor[S]-m(f"{G}/eval_{S}__on__{T}.json") for S,T in pairs])
 src=np.array([anchor[S] for S,T in pairs]); tgt=np.array([anchor[T] for S,T in pairs])
+def _partial_r(rx,ry,k):
+    """Pearson r of two residual vectors with its two-sided p-value on n - 2 - k degrees of freedom (k controlled variables)."""
+    r=float(stats.pearsonr(rx,ry)[0]); df=len(rx)-2-k; t=r*np.sqrt(df/max(1e-12,1-r*r)); return r,float(2*stats.t.sf(abs(t),df))
 def partial(x,zs):
-    Z=np.column_stack([np.ones(len(y))]+zs); rx=x-Z@np.linalg.lstsq(Z,x,rcond=None)[0]; ry=y-Z@np.linalg.lstsq(Z,y,rcond=None)[0]; return stats.pearsonr(rx,ry)
+    Z=np.column_stack([np.ones(len(y))]+zs); rx=x-Z@np.linalg.lstsq(Z,x,rcond=None)[0]; ry=y-Z@np.linalg.lstsq(Z,y,rcond=None)[0]; return _partial_r(rx,ry,len(zs))
 def loo(cols):
     A=np.column_stack([np.ones(len(y))]+cols); errs=[]
     for h in grid:
@@ -36,7 +39,7 @@ lb=np.array([np.log(nbox(c)) for c in grid])
 for key,T in [("kittival","KITTI"),("cityscapesval","Cityscapes")]:
     yr=np.array([m(f"{G}/src_{c}_{key}.json") for c in grid]); print(f"\n=== C. {T}: {len(grid)} sources, real mAP; r / partial|log boxes")
     for k in MEAS:
-        x=np.array([P[c][T][k] for c in grid],float); r0=stats.pearsonr(x,yr); Z=np.column_stack([np.ones(len(yr)),lb]); rx=x-Z@np.linalg.lstsq(Z,x,rcond=None)[0]; ry=yr-Z@np.linalg.lstsq(Z,yr,rcond=None)[0]; pr=stats.pearsonr(rx,ry)
+        x=np.array([P[c][T][k] for c in grid],float); r0=stats.pearsonr(x,yr); Z=np.column_stack([np.ones(len(yr)),lb]); rx=x-Z@np.linalg.lstsq(Z,x,rcond=None)[0]; ry=yr-Z@np.linalg.lstsq(Z,yr,rcond=None)[0]; pr=_partial_r(rx,ry,1)
         print(f"  {k:<18} r={r0[0]:+.3f} (p={r0[1]:.3f})  partial|boxes {pr[0]:+.3f} (p={pr[1]:.3f})")
     lows=[c for c in grid if c+"@low" in P and glob.glob(f"{L}/src_{c}_{key}.json")]
     if len(lows)>=4:

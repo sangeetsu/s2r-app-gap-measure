@@ -34,7 +34,7 @@ def f1(town=os.environ.get("F1_TOWN","Town03"),frame=int(os.environ.get("F1_FRAM
         for c,x1,y1,x2,y2 in boxes: ax.add_patch(plt.Rectangle((x1-x0,y1),x2-x1,y2-y1,fill=False,lw=.5,ec={"Car":"#ffd700","Pedestrian":"#00e5ff","Cyclist":"#ff40ff"}.get(c,"w")))
         cost="" if d=="d00_ref" else f"   (−{(R9['seed42'][f'{town}|{d}']+R9['seed17'][f'{town}|{d}'])/2:.1f} pp)"
         ax.set_title(NICE[d]+cost,fontsize=7,pad=2)
-    fig.suptitle(f"{town}, held-out frame {frame}: identical actors, poses and labels ({len(boxes)} boxes: Car yellow, Pedestrian cyan, Cyclist magenta) re-rendered under each dose.\nIn brackets: mAP drop of the town's clean-trained detector on its held-out frames under that dose (mean of 2 seeds).",fontsize=7,y=1.04)
+    fig.suptitle(f"{town}, held-out frame {frame}: identical actors, poses and labels ({len(boxes)} boxes: Car yellow, Pedestrian cyan, Cyclist magenta) re-rendered under each dose.\nIn brackets: change in mAP of the town's clean-trained detector on its held-out frames under that dose (mean of 2 seeds).",fontsize=7,y=1.04)
     fig.subplots_adjust(wspace=.02,hspace=.18); save(fig,"F1_frame_matched")
 # ---------------- F2 dose response ----------------
 def f2():
@@ -69,7 +69,7 @@ def f4():
             dx=MET[f"{t}_{d}"][f"fid_{Tn}"]-MET[f"{t}_d00_ref"][f"fid_{Tn}"]; dy=(dreal(DO,t,d,key)+dreal(DOR,t,d,key))/2
             ax.scatter(dx,dy,s=12,color=FAMC[fam(d)],marker=FAMM[fam(d)],edgecolor="k",linewidths=.25,alpha=.85)
         s=T12[f"{Tn}|DINOv3 image FID to real|seed mean"]; ax.set_title(f"real target: {Tn}")
-        ax.text(.97,.97,f"all doses ρ = {s['all']['rho']:+.2f} [{s['all']['ci'][0]:+.2f}, {s['all']['ci'][1]:+.2f}], p {'< .001' if s['all']['p']<.001 else '= %.3f'%s['all']['p']}\nfog only ρ = {s['fog only']['rho']:+.2f}; without fog ρ = {s['without fog']['rho']:+.2f} (p = {s['without fog']['p']:.2f})",transform=ax.transAxes,ha="right",va="top",fontsize=6)
+        ax.text(.97,.97,f"all doses ρ = {s['all']['rho']:+.2f} [{s['all']['ci'][0]:+.2f}, {s['all']['ci'][1]:+.2f}], p {'< .001' if s['all']['p']<.001 else '= %.3f'%s['all']['p']}\nfog only ρ = {s['fog only']['rho']:+.2f}; without fog ρ = {s['without fog']['rho']:+.2f} (p {'< .001' if s['without fog']['p']<.001 else '= %.3f'%s['without fog']['p']})",transform=ax.transAxes,ha="right",va="top",fontsize=6)
         ax.set_xlabel(f"Δ FID (DINOv3) to {Tn}, dose − ref cell"); ax.set_ylabel("Δ real mAP (pp), dose- minus\nreference-trained (mean of 2 seeds)"); lo,hi=ax.get_ylim(); ax.set_ylim(lo,hi+(hi-lo)*.25)
     h=[Line2D([],[],marker=FAMM[f],ls="",color=FAMC[f],label={"sun":"sun angle / night","fog":"fog 25/50/75","other":"wet / rain"}[f],ms=4) for f in ("sun","fog","other")]+[plt.Rectangle((0,0),1,1,color="gray",alpha=.25,label="±1 seed sd")]
     axs[0].legend(handles=h,ncol=1,frameon=False,loc="lower left",handletextpad=.3); fig.subplots_adjust(wspace=.32); save(fig,"F4_dfid_vs_dreal")
@@ -79,7 +79,7 @@ def f5():
     fig,axs=plt.subplots(1,2,figsize=(6.9,2.1),sharey=True)
     for ax,Tn in zip(axs,["KITTI","Cityscapes"]):
         d=T15[Tn]; items=[("pretraining: COCO instead of ImageNet init\n(same 24 cells)",d["pretraining_pp"],None,"#4c4c4c"),("content: best instead of worst town\n(spread of town means, 24-cell grid)",d["town_range_pp"],None,"#1f77b4"),("content: twice the labeled objects\n(within-cell learning curve, causal)",d["pp_per_doubling"],None,"#1f77b4"),
-               ("appearance: night instead of clear noon\n(frame-matched, same content)",d["night_pp"],R3[Tn]["d04_night"]["ci"],"#d62728"),("appearance: Low instead of Epic rendering\n(5 towns, p = %.2f KITTI, %.2f Cityscapes; ± sd)"%(T7["KITTI"]["p"],T7["Cityscapes"]["p"]),-T7[Tn]["epic_minus_low"],[-T7[Tn]["epic_minus_low"]-T7[Tn]["sd"],-T7[Tn]["epic_minus_low"]+T7[Tn]["sd"]],"#d62728"),("appearance: heavy fog instead of clear noon\n(frame-matched, fog75, same content)",d["fog75_pp"],R3[Tn]["d07_fog75"]["ci"],"#d62728")]
+               ("appearance: night instead of clear noon\n(frame-matched, same content)",d["night_pp"],R3[Tn]["d04_night"]["ci"],"#d62728"),("appearance: Low instead of Epic rendering\n(5 towns, p = %.2f KITTI, %.2f Cityscapes; ± sd)"%(T7["KITTI"]["p"],T7["Cityscapes"]["p"]),-T7[Tn]["epic_minus_low"],[-T7[Tn]["epic_minus_low"]-T7[Tn]["sd"],-T7[Tn]["epic_minus_low"]+T7[Tn]["sd"]],"#d62728"),("appearance: dense fog instead of clear noon\n(frame-matched, fog75, same content)",d["fog75_pp"],R3[Tn]["d07_fog75"]["ci"],"#d62728")]
         y=np.arange(len(items))[::-1]
         for yi,(lab,v,ci,c) in zip(y,items):
             ax.barh(yi,v,color=c,alpha=.85,height=.65)

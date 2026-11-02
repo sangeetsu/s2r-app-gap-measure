@@ -54,8 +54,11 @@ def cal_k(x,y,g,k):
         if itr.sum()<3: continue
         b=np.polyfit(x[itr],y[itr],1); e+=list(np.abs(y[ite]-np.polyval(b,x[ite])))
     return float(np.mean(e))
+def _partial_r(rx,ry,k):
+    """Pearson r of two residual vectors with its two-sided p-value on n - 2 - k degrees of freedom (k controlled variables)."""
+    r=float(stats.pearsonr(rx,ry)[0]); df=len(rx)-2-k; t=r*np.sqrt(df/max(1e-12,1-r*r)); return r,float(2*stats.t.sf(abs(t),df))
 def partial(x,y,z):
-    Z=np.column_stack([np.ones(len(y)),z]); rx=x-Z@np.linalg.lstsq(Z,x,rcond=None)[0]; ry=y-Z@np.linalg.lstsq(Z,y,rcond=None)[0]; return stats.pearsonr(rx,ry)
+    Z=np.column_stack([np.ones(len(y)),z]); rx=x-Z@np.linalg.lstsq(Z,x,rcond=None)[0]; ry=y-Z@np.linalg.lstsq(Z,y,rcond=None)[0]; return _partial_r(rx,ry,Z.shape[1]-1)
 def rss(y,X): b=np.linalg.lstsq(X,y,rcond=None)[0]; e=y-X@b; return float(e@e)
 def dummies(v): u=sorted(set(v)); return np.column_stack([(np.asarray(v)==k).astype(float) for k in u[1:]])
 def fmt(v,d=3,sign=True):

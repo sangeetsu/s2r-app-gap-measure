@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """F9 (mechanism, ledger §15.82): (a) loss rate by displacement quintile per family; (b) ROC of displacement vs contrast, luminance, size;
-F9_mechanism_example: Town03 frame 852 under fog 50 — each GT object the clean-trained detector finds in the clean render, coloured by its feature displacement,
+F9_mechanism_example: Town03 frame 852 under fog 50 — each GT object the clean-trained detector finds in the clean render, colored by its feature displacement,
 dashed red = lost in the fog render. Panel (c) is one illustrative frame (the F1 frame); (a)/(b) use all 36,216 cases."""
 import sys
 from pathlib import Path
@@ -53,6 +53,6 @@ for c,(img,title) in enumerate(((ir,"clean render"),(idd,"same frame under fog 5
         if c==1 and not hd[j]: ax.add_patch(plt.Rectangle((b[0]-3,b[1]-3),b[2]-b[0]+6,b[3]-b[1]+6,fill=False,lw=1.0,ec="#ff3030",ls="--"))
     ax.set_title((f"{title}: objects the clean-trained detector finds" if c==0 else f"{title}: red dashed = lost by the detector"),fontsize=6.5)
     for s in ax.spines.values(): s.set_visible(False)
-sm=cm.ScalarMappable(norm=norm,cmap=cmap); cb=fig2.colorbar(sm,ax=list(axs),orientation="horizontal",fraction=.08,pad=.04,aspect=60); cb.set_label("per-object feature displacement (box colour)",fontsize=6); cb.ax.tick_params(labelsize=6)
+sm=cm.ScalarMappable(norm=norm,cmap=cmap); cb=fig2.colorbar(sm,ax=list(axs),orientation="horizontal",fraction=.08,pad=.04,aspect=60); cb.set_label("per-object feature displacement (box color)",fontsize=6); cb.ax.tick_params(labelsize=6)
 print("frame objects (found in clean):",int(hr.sum()),"lost under fog:",int((hr&~hd).sum()),"displacements lost:",[round(d,1) for d,a,b_ in zip(disp,hr,hd) if a and not b_],"kept:",[round(d,1) for d,a,b_ in zip(disp,hr,hd) if a and b_])
 fig2.savefig("figures/cvpr/F9_mechanism_example.pdf",bbox_inches="tight"); fig2.savefig("figures/cvpr/F9_mechanism_example.png",bbox_inches="tight",dpi=150); print("[fig] F9 + example")

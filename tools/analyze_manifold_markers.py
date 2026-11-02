@@ -19,8 +19,11 @@ def own(name):
     for f in (f"{R}/eval_{cell}__on__{cell}.json",f"{R}/eval_{cell}__on__{cell}_low.json"):
         if os.path.exists(f): return m(f)
     return np.nan
+def _partial_r(rx,ry,k):
+    """Pearson r of two residual vectors with its two-sided p-value on n - 2 - k degrees of freedom (k controlled variables)."""
+    r=float(stats.pearsonr(rx,ry)[0]); df=len(rx)-2-k; t=r*np.sqrt(df/max(1e-12,1-r*r)); return r,float(2*stats.t.sf(abs(t),df))
 def partial(x,y,z):
-    Z=np.column_stack([np.ones(len(y)),z]); rx=x-Z@np.linalg.lstsq(Z,x,rcond=None)[0]; ry=y-Z@np.linalg.lstsq(Z,y,rcond=None)[0]; return stats.pearsonr(rx,ry)
+    Z=np.column_stack([np.ones(len(y)),z]); rx=x-Z@np.linalg.lstsq(Z,x,rcond=None)[0]; ry=y-Z@np.linalg.lstsq(Z,y,rcond=None)[0]; return _partial_r(rx,ry,Z.shape[1]-1)
 A=sorted(n for n in K if n.startswith("anchin_"))
 print(f"=== Rule 1/2/4: {len(A)} ImageNet-backbone sources, markers on own source data vs real-target mAP ===")
 for key,T in [("kittival","KITTI"),("cityscapesval","Cityscapes")]:
