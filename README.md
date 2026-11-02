@@ -105,7 +105,7 @@ data, statistic and decision rule were written before its outcome existed. The l
 ```bibtex
 @phdthesis{ulhas2026dissertation,
   author = {Ulhas, Sangeet Sankaramangalam},
-  title  = {Quantifying the Sim2Real Gap through Latent Representations and Feature Spaces},
+  title  = {Quantifying the Sim2Real Appearance Gap in Driving Environments through Latent Representations and Feature Spaces},
   school = {Arizona State University},
   year   = {2026}
 }
