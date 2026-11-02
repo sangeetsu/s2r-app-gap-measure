@@ -66,7 +66,7 @@ for j,(lab,col) in enumerate((("trained on clear simulator images","#7f7f7f"),("
     for i,a in enumerate(v): ax.scatter(np.full(8,x[i]+(j-.5)*w)+rng.uniform(-.08,.08,8),a,s=4,color="k",zorder=3,linewidths=0)
 for i,k in enumerate(SRC):
     d=mean[k][1]-mean[k][0]; ax.text(x[i],max(mean[k][0].max(),mean[k][1].max())+1,f"{d.mean():+.1f} pp ({int((d>0).sum())}/8 towns)",ha="center",fontsize=6)
-ax.set_xticks(x); ax.set_xticklabels(["KITTI\nclear, real","Cityscapes\nclear, real","Foggy Cityscapes β=.02\nsynthetic fog on real photos","RTTS\nreal haze photos"]); ax.set_ylabel("real-world mAP, all images (%)")
+ax.set_xticks(x); ax.set_xticklabels(["KITTI\nclear, real","Cityscapes\nclear, real","Foggy Cityscapes β=.02\nsynthetic fog on real images","RTTS\nreal haze images"]); ax.set_ylabel("real-world mAP, all images (%)")
 ax.legend(frameon=False,loc="upper center",bbox_to_anchor=(.5,-.3),ncol=2,fontsize=6.5); ax.set_ylim(0,max(a.max() for v in mean.values() for a in v)+7)
 ax.set_title("All images, 8 towns (bars = mean, dots = towns): same on clear real images, clearly better on real fog",fontsize=7)
 fig.suptitle(f"Simulator-trained detectors on real images ({TOWN}). Examples selected to illustrate the effect; boxes: car yellow, pedestrian cyan, cyclist magenta.",fontsize=7,y=1.012)

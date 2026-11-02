@@ -34,7 +34,7 @@ def f1(town=os.environ.get("F1_TOWN","Town03"),frame=int(os.environ.get("F1_FRAM
         for c,x1,y1,x2,y2 in boxes: ax.add_patch(plt.Rectangle((x1-x0,y1),x2-x1,y2-y1,fill=False,lw=.5,ec={"Car":"#ffd700","Pedestrian":"#00e5ff","Cyclist":"#ff40ff"}.get(c,"w")))
         cost="" if d=="d00_ref" else f"   (−{(R9['seed42'][f'{town}|{d}']+R9['seed17'][f'{town}|{d}'])/2:.1f} pp)"
         ax.set_title(NICE[d]+cost,fontsize=7,pad=2)
-    fig.suptitle(f"{town}, held-out frame {frame}: identical actors, poses and labels ({len(boxes)} boxes: Car yellow, Pedestrian cyan, Cyclist magenta) re-rendered under each dose.\nIn brackets: change in mAP of the town's clean-trained detector on its held-out frames under that dose (mean of 2 seeds).",fontsize=7,y=1.04)
+    fig.suptitle(f"{town}, held-out frame {frame}: identical actors, poses and labels ({len(boxes)} boxes: Car yellow, Pedestrian cyan, Cyclist magenta) re-rendered under each dose.\nIn brackets: change in mAP of the town's reference-trained detector on its held-out frames under that dose (mean of 2 seeds).",fontsize=7,y=1.04)
     fig.subplots_adjust(wspace=.02,hspace=.18); save(fig,"F1_frame_matched")
 # ---------------- F2 dose response ----------------
 def f2():
@@ -45,7 +45,7 @@ def f2():
         mu=np.array([np.mean([DM[(t,d)] for t in T]) for d in ds]); ci=np.array([bci(np.array([DM[(t,d)] for t in T])) for d in ds])
         ax.errorbar(x,mu,yerr=[mu-ci[:,0],ci[:,1]-mu],color="k",lw=1.6,capsize=2,marker="s",ms=3,label="town mean [95% CI]",zorder=5)
         ax.set_xticks(x); ax.set_xticklabels([NICE[d] for d in ds]); ax.set_title(name); ax.axhline(0,color="gray",lw=.5,ls=":")
-    axs[0].set_ylabel("appearance-only mAP drop (pp)\nclean-trained detector, same frames"); axs[0].legend(ncol=3,frameon=False,loc="upper left",handlelength=1.2,columnspacing=.8)
+    axs[0].set_ylabel("appearance-only mAP drop (pp)\nreference-trained detector, same frames"); axs[0].legend(ncol=3,frameon=False,loc="upper left",handlelength=1.2,columnspacing=.8)
     fig.subplots_adjust(wspace=.08); save(fig,"F2_dose_response")
 # ---------------- F3 metric vs drop ----------------
 def f3():
@@ -70,7 +70,7 @@ def f4():
             ax.scatter(dx,dy,s=12,color=FAMC[fam(d)],marker=FAMM[fam(d)],edgecolor="k",linewidths=.25,alpha=.85)
         s=T12[f"{Tn}|DINOv3 image FID to real|seed mean"]; ax.set_title(f"real target: {Tn}")
         ax.text(.97,.97,f"all doses ρ = {s['all']['rho']:+.2f} [{s['all']['ci'][0]:+.2f}, {s['all']['ci'][1]:+.2f}], p {'< .001' if s['all']['p']<.001 else '= %.3f'%s['all']['p']}\nfog only ρ = {s['fog only']['rho']:+.2f}; without fog ρ = {s['without fog']['rho']:+.2f} (p {'< .001' if s['without fog']['p']<.001 else '= %.3f'%s['without fog']['p']})",transform=ax.transAxes,ha="right",va="top",fontsize=6)
-        ax.set_xlabel(f"Δ FID (DINOv3) to {Tn}, dose − ref cell"); ax.set_ylabel("Δ real mAP (pp), dose- minus\nreference-trained (mean of 2 seeds)"); lo,hi=ax.get_ylim(); ax.set_ylim(lo,hi+(hi-lo)*.25)
+        ax.set_xlabel(f"$\\Delta d_\\mathrm{{real}}$: change in image FID (DINOv3) to {Tn},\ndose minus reference rendering"); ax.set_ylabel("Δ real mAP (pp), dose- minus\nreference-trained (mean of 2 seeds)"); lo,hi=ax.get_ylim(); ax.set_ylim(lo,hi+(hi-lo)*.25)
     h=[Line2D([],[],marker=FAMM[f],ls="",color=FAMC[f],label={"sun":"sun angle / night","fog":"fog 25/50/75","other":"wet / rain"}[f],ms=4) for f in ("sun","fog","other")]+[plt.Rectangle((0,0),1,1,color="gray",alpha=.25,label="±1 seed sd")]
     axs[0].legend(handles=h,ncol=1,frameon=False,loc="lower left",handletextpad=.3); fig.subplots_adjust(wspace=.32); save(fig,"F4_dfid_vs_dreal")
 # ---------------- F5 decomposition ----------------
@@ -99,12 +99,12 @@ def f6():
         (a1 if R==DO else a2).update(S)
     A={p:((a1[p][0]+a2[p][0])/2,(a1[p][1]+a2[p][1])/2) for p in PAIRS}
     m1=[np.mean([A[(t,d)][0] for t in T]) for d in DOSES]; m2=[np.mean([A[(t,d)][1] for t in T]) for d in DOSES]
-    ax.bar(x-w/2,m1,w,color="#d62728",alpha=.8,label="clean-trained detector on dose frames"); ax.bar(x+w/2,m2,w,color="#1f77b4",alpha=.8,label="dose-trained detector on clean frames")
+    ax.bar(x-w/2,m1,w,color="#d62728",alpha=.8,label="reference-trained detector on dose frames"); ax.bar(x+w/2,m2,w,color="#1f77b4",alpha=.8,label="dose-trained detector on reference frames")
     for i,d in enumerate(DOSES):
         ax.scatter(x[i]-w/2+rng.uniform(-.1,.1,8),[A[(t,d)][0] for t in T],s=6,color="k",zorder=3,linewidths=0); ax.scatter(x[i]+w/2+rng.uniform(-.1,.1,8),[A[(t,d)][1] for t in T],s=6,color="k",zorder=3,linewidths=0)
         k=sum(A[(t,d)][0]>A[(t,d)][1] for t in T); ax.text(x[i],max(max(A[(t,d)][0] for t in T),max(A[(t,d)][1] for t in T))+1.2,f"{k}/8",ha="center",fontsize=6)
     ax.set_xticks(x); ax.set_xticklabels([NICE[d] for d in DOSES]); ax.set_ylabel("mAP drop on the other rendering (pp)\n(each detector vs its own held-out frames)"); ax.legend(frameon=False,loc="upper left")
-    tot=sum(A[p][0]>A[p][1] for p in PAIRS); ax.set_title(f"clean→degraded is the harder direction in {tot}/72 town×dose pairs (seed-mean drops; labels = towns of 8)")
+    tot=sum(A[p][0]>A[p][1] for p in PAIRS); ax.set_title(f"reference→dose is the harder direction in {tot}/72 town×dose pairs (seed-mean drops; labels = towns of 8)")
     save(fig,"F6_asymmetry")
 # ---------------- F7 held-out-dose prediction ----------------
 def f7():
@@ -116,7 +116,7 @@ def f7():
         t=v["town"]; o=np.mean([own[DO][t]-m(f"{HO}/eval_{t}_d00_ref__on__{c}.json"),own[DOR][t]-m(f"{HO}_rep/eval_{t}_d00_ref__on__{c}.json")]); q=v["obj_fid_ref"]
         ax.errorbar(q["pred"],o,xerr=[[q["pred"]-q["pi90"][0]],[q["pi90"][1]-q["pred"]]],fmt="o",ms=3,color=SUBC[v["subset"]],ecolor=SUBC[v["subset"]],elinewidth=.3,alpha=.8,mec="k",mew=.2)
     lim=[-5,50]; ax.plot(lim,lim,"k:",lw=.6); ax.set_xlim(lim); ax.set_ylim(lim)
-    ax.set_xlabel("predicted drop (pp), object FID calibrated\non the 9 original doses, 90% PI"); ax.set_ylabel("observed appearance-only drop (pp)")
+    ax.set_xlabel("predicted drop (pp) from $d_\\mathrm{app}$ (object FID), calibrated\non the 9 original doses, 90% PI"); ax.set_ylabel("observed appearance-only drop (pp)")
     ax.text(.03,.97,f"72 held-out pairs, 8 towns\nρ = {T16['rho']:.2f}; MAE {T16['mae']:.1f} pp\n{100*T16['coverage90']:.0f}% inside 90% PI",transform=ax.transAxes,va="top",fontsize=6)
     ax.legend(handles=[Line2D([],[],marker="o",ls="",color=c,label=k+{"interpolation":" (fog35/65, sun6)","extrapolation":" (fog90)","compound":" (night+rain, night+fog, sun10+wet)","novel":" (cloud90, dust50)"}[k],ms=4) for k,c in SUBC.items()],frameon=False,loc="upper center",bbox_to_anchor=(.45,-.2),fontsize=5,ncol=1)
     save(fig,"F7_heldout_prediction")
